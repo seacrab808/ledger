@@ -48,7 +48,7 @@ command = [str(qemu), '-name', 'ledger-phase1,debug-threads=on', '-machine', 'q3
            '-cpu', 'host', '-smp', '2', '-m', '2048', '-nodefaults', '-display', 'none',
            '-serial', 'file:' + str(run_dir / 'serial.log'),
            '-drive', 'file=' + str(overlay) + ',if=virtio,format=qcow2,cache=none',
-           '-device', device_argument(config) + ',serial=LEDGER-PHASE1',
+           '-device', device_argument(config),
            '-netdev', 'user,id=net0,hostfwd=tcp:127.0.0.1:' + str(port) + '-:22',
            '-device', 'virtio-net-pci,netdev=net0', '-qmp', 'unix:' + str(qmp) + ',server=on,wait=off']
 

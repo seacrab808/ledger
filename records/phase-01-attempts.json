@@ -1,0 +1,16 @@
+[
+  {
+    "run_id": "P1-SANITY-001-20261007T103833Z",
+    "start_utc": "2026-10-07T10:38:33.687063+00:00",
+    "end_utc": "2026-10-07T10:38:51.660992+00:00",
+    "status": "failed",
+    "error": "Guest command failed; inspect guest-error.log",
+    "qemu_stopped": true,
+    "project_commit_at_run": "15aede836fdae8c2e850748c053fcdfe7b576d25",
+    "config_sha256": "30709544f66dd33deeefd0c941f618a22e6c011f713ee56b11667a54b0fe6eed",
+    "stage": "device-identity-before-any-fio",
+    "raw_write_executed": false,
+    "cause": "Custom serial property is ignored by pinned FEMU",
+    "resolution": "Use native generated serial and BlackBox model; no FEMU source patch"
+  }
+]

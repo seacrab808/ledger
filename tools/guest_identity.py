@@ -10,11 +10,14 @@ def output(command):
 
 
 devices = sorted(Path('/sys/class/nvme').glob('nvme[0-9]*'))
-matches = [p for p in devices if (p / 'serial').read_text().strip() == 'LEDGER-PHASE1']
+matches = [p for p in devices if 'FEMU' in (p / 'model').read_text().strip()]
 if len(matches) != 1:
-    raise SystemExit('Expected exactly one FEMU serial')
+    raise SystemExit('Expected exactly one FEMU controller')
 ctrl = matches[0]
 model = (ctrl / 'model').read_text().strip()
+serial = (ctrl / 'serial').read_text().strip()
+if not serial:
+    raise SystemExit('Native controller serial missing')
 target = '/dev/' + ctrl.name + 'n1'
 size = int(output(['sudo', '-n', 'blockdev', '--getsize64', target]))
 tree = json.loads(output(['lsblk', '-J', '-b', '-o', 'NAME,PATH,TYPE,SIZE,MOUNTPOINTS', target]))
@@ -28,7 +31,7 @@ if list((Path('/sys/class/block') / Path(target).name / 'holders').iterdir()):
 partitions = output(['sudo', '-n', 'wipefs', '--no-act', '--noheadings', target])
 if partitions:
     raise SystemExit('Existing signatures: refusing I/O')
-record = {'target': target, 'serial': 'LEDGER-PHASE1', 'model': model, 'capacity_bytes': size,
+record = {'target': target, 'serial': serial, 'model': model, 'capacity_bytes': size,
           'namespace_count': 1, 'partition_and_mount_check': 'passed', 'signature_check': 'empty',
           'nvme_id_ctrl': json.loads(output(['sudo', '-n', 'nvme', 'id-ctrl', '/dev/' + ctrl.name, '-o', 'json'])),
           'nvme_id_ns': json.loads(output(['sudo', '-n', 'nvme', 'id-ns', target, '-o', 'json'])),
