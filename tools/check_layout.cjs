@@ -29,6 +29,15 @@ const { pathToFileURL } = require('node:url');
         if (name === 'index' || name === 'phase-01') {
           await page.screenshot({ path: path.join(output, `${name}-${width}.png`), fullPage: true });
         }
+        if (name === 'phase-01' && width === 1280) {
+          for (const [heading, filename] of [
+            ['Native counter · 실제 before/after', 'native-metrics'],
+            ['RAM / CPU / 공용 장비 부담 · 실측', 'resources']
+          ]) {
+            await page.locator('section').filter({ has: page.getByRole('heading', { name: heading, exact: true }) })
+              .screenshot({ path: path.join(output, filename + '.png') });
+          }
+        }
         console.log(`${name}/${width}: offline layout passed`);
       }
       await context.close();

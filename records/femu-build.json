@@ -30,5 +30,10 @@
   ],
   "qemu_sha256": "0290656a293b3e6f64c8fec3d9468cc6e9863e95f82597d91523ea6f9f845220",
   "qemu_img_sha256": "26a1cf12f2b6f4d5d492df48cd3a0901ff58e17bdb47e33d03198b8c9f25a486",
-  "system_packages_modified": false
+  "system_packages_modified": false,
+  "invoked_runner_sha256": "24036ce4570641e942ddde5a400eb5d0e841cc4bb937c52c999df4f4ac23b246",
+  "runner_published_commit": "15aede836fdae8c2e850748c053fcdfe7b576d25",
+  "project_checkout_at_execution": "ad835b2dfe09b91e06fce18621b8f47161a57439",
+  "invocation_mode": "reviewed script via new SSH stdin session; Python -I",
+  "host_information": "records/lab-preflight-current.json"
 }

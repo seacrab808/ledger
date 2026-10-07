@@ -1,6 +1,6 @@
 # LEDGER / shared-flash research exploration
 
-**연구 방향: provisional · 현재 Phase 1 · 서버 연결 완료, KVM 권한으로 실행 보류**
+**연구 방향: provisional · Phase 1 통과 · Phase 2 승인 대기 / 미실행**
 
 이 저장소는 정해진 LEDGER의 최종 구현 명세가 아닙니다. 여러 서비스와 LLM이
 저장장치를 쓸 때 논리 쓰기 바이트가 내부 NAND 쓰기·소거 비용을 충분히
@@ -16,8 +16,14 @@
 - 공식 FEMU는 물리 x86_64 Linux/KVM을 요구하며 WSL을 지원하지 않습니다.
 - FEMU source는 external/FEMU에 pin하고 Git에는 lock만 기록합니다.
 - 연구실 서버 자동 SSH 점검 성공: 물리 Ubuntu 22.04, AMD Threadripper,
-  충분한 available RAM. 현재 계정에 `/dev/kvm` 접근 권한이 없습니다.
-- Dependency 설치, build, guest 생성/boot, fio sanity는 미실행입니다.
+  충분한 available RAM. 사용자가 KVM 권한을 준비했고 **새 SSH 세션의
+  group/RW/open/API/빈 VM 생성 검사**가 통과했습니다.
+- 시스템 설치 없이 ledger 내부 dependency/venv로 FEMU build와 native 단위
+  테스트가 통과했습니다. FEMU source patch는 없습니다.
+- Guest 2 GiB/2 vCPU, raw 4 GiB/exposed 3 GiB BlackBox에서 16 MiB direct write와
+  CRC32C verify read 성공. native delta host/NAND=4096 pages, GC/erase=0입니다.
+- QEMU observed peak RSS 3.63 GiB, fio 구간 평균 CPU 약 271% (100%=논리 CPU 하나).
+  관측 구간 host swap-in/out=0. VM은 정상 종료했습니다. 전체 작업 폴더 약 4.61 GiB.
 - E0 및 Phase 2 이후 실험은 시작하지 않았습니다.
 
 ## 집과 연구실
@@ -29,11 +35,11 @@ Ubuntu 또는 승인된 연구실 Linux에서 할 수 있습니다. Git과 JSON 
 
 공용 서버에서는 계정의 **ledger 폴더 안에만** 파일·venv·cache·build·image를
 둡니다. 시스템 패키지/계정/서비스/권한/네트워크 설정은 변경하지 않습니다.
-venv는 KVM device 권한을 해결하지 못합니다. 현재 gate를 통과하지 못했으므로
-실행을 강행하지 않습니다. 접근 권한 확인 결과는 records/lab-constraints.json에 있습니다.
+venv는 KVM device 권한을 해결하지 못합니다. 과거 권한 부족 이력은
+records/lab-constraints.json, 현재 통과 검사는 records/kvm-sanity.json에 있습니다.
 서버의 기존 빈 `~/ledger`에 프로젝트 checkout도 준비했습니다. 초기 준비 시각과
-commit은 records/lab-workspace.json에 남겼습니다. FEMU source 확보는 현재 로컬에서만
-완료됐으며 서버에는 프로젝트 코드·문서·lock이 있습니다.
+commit은 records/lab-workspace.json에 남겼습니다. 서버에도 pinned source·내부 dependency·
+build·guest image·run log가 `external/FEMU/`, `artifacts/`, `.venv/`에 있으며 큰 파일은 Git에서 제외합니다.
 
 ## 오프라인 도구 — FEMU 실험을 실행하지 않음
 
@@ -50,12 +56,19 @@ python tools/validate_docs.py
 python3 tools/preflight_linux.py --output results/summary/linux-preflight.json
 ```
 
-환경 gate를 통과한 뒤 설치/build/guest/sanity를 수행합니다. 재개 절차는
-[Phase 1 노트](docs/phase-01.html)에 있습니다. config는 source로 검토한 후보이며
-VM에서 검증한 최종 설정은 아닙니다.
+Phase 1 결과와 절차는 [Phase 1 노트](docs/phase-01.html)에 있습니다. 작은 config는
+이 sanity에서 runtime 검증됐지만 GC stress·E0 trend·실기기 검증은 하지 않았습니다.
+실행 당시 config bytes/hash는 records/phase-01-executed-config.json에 보존했습니다.
 
 공용 서버의 dependency 설치도 ledger 내부 prefix/venv로 한정합니다.
 공식 문서의 sudo/apt 예제를 이 서버에서 그대로 실행하지 않습니다.
+Build는 2 jobs/nice 10/2 CPU affinity, VM은 하나만/6 CPU affinity/12 GiB address-space
+limit로 실행했습니다. CPU 수치는 전체 QEMU process이며 짧은 fio 실행·수집 구간입니다.
+공용 서버 활동이 latency/resource 값에 영향을 줄 수 있습니다.
+
+Phase 2 pilot를 시작할 플랫폼 조건은 통과했습니다. 먼저 GC 유도·reset·preconditioning·
+동일 bytes와 비교 기준을 설계하고 사용자 승인을 받아야 합니다. erase=0은 작은 sanity의
+예상 결과이며 LEDGER 문제 정의를 지지하거나 반박하는 evidence가 아닙니다.
 
 ## 구조
 

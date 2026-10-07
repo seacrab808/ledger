@@ -1,11 +1,13 @@
 """Check generated offline documents, original hashes and local links."""
 import hashlib
 import json
+import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 PAGES = ["index.html", "research-map.html", "phase-01.html", "experiment-log.html", "decision-log.html", "glossary.html"]
 
 
@@ -58,6 +60,24 @@ def validate():
     config_hash = hashlib.sha256((ROOT / "configs/femu/blackbox-small.json").read_bytes()).hexdigest()
     if config_hash != record["config_sha256"]:
         errors.append("Config hash and record mismatch")
+    runtime_path = ROOT / 'records/phase-01-runtime.json'
+    if runtime_path.exists():
+        from tools.qmp_metrics import delta_metrics
+        run = json.loads(runtime_path.read_text(encoding='utf-8'))
+        executed_path = ROOT / 'records/phase-01-executed-config.json'
+        if hashlib.sha256(executed_path.read_bytes()).hexdigest() != run['config_sha256']:
+            errors.append('Executed config hash mismatch')
+        computed = delta_metrics(run['native_before']['reply'], run['native_after']['reply'])
+        if computed != run['metrics']:
+            errors.append('Derived counter metrics disagree with native snapshots')
+        if computed['host_page_covered_bytes'] != run['fio']['jobs'][0]['write']['io_bytes']:
+            errors.append('Aligned host page bytes disagree with fio')
+        expected = json.loads(executed_path.read_text(encoding='utf-8'))
+        for field, config_key in [('channels', 'nchs'), ('luns-per-channel', 'luns_per_ch'),
+                                  ('planes-per-lun', 'pls_per_lun'), ('blocks-per-plane', 'blks_per_pl'),
+                                  ('pages-per-block', 'pgs_per_blk')]:
+            if run['native_after']['reply']['return']['namespaces'][0]['geometry'][field] != expected['device'][config_key]:
+                errors.append('Realized geometry mismatch: ' + field)
     if errors:
         raise ValueError("\n".join(errors))
     print("6 HTML notes: offline assets, Korean layout, local links, original hashes and config provenance pass.")

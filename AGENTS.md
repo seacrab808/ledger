@@ -22,6 +22,13 @@ change with evidence. Measurement validity comes before preserving an idea.
   configuration, groups, permissions outside that directory, or other users'
   work. No sudo/apt/usermod/host upgrade. Python venv, caches, build trees and
   guest images belong inside ledger. Read-only host inspection is allowed.
+- Start each SSH check without multiplexing (ControlMaster=no, ControlPath=none,
+  ControlPersist=no). The user has separately arranged KVM group access; verify
+  the execution session's groups, R/W, open and API before using it.
+- Build uses at most 2 jobs, nice 10 and 2-CPU affinity. Keep one VM, guest
+  2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
+  12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
+  are project-local. Stop the owned VM after sanity; never stop other users' jobs.
 - Stop after Phase 1 for the user's decision. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
 

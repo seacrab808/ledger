@@ -219,5 +219,10 @@
     }
   ],
   "build_jobs_planned": 2,
-  "build": "not-run"
+  "build": "not-run",
+  "invoked_runner_sha256": "ee97415039fb7a8eef7e106a9ba328d2e904bd585c335082f58233354273abb9",
+  "runner_published_commit": "15aede836fdae8c2e850748c053fcdfe7b576d25",
+  "project_checkout_at_execution": "ad835b2dfe09b91e06fce18621b8f47161a57439",
+  "invocation_mode": "reviewed script via new SSH stdin session; Python -I",
+  "host_information": "records/lab-preflight-current.json"
 }

@@ -2,6 +2,9 @@
 *.sh text eol=lf
 *.ps1 text eol=lf
 *.json text eol=lf
+*.cjs text eol=lf
+*.html text eol=lf
 *.md text eol=lf
 # Historical HTML is immutable, including original line endings.
 docs/LEDGER* -text
+records/phase-01-executed-config.json -text

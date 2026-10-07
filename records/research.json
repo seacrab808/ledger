@@ -48,7 +48,7 @@
     {
       "phase": 1,
       "name": "FEMU 탐색 장비 + 연구 기록",
-      "status": "incomplete-kvm-permission-blocked"
+      "status": "complete-awaiting-phase2-approval"
     },
     {
       "phase": 2,
@@ -107,15 +107,15 @@
       "reason": "장비 위치를 바꿔도 코드와 실험 조건을 추적할 수 있다. 사용자가 연구실 접속을 요청했다.",
       "alternatives": "집 물리 Ubuntu 설치/듀얼부팅",
       "why_not": "여전히 가능하지만 지금 OS 설치·재부팅·파티션 변경은 요청되지 않았다.",
-      "status": "active-remote-connected-runtime-blocked"
+      "status": "active-remote-phase1-passed"
     },
     {
       "id": "D005",
       "title": "4 GiB raw / 3 GiB exposed를 첫 후보로 기록",
       "reason": "4 KiB page, 256-page block, 256 GC lines를 유지하며 작은 모델의 비용을 줄인다.",
       "alternatives": "default 16 GiB raw / 12 GiB exposed 또는 2 GiB raw",
-      "why_not": "default는 16 GB host에 크고, 더 작은 모델은 GC granularity 영향을 더 키울 수 있다. runtime 검증 전에는 확정하지 않는다.",
-      "status": "provisional-runtime-unvalidated"
+      "why_not": "default는 집 16 GB host에 크고 더 작은 모델은 GC granularity 영향을 더 키울 수 있다. 초기에는 runtime 검증 전 미확정이었고, 이후 Phase 1 검증은 D010에 기록했다.",
+      "status": "phase1-validated-research-sensitivity-open"
     },
     {
       "id": "D006",
@@ -128,10 +128,58 @@
     {
       "id": "D007",
       "title": "공용 서버 기본 설정을 변경하지 않음",
-      "reason": "사용자 지시: 서버에서는 계정의 ledger 폴더 안에서만 작업한다. /dev/kvm 접근 권한은 현재 없다.",
+      "reason": "사용자 지시: 서버에서는 계정의 ledger 폴더 안에서만 작업한다. 초기 결정 당시 /dev/kvm 권한이 없었고, 사용자가 준비한 뒤 D008에서 새 세션 통과를 확인했다.",
       "alternatives": "sudo 실행, kvm group/ACL 변경, 시스템 dependency 설치, TCG 우회",
       "why_not": "공용 설정 변경은 금지됐고 TCG는 지원 KVM 환경의 latency 검증을 대신할 수 없다. Python venv도 device 권한은 해결하지 못한다.",
-      "status": "active-runtime-blocker"
+      "status": "active-scope-rule-blocker-resolved-see-D008"
+    },
+    {
+      "id": "D008",
+      "title": "사용자가 준비한 KVM 권한을 새 SSH 세션에서 재검증",
+      "reason": "기존 세션은 supplementary groups가 오래될 수 있다. id/groups/RW/open/API 12/빈 VM 생성이 실제 세션에서 통과했다.",
+      "alternatives": "기존 multiplexed session 재사용 또는 agent의 권한 변경",
+      "why_not": "사용자 지시와 공용 서버 작업 경계를 준수한다.",
+      "status": "verified"
+    },
+    {
+      "id": "D009",
+      "title": "dependency는 ledger 내부 deb 압축 해제와 venv로 준비",
+      "reason": "공용 pkg-config/GLib dev/ninja가 없지만 시스템 apt install은 금지다. signed Ubuntu index와 package hash를 기록했다.",
+      "alternatives": "시스템 package 설치 또는 기존 Python site-package 사용",
+      "why_not": "다른 사용자 환경을 건드리지 않는다. 기존 .pth 오류는 -I/venv로 격리했다.",
+      "status": "build-verified"
+    },
+    {
+      "id": "D010",
+      "title": "작은 BlackBox profile을 유지하고 native counter로 correctness 확인",
+      "reason": "4 GiB raw / 3 GiB exposed, 2 GiB/2 vCPU에서 16 MiB write/read와 4096 page delta가 일치했다.",
+      "alternatives": "서버 자원을 이유로 default 이상으로 확장",
+      "why_not": "초기화·반복·GC mechanism 통제가 목적이다. 실제 edge 복제나 큰 용량의 trend는 주장하지 않는다.",
+      "status": "phase1-verified"
+    },
+    {
+      "id": "D011",
+      "title": "FEMU 자체 생성 identity로 장치를 확인",
+      "reason": "첫 실행에서 serial compatibility property가 무시됨을 발견했다. raw write 전 중단하고 model/native serial/용량/mount로 확인했다.",
+      "alternatives": "FEMU source의 serial 동작 변경",
+      "why_not": "native 기능으로 충분하다. 실패 기록을 보존했다.",
+      "status": "resolved"
+    },
+    {
+      "id": "D012",
+      "title": "공용 장비에서 작은 자원 예산과 종료 절차 유지",
+      "reason": "2 build jobs와 nice 10, 한 VM·6 CPU affinity·12 GiB address-space limit를 사용했다. RSS와 CPU를 관측하고 VM을 정상 종료했다.",
+      "alternatives": "nproc 전체 병렬 build, 큰 VM 유지",
+      "why_not": "다른 사용자의 작업 여유를 남긴다. CPU/RSS 값은 짧은 sanity 관측이며 모든 향후 workload 상한으로 읽지 않는다.",
+      "status": "measured"
+    },
+    {
+      "id": "D013",
+      "title": "Phase 1 완료 후 Phase 2 실행 중단",
+      "reason": "GC/erase stress·preconditioning·E0 비교는 아직 승인되지 않았다. sanity erase=0은 연구 결과가 아니다.",
+      "alternatives": "바로 sequential/random aging 실험 시작",
+      "why_not": "사용자가 HTML과 결과를 검토하고 pilot 조건을 승인해야 한다.",
+      "status": "awaiting-user-review"
     }
   ],
   "new_questions": [
@@ -139,5 +187,6 @@
     "logical fill과 raw NAND의 live occupancy 중 어느 값이 rate를 더 잘 설명할까?",
     "회계로 공정하게 비용을 나누는 것보다 배치로 그 비용 자체를 줄이는 것이 더 강한 해결일까?",
     "KV를 덜 저장하면 재계산으로 늘어난 시간 동안 로그·DB가 더 쓰는 비용까지 줄어들까?"
-  ]
+  ],
+  "capacity_sensitivity_candidate": "서버에 충분한 RAM/CPU가 있어 향후 capacity/geometry sensitivity를 검토할 수 있다. 지금의 Phase 1과 초기 pilot E0는 4 GiB raw / 3 GiB exposed를 유지한다. 확장은 별도 승인·자원 예산·명시적 변수 통제 후 수행한다."
 }

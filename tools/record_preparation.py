@@ -42,7 +42,7 @@ def capture():
         refs.append({"topic": topic, "path": rel,
                      "sha256": hashlib.sha256((external / rel).read_bytes()).hexdigest(),
                      "url": f"https://github.com/MoatLab/FEMU/blob/{lock['commit']}/{rel}"})
-    return {
+    result = {
         "captured_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
         "display_timezone": "Asia/Seoul",
         "project_commit_at_capture": git("rev-parse", "HEAD"),
@@ -87,8 +87,49 @@ def capture():
             "note": "연구실 장비가 필수인 것은 아니다. 집 물리 Linux도 가능하다. 두 호스트의 성능을 합치지 않는다."
         }
     }
+    runtime_file = ROOT / 'records/phase-01-runtime.json'
+    if runtime_file.exists():
+        run = json.loads(runtime_file.read_text(encoding='utf-8'))
+        executed = ROOT / 'records/phase-01-executed-config.json'
+        if hashlib.sha256(executed.read_bytes()).hexdigest() != run['config_sha256']:
+            raise ValueError('Executed config hash changed')
+        old_config = json.loads(executed.read_text(encoding='utf-8'))
+        current_config = json.loads((ROOT / 'configs/femu/blackbox-small.json').read_text(encoding='utf-8'))
+        if old_config['device'] != current_config['device'] or old_config['guest'] != current_config['guest']:
+            raise ValueError('Runtime result does not validate current geometry/guest')
+        if run['status'] == 'passed' and run['qemu_stopped']:
+            resources = run['resources']
+            result['phase_status'] = 'complete-awaiting-phase2-approval'
+            result['executed_config_sha256'] = run['config_sha256']
+            result['runtime_result'] = 'records/phase-01-runtime.json'
+            result['runtime'] = {
+                'dependency_install': 'project-local extraction + venv; no system install',
+                'build': 'passed', 'guest_creation': 'passed', 'guest_boot': 'passed', 'sanity': 'passed',
+                'target_device': run['guest']['target'], 'qemu_rss_bytes': resources['rss_peak_bytes'],
+                'qemu_cpu_utilization': resources['cpu_mean_by_phase'],
+                'guest_memory_measured_bytes': int(run['guest']['guest_memory'].splitlines()[0].split()[1]) * 1024,
+                'host_swap_during_femu': resources['host_swap_page_deltas'],
+                'native_counters': run['metrics']['native_counter_deltas'], 'qemu_stopped': True}
+            result['activities'] += [
+                {'id': 'P1-KVM-002', 'kind': 'environment-sanity', 'status': 'passed', 'result': '새 SSH 세션에서 kvm group·R/W·open·API 12·빈 VM 생성 확인. 사용자가 권한을 준비했고 agent는 공용 설정을 수정하지 않음.', 'artifacts': ['records/kvm-sanity.json', 'records/lab-preflight-current.json']},
+                {'id': 'P1-BUILD-001', 'kind': 'build', 'status': 'passed', 'result': '공식 Ubuntu dependency를 ledger 내부에 압축 해제하고 venv 사용. 2 jobs/nice 10으로 QEMU 10.1 build와 native 단위 테스트 2개 통과. FEMU source patch 없음.', 'artifacts': ['records/lab-preparation.json', 'records/femu-build.json']},
+                {'id': 'P1-GUEST-001', 'kind': 'guest', 'status': 'passed', 'result': '공식 Ubuntu 24.04 이미지 checksum/signature 확인. native image builder로 guest 준비. 2 GiB·2 vCPU boot와 3 GiB BlackBox namespace 인식.', 'artifacts': ['records/phase-01-guest.json']},
+                {'id': 'P1-SANITY-002', 'kind': 'platform-sanity', 'status': 'passed', 'result': '16 MiB direct write + CRC32C 검증 read 성공. native delta host/NAND 4096·GC/erase 0. VM 정상 종료. E0 evidence 아님.', 'artifacts': ['records/phase-01-runtime.json', 'records/phase-01-executed-config.json', 'records/phase-01-footprint.json']}]
+            # Preserve prior blocked/preparation entries as history, rather than rewriting them.
+            for issue in result['issues']:
+                if issue['problem'] == '공용 서버 계정의 /dev/kvm 접근 권한 없음':
+                    issue.update(action='사용자가 kvm group 등록을 준비. 새 세션의 open/API/빈 VM 검사 통과. agent의 권한 변경 없음.', status='resolved')
+                if issue['problem'] == '서버에 다수의 FEMU C build dependency가 없음':
+                    issue.update(action='프로젝트 내부 APT index/cache·deb 압축 해제·venv로 build 성공. 공용 apt install 없음.', status='resolved')
+            result['issues'] += [
+                {'problem': '공용 서버의 오래된 APT 목록으로 일부 deb 404', 'action': 'ledger 내부에 별도 sources/index/cache를 두고 signed Ubuntu repository로 갱신. /etc·/var 상태 변경 없음.', 'status': 'resolved'},
+                {'problem': 'GLib의 추가 libpcre build dependency 누락', 'action': '공식 libpcre development/runtime 패키지를 동일한 내부 prefix에 추가. 시스템 설치 없음.', 'status': 'resolved'},
+                {'problem': '사용자 기존 Python site-package의 .pth 오류', 'action': 'remote Python -I, build PYTHONNOUSERSITE=1 및 project venv로 격리. 기존 설치 수정 없음.', 'status': 'resolved'},
+                {'problem': 'FEMU serial property가 compatibility-only라 첫 identity 검사 실패', 'action': '쓰기 전 중단, native model·생성된 serial·capacity·mount 확인으로 수정. 실패 기록 보존. FEMU source patch 없음.', 'status': 'resolved'}]
+            result['feasibility']['lab'] = '작은 Phase 1 통과. 동일 4/3 GiB로 pilot E0 준비 가능하지만 Phase 2 승인과 GC/reset/preconditioning 설계가 먼저 필요.'
+    return result
 
 
 if __name__ == "__main__":
     (ROOT / "records/phase-01.json").write_text(json.dumps(capture(), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("Preparation provenance recorded; runtime remains not-run.")
+    print("Phase 1 provenance recorded from structured measurement artifacts.")
