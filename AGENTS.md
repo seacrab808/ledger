@@ -8,10 +8,11 @@ work/wear for services and LLMs on shared edge storage. Problem statement,
 contributions, accounting, placement, architecture, KV policy and even LEDGER may
 change with evidence. Measurement validity comes before preserving an idea.
 
-- Current scope is Phase 1 only: environment inspection, pinned FEMU source,
-  small BlackBox config, supported Linux build/boot, bounded sanity, native
-  metrics/resources and documentation. Commit/push is authorized by the user.
-- Do NOT run E0, formal sequential/random comparisons, fill/OP/GC/geometry sweeps,
+- Current authorization is Phase 2 pilot only: same 4 GiB raw / 3 GiB exposed,
+  approximately 70% live logical fill, identical deterministic preconditioning,
+  GC/erase gate, 4 KiB sequential versus uniform random overwrites, direct I/O,
+  QD1/job1/equal byte budgets and three runs each. Commit/push remains authorized.
+- Do NOT run other E0 workloads, fill/OP/GC/geometry sweeps,
   repeated statistics, LLM downloads, accounting/Shapley/BPF, SAVE/DROP policies,
   threshold/paced, placement features or real-device experiments in this phase.
 - An unsuitable host is a recorded blocker. Do not install/run FEMU under WSL or
@@ -29,7 +30,7 @@ change with evidence. Measurement validity comes before preserving an idea.
   2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
   12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
   are project-local. Stop the owned VM after sanity; never stop other users' jobs.
-- Stop after Phase 1 for the user's decision. A blocked runtime stays incomplete;
+- Stop after Phase 2 pilot for the user's decision. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
 
 ## Documents and evidence
