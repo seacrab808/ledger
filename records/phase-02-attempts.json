@@ -1,0 +1,50 @@
+[
+  {
+    "batch_id": "P2-PILOT-20261007T111731Z",
+    "project_commit_at_run": "e38cd5d7960a8a75fa7be0208f9ad715074c08dc",
+    "config_sha256": "c92efe30ae2fc7ccd19377fef0dd33385ddbd653b4e47e056470d95cbfadb488",
+    "plan_sha256": "5802dd3fae1b4a6b03462db3882e9b305e6f2b68f0fba95480f8029e6f0e2eb2",
+    "runner_sha256": "b7b34aa02cee615dfb51aa02e9b0dd8845774510aea3a343eecc3f3b4474365f",
+    "start_utc": "2026-10-07T11:17:31.433227+00:00",
+    "end_utc": "2026-10-07T11:17:44.255831+00:00",
+    "status": "failed-before-io",
+    "completed_fio_stages": 0,
+    "reason": "fio 3.36 rejected random_distribution=uniform before I/O; uniform is its default",
+    "resolution": "Remove unsupported distribution string only; preserve uniform/default and norandommap=1",
+    "qemu_stopped": true,
+    "native_before_first_fio": {
+      "return": {
+        "mode": "bbssd",
+        "path": "/machine/peripheral/femu0",
+        "namespaces": [
+          {
+            "nsid": 1,
+            "mode": "bbssd",
+            "counters": {
+              "block-erases": 0,
+              "nand-write-pages": 0,
+              "gc-write-pages": 0,
+              "host-write-pages": 0
+            },
+            "line-counts": {
+              "total": 256,
+              "free": 255,
+              "full": 0,
+              "victim": 0
+            },
+            "geometry": {
+              "pages-per-block": 256,
+              "pages-per-line": 4096,
+              "luns-per-channel": 8,
+              "page-size": 4096,
+              "planes-per-lun": 1,
+              "blocks-per-plane": 256,
+              "channels": 2
+            }
+          }
+        ]
+      },
+      "id": "counters"
+    }
+  }
+]

@@ -143,7 +143,7 @@ def run_one(spec, index):
                ' --rw=' + ('write' if pattern == 'sequential' else 'randwrite') +
                ' --bs=4096 --size=' + str(plan['region_bytes']) + ' --io_size=' + str(byte_budget) +
                ' --offset=0 --ioengine=libaio --direct=1 --iodepth=1 --numjobs=1'
-               ' --random_distribution=uniform --norandommap=1 --random_generator=tausworthe64'
+               ' --norandommap=1 --random_generator=tausworthe64'
                ' --randrepeat=1 --randseed=' + str(seed) +
                ' --end_fsync=1 --output-format=json --output=/home/femu/phase2-fio.json')
         start = utc()

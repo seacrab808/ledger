@@ -13,6 +13,7 @@
   "numjobs": 1,
   "ioengine": "libaio",
   "random_distribution": "uniform",
+  "fio_compatibility": "fio 3.36 uniform is the default random distribution; do not pass unsupported random_distribution=uniform",
   "norandommap": 1,
   "random_generator": "tausworthe64",
   "runs": [
