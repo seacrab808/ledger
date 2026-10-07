@@ -1,0 +1,96 @@
+{
+  "captured_at_utc": "2026-10-07T10:26:50.665025+00:00",
+  "system": "Linux",
+  "kernel": "5.15.0-78-generic",
+  "architecture": "x86_64",
+  "distro": {
+    "PRETTY_NAME": "Ubuntu 22.04.3 LTS",
+    "VERSION_ID": "22.04",
+    "ID": "ubuntu"
+  },
+  "virtualization": "none",
+  "cpu_model": "AMD Ryzen Threadripper PRO 7975WX 32-Cores",
+  "logical_cpus": 64,
+  "hardware_virtualization_flag": true,
+  "kvm_exists": true,
+  "kvm_access": true,
+  "kvm_loaded": true,
+  "kvm_amd_loaded": true,
+  "mem_total_bytes": 269642309632,
+  "mem_available_bytes": 252606926848,
+  "swap_total_bytes": 8589930496,
+  "swap_free_bytes": 8283746304,
+  "disk_free_bytes": 1301736865792,
+  "packages": {
+    "python": {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.10.12",
+      "stderr": ""
+    },
+    "glib": {
+      "argv": [
+        "pkg-config",
+        "--modversion",
+        "glib-2.0"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    },
+    "gcc": {
+      "argv": [
+        "gcc",
+        "-dumpfullversion"
+      ],
+      "exit_code": 0,
+      "stdout": "11.4.0",
+      "stderr": ""
+    },
+    "ninja": {
+      "argv": [
+        "ninja",
+        "--version"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    },
+    "git": {
+      "argv": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.34.1",
+      "stderr": ""
+    },
+    "fio": {
+      "argv": [
+        "fio",
+        "--version"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    },
+    "nvme": {
+      "argv": [
+        "nvme",
+        "version"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    }
+  },
+  "interpretation": "environment probe only; no FEMU or fio workload was run",
+  "gate": {
+    "eligible": true,
+    "blockers": [],
+    "required_available_bytes": 8589934592
+  }
+}

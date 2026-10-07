@@ -20,7 +20,8 @@ def ssh_command(alias, transport="native", distro="Ubuntu"):
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", alias):
         raise ValueError("Expected configured SSH alias")
     options = ["-o", "BatchMode=yes", "-o", "StrictHostKeyChecking=yes",
-               "-o", "ConnectTimeout=15"]
+               "-o", "ConnectTimeout=15", "-o", "ControlMaster=no",
+               "-o", "ControlPath=none", "-o", "ControlPersist=no"]
     if transport == "native":
         return ["ssh", *options, alias]
     if os.name != "nt":

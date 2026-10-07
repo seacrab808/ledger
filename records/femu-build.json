@@ -1,0 +1,34 @@
+{
+  "status": "build-passed",
+  "start_utc": "2026-10-07T10:32:34.649934+00:00",
+  "end_utc": "2026-10-07T10:34:30.842397+00:00",
+  "runtime_seconds": 116.19246644247323,
+  "femu_commit": "57920cdcfb9de0ebbac718f337d460684d9629e1",
+  "source_tracked_clean": true,
+  "build_jobs": 2,
+  "build_nice": 10,
+  "build_cpu_affinity": [
+    0,
+    1
+  ],
+  "compiler": "11.4.0",
+  "version": "QEMU emulator version 10.1.0",
+  "native_unit_tests": "passed",
+  "native_test_log": "artifacts/build-femu/meson-logs/testlog.txt",
+  "configure_options": [
+    "--enable-kvm",
+    "--target-list=x86_64-softmmu",
+    "--enable-slirp",
+    "--disable-libnfs",
+    "--disable-libiscsi",
+    "--disable-curl",
+    "--disable-docs",
+    "--disable-gtk",
+    "--disable-sdl",
+    "--disable-vnc",
+    "--python=$LEDGER/.venv/bin/python"
+  ],
+  "qemu_sha256": "0290656a293b3e6f64c8fec3d9468cc6e9863e95f82597d91523ea6f9f845220",
+  "qemu_img_sha256": "26a1cf12f2b6f4d5d492df48cd3a0901ff58e17bdb47e33d03198b8c9f25a486",
+  "system_packages_modified": false
+}
