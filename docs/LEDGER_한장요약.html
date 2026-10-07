@@ -1,0 +1,364 @@
+<title>LEDGER 한 장</title>
+<style>
+:root{
+  --paper:#EDF0F3;--surface:#FFFFFF;--ink:#172029;--ink-soft:#4A5763;--ink-faint:#7C8994;--rule:#C9D2D9;--rule-soft:#DFE5EA;--accent:#A0521A;--accent-bg:#F7EBDF;--alert:#8C2E2E;--alert-bg:#F6E4E4;--ok:#1F6B5A;--ok-bg:#E0EFEA;--band:#172029;--band-ink:#E6EBEF;--band-muted:#93A3B0;--w1:#A0521A;--w2:#C98B4B;--w3:#4A6FA5;--w4:#7C8994;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#12161B;--surface:#1A2027;--ink:#E4E8EC;--ink-soft:#AEB8C2;--ink-faint:#7F8B96;--rule:#2C353E;--rule-soft:#232B33;--accent:#E09A55;--accent-bg:#2E241A;--alert:#E08484;--alert-bg:#3A2020;--ok:#6FC3AC;--ok-bg:#16302A;--band:#0C0F13;--band-ink:#E6EBEF;--band-muted:#8A99A6;--w1:#E09A55;--w2:#D9B27A;--w3:#7FA3D6;--w4:#8A99A6;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#12161B;--surface:#1A2027;--ink:#E4E8EC;--ink-soft:#AEB8C2;--ink-faint:#7F8B96;--rule:#2C353E;--rule-soft:#232B33;--accent:#E09A55;--accent-bg:#2E241A;--alert:#E08484;--alert-bg:#3A2020;--ok:#6FC3AC;--ok-bg:#16302A;--band:#0C0F13;--band-ink:#E6EBEF;--band-muted:#8A99A6;--w1:#E09A55;--w2:#D9B27A;--w3:#7FA3D6;--w4:#8A99A6;
+  }
+
+* { box-sizing:border-box; }
+body{background:var(--paper);color:var(--ink);margin:0;font-family:'IBM Plex Sans KR','Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:16px;line-height:1.65;word-break:keep-all;overflow-wrap:break-word;}
+.wrap{max-width:880px;margin:0 auto;padding-block:56px 96px;padding-inline:24px;}
+@media (max-width:640px){ .wrap{padding-inline:16px;} }
+
+.mono,.kicker,.chip,.secnum,.eq,dt,.mono-line,.axisline,.bandmono{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;}
+svg text{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;}
+
+h1,h2,h3{text-wrap:balance;margin:0;}
+h1{font-size:56px;font-weight:700;letter-spacing:-0.04em;line-height:1.1;margin-top:14px;}
+@media (max-width:640px){ h1{font-size:38px;} }
+
+.kicker{color:var(--ink-soft);font-size:13px;letter-spacing:.02em;}
+.thesis{font-size:22px;font-weight:600;margin-top:22px;line-height:1.5;}
+.thesis .q{color:var(--accent);}
+
+.band{background:var(--band);color:var(--band-ink);border-radius:4px;padding:18px 20px;display:flex;flex-wrap:wrap;align-items:center;gap:18px 28px;margin-top:28px;}
+.band-left{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-weight:600;letter-spacing:.02em;white-space:nowrap;}
+.band-dl{display:flex;flex-wrap:wrap;gap:8px 22px;margin:0;font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:13px;}
+.band-dl>div{display:flex;gap:6px;align-items:baseline;}
+.band-dl dt{color:var(--band-muted);margin:0;}
+.band-dl dd{margin:0;color:var(--band-ink);}
+.band-dl dd.hot{color:#F0A8A2;font-weight:700;}
+.band-muted{margin-left:auto;color:var(--band-muted);font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12.5px;white-space:nowrap;}
+
+section{margin-top:56px;}
+.shead{display:flex;align-items:baseline;gap:12px;border-bottom:1.5px solid var(--rule);padding-bottom:10px;margin-bottom:22px;}
+.secnum{color:var(--accent);font-size:14px;font-weight:600;}
+h2{font-size:22px;font-weight:700;}
+.lead{color:var(--ink-soft);font-size:15px;margin-bottom:18px;}
+
+svg{width:100%;height:auto;max-width:100%;display:block;}
+
+.tri-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px;}
+@media (max-width:640px){ .tri-grid{grid-template-columns:1fr;} }
+.stat{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:14px 16px;}
+.stat .lbl{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-size:12px;font-weight:600;margin-bottom:6px;}
+.stat p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+.duo-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px;}
+@media (max-width:640px){ .duo-grid{grid-template-columns:1fr;} }
+.block{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:14px 16px;}
+.block .lbl{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;font-weight:600;margin-bottom:6px;}
+.block.pass .lbl{color:var(--ok);}
+.block.fail .lbl{color:var(--alert);}
+.block p{margin:0;font-size:14.5px;color:var(--ink-soft);}
+
+.mono-line{font-size:12.5px;color:var(--ink-faint);margin-top:12px;}
+
+.tw{margin-top:6px;}
+table{width:100%;border-collapse:collapse;font-size:14px;}
+th{text-align:left;font-weight:600;color:var(--ink-soft);border-bottom:1.5px solid var(--rule);padding:8px 10px;font-size:12.5px;font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;}
+td{border-bottom:1px solid var(--rule-soft);padding:10px;vertical-align:top;font-variant-numeric:tabular-nums;}
+td.num{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;}
+
+.eq{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:18px;margin-top:18px;text-align:center;font-size:13.5px;line-height:2;color:var(--ink-soft);}
+.eq .decide{color:var(--ink);font-weight:600;}
+
+.clist{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px;}
+@media (max-width:640px){ .clist{grid-template-columns:1fr;} }
+.citem{background:var(--surface);border:1px solid var(--rule);border-radius:4px;padding:14px 16px;}
+.chead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:8px;}
+.chead label{font-weight:600;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;cursor:pointer;}
+input[type="checkbox"]{width:16px;height:16px;accent-color:var(--accent);flex:0 0 auto;}
+input[type="checkbox"]:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.citem p{margin:4px 0;font-size:14px;color:var(--ink-soft);}
+.citem .done{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;color:var(--ink-faint);margin-top:8px;}
+
+.chip{display:inline-block;font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;font-size:12px;padding:2px 6px;border:1px solid var(--rule);border-radius:3px;color:var(--ink-soft);white-space:nowrap;}
+.chip.a{border-color:var(--accent);color:var(--accent);background:var(--accent-bg);}
+.chip.ok{border-color:var(--ok);color:var(--ok);background:var(--ok-bg);}
+.chip.alert{border-color:var(--alert);color:var(--alert);background:var(--alert-bg);}
+
+.note-alert{border:1px solid var(--alert);background:var(--alert-bg);color:var(--alert);border-radius:4px;padding:10px 14px;margin-top:14px;font-size:14px;}
+
+.deflist{display:grid;grid-template-columns:180px 1fr;gap:8px 16px;margin:0;}
+@media (max-width:640px){ .deflist{grid-template-columns:1fr;} }
+.deflist dt{font-family:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;color:var(--ink-soft);font-size:13px;}
+.deflist dd{margin:0;font-size:14.5px;padding-bottom:8px;border-bottom:1px solid var(--rule-soft);}
+@media (max-width:640px){ .deflist dd{border-bottom:none;padding-bottom:2px;} }
+
+tr.ship td{background:var(--band);color:var(--band-ink);font-weight:600;}
+
+footer{margin-top:56px;font-size:13.5px;color:var(--ink-faint);border-top:1px solid var(--rule-soft);padding-top:16px;}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<div class="wrap">
+
+<div class="kicker">LEDGER · 한 장 요약 · 2026-09-22 · 구현 착수용</div>
+<h1>메모리 압박은 쓰기가 되고, 쓰기는 소거가 된다.</h1>
+<p class="thesis">엣지 리눅스에서 그 소거를 <span class="q">서비스 단위로 세고, 예산으로 나누고, 학습 서비스만 연산으로 되사게</span> 하는 계층. 커널이 이미 하는 것 위에 얹는다.</p>
+
+<div class="band">
+  <div class="band-left">CCGrid 2027 · Track 3</div>
+  <dl class="band-dl">
+    <div><dt>게이트(Figure 1)</dt><dd>10.03</dd></div>
+    <div><dt>범위 동결</dt><dd>10.06</dd></div>
+    <div><dt>초록</dt><dd>11.24</dd></div>
+    <div><dt>본문</dt><dd class="hot">12.01</dd></div>
+  </dl>
+  <div class="band-muted">오늘 기준 D-70. · 10.03은 토요일(개천절) — 실제 합류는 10.02 또는 10.05</div>
+</div>
+
+<section>
+  <div class="shead"><span class="secnum">01</span><h2>무엇이 일어나는가 — 한 그림</h2></div>
+
+  <svg viewBox="0 0 880 200" role="img" aria-label="파이프라인 다이어그램">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M0,0L10,5L0,10z" fill="var(--ink-soft)"/>
+      </marker>
+    </defs>
+
+    <!-- box 1 -->
+    <rect x="10" y="30" width="150" height="110" rx="4" fill="var(--surface)" stroke="var(--rule)"/>
+    <text x="20" y="54" font-size="14" font-weight="600" fill="var(--ink)">메모리 압박</text>
+    <text x="20" y="72" font-size="11" fill="var(--ink-soft)">memory.max 캡</text>
+    <text x="20" y="86" font-size="11" fill="var(--ink-soft)">LoRA 학습 라운드</text>
+
+    <!-- box 2 -->
+    <rect x="182" y="30" width="150" height="110" rx="4" fill="var(--surface)" stroke="var(--rule)"/>
+    <text x="192" y="54" font-size="14" font-weight="600" fill="var(--ink)">쓰기 경로</text>
+    <text x="192" y="72" font-size="11" fill="var(--ink-soft)">zram writeback</text>
+    <text x="192" y="86" font-size="11" fill="var(--ink-soft)">모델 저장</text>
+    <text x="192" y="100" font-size="11" fill="var(--ink-soft)">활성화 오프로드</text>
+    <text x="192" y="114" font-size="11" fill="var(--ink-soft)">journald·SQLite 대리 쓰기</text>
+
+    <!-- box 3 -->
+    <rect x="354" y="30" width="150" height="110" rx="4" fill="var(--surface)" stroke="var(--rule)"/>
+    <text x="364" y="54" font-size="14" font-weight="600" fill="var(--ink)">블록 계층</text>
+    <text x="364" y="72" font-size="11" fill="var(--ink-soft)">bytes per cgroup</text>
+    <text x="364" y="86" font-size="11" fill="var(--ink-soft)">io.stat</text>
+    <rect x="364" y="118" width="54" height="16" rx="3" fill="var(--ok-bg)" stroke="var(--ok)"/>
+    <text x="391" y="129.5" font-size="10.5" text-anchor="middle" fill="var(--ok)">보인다</text>
+
+    <!-- box 4 -->
+    <rect x="526" y="30" width="150" height="110" rx="4" fill="var(--surface)" stroke="var(--rule)"/>
+    <text x="536" y="54" font-size="14" font-weight="600" fill="var(--ink)">FTL</text>
+    <text x="536" y="72" font-size="11" fill="var(--ink-soft)">erases</text>
+    <text x="536" y="86" font-size="11" fill="var(--ink-soft)">WAF per pattern</text>
+    <text x="536" y="100" font-size="11" fill="var(--ink-soft)">flush/FUA</text>
+    <rect x="536" y="118" width="66" height="16" rx="3" fill="var(--alert-bg)" stroke="var(--alert)"/>
+    <text x="569" y="129.5" font-size="10.5" text-anchor="middle" fill="var(--alert)">안 보인다</text>
+
+    <!-- box 5 -->
+    <rect x="698" y="30" width="150" height="110" rx="4" fill="var(--surface)" stroke="var(--rule)"/>
+    <text x="708" y="54" font-size="14" font-weight="600" fill="var(--ink)">수명</text>
+    <text x="708" y="72" font-size="11" fill="var(--ink-soft)">누적</text>
+    <text x="708" y="86" font-size="11" fill="var(--ink-soft)">서비스별</text>
+    <text x="708" y="100" font-size="11" fill="var(--ink-soft)">예산 없음</text>
+    <rect x="708" y="118" width="66" height="16" rx="3" fill="var(--alert-bg)" stroke="var(--alert)"/>
+    <text x="741" y="129.5" font-size="10.5" text-anchor="middle" fill="var(--alert)">안 보인다</text>
+
+    <!-- arrows -->
+    <line x1="160" y1="85" x2="180" y2="85" stroke="var(--ink-soft)" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="332" y1="85" x2="352" y2="85" stroke="var(--ink-soft)" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="504" y1="85" x2="524" y2="85" stroke="var(--ink-soft)" stroke-width="1.5" marker-end="url(#arrow)"/>
+    <line x1="676" y1="85" x2="696" y2="85" stroke="var(--ink-soft)" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+    <!-- brackets -->
+    <line x1="10" y1="155" x2="504" y2="155" stroke="var(--rule)" stroke-width="1"/>
+    <line x1="10" y1="148" x2="10" y2="155" stroke="var(--rule)" stroke-width="1"/>
+    <line x1="504" y1="148" x2="504" y2="155" stroke="var(--rule)" stroke-width="1"/>
+    <text x="257" y="172" font-size="11" text-anchor="middle" fill="var(--ink-soft)">리눅스가 세는 것: 바이트, 순간 속도</text>
+
+    <line x1="526" y1="155" x2="848" y2="155" stroke="var(--accent)" stroke-width="1"/>
+    <line x1="526" y1="148" x2="526" y2="155" stroke="var(--accent)" stroke-width="1"/>
+    <line x1="848" y1="148" x2="848" y2="155" stroke="var(--accent)" stroke-width="1"/>
+    <text x="687" y="172" font-size="11" text-anchor="middle" fill="var(--accent)">아무도 안 세는 것: 소거, 누적, 누가 썼나</text>
+  </svg>
+
+  <div class="tri-grid">
+    <div class="stat"><div class="lbl">문제</div><p>서로 독립적인 서비스들이 플래시 수명을 함께 소모한다. 학습은 메모리가 모자랄 때 쓰기로 버틴다.</p></div>
+    <div class="stat"><div class="lbl">갭</div><p>cgroup은 바이트를 세지만 소거를 모르고, 대리 쓰기(journald·zram)는 원인 서비스에 귀속되지 않으며, 누적 예산이 없다.</p></div>
+    <div class="stat"><div class="lbl">기여</div><p>소거 비용 귀속 + 누적 예산 + 환율. 학습 서비스만 쓰기를 연산으로 되살 수 있다는 성질을 이용한다.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><span class="secnum">02</span><h2>Figure 1 — 게이트. 이 그림이 논문의 첫 그림이다</h2></div>
+  <p class="lead">측정 전이다. 아래는 형태 예상이며 축과 범례만 확정한다. 10.03까지 실측으로 대체한다.</p>
+
+  <svg viewBox="0 0 880 360" role="img" aria-label="게이트 차트">
+    <!-- gridlines -->
+    <line x1="80" y1="320" x2="820" y2="320" stroke="var(--rule-soft)" stroke-width="1"/>
+    <line x1="80" y1="260" x2="820" y2="260" stroke="var(--rule-soft)" stroke-width="1"/>
+    <line x1="80" y1="200" x2="820" y2="200" stroke="var(--rule-soft)" stroke-width="1"/>
+    <line x1="80" y1="140" x2="820" y2="140" stroke="var(--rule-soft)" stroke-width="1"/>
+    <line x1="80" y1="80" x2="820" y2="80" stroke="var(--rule-soft)" stroke-width="1"/>
+
+    <!-- watermark -->
+    <text x="450" y="195" font-size="42" font-weight="700" fill="var(--accent)" opacity="0.12" text-anchor="middle" transform="rotate(-18 450 195)">예상 형태 · 측정 전</text>
+
+    <!-- y axis label -->
+    <text x="26" y="180" font-size="12" fill="var(--ink-soft)" text-anchor="middle" transform="rotate(-90 26 180)">라운드당 소거 (상대값)</text>
+
+    <!-- bar 8GB: seg y/h = (310,10)(280,30)(275,5)(260,15) -->
+    <rect x="116" y="310" width="140" height="10" fill="var(--w1)"/>
+    <rect x="116" y="280" width="140" height="30" fill="var(--w2)"/>
+    <rect x="116" y="275" width="140" height="5" fill="var(--w3)"/>
+    <rect x="116" y="260" width="140" height="15" fill="var(--w4)"/>
+
+    <!-- bar 4GB: (290,30)(260,30)(240,20)(225,15) -->
+    <rect x="292" y="290" width="140" height="30" fill="var(--w1)"/>
+    <rect x="292" y="260" width="140" height="30" fill="var(--w2)"/>
+    <rect x="292" y="240" width="140" height="20" fill="var(--w3)"/>
+    <rect x="292" y="225" width="140" height="15" fill="var(--w4)"/>
+
+    <!-- bar 2GB: (250,70)(220,30)(175,45)(160,15) -->
+    <rect x="468" y="250" width="140" height="70" fill="var(--w1)"/>
+    <rect x="468" y="220" width="140" height="30" fill="var(--w2)"/>
+    <rect x="468" y="175" width="140" height="45" fill="var(--w3)"/>
+    <rect x="468" y="160" width="140" height="15" fill="var(--w4)"/>
+
+    <!-- bar 1GB: (200,120)(170,30)(100,70)(85,15) -->
+    <rect x="644" y="200" width="140" height="120" fill="var(--w1)"/>
+    <rect x="644" y="170" width="140" height="30" fill="var(--w2)"/>
+    <rect x="644" y="100" width="140" height="70" fill="var(--w3)"/>
+    <rect x="644" y="85" width="140" height="15" fill="var(--w4)"/>
+
+    <!-- per-bar 압박 유발 share -->
+    <text x="186" y="252" font-size="11" text-anchor="middle" fill="var(--accent)">압박 유발 25%</text>
+    <text x="362" y="217" font-size="11" text-anchor="middle" fill="var(--accent)">압박 유발 53%</text>
+    <text x="538" y="152" font-size="11" text-anchor="middle" fill="var(--accent)">압박 유발 72%</text>
+    <text x="714" y="77" font-size="11" text-anchor="middle" fill="var(--accent)">압박 유발 81%</text>
+
+    <!-- x axis -->
+    <line x1="80" y1="320" x2="820" y2="320" stroke="var(--rule)" stroke-width="1.5"/>
+    <text x="186" y="340" font-size="12" text-anchor="middle" fill="var(--ink-soft)">8 GB</text>
+    <text x="362" y="340" font-size="12" text-anchor="middle" fill="var(--ink-soft)">4 GB</text>
+    <text x="538" y="340" font-size="12" text-anchor="middle" fill="var(--ink-soft)">2 GB</text>
+    <text x="714" y="340" font-size="12" text-anchor="middle" fill="var(--ink-soft)">1 GB</text>
+
+    <!-- legend -->
+    <rect x="650" y="12" width="10" height="10" fill="var(--w1)"/>
+    <text x="665" y="21" font-size="11" fill="var(--ink-soft)">zram writeback</text>
+    <rect x="650" y="28" width="10" height="10" fill="var(--w2)"/>
+    <text x="665" y="37" font-size="11" fill="var(--ink-soft)">모델 저장(체크포인트 파일)</text>
+    <rect x="650" y="44" width="10" height="10" fill="var(--w3)"/>
+    <text x="665" y="53" font-size="11" fill="var(--ink-soft)">활성화 오프로드</text>
+    <rect x="650" y="60" width="10" height="10" fill="var(--w4)"/>
+    <text x="665" y="69" font-size="11" fill="var(--ink-soft)">대리 쓰기(journald·SQLite)</text>
+  </svg>
+
+  <div class="duo-grid">
+    <div class="block pass"><div class="lbl">통과</div><p>압박 유발 소거(zram·오프로드)가 1 GB 캡에서 총 소거의 20% 이상 → 주장 성립. 예산·환율 설계로 진행.</p></div>
+    <div class="block fail"><div class="lbl">실패</div><p>20% 미만 → 지배 쓰기는 모델 저장·로그. 주장을 "학습 라운드가 서비스별 소거 예산을 태운다"로 좁히고, 노브는 저장 주기·크기로 바꾼다.</p></div>
+  </div>
+  <p class="mono-line">측정 방법 — systemd 슬라이스에 memory.max 캡 → LoRA 1 라운드 → cgroup io.stat wbytes, /sys/block/zram0/bd_stat(bd_writes), NVMe SMART Data Units Written 수집 → blkparse → MQSim 재생으로 소거 환산.</p>
+</section>
+
+<section>
+  <div class="shead"><span class="secnum">03</span><h2>통찰 → 메커니즘</h2></div>
+  <div class="tw" style="overflow-x:auto">
+    <table>
+      <tr><th>관찰</th><th>메커니즘</th><th>재사용</th><th>새로 만드는 것</th></tr>
+      <tr><td>바이트 ≠ 소거. 작은 랜덤 쓰기·flush는 순차 스필보다 바이트당 소거가 크다</td><td>서비스별 WAF로 보정한 소거 비용</td><td>blktrace, cgroup io.stat</td><td>blkparse→MQSim 변환기, 패턴별 WAF 표</td></tr>
+      <tr><td>대리 쓰기는 쓴 주체에 귀속된다</td><td>대리 쓰기별 훅</td><td>커널의 writeback cgroup 귀속(그대로)</td><td>journald _SYSTEMD_CGROUP 매핑, SQLite uprobe, zram 슬롯→swap_cgroup 룩업</td></tr>
+      <tr><td>누적 예산이 없다</td><td>유저스페이스 원장 + 기존 노브로 집행</td><td>memory.low/min, io.max, PSI</td><td>원장 데몬. 새 cgroup 컨트롤러 없음</td></tr>
+      <tr><td>학습만 쓰기를 연산으로 되살 수 있다</td><td>환율 — 소거 통화 하나로</td><td>MADV_FREE, gradient checkpointing</td><td>gradient checkpointing 깊이 노브, 라운드별 예산 보고 → FL 서버 선택</td></tr>
+    </table>
+  </div>
+  <div class="eq">
+    스필: E_spill = bytes × WAF(service) / erase_block&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;재계산: E_recompute = 0 (소거)&nbsp;&nbsp;&nbsp;&nbsp;제약: T_recompute ≤ T_budget<br>
+    <span class="decide">결정: 재계산 ≤ 예산 지연이면 재계산, 아니면 스필. 통화는 소거 하나. 지연은 제약이지 비용이 아니다.</span>
+  </div>
+</section>
+
+<section>
+  <div class="shead"><span class="secnum">04</span><h2>지금 만들 것 — 테스트 전에</h2></div>
+  <p class="lead">Figure 1에 필요한 것은 b1·b2·b3다. b4·b5·b6은 게이트 이후 단계이며 병행한다. 10.03에 합친다.</p>
+
+  <div class="clist">
+    <div class="citem">
+      <div class="chead"><input type="checkbox" id="b1"><label for="b1"><span class="chip ok">게이트 필수</span> <span class="chip">팀원 3</span> 측정 하니스</label></div>
+      <p>memory.max 스윕 스크립트(8/4/2/1 GB).</p>
+      <p>라운드 전후 io.stat·zram bd_stat·SMART 스냅샷.</p>
+      <p>플롯 스크립트.</p>
+      <p class="done">완료 기준: 캡 4개 × 3회 반복 CSV와 Figure 1 초안.</p>
+    </div>
+    <div class="citem">
+      <div class="chead"><input type="checkbox" id="b2"><label for="b2"><span class="chip ok">게이트 필수</span> <span class="chip a">본인</span> 학습 워크로드</label></div>
+      <p>Flower 클라이언트 안의 LoRA(0.5B, CPU).</p>
+      <p>gradient checkpointing 깊이 노브.</p>
+      <p>라운드당 쓰기 로그.</p>
+      <p>가중치는 anon으로 적재하거나(mmap 읽기 전용이면 압박이 clean 페이지 축출로 새어 소거 0), 캡을 가중치 크기 대비로 잡는다(0.5B bf16 ≈ 1 GB).</p>
+      <p class="done">완료 기준: 1 라운드가 1 GB 캡에서 죽지 않고 끝난다.</p>
+    </div>
+    <div class="citem">
+      <div class="chead"><input type="checkbox" id="b3"><label for="b3"><span class="chip ok">게이트 필수</span> <span class="chip">팀원 1</span> 소거 모델</label></div>
+      <p>blkparse → MQSim 트레이스 변환기.</p>
+      <p>NVMe SMART Data Units Written(호스트 바이트)과 벤더 NAND 쓰기 로그로 WAF 산출 — RPi 5 드라이브가 NAND 쓰기 카운터를 노출하는지 1주차에 확인.</p>
+      <p class="done">완료 기준: 같은 트레이스에서 MQSim WAF와 SMART WAF가 ±20% 안. 카운터가 없으면 MQSim 단독, 문서에 명시.</p>
+    </div>
+    <div class="citem">
+      <div class="chead"><input type="checkbox" id="b4"><label for="b4"><span class="chip">게이트 이후</span> <span class="chip">팀원 1 · 본인</span> 귀속 프로브</label></div>
+      <p>block_bio_queue·writeback에 상시 attach, cgroup별 플래그로 비싼 룩업 게이트.</p>
+      <p>zram 슬롯→swap_cgroup 프로토타입 먼저(가장 위험).</p>
+      <p>게이트 측정은 슬라이스 하나라 cgroup 귀속이 필요 없다 — 쓰기 경로별 분리(zram bd_stat, 저장 파일, 저널)로 충분하다.</p>
+      <p class="done">완료 기준: 바이트 수를 아는 합성 writer 4종에서 귀속 합 = io.stat 총량, 잔차 명시.</p>
+    </div>
+    <div class="citem">
+      <div class="chead"><input type="checkbox" id="b5"><label for="b5"><span class="chip">게이트 이후</span> <span class="chip">팀원 2</span> FL 서버</label></div>
+      <p>Flower 서버.</p>
+      <p>클라이언트가 라운드마다 소거 소비·잔여 예산 보고.</p>
+      <p>예산 하 클라이언트 선택 + 공정성 목적함수.</p>
+      <p class="done">완료 기준: 호스트 cgroup 클라이언트 8개로 10 라운드, 선택 로그.</p>
+    </div>
+    <div class="citem">
+      <div class="chead"><input type="checkbox" id="b6"><label for="b6"><span class="chip">게이트 이후</span> <span class="chip">팀원 2 · 팀원 3</span> 베이스라인</label></div>
+      <p>stock cgroup(예산 없음), zram writeback_limit, io.max 스로틀, tmpfs 캐시 + volatile 로그.</p>
+      <p class="done">완료 기준: 네 설정 모두 같은 하니스에서 돈다.</p>
+    </div>
+  </div>
+  <p class="note-alert">커널 패치 없음. 프로브·데몬·변환기·스크립트뿐이다. 이 경계를 넘는 순간 12월 1일은 없다.</p>
+</section>
+
+<section>
+  <div class="shead"><span class="secnum">05</span><h2>평가 — 한 줄씩</h2></div>
+  <dl class="deflist">
+    <dt>계층</dt><dd>Tier A 호스트 cgroup(바이트 신뢰, 지연 참고) · Tier B MQSim 재생(소거 근거, 개루프) · Tier C RPi 5 NVMe(지연·환율 실측)</dd>
+    <dt>주 지표</dt><dd>서비스별 소거 vs 라운드 수렴 시간·정확도</dd>
+    <dt>스윕</dt><dd>memory.max × 재계산 가능 비율, 통제 수준으로</dd>
+    <dt>민감도 하나</dt><dd>예산 창 길이 vs 기아·공정성</dd>
+    <dt>ablation</dt><dd>귀속만 · 예산만 · 환율만</dd>
+    <dt>장기 실행</dt><dd>6주차까지 다일 실행 1회. 누적 예산은 분이 아니라 일 단위다</dd>
+    <dt>지는 경우</dt><dd>재계산이 이기지 않는 워크로드, 예산이 지연을 해치는 설정을 포함한다</dd>
+    <dt>베이스라인</dt><dd>출하 설정 그대로(reclaim 켠 채). 스왑 끈 허수아비 없음</dd>
+  </dl>
+</section>
+
+<section>
+  <div class="shead"><span class="secnum">06</span><h2>일정</h2></div>
+  <div class="tw" style="overflow-x:auto">
+    <table>
+      <tr><th>주차</th><th>기간</th><th>산출물</th></tr>
+      <tr><td class="num">1–2</td><td class="num">9.16–10.03</td><td>04절 여섯 개. Figure 1. 게이트 판정</td></tr>
+      <tr><td class="num">3</td><td class="num">10.06</td><td>범위 동결. 통과/실패 분기 확정</td></tr>
+      <tr><td class="num">4–6</td><td class="num">10.07–10.27</td><td>귀속 잔차 닫기, 소거 모델 검증, 원장 집행. 다일 실행 시작</td></tr>
+      <tr><td class="num">7–8</td><td class="num">10.28–11.10</td><td>환율 실측, FL 선택 실험, 베이스라인 4종</td></tr>
+      <tr><td class="num">9–10</td><td class="num">11.11–11.24</td><td>전체 평가, ablation, 민감도. 11.24 초록</td></tr>
+      <tr><td class="num">11</td><td class="num">11.25–11.29</td><td>결과 동결, 집필</td></tr>
+      <tr class="ship"><td class="num">—</td><td class="num">12.01</td><td>제출</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>근거와 선행연구 표는 LEDGER_v2_팀제안서.html 02–04절. 이 문서는 구현 착수용 한 장이며 인용을 담지 않는다.</footer>
+
+</div>

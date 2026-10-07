@@ -1,0 +1,297 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>LEDGER 연구 제안서</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: one reading column for a research proposal; hypotheses and plan as structured cards, evidence as compact tables. */
+:root{
+  --bg:#f6f6f3; --paper:#ffffff; --fg:#1c2023; --muted:#5d6569; --rule:#d9dcd8; --soft:#eef0ec;
+  --accent:#9a3d1f; --accent2:#2d5f7a; --good:#2f7d4f; --warn:#a8641a;
+  --sans:"IBM Plex Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121416; --paper:#191c1f; --fg:#e4e7e5; --muted:#9ca4a7; --rule:#2c3134; --soft:#1f2326;
+  --accent:#e08a66; --accent2:#7fb3cf; --good:#6cc28d; --warn:#e0a84a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121416; --paper:#191c1f; --fg:#e4e7e5; --muted:#9ca4a7; --rule:#2c3134; --soft:#1f2326;
+  --accent:#e08a66; --accent2:#7fb3cf; --good:#6cc28d; --warn:#e0a84a; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.75;margin:0}
+.wrap{max-width:860px;margin:0 auto;padding-inline:20px;padding-block:32px 80px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:30px;line-height:1.25;margin:6px 0 4px;font-weight:700;text-wrap:balance}
+h1 .name{color:var(--accent)}
+.sub{font-size:16.5px;color:var(--muted);margin:0 0 14px;text-wrap:balance}
+h2{font-size:20px;margin:52px 0 8px;padding-top:16px;border-top:2px solid var(--fg);font-weight:700;text-wrap:balance}
+h2 .num{font-family:var(--mono);color:var(--accent);margin-right:10px;font-weight:500}
+h3{font-size:16px;margin:26px 0 6px;font-weight:600;text-wrap:balance}
+p,li{max-width:70ch}
+p{margin:6px 0 12px}
+ul,ol{padding-left:20px;margin:6px 0 12px}
+li{margin:3px 0}
+code{font-family:var(--mono);font-size:12.5px;background:var(--soft);padding:1px 5px;border-radius:3px;overflow-wrap:anywhere}
+.meta{color:var(--muted);font-size:13px}
+.lede{font-size:16px;background:var(--paper);border-left:3px solid var(--accent);padding:14px 18px;margin:18px 0}
+.tbl{overflow-x:auto;margin:10px 0 16px}
+table{border-collapse:collapse;font-size:13.5px;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:6px 9px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:12.5px}
+td.n{text-align:right;font-family:var(--mono);font-size:12.5px;white-space:nowrap}
+.hyp{display:grid;grid-template-columns:110px 1fr;gap:6px 16px;background:var(--paper);border:1px solid var(--rule);padding:14px 16px;margin:12px 0}
+.hyp .id{font-family:var(--mono);font-weight:500;color:var(--accent);font-size:15px}
+.hyp dt{color:var(--muted);font-size:12.5px;padding-top:2px}
+.hyp dd{margin:0;min-width:0}
+.hyp .claim{grid-column:1/-1;font-weight:600;font-size:15.5px}
+@media (max-width:560px){.hyp{grid-template-columns:1fr}.hyp dt{padding-top:8px}}
+.comp{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;margin:12px 0}
+.comp div{background:var(--paper);border:1px solid var(--rule);padding:12px 14px;min-width:0}
+.comp b{display:block;color:var(--accent2);margin-bottom:4px}
+.comp p{font-size:13.5px;margin:0}
+.formula{font-family:var(--mono);font-size:13px;background:var(--paper);border:1px solid var(--rule);padding:12px 14px;overflow-x:auto;white-space:pre;margin:10px 0 14px}
+.status{font-family:var(--mono);font-size:11px;padding:0 6px;border:1px solid var(--rule);border-radius:9px;color:var(--muted);white-space:nowrap}
+.status.done{border-color:var(--good);color:var(--good)}
+.status.run{border-color:var(--warn);color:var(--warn)}
+.status.plan{border-color:var(--accent2);color:var(--accent2)}
+pre.mermaid{background:var(--paper);border:1px solid var(--rule);padding:12px;overflow-x:auto}
+a{color:var(--accent2)}
+</style>
+
+<div class="wrap">
+<div class="eyebrow">연구 제안서 · CCGrid 2027 Track 3 · 2026-09-28</div>
+<h1><span class="name">LEDGER</span>: 공유 플래시 위 온디바이스 LLM을 위한 서비스별 소거율 회계</h1>
+<p class="sub">LEDGER: Per-Service Erase-Rate Accounting for On-Device LLMs on Shared Flash</p>
+
+<div class="lede">엣지 기기의 온디바이스 LLM은 대화 상태(KV 캐시)를 플래시에 보존하기 시작했다. 같은 플래시를 쓰는 다른 서비스와 함께, 기존 수명 관리는 이것을 <b>바이트</b>로 센다. 하지만 플래시를 닳게 하는 것은 바이트가 아니라 <b>소거</b>이고, 같은 바이트라도 쓰기 모양(크기, 연속성)에 따라 소거가 크게 다를 수 있다. 이 연구는 서비스별 소거율을 한 번 보정해 소거 단위로 세고, 대리 쓰기를 원인 서비스에 돌려주며, 기존 커널 제어 수단만으로 예산을 집행하는 LEDGER를 제안한다. 추론 서비스에는 소거에 가격을 매겨, 계산(재계산)으로 소거를 되사게 한다.</div>
+
+<!-- ============================================================ -->
+<h2><span class="num">1</span>배경과 동기</h2>
+<h3>온디바이스 LLM은 KV 캐시를 플래시에 쓰기 시작했다</h3>
+<p>대화가 이어질 때 이전 문맥의 KV 캐시를 버리면 다음 턴에서 전부 다시 계산해야 한다(재계산, re-prefill). 엣지 CPU에서 4K 토큰 재계산은 수 분이 걸린다. 그래서 KV를 저장장치에 보존하는 설계가 늘고 있다.</p>
+<ul>
+<li>실사용 소프트웨어: llama.cpp 서버의 슬롯 저장(<code>--slot-save-path</code>), llama-cpp-python의 디스크 캐시(켜면 매 턴 저장), Home Assistant의 LLM 통합 home-llm의 디스크 캐시.</li>
+<li>모바일 연구 설계: LLMS(앱별 문맥을 디스크로 스왑), mzCache(MobiCom'26, zram과 플래시 스왑 파일), KVSwap(전체 캐시를 디스크에).</li>
+<li>서버 쪽: CachedAttention(ATC'24), LMCache 디스크 계층.</li>
+</ul>
+<p>이 시스템들은 대역폭과 지연만 잰다. <b>플래시 마모를 잰 곳은 없다.</b> KV는 크다. 1B 모델이 토큰당 32 KiB, 3B가 112 KiB, 8B가 128 KiB라서 4K 토큰 세션 하나를 저장하면 128–512 MiB를 쓴다.</p>
+
+<h3>엣지 기기는 한 플래시를 여러 서비스가 나눠 쓴다</h3>
+<p>Raspberry Pi OS 같은 엣지 리눅스에서는 LLM, 일반 앱, 로거(journald), 로컬 DB가 eMMC나 SD 카드 하나를 공유한다. 메모리가 빠듯하면 커널이 페이지를 zram으로 스왑하고, 하루 한 번 writeback으로 플래시에 쓴다(rpi-swap). 이 쓰기는 커널, journald, 추론 데몬 같은 <b>대리 쓰기자</b>가 다른 서비스 대신 한다. 플래시 내부(FTL)는 블랙박스라 서비스별 소거는 보이지 않는다.</p>
+
+<h3>기존 수명 관리는 바이트를 센다</h3>
+<p>MobiSys '19(Zhang et al., "Apps Can Quickly Destroy Your Mobile's Flash")는 일반 앱이 플래시를 손상시킬 만큼 쓰지 않는다고 결론 내리고, 하루 바이트 한도로 악성 앱을 막자고 제안했다. Android Automotive Watchdog도 앱별 하루 바이트 한도를 쓴다. MobiSys '19 저자들은 스스로 한계를 적었다: "이상적으로는 논리 쓰기가 아니라 물리 쓰기를 추적해야 하지만, 대부분의 기기는 물리 쓰기를 보고하지 않는다."</p>
+
+<!-- ============================================================ -->
+<h2><span class="num">2</span>문제 정의</h2>
+<p><b>공유된 블랙박스 플래시에서, 서비스별 수명 예산을 바이트로 매기면 소거를 잘못 배분한다. 그리고 그 오배분은 KV를 보존하는 LLM 서비스가 들어올 때 커진다.</b> 구체적으로 세 가지 틈이 있다.</p>
+<ol>
+<li><b>회계 단위가 틀렸다.</b> 같은 1 MiB라도 서비스마다 소거가 다르다. 큰 순차 쓰기(KV 저장)는 적게, 작은 랜덤 쓰기(zram writeback, 로그, 파일시스템 저널)는 많이 닳게 한다. 이 비율은 기기 상태(채움률)에 따라서도 변할 수 있다.</li>
+<li><b>귀속 대상이 틀렸다.</b> 쓰기를 실제로 발행하는 주체(커널 zram writeback, journald, 추론 데몬)와 원인 서비스가 다르다. cgroup 바이트 회계는 대리 쓰기자에게 귀속하거나 아무에게도 귀속하지 않는다.</li>
+<li><b>집행 수단이 틀렸다.</b> 바이트 한도는 초과한 서비스를 멈추거나 쓰기 속도를 묶는다. 하지만 추론 서비스는 다른 서비스와 달리 <b>계산으로 소거를 되살 수 있다</b>. KV를 저장하지 않고 버린 뒤 다시 계산하면 소거 대신 CPU 시간을 쓴다. 멈추기 대신 소거에 가격을 매겨야 이 교환을 쓸 수 있다.</li>
+</ol>
+<p><b>범위.</b> 대상은 엣지 리눅스(Raspberry Pi OS 계열, Debian Trixie arm64)다. 커널 패치와 새 cgroup 컨트롤러는 만들지 않는다. 산출물은 프로브, 데몬, 보정 도구, 스크립트뿐이다. 학습·연합학습은 다루지 않는다. 문제 설정은 미래 지향적이다. 오늘의 평균 사용량에서 수명이 위험하다고 주장하지 않는다. KV 보존이 늘어나는 설계 방향에서 바이트 회계가 구조적으로 틀린다는 점을 보인다.</p>
+
+<!-- ============================================================ -->
+<h2><span class="num">3</span>연구 질문과 가설</h2>
+<p>가설마다 무엇이 나오면 기각하는지 미리 정해 둔다.</p>
+
+<dl class="hyp">
+<dt class="id">H1</dt><dd class="claim">특성화: 메모리가 빠듯한 엣지 기기에서 LLM의 KV 보존은 플래시 쓰기의 지배적 원인이 되고, 그 수명 영향은 모델 크기 × 보존 정책 × 호출 빈도로 정해진다.</dd>
+<dt>예측</dt><dd>KV 보존이 있으면 KV 저장이 기기 전체 플래시 쓰기의 과반을 차지한다. 저장 정책만 바꿔도 세션당 소거가 20% 이상 달라진다. 큰 모델·매 턴 보존·잦은 호출 조합에서는 5년 수명 예산을 넘는다.</dd>
+<dt>기각 조건</dt><dd>KV 저장이 쓰기의 소수이거나, 정책 간 소거 차이가 20% 미만이거나, 모든 현실적 조합에서 수명이 충분하면 기각.</dd>
+<dt>관련 기여</dt><dd>C1</dd>
+</dl>
+
+<dl class="hyp">
+<dt class="id">H2</dt><dd class="claim">회계: 서비스별 소거율(소거/MiB)은 서비스마다 크게 다르고, 다른 서비스와의 혼합에는 거의 영향받지 않지만 기기 채움률에는 크게 영향받는다. 그래서 채움률을 열쇠로 한 번 보정한 서비스별 표가 바이트 회계보다 훨씬 정확하다.</dd>
+<dt>예측</dt><dd>보정한 서비스별 표의 소거 예측 오차는 수 % 이내, 기기 평균 소거율 하나(바이트 회계와 동치)는 20% 이상. 다른 워크로드로 옮겨도 오차가 유지된다. 채움률이 다른 표를 쓰면 오차가 크게 늘어난다.</dd>
+<dt>기각 조건</dt><dd>서비스별 표와 단일 소거율의 오차 차이가 작거나, 혼합에 따라 소거율이 크게 변해 표가 쓸모없으면 기각(그 경우 온라인 보정이 필요).</dd>
+<dt>관련 기여</dt><dd>C2 (핵심)</dd>
+</dl>
+
+<dl class="hyp">
+<dt class="id">H3</dt><dd class="claim">귀속: 커널 수정 없이 BPF 프로브로 대리 쓰기(zram writeback, journald, 추론 데몬)를 원인 서비스에 바이트 단위까지 돌려줄 수 있다.</dd>
+<dt>예측</dt><dd>원인을 아는 합성 쓰기에 대해 귀속 오차 1% 이내, 미귀속 쓰기 사실상 0.</dd>
+<dt>기각 조건</dt><dd>대형 폴리오(THP), 서비스 재시작, 슬롯 재사용 등에서 미귀속이 수 % 이상 남으면 기각.</dd>
+<dt>관련 기여</dt><dd>기반 (C2를 받침)</dd>
+</dl>
+
+<dl class="hyp">
+<dt class="id">H4</dt><dd class="claim">집행: 소거 단위 예산을 기존 제어 수단(memory.low, io.max, KV 정책 신호)로 집행하면 예산, LLM 서비스, 공존 피해 서비스를 함께 지킬 수 있다. 바이트 규칙은 그러지 못한다.</dd>
+<dt>예측</dt><dd>같은 하루 소거 예산에서 LEDGER는 예산 이내, LLM 턴 처리 100%, 피해 앱 지연 p99 유지. 바이트 속도 제한은 대리 쓰기를 못 막아 예산 초과, 바이트 일일 한도는 LLM을 과하게 멈춤.</dd>
+<dt>기각 조건</dt><dd>바이트 규칙 중 하나라도 세 조건을 함께 만족하거나, LEDGER가 예산을 넘으면 기각.</dd>
+<dt>관련 기여</dt><dd>C2</dd>
+</dl>
+
+<dl class="hyp">
+<dt class="id">H5</dt><dd class="claim">추론 레버: 예산 소진 속도로 KV 저장에 소거 가격을 매기는 정책(paced)이, 예산 근처에서 일괄로 버림으로 바꾸는 threshold보다 같은 예산에서 소거·재계산·지연이 모두 나을 것이다. 단, 버린 KV가 실제로 메모리에서 사라져야 한다.</dd>
+<dt>예측</dt><dd>paced가 threshold 대비 소거 감소, 재계산 수배 감소, TTFT 동등 이상. 가격 매개변수의 넓은 범위에서 유지. 서버가 버린 KV를 내부 캐시 등으로 메모리에 남기면 그 메모리가 스왑을 거쳐 플래시에 쓰여 이득이 줄어들 수 있으므로 서버 설정을 함께 점검한다.</dd>
+<dt>기각 조건</dt><dd>같은 조건(코어 종류 일치)에서 paced가 threshold보다 TTFT나 소거에서 일관되게 나쁘거나, 이득이 특정 매개변수에서만 나오면 기각.</dd>
+<dt>관련 기여</dt><dd>C3</dd>
+</dl>
+
+<!-- ============================================================ -->
+<h2><span class="num">4</span>LEDGER 설계</h2>
+<pre class="mermaid">
+flowchart LR
+  subgraph Offline["한 번 (기기·채움률별)"]
+    T[블록 추적 + 서비스 태그] --> F[FTL 시뮬레이터 재생]
+    F --> S[Shapley 귀속]
+    S --> R[(서비스별 소거율 표<br/>채움률 열쇠)]
+  end
+  subgraph Online["실시간 데몬"]
+    IO[cgroup io.stat] --> L[서비스별 소거 회계]
+    P[BPF 대리 쓰기 프로브] --> L
+    R --> L
+    L --> E{예산 집행}
+    E --> K1[memory.low / io.max]
+    E --> K2[KV 저장 가격 λ]
+  end
+</pre>
+
+<div class="comp">
+<div><b>① 보정</b><p>기기마다 한 번, 블록 추적을 FTL 시뮬레이터로 재생하고 서비스 부분집합마다 다시 돌려(2<sup>n</sup>회) Shapley 값으로 서비스별 소거를 구한다. 서비스별 소거율 표를 채움률 구간마다 만든다. 불변식: 서비스별 Shapley 합 = 총 소거.</p></div>
+<div><b>② 소거 회계</b><p>1초마다 서비스별 직접 쓰기(io.stat)와 대리 쓰기(BPF 프로브)를 읽어 현재 채움률의 소거율을 곱해 귀속한다. 대리 쓰기는 페이지·로그·저장 파일의 실제 주인에게 귀속한다.</p></div>
+<div><b>③ 집행</b><p>기존 제어 수단만 쓴다: 피해 서비스에 memory.low 예약, 쓰기 속도 io.max, zram writeback_limit, 그리고 추론 서비스에 저장/버림 신호. 예약 서비스(로그·DB)는 멈추지 않는다.</p></div>
+<div><b>④ 가격</b><p>추론 서비스의 KV 저장에 소거 가격을 매긴다. 축출되는 슬롯은 "돌아올 확률 × 재계산 시간 ≥ 가격 × 저장 소거"일 때만 저장한다. 가격은 예산 소진 속도에 따라 오른다.</p></div>
+</div>
+
+<h3>가격 함수</h3>
+<div class="formula">save(s)  ⇔  P(return | turns_s) · n_ctx(s) / prefill_rate  ≥  λ · E_save(s)
+E_save(s) = n_ctx(s) · KV_bytes_per_token · rate_KV(fill)
+λ = λ_max · clamp((charged − a·pace) / (w·pace), 0, 1),   pace = budget_LLM · (경과 시간 / 하루)
+초기값 λ_max = 0.6, a = 0.8, w = 0.4 (민감도 실험으로 조정)</div>
+
+<!-- ============================================================ -->
+<h2><span class="num">5</span>평가 계획</h2>
+<ul>
+<li><b>환경:</b> VM(엣지 리눅스, rpi-swap 재현)에서 실행하고, 소거는 블록 추적을 FTL 시뮬레이터로 재생해 Shapley로 서비스별로 나눈다. 지연은 실기기(RPi 5)에서 확인한다.</li>
+<li><b>비교 대상:</b> 기본 설정(집행 없음), MobiSys '19식 바이트 속도 제한, Watchdog식 하루 바이트 한도, LEDGER threshold / paced, 절제 변형.</li>
+<li><b>지표:</b> 소거/예산, LLM 턴 처리율, 공존 앱 지연 p99, TTFT p90, 재계산 토큰.</li>
+</ul>
+<div class="tbl"><table>
+<tr><th>가설</th><th>무엇을 보나</th></tr>
+<tr><td>H1</td><td>메모리 압박 × KV 저장 정책에 따라 소거가 얼마나 변하나, 실제 HA에서 LLM 명령 하나가 얼마나 쓰나, 수명으로 몇 년인가</td></tr>
+<tr><td>H2</td><td>서비스별 소거율 표가 소거율 하나(바이트 회계)보다 총 소거를 잘 맞히나</td></tr>
+<tr><td>H3</td><td>원인을 아는 합성 쓰기를 프로브가 원래 주인에게 정확히 돌려주나</td></tr>
+<tr><td>H4</td><td>같은 소거 예산에서 어떤 규칙이 예산·LLM·공존 앱을 함께 지키나</td></tr>
+<tr><td>H5</td><td>paced가 threshold보다 소거·재계산·지연에서 나은가</td></tr>
+</table></div>
+<p><b>게이트 (10.08):</b> ① 소거 비중 ÷ 바이트 비중이 1.5 이상이거나 2/3 이하인 서비스가 3회 모두 나온다. ② 저장 정책이 세션당 소거를 20% 이상 바꾼다. 결과는 논문의 틀만 바꾸고, 제출은 한다.</p>
+
+<!-- ============================================================ -->
+<h2><span class="num">6</span>타당성 위협과 대응</h2>
+<div class="tbl"><table>
+<tr><th>위협</th><th>대응</th></tr>
+<tr><td>소거가 시뮬레이션 값이다</td><td>FTL 시뮬레이터를 합성 트레이스로 먼저 검증한다(Shapley 합 = 총 소거, 시드 간 편차, 점유율에 따른 소거 증가). 채움률·OP·GC·블록 크기를 바꾸는 민감도 실험으로 결론 방향이 설정에 좌우되지 않는지 보고, 절대값은 조건을 명시한다. 실기기에서 쓰기 동작을 확인한다(E6·E7)</td></tr>
+<tr><td>"작은 랜덤 쓰기가 더 닳는 건 당연하다"</td><td>기여는 그 사실이 아니라, 블랙박스 FTL에서 서비스별로 정확히 세는 방법(Shapley 보정 + 채움률 열쇠 + 대리 쓰기 귀속)과 그 정확도, 그리고 그것이 집행 결과를 바꾼다는 것이다</td></tr>
+<tr><td>합성 공존 서비스</td><td>실제 Home Assistant(E1)와 실제 rpi-swap 주기(E3)로 보완한다. 합성 DB는 갱신 방식을 바꿔 결과가 유지되는지 확인한다</td></tr>
+<tr><td>지연이 VM·코어 종류에 민감</td><td>같은 코어 종류에서 규칙 순서를 바꾼 라틴 방진으로 비교하고, 정책 비교의 주 지표는 지연보다 덜 흔들리는 재계산 토큰으로 둔다. 지연 최종값은 실기기에서만 믿는다</td></tr>
+<tr><td>사용 빈도 근거 부족</td><td>문헌(스마트 스피커 하루 약 4–7회, 챗봇 하루 약 3.7개 메시지)과 호출 수 스윕으로 처리한다. 문제는 미래 지향으로 설정한다</td></tr>
+<tr><td>서버 설정의 숨은 상호작용</td><td>추론 서버의 캐시·메모리 설정이 버린 KV를 메모리에 남기는지 확인하고, 필요하면 설정을 바꾼 분리 실험으로 측정한다</td></tr>
+</table></div>
+
+<!-- ============================================================ -->
+<h2><span class="num">7</span>기여</h2>
+<ol>
+<li><b>C1 특성화.</b> 온디바이스 LLM의 KV 보존이 공유 플래시의 마모에 미치는 영향을 처음으로 소거 단위로 측정하고, 모델 크기·보존 정책·호출 빈도에 따라 MobiSys '19의 안전 범위를 벗어나는 조건을 보인다.</li>
+<li><b>C2 서비스별 소거율 회계.</b> 블랙박스 FTL에서 서비스별 소거를 채움률 열쇠 소거율 표로 한 번 보정해 세는 방법과 그 정확도를 보이고, BPF로 대리 쓰기를 원인 서비스에 돌려주며, 기존 커널 제어 수단만으로 예산을 집행한다.</li>
+<li><b>C3 추론 레버.</b> 추론 서비스가 재계산으로 소거를 되사는 교환에 가격을 매기는 저장 허용 정책(paced)을 제안하고, 그 교환이 성립하는 조건과 적용 범위를 밝힌다.</li>
+</ol>
+
+<!-- ============================================================ -->
+<h2><span class="num">8</span>일정</h2>
+<div class="tbl"><table>
+<tr><th>날짜</th><th>목표</th></tr>
+<tr><td>9.28–10.08</td><td>도구 검증(FTL 시뮬레이터, Shapley), G1 게이트 실험 3회</td></tr>
+<tr><td>10.08</td><td>게이트 판정, 논문 틀 결정</td></tr>
+<tr><td>10.08–10.12</td><td>E1 실제 HA, E5 프로브 검증, 소거율 보정</td></tr>
+<tr><td>10.12</td><td>범위 고정 (scope freeze)</td></tr>
+<tr><td>10.12–11.13</td><td>E4 규칙 비교와 paced, 미래 지향 시나리오, E3 rpi-swap, 공유 추론 데몬, 실기기(장비 도착 시)</td></tr>
+<tr><td>11.13</td><td>결과 고정, 이후 새 실험 없음</td></tr>
+<tr><td>11.24</td><td>초록 제출</td></tr>
+<tr><td>12.01</td><td>논문 제출</td></tr>
+</table></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>try{const d=document.documentElement.dataset.theme==='dark'||(!document.documentElement.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches);mermaid.initialize({startOnLoad:true,theme:d?'dark':'neutral',securityLevel:'strict'});}catch(e){}</script>
+
+<!--claude-mermaid-runtime-begin:3477-->
+<style>.mermaid-diagram{margin-block:4px}.mermaid-diagram svg{display:block;margin:0 auto;max-width:100%;height:auto}</style>
+<script src="/_runtime/mermaid-11.16.1.min.js"></script>
+<script>(function(){
+var CFG={"palettes":{"light":{"surface":"#f4efe4","text":"#42392e","line":"#8a7f6d","border":"#7a6c52","bg":"#fffdf8"},"dark":{"surface":"#262b34","text":"#f2f3f5","line":"#a8adb8","border":"#9aa4b8","bg":"#1f232b"}}};
+if(typeof mermaid==='undefined')return;
+var pres=Array.prototype.slice.call(document.querySelectorAll('pre.mermaid')).filter(function(p){if(p.hasAttribute('data-claude-mermaid-claimed'))return false;p.setAttribute('data-claude-mermaid-claimed','1');return true;});
+if(!pres.length)return;
+var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
+var root=document.documentElement;
+var items=pres.map(function(pre){
+var mount=document.createElement('div');mount.className='mermaid-diagram';
+return {pre:pre,mount:mount,src:pre.textContent||''};
+});
+var seq=0;
+var renderGen=0;
+var lastKey='';
+function pageBg(fallback){
+var els=[document.body,document.documentElement];
+for(var i=0;i<els.length;i++){
+var c=els[i]&&getComputedStyle(els[i]).backgroundColor;
+if(c&&c!=='transparent'&&c!=='rgba(0, 0, 0, 0)')return c;
+}
+return fallback;
+}
+function render(){
+var theme=root.getAttribute('data-theme');
+var dark=theme==='dark'||(!!(mq&&mq.matches)&&theme!=='light');
+var pal=dark?CFG.palettes.dark:CFG.palettes.light;
+var bg=pageBg(pal.bg);
+var key=(dark?'d':'l')+'|'+bg;
+if(key===lastKey)return;
+lastKey=key;
+var gen=++renderGen;
+var font=getComputedStyle(document.body).fontFamily||'sans-serif';
+var nat={useMaxWidth:false};
+mermaid.initialize({
+startOnLoad:false,securityLevel:'strict',theme:'base',
+flowchart:nat,sequence:nat,er:nat,state:nat,class:nat,pie:nat,
+gantt:nat,journey:nat,timeline:nat,gitGraph:nat,mindmap:nat,xyChart:nat,
+quadrantChart:nat,sankey:nat,c4:nat,requirement:nat,block:nat,
+packet:nat,kanban:nat,architecture:nat,radar:nat,
+themeVariables:{background:bg,mainBkg:pal.surface,primaryColor:pal.surface,
+primaryTextColor:pal.text,lineColor:pal.line,primaryBorderColor:pal.border,
+nodeBorder:pal.border,clusterBorder:pal.border,edgeLabelBackground:bg,
+clusterBkg:'rgba(127,127,127,0.07)',titleColor:pal.text,
+darkMode:dark,rowOdd:bg,rowEven:'rgba(127,127,127,0.07)',
+attributeBackgroundColorOdd:bg,attributeBackgroundColorEven:'rgba(127,127,127,0.07)',
+fontSize:'16px',fontFamily:font},
+themeCSS:'.node rect, .node circle, .node polygon, .node path, .cluster rect { stroke-width: 2px; }'
+});
+items.forEach(function(it){
+var id='claude-mermaid-'+seq++;
+mermaid.render(id,it.src).then(function(r){
+if(gen!==renderGen)return;
+var prev=it.pre.previousElementSibling;
+if(prev&&prev.className==='mermaid-diagram'&&prev!==it.mount)return;
+it.mount.innerHTML=r.svg;
+if(!it.mount.parentNode)it.pre.parentNode.insertBefore(it.mount,it.pre);
+it.pre.style.display='none';
+},function(){
+var scratch=document.getElementById(id);
+if(scratch)scratch.parentNode.removeChild(scratch);
+scratch=document.getElementById('d'+id);
+if(scratch)scratch.parentNode.removeChild(scratch);
+if(gen!==renderGen)return;
+if(it.mount.parentNode)it.mount.parentNode.removeChild(it.mount);
+it.pre.style.display='';
+});
+});
+}
+render();
+if(mq&&mq.addEventListener)mq.addEventListener('change',render);
+if(typeof MutationObserver!=='undefined')new MutationObserver(render).observe(root,{attributes:true,attributeFilter:['data-theme']});
+})();</script>
+<!--claude-mermaid-runtime-end-->
+
+</body></html>

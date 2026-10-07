@@ -1,0 +1,102 @@
+{
+  "captured_at_utc": "2026-10-07T09:42:48.288070+00:00",
+  "system": "Linux",
+  "kernel": "6.18.40.1-microsoft-standard-WSL2",
+  "architecture": "x86_64",
+  "distro": {
+    "PRETTY_NAME": "Ubuntu 26.04 LTS",
+    "VERSION_ID": "26.04",
+    "ID": "ubuntu"
+  },
+  "virtualization": "wsl",
+  "cpu_model": "AMD Ryzen 5 3500 6-Core Processor",
+  "logical_cpus": 6,
+  "hardware_virtualization_flag": false,
+  "kvm_exists": false,
+  "kvm_access": false,
+  "kvm_loaded": false,
+  "kvm_amd_loaded": false,
+  "mem_total_bytes": 8292999168,
+  "mem_available_bytes": 7625035776,
+  "swap_total_bytes": 2147483648,
+  "swap_free_bytes": 2147483648,
+  "disk_free_bytes": 1023158677504,
+  "packages": {
+    "python": {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Python 3.14.4",
+      "stderr": ""
+    },
+    "glib": {
+      "argv": [
+        "pkg-config",
+        "--modversion",
+        "glib-2.0"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Package glib-2.0 was not found in the pkg-config search path.\nPerhaps you should add the directory containing `glib-2.0.pc'\nto the PKG_CONFIG_PATH environment variable\nPackage 'glib-2.0' not found"
+    },
+    "gcc": {
+      "argv": [
+        "gcc",
+        "-dumpfullversion"
+      ],
+      "exit_code": 0,
+      "stdout": "15.2.0",
+      "stderr": ""
+    },
+    "ninja": {
+      "argv": [
+        "ninja",
+        "--version"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    },
+    "git": {
+      "argv": [
+        "git",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "git version 2.53.0",
+      "stderr": ""
+    },
+    "fio": {
+      "argv": [
+        "fio",
+        "--version"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    },
+    "nvme": {
+      "argv": [
+        "nvme",
+        "version"
+      ],
+      "exit_code": null,
+      "stdout": null,
+      "stderr": "not installed"
+    }
+  },
+  "interpretation": "environment probe only; no FEMU or fio workload was run",
+  "gate": {
+    "eligible": false,
+    "blockers": [
+      "WSL is unsupported by FEMU upstream",
+      "/dev/kvm missing or not readable/writable",
+      "svm/vmx not exposed; physical BIOS state cannot be inferred from a VM",
+      "kvm module not visible",
+      "less than 8 GiB available for the selected profile and headroom"
+    ],
+    "required_available_bytes": 8589934592
+  }
+}

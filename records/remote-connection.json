@@ -1,0 +1,15 @@
+{
+  "captured_at_utc": "2026-10-07T10:09:46.163371+00:00",
+  "status": "connected-environment-blocked",
+  "network_reached": true,
+  "login_succeeded": true,
+  "host_environment_read": true,
+  "key_registration": "success",
+  "automatic_ssh": "success-via-local-agent",
+  "private_endpoint": "omitted",
+  "summary": "공개키 등록 및 자동 SSH 접속 성공. 물리 Ubuntu/KVM/RAM 읽기 전용 점검 완료. 계정의 /dev/kvm 권한 없음으로 runtime 보류. 공용 설정 변경 없음.",
+  "artifacts": [
+    "records/lab-preflight.json",
+    "records/lab-constraints.json"
+  ]
+}

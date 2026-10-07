@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/MoatLab/FEMU.git",
+  "commit": "57920cdcfb9de0ebbac718f337d460684d9629e1",
+  "checkout": "external/FEMU", "source_changes": false,
+  "references": {
+    "requirements": "hw/femu/docs/getting-started/requirements.md",
+    "build": "hw/femu/docs/getting-started/build.md",
+    "blackbox": "hw/femu/docs/modes/blackbox.md",
+    "properties": "hw/femu/docs/reference/properties.md",
+    "metrics": "hw/femu/docs/reference/query-femu.md",
+    "vendor_log": "hw/femu/docs/reference/log-pages-and-counters.md",
+    "reset": "hw/femu/docs/concepts/security-and-limits.md"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "status": "provisional",
+  "question": "여러 서비스와 LLM이 저장장치를 함께 쓸 때, logical bytes 회계는 내부 NAND 작업과 마모를 충분히 표현하는가?",
+  "scope": "현재는 현상을 탐색할 실험 장비와 기록 기반을 준비한다. 기존 LEDGER를 정답으로 가정하지 않는다.",
+  "directions": [
+    {
+      "name": "서비스별 소거 비용 회계",
+      "status": "open",
+      "why": "같은 1 MiB를 쓴 두 서비스의 내부 비용이 다르면 바이트 예산은 부담을 잘못 나눌 수 있다.",
+      "needed": "독립 FTL에서 패턴 차이, 혼합에서도 유지되는 rate, held-out 예측과 집행 개선",
+      "evidence": "기존 보고서는 자체 ftlsim에서 차이와 표의 예측력을 보고했다. 독립 재현은 아직 없다.",
+      "objection": "서비스 혼합·상태에 따라 rate가 크게 바뀌면 정적 표가 쓸모없을 수 있다."
+    },
+    {
+      "name": "서비스를 고려한 placement / wear isolation",
+      "status": "open",
+      "why": "회계보다 서로 다른 수명의 데이터를 분리해 GC 복사를 줄이는 편이 더 직접적인 해결일 수 있다.",
+      "needed": "기본 FTL에서 간섭 확인, placement baseline, 동일 bytes와 공정한 공간·지연 비교",
+      "evidence": "현재 프로젝트에서 측정한 evidence는 없다. FDP/streams는 Phase 1에서 끈다.",
+      "objection": "배치 힌트를 지원하는 장치가 필요하고 일부 edge storage에는 적용하지 못할 수 있다."
+    },
+    {
+      "name": "wear-aware KV persistence",
+      "status": "open",
+      "why": "다시 사용하지 않는 큰 KV 파일을 저장하지 않거나 변경된 부분만 저장하면 불필요한 쓰기를 줄일 수 있다.",
+      "needed": "실제 저장·복원·해제 동작, 복귀 분포, bytes와 내부 비용, 지연·내구성 조건",
+      "evidence": "기존 보고서에 저장 정책 효과가 있지만 현재 저장소에서 실행하지 않았다.",
+      "objection": "cache reuse·crash recovery·partial restore 비용이 synthetic 패턴과 다를 수 있다."
+    },
+    {
+      "name": "compute ↔ flash work controller",
+      "status": "open",
+      "why": "KV를 버리면 다시 계산해야 한다. 저장과 재계산 사이에서 서비스 지연 한도를 지키는 선택을 찾을 수 있다.",
+      "needed": "erase·CPU-seconds·재계산 tokens·TTFT·공존 서비스 SLO를 함께 측정한 frontier",
+      "evidence": "기존 paced 결과에는 지연이 악화되는 예외도 있다. 새 실험은 아직 없다.",
+      "objection": "재계산 때문에 실행이 길어져 다른 서비스의 쓰기와 에너지가 증가할 수 있다."
+    },
+    {
+      "name": "차이가 특정 FTL에서만 크거나 거의 없음",
+      "status": "open",
+      "why": "부정 결과는 문제의 적용 범위를 정하고 더 좋은 질문으로 전환할 근거가 된다.",
+      "needed": "GC·reset·warmup이 유효한 독립 비교와 충분한 precision, 다른 모델·장치 검증",
+      "evidence": "FEMU 본 실험은 하지 않았다. sanity의 erase=0도 이 질문의 답이 아니다.",
+      "objection": "작은 차이는 진짜 동등성이 아니라 GC 부족이나 측정 precision 부족일 수 있다."
+    }
+  ],
+  "roadmap": [
+    {
+      "phase": 1,
+      "name": "FEMU 탐색 장비 + 연구 기록",
+      "status": "incomplete-kvm-permission-blocked"
+    },
+    {
+      "phase": 2,
+      "name": "E0: 동일 bytes에서 pattern별 내부 작업 차이",
+      "status": "not-authorized"
+    },
+    {
+      "phase": 3,
+      "name": "KV / log / SQLite / zram-like 서비스 패턴",
+      "status": "provisional"
+    },
+    {
+      "phase": 4,
+      "name": "실제 llama.cpp KV persistence",
+      "status": "provisional"
+    },
+    {
+      "phase": 5,
+      "name": "evidence로 해결 방향 선택",
+      "status": "provisional"
+    },
+    {
+      "phase": 6,
+      "name": "선택한 방향에 따라 다시 설계",
+      "status": "undecided"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D001",
+      "title": "LEDGER를 최종 설계가 아닌 후보로 취급",
+      "reason": "사용자의 최신 지시. 가장 방어 가능한 현상을 먼저 찾는다.",
+      "alternatives": "기존 C1/C2/C3와 paced를 고정 구현",
+      "why_not": "결론을 맞추는 방향으로 탐색이 편향될 수 있다.",
+      "status": "provisional"
+    },
+    {
+      "id": "D002",
+      "title": "첫 독립 도구 후보는 공식 FEMU BlackBox",
+      "reason": "ftlsim과 다른 구현의 device-managed FTL과 native counter를 사용할 수 있다.",
+      "alternatives": "MQSim, 자체 simulator, 실제 장치 SMART",
+      "why_not": "MQSim은 보고서의 문제가 독립 확인되지 않았고, 자체 모델은 독립성이 부족하다. SMART의 host bytes는 NAND/erase를 대신하지 못한다.",
+      "status": "provisional"
+    },
+    {
+      "id": "D003",
+      "title": "Windows/WSL에서는 FEMU 설치·실행을 보류",
+      "reason": "공식 요구사항에서 WSL은 지원하지 않으며 관측한 WSL에 /dev/kvm도 없다.",
+      "alternatives": "WSL nested KVM 또는 TCG로 강행",
+      "why_not": "실행 편의를 위해 latency validity를 포기하지 않는다.",
+      "status": "active-environment-gate"
+    },
+    {
+      "id": "D004",
+      "title": "집 개발과 연구실 실행을 같은 Git/config로 연결",
+      "reason": "장비 위치를 바꿔도 코드와 실험 조건을 추적할 수 있다. 사용자가 연구실 접속을 요청했다.",
+      "alternatives": "집 물리 Ubuntu 설치/듀얼부팅",
+      "why_not": "여전히 가능하지만 지금 OS 설치·재부팅·파티션 변경은 요청되지 않았다.",
+      "status": "active-remote-connected-runtime-blocked"
+    },
+    {
+      "id": "D005",
+      "title": "4 GiB raw / 3 GiB exposed를 첫 후보로 기록",
+      "reason": "4 KiB page, 256-page block, 256 GC lines를 유지하며 작은 모델의 비용을 줄인다.",
+      "alternatives": "default 16 GiB raw / 12 GiB exposed 또는 2 GiB raw",
+      "why_not": "default는 16 GB host에 크고, 더 작은 모델은 GC granularity 영향을 더 키울 수 있다. runtime 검증 전에는 확정하지 않는다.",
+      "status": "provisional-runtime-unvalidated"
+    },
+    {
+      "id": "D006",
+      "title": "JSON에서 HTML 설명을 생성",
+      "reason": "측정하지 않은 숫자를 실측처럼 보여주거나 결과와 설명이 어긋나는 일을 막는다.",
+      "alternatives": "HTML에 숫자를 직접 편집",
+      "why_not": "반복·팀 공유에서 source of truth가 둘로 갈라질 수 있다.",
+      "status": "active"
+    },
+    {
+      "id": "D007",
+      "title": "공용 서버 기본 설정을 변경하지 않음",
+      "reason": "사용자 지시: 서버에서는 계정의 ledger 폴더 안에서만 작업한다. /dev/kvm 접근 권한은 현재 없다.",
+      "alternatives": "sudo 실행, kvm group/ACL 변경, 시스템 dependency 설치, TCG 우회",
+      "why_not": "공용 설정 변경은 금지됐고 TCG는 지원 KVM 환경의 latency 검증을 대신할 수 없다. Python venv도 device 권한은 해결하지 못한다.",
+      "status": "active-runtime-blocker"
+    }
+  ],
+  "new_questions": [
+    "같은 LBA 순서에서 요청 크기만 바꿔도 GC 호출 시점 때문에 내부 비용이 달라질까?",
+    "logical fill과 raw NAND의 live occupancy 중 어느 값이 rate를 더 잘 설명할까?",
+    "회계로 공정하게 비용을 나누는 것보다 배치로 그 비용 자체를 줄이는 것이 더 강한 해결일까?",
+    "KV를 덜 저장하면 재계산으로 늘어난 시간 동안 로그·DB가 더 쓰는 비용까지 줄어들까?"
+  ]
+}
