@@ -31,6 +31,9 @@ Ubuntu 또는 승인된 연구실 Linux에서 할 수 있습니다. Git과 JSON 
 둡니다. 시스템 패키지/계정/서비스/권한/네트워크 설정은 변경하지 않습니다.
 venv는 KVM device 권한을 해결하지 못합니다. 현재 gate를 통과하지 못했으므로
 실행을 강행하지 않습니다. 접근 권한 확인 결과는 records/lab-constraints.json에 있습니다.
+서버의 기존 빈 `~/ledger`에 프로젝트 checkout도 준비했습니다. 초기 준비 시각과
+commit은 records/lab-workspace.json에 남겼습니다. FEMU source 확보는 현재 로컬에서만
+완료됐으며 서버에는 프로젝트 코드·문서·lock이 있습니다.
 
 ## 오프라인 도구 — FEMU 실험을 실행하지 않음
 

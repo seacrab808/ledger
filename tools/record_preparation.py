@@ -23,6 +23,8 @@ def capture():
         "status": "not-verified", "login_succeeded": False, "host_environment_read": False,
         "private_endpoint": "omitted"
     }
+    workspace_file = ROOT / "records/lab-workspace.json"
+    workspace = json.loads(workspace_file.read_text(encoding="utf-8")) if workspace_file.exists() else None
     lock = json.loads((ROOT / "external/femu.lock.json").read_text(encoding="utf-8"))
     external = ROOT / lock["checkout"]
     if git("rev-parse", "HEAD", cwd=external) != lock["commit"]:
@@ -60,11 +62,13 @@ def capture():
                     "guest_memory_measured_bytes": None, "host_swap_during_femu": None,
                     "native_counters": None},
         "remote_connection": connection,
+        "remote_workspace_initialization": workspace,
         "activities": [
             {"id": "P1-HOST-001", "kind": "environment", "status": "confirmed", "result": "Windows host와 WSL Ubuntu를 읽기 전용으로 확인. FEMU 실행 gate 미통과.", "artifacts": ["records/windows-host.json", "records/wsl-preflight.json"]},
             {"id": "P1-SOURCE-001", "kind": "preparation", "status": "confirmed", "result": "공식 source를 external/FEMU에 detached checkout, pin 확인. 수정·build 없음.", "artifacts": ["external/femu.lock.json"]},
             {"id": "P1-CONFIG-001", "kind": "offline-audit", "status": "source-reviewed", "result": "geometry와 counter source 확인. arithmetic audit만 수행했으며 realize/boot는 하지 않음.", "artifacts": ["configs/femu/blackbox-small.json"]},
             {"id": "P1-SSH-001", "kind": "connection", "status": connection["status"], "result": connection.get("summary", "자동 접속 미확인"), "artifacts": ["records/remote-connection.json"] if connection_file.exists() else []},
+            {"id": "P1-WORKSPACE-001", "kind": "preparation", "status": "ready" if workspace else "not-run", "result": "서버의 기존 빈 ledger 폴더 안에 프로젝트 checkout 준비. 초기 checkout commit은 lab-workspace.json에 기록. 공용 설정 변경 없음." if workspace else "서버 프로젝트 checkout 미준비", "artifacts": ["records/lab-workspace.json"] if workspace else []},
             {"id": "P1-SANITY-001", "kind": "platform-sanity", "status": "not-run", "result": "FEMU guest가 없어 실행하지 않음. 연구 결과 없음.", "artifacts": []}
         ],
         "issues": [

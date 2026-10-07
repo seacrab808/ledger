@@ -1,0 +1,11 @@
+{
+  "captured_at_utc": "2026-10-07T10:14:15.938801+00:00",
+  "status": "project-checkout-ready",
+  "project_commit": "9e11856766eede65a37587d75e19507974930423",
+  "working_tree_clean": true,
+  "all_created_files_inside_ledger": true,
+  "system_configuration_changed": false,
+  "femu_build": "not-run",
+  "guest_boot": "not-run",
+  "sanity": "not-run"
+}

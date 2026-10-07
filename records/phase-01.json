@@ -1,7 +1,7 @@
 {
-  "captured_at_utc": "2026-10-07T10:12:47.439826+00:00",
+  "captured_at_utc": "2026-10-07T10:14:56.324551+00:00",
   "display_timezone": "Asia/Seoul",
-  "project_commit_at_capture": "3bbd22b66959bc9598324d6a10e24d15ce901919",
+  "project_commit_at_capture": "9e11856766eede65a37587d75e19507974930423",
   "project_dirty_at_capture": true,
   "femu_commit": "57920cdcfb9de0ebbac718f337d460684d9629e1",
   "femu_source_clean": true,
@@ -102,6 +102,17 @@
       "records/lab-constraints.json"
     ]
   },
+  "remote_workspace_initialization": {
+    "captured_at_utc": "2026-10-07T10:14:15.938801+00:00",
+    "status": "project-checkout-ready",
+    "project_commit": "9e11856766eede65a37587d75e19507974930423",
+    "working_tree_clean": true,
+    "all_created_files_inside_ledger": true,
+    "system_configuration_changed": false,
+    "femu_build": "not-run",
+    "guest_boot": "not-run",
+    "sanity": "not-run"
+  },
   "activities": [
     {
       "id": "P1-HOST-001",
@@ -138,6 +149,15 @@
       "result": "공개키 등록 및 자동 SSH 접속 성공. 물리 Ubuntu/KVM/RAM 읽기 전용 점검 완료. 계정의 /dev/kvm 권한 없음으로 runtime 보류. 공용 설정 변경 없음.",
       "artifacts": [
         "records/remote-connection.json"
+      ]
+    },
+    {
+      "id": "P1-WORKSPACE-001",
+      "kind": "preparation",
+      "status": "ready",
+      "result": "서버의 기존 빈 ledger 폴더 안에 프로젝트 checkout 준비. 초기 checkout commit은 lab-workspace.json에 기록. 공용 설정 변경 없음.",
+      "artifacts": [
+        "records/lab-workspace.json"
       ]
     },
     {
