@@ -8,10 +8,10 @@ work/wear for services and LLMs on shared edge storage. Problem statement,
 contributions, accounting, placement, architecture, KV policy and even LEDGER may
 change with evidence. Measurement validity comes before preserving an idea.
 
-- Current authorization extends Phase 2 with a steady-state check only: same 4 GiB raw / 3 GiB exposed,
-  approximately 70% live logical fill, identical deterministic preconditioning,
+- Current authorization is a small initial-history control only: same 4 GiB raw / 3 GiB exposed,
+  approximately 70% live logical fill; only random preconditioning changes from one to three identical passes,
   GC/erase gate, 4 KiB sequential versus uniform random overwrites, direct I/O,
-  QD1/job1/equal byte budgets and three runs each. Commit/push remains authorized.
+  QD1/job1/equal byte budgets. Reuse the archived one-pass seed 42 baseline; run two new three-pass runs, one per pattern. Commit/push remains authorized.
 - Do NOT run other E0 workloads, fill/OP/GC/geometry sweeps,
   extra repetitions beyond the approved three per pattern, LLM downloads,
   accounting/Shapley/BPF, SAVE/DROP policies,
@@ -31,13 +31,14 @@ change with evidence. Measurement validity comes before preserving an idea.
   2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
   12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
   are project-local. Stop the owned VM after each run; never stop other users' jobs.
-- Stop after the Phase 2 steady-state check for the user's decision. A blocked runtime stays incomplete;
+- Stop after the initial-history control and design of the unexecuted three-pattern experiment for the user's decision. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
 
 - The six original Phase 2 pilot runs are COMPLETE and must be preserved.
   The six longer same-profile overwrite runs are also COMPLETE. Do not rerun or extend them.
-  Preserve the original preconditioning, use fixed byte windows and preregister the
-  convergence criterion. No other workloads, sweeps or phase transitions are authorized.
+  The newer user instruction authorizes the small three-pass history control only.
+  Use fixed byte windows and frozen convergence/comparison criteria. Sequential/permutation/
+  replacement comparison is DESIGN ONLY; no other workloads, sweeps or phase transitions are authorized.
 
 ## Documents and evidence
 

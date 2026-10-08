@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "purpose": "Small initial-history control; reuse archived one-pass seed 42 and run only three-pass history",
+  "device_config": "configs/femu/blackbox-small.json",
+  "region_bytes": 2254856192,
+  "fill_definition": "live mapped bytes / exposed logical capacity; first contiguous region",
+  "preconditioning": {
+    "fill_passes": 1,
+    "random_overwrite_passes": 3,
+    "seed": 20261007
+  },
+  "measurement_bytes": 18038849536,
+  "measurement_windows": 8,
+  "request_bytes": 4096,
+  "direct": 1,
+  "iodepth": 1,
+  "numjobs": 1,
+  "ioengine": "libaio",
+  "random_distribution": "uniform",
+  "fio_compatibility": "fio 3.36 uniform is the default random distribution; do not pass unsupported random_distribution=uniform",
+  "norandommap": 1,
+  "random_generator": "tausworthe64",
+  "runs": [
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "replicate": 1
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "replicate": 1
+    }
+  ],
+  "gate": "Before any measurement, preconditioning gc-write-pages and block-erases must both increase; otherwise stop unchanged and report",
+  "timeout_per_fio_seconds": 1800,
+  "max_batch_seconds": 5400,
+  "interpretation": "Operational plateau, not proof of infinite-horizon stationarity or hardware validity",
+  "report_window_bytes": 4509712384,
+  "report_windows": 4,
+  "subwindows_per_report_window": 2,
+  "convergence": {
+    "terminal_report_windows": 3,
+    "max_relative_range": 0.01,
+    "max_abs_relative_slope_per_window": 0.005,
+    "metrics": [
+      "waf",
+      "erase_per_gib"
+    ],
+    "require_every_replicate": true,
+    "fixed_budget_no_adaptive_extension": true,
+    "estimator": "ratio of sums in final 3 windows per run; mean and sample SD across three independent fresh-process replicates"
+  },
+  "continuity_note": "Preserve all original measurement subwindow commands/seeds. Three preconditioning passes repeat exactly the same seed 20261007; compare the same measurement horizon.",
+  "comparison": {
+    "baseline": "records/phase-02-steady.json",
+    "baseline_seed": 42,
+    "matched_report_windows": [
+      2,
+      3,
+      4
+    ],
+    "near_relative_tolerance": 0.01,
+    "require_both_metrics": true,
+    "interpretation": "Descriptive selected-history control with one run per pattern, not a statistical equivalence test",
+    "no_adaptive_extension": true
+  }
+}
