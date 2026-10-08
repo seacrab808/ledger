@@ -13,7 +13,8 @@ change with evidence. Measurement validity comes before preserving an idea.
   GC/erase gate, 4 KiB sequential versus uniform random overwrites, direct I/O,
   QD1/job1/equal byte budgets and three runs each. Commit/push remains authorized.
 - Do NOT run other E0 workloads, fill/OP/GC/geometry sweeps,
-  repeated statistics, LLM downloads, accounting/Shapley/BPF, SAVE/DROP policies,
+  extra repetitions beyond the approved three per pattern, LLM downloads,
+  accounting/Shapley/BPF, SAVE/DROP policies,
   threshold/paced, placement features or real-device experiments in this phase.
 - An unsuitable host is a recorded blocker. Do not install/run FEMU under WSL or
   substitute TCG/nested VM results for supported physical Linux/KVM measurements.
@@ -29,9 +30,12 @@ change with evidence. Measurement validity comes before preserving an idea.
 - Build uses at most 2 jobs, nice 10 and 2-CPU affinity. Keep one VM, guest
   2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
   12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
-  are project-local. Stop the owned VM after sanity; never stop other users' jobs.
+  are project-local. Stop the owned VM after each run; never stop other users' jobs.
 - Stop after Phase 2 pilot for the user's decision. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
+
+- The six authorized Phase 2 pilot runs are COMPLETE. Do not rerun them,
+  extend overwrite/preconditioning, or enter another phase without new user approval.
 
 ## Documents and evidence
 

@@ -1,14 +1,14 @@
 {
   "status": "provisional",
   "question": "여러 서비스와 LLM이 저장장치를 함께 쓸 때, logical bytes 회계는 내부 NAND 작업과 마모를 충분히 표현하는가?",
-  "scope": "현재는 현상을 탐색할 실험 장비와 기록 기반을 준비한다. 기존 LEDGER를 정답으로 가정하지 않는다.",
+  "scope": "Phase 1과 승인된 Phase 2 pilot만 완료했다. 단일 FEMU 조건의 pattern 효과를 관찰했으며 해결 방향은 아직 미정이다.",
   "directions": [
     {
       "name": "서비스별 소거 비용 회계",
       "status": "open",
       "why": "같은 1 MiB를 쓴 두 서비스의 내부 비용이 다르면 바이트 예산은 부담을 잘못 나눌 수 있다.",
       "needed": "독립 FTL에서 패턴 차이, 혼합에서도 유지되는 rate, held-out 예측과 집행 개선",
-      "evidence": "기존 보고서는 자체 ftlsim에서 차이와 표의 예측력을 보고했다. 독립 재현은 아직 없다.",
+      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.",
       "objection": "서비스 혼합·상태에 따라 rate가 크게 바뀌면 정적 표가 쓸모없을 수 있다."
     },
     {
@@ -40,7 +40,7 @@
       "status": "open",
       "why": "부정 결과는 문제의 적용 범위를 정하고 더 좋은 질문으로 전환할 근거가 된다.",
       "needed": "GC·reset·warmup이 유효한 독립 비교와 충분한 precision, 다른 모델·장치 검증",
-      "evidence": "FEMU 본 실험은 하지 않았다. sanity의 erase=0도 이 질문의 답이 아니다.",
+      "evidence": "현재 pilot 분류=strong-local-pilot-support. 한 FEMU 조건에서만 관찰했으므로 다른 상태·FTL·실기기에서는 차이가 작거나 사라질 가능성이 열려 있다.",
       "objection": "작은 차이는 진짜 동등성이 아니라 GC 부족이나 측정 precision 부족일 수 있다."
     }
   ],
@@ -48,12 +48,12 @@
     {
       "phase": 1,
       "name": "FEMU 탐색 장비 + 연구 기록",
-      "status": "complete-awaiting-phase2-approval"
+      "status": "complete"
     },
     {
       "phase": 2,
       "name": "E0: 동일 bytes에서 pattern별 내부 작업 차이",
-      "status": "not-authorized"
+      "status": "pilot-complete-further-experiments-not-authorized"
     },
     {
       "phase": 3,
@@ -179,6 +179,46 @@
       "reason": "GC/erase stress·preconditioning·E0 비교는 아직 승인되지 않았다. sanity erase=0은 연구 결과가 아니다.",
       "alternatives": "바로 sequential/random aging 실험 시작",
       "why_not": "사용자가 HTML과 결과를 검토하고 pilot 조건을 승인해야 한다.",
+      "status": "review-complete-user-authorized-pilot-see-D014"
+    },
+    {
+      "id": "D014",
+      "title": "사용자 승인 범위를 70% fill의 sequential/random pilot로 한정",
+      "reason": "Phase 1 완료 검토 후 사용자가 두 패턴·각 3회만 승인했다. 4/3 GiB와 모든 device 설정을 유지했다.",
+      "alternatives": "fill/OP/geometry sweep, 서비스 패턴 또는 정책으로 바로 확장",
+      "why_not": "이번에는 동일 bytes에서 내부 작업 차이가 존재하는지 하나만 본다.",
+      "status": "completed"
+    },
+    {
+      "id": "D015",
+      "title": "fresh process와 동일 preconditioning, GC gate 뒤 byte 고정 비교",
+      "reason": "각 run 70% 영역 fill + 고정 seed uniform overwrite 후 native GC copies/erase 증가를 확인했다. 비교 4.20 GiB는 준비 쓰기를 제외한다.",
+      "alternatives": "빈 SSD 비교, 이전 run 상태 계승, 시간 고정",
+      "why_not": "GC 부족·initial-state 차이·byte budget 차이를 섞지 않는다. full mapping state 직접 검증은 하지 못했다.",
+      "status": "measured"
+    },
+    {
+      "id": "D016",
+      "title": "fio 3.36 옵션 오류를 보존하고 default uniform을 사용",
+      "reason": "첫 시도는 random_distribution=uniform parsing에서 I/O 전에 중단됐다. 해당 버전의 default random이 균등 분포임을 확인했다.",
+      "alternatives": "fio 업그레이드, 다른 분포나 FEMU 설정으로 변경, 실패 삭제",
+      "why_not": "지원되는 default로 충분하다. 수정은 unsupported 문자열 제거뿐이며 실패 provenance를 남겼다.",
+      "status": "resolved"
+    },
+    {
+      "id": "D017",
+      "title": "finite-window pilot 관측과 steady-state/hardware 주장을 구분",
+      "reason": "독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.",
+      "alternatives": "pilot 평균을 고정된 서비스 erase rate나 실기기 수명으로 사용",
+      "why_not": "전반/후반 상태 변화와 작은 geometry·synthetic workload의 범위가 있다. 문제 존재와 해결책의 효과는 다르다.",
+      "status": "strong-local-pilot-support"
+    },
+    {
+      "id": "D018",
+      "title": "pilot 종료 후 다음 실행 중단",
+      "reason": "6회 측정과 검증·HTML 기록만 완료했다. 다음 후보는 동일 조건의 더 긴 overwrite에서 window별 수렴 확인이다.",
+      "alternatives": "자동으로 warmup/budget 또는 workload를 확대",
+      "why_not": "추가 실험은 별도 사용자 승인과 byte/runtime 자원 예산을 먼저 정한다.",
       "status": "awaiting-user-review"
     }
   ],
@@ -186,7 +226,8 @@
     "같은 LBA 순서에서 요청 크기만 바꿔도 GC 호출 시점 때문에 내부 비용이 달라질까?",
     "logical fill과 raw NAND의 live occupancy 중 어느 값이 rate를 더 잘 설명할까?",
     "회계로 공정하게 비용을 나누는 것보다 배치로 그 비용 자체를 줄이는 것이 더 강한 해결일까?",
-    "KV를 덜 저장하면 재계산으로 늘어난 시간 동안 로그·DB가 더 쓰는 비용까지 줄어들까?"
+    "KV를 덜 저장하면 재계산으로 늘어난 시간 동안 로그·DB가 더 쓰는 비용까지 줄어들까?",
+    "주소 갱신을 묶는 host-side scheduling이 같은 bytes에서 GC 복사를 줄일 수 있을까? durability/latency를 지키는 해결 후보이며 아직 미실험이다."
   ],
   "capacity_sensitivity_candidate": "서버에 충분한 RAM/CPU가 있어 향후 capacity/geometry sensitivity를 검토할 수 있다. 지금의 Phase 1과 초기 pilot E0는 4 GiB raw / 3 GiB exposed를 유지한다. 확장은 별도 승인·자원 예산·명시적 변수 통제 후 수행한다."
 }

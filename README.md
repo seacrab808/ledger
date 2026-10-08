@@ -1,6 +1,6 @@
 # LEDGER / shared-flash research exploration
 
-**연구 방향: provisional · Phase 1 통과 · Phase 2 승인 대기 / 미실행**
+**연구 방향: provisional · Phase 1 통과 · Phase 2 pilot 완료 · 추가 실험 승인 대기**
 
 이 저장소는 정해진 LEDGER의 최종 구현 명세가 아닙니다. 여러 서비스와 LLM이
 저장장치를 쓸 때 논리 쓰기 바이트가 내부 NAND 쓰기·소거 비용을 충분히
@@ -24,7 +24,10 @@
   CRC32C verify read 성공. native delta host/NAND=4096 pages, GC/erase=0입니다.
 - QEMU observed peak RSS 3.63 GiB, fio 구간 평균 CPU 약 271% (100%=논리 CPU 하나).
   관측 구간 host swap-in/out=0. VM은 정상 종료했습니다. 전체 작업 폴더 약 4.61 GiB.
-- E0 및 Phase 2 이후 실험은 시작하지 않았습니다.
+- 승인된 Phase 2 pilot만 완료했습니다. 동일 70% fill·4 KiB/QD1/job1/direct·host 4.20 GiB에서
+  sequential/random 각 3회. 평균 WAF 1.1944/1.9049, erase/GiB 1222.858/1950.478.
+  native GC/erase와 동일 observed initial state가 확인됐습니다. 모든 VM을 종료했습니다.
+- 추가 E0 조건과 다음 Phase는 실행하지 않았습니다. [Phase 2 pilot 노트](docs/phase-02.html)와 records/phase-02-*.json에 원본·해석이 있습니다.
 
 ## 집과 연구실
 
@@ -57,7 +60,7 @@ python3 tools/preflight_linux.py --output results/summary/linux-preflight.json
 ```
 
 Phase 1 결과와 절차는 [Phase 1 노트](docs/phase-01.html)에 있습니다. 작은 config는
-이 sanity에서 runtime 검증됐지만 GC stress·E0 trend·실기기 검증은 하지 않았습니다.
+이 sanity에서 runtime 검증됐습니다. 이후 GC와 E0 pattern 차이의 pilot는 별도 기록이며 실기기 검증은 하지 않았습니다.
 실행 당시 config bytes/hash는 records/phase-01-executed-config.json에 보존했습니다.
 
 공용 서버의 dependency 설치도 ledger 내부 prefix/venv로 한정합니다.
@@ -66,9 +69,9 @@ Build는 2 jobs/nice 10/2 CPU affinity, VM은 하나만/6 CPU affinity/12 GiB ad
 limit로 실행했습니다. CPU 수치는 전체 QEMU process이며 짧은 fio 실행·수집 구간입니다.
 공용 서버 활동이 latency/resource 값에 영향을 줄 수 있습니다.
 
-Phase 2 pilot를 시작할 플랫폼 조건은 통과했습니다. 먼저 GC 유도·reset·preconditioning·
-동일 bytes와 비교 기준을 설계하고 사용자 승인을 받아야 합니다. erase=0은 작은 sanity의
-예상 결과이며 LEDGER 문제 정의를 지지하거나 반박하는 evidence가 아닙니다.
+Phase 2 pilot의 차이는 단일 FEMU 조건의 유한 overwrite 구간에서 얻은 evidence입니다.
+steady state, 실기기 수명, 서비스 회계, LEDGER 정책 효과로 일반화하지 않습니다.
+다음 후보는 같은 설정에서 더 긴 overwrite의 window별 수렴 확인이며 아직 미승인입니다.
 
 ## 구조
 

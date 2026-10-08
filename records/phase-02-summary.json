@@ -1,0 +1,317 @@
+{
+  "status": "passed",
+  "batch_id": "P2-PILOT-20261007T111845Z",
+  "rows": [
+    {
+      "index": 1,
+      "pattern": "sequential",
+      "replicate": 1,
+      "seed": 42,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 5.01654052734375,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 214052,
+      "block-erases": 5136,
+      "waf": 1.1944152791452165,
+      "block_erases": 5136,
+      "erase_per_gib": 1222.8580313967977,
+      "fio_completed_bytes": 4509712384,
+      "runtime_seconds": 231.98016788531095,
+      "fio_job_runtime_ms": 231188,
+      "window1_waf": 1.388830558290433,
+      "window2_waf": 1.0,
+      "window1_erase_per_gib": 1424.762940007484,
+      "window2_erase_per_gib": 1020.9531227861116
+    },
+    {
+      "index": 2,
+      "pattern": "random",
+      "replicate": 1,
+      "seed": 42,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.999683380126953,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 996065,
+      "block-erases": 8192,
+      "waf": 1.9046879030412243,
+      "block_erases": 8192,
+      "erase_per_gib": 1950.4776077107804,
+      "fio_completed_bytes": 4509712384,
+      "runtime_seconds": 244.1690492723137,
+      "fio_job_runtime_ms": 243396,
+      "window1_waf": 1.9074208631394618,
+      "window2_waf": 1.9019549429429865,
+      "window1_erase_per_gib": 1950.4776077107804,
+      "window2_erase_per_gib": 1950.4776077107804
+    },
+    {
+      "index": 3,
+      "pattern": "random",
+      "replicate": 2,
+      "seed": 43,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 8.0008544921875,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 996372,
+      "block-erases": 8192,
+      "waf": 1.9049667394487213,
+      "block_erases": 8192,
+      "erase_per_gib": 1950.4776077107804,
+      "fio_completed_bytes": 4509712384,
+      "runtime_seconds": 244.15921494364738,
+      "fio_job_runtime_ms": 243403,
+      "window1_waf": 1.906770547609273,
+      "window2_waf": 1.9031629312881697,
+      "window1_erase_per_gib": 1950.4776077107804,
+      "window2_erase_per_gib": 1950.4776077107804
+    },
+    {
+      "index": 4,
+      "pattern": "sequential",
+      "replicate": 2,
+      "seed": 43,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 5.01654052734375,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 214052,
+      "block-erases": 5136,
+      "waf": 1.1944152791452165,
+      "block_erases": 5136,
+      "erase_per_gib": 1222.8580313967977,
+      "fio_completed_bytes": 4509712384,
+      "runtime_seconds": 231.9464992498979,
+      "fio_job_runtime_ms": 231173,
+      "window1_waf": 1.388830558290433,
+      "window2_waf": 1.0,
+      "window1_erase_per_gib": 1424.762940007484,
+      "window2_erase_per_gib": 1020.9531227861116
+    },
+    {
+      "index": 5,
+      "pattern": "sequential",
+      "replicate": 3,
+      "seed": 44,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 5.01654052734375,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 214052,
+      "block-erases": 5136,
+      "waf": 1.1944152791452165,
+      "block_erases": 5136,
+      "erase_per_gib": 1222.8580313967977,
+      "fio_completed_bytes": 4509712384,
+      "runtime_seconds": 232.0969558255747,
+      "fio_job_runtime_ms": 231320,
+      "window1_waf": 1.388830558290433,
+      "window2_waf": 1.0,
+      "window1_erase_per_gib": 1424.762940007484,
+      "window2_erase_per_gib": 1020.9531227861116
+    },
+    {
+      "index": 6,
+      "pattern": "random",
+      "replicate": 3,
+      "seed": 44,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 8.001640319824219,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 996578,
+      "block-erases": 8192,
+      "waf": 1.9051538414029376,
+      "block_erases": 8192,
+      "erase_per_gib": 1950.4776077107804,
+      "fio_completed_bytes": 4509712384,
+      "runtime_seconds": 244.16359259560704,
+      "fio_job_runtime_ms": 243408,
+      "window1_waf": 1.9074717258066274,
+      "window2_waf": 1.902835956999248,
+      "window1_erase_per_gib": 1950.4776077107804,
+      "window2_erase_per_gib": 1950.4776077107804
+    }
+  ],
+  "arms": {
+    "sequential": {
+      "waf": {
+        "n": 3,
+        "mean": 1.1944152791452165,
+        "sample_sd": 0.0,
+        "min": 1.1944152791452165,
+        "max": 1.1944152791452165,
+        "descriptive_t95": [
+          1.1944152791452165,
+          1.1944152791452165
+        ]
+      },
+      "block_erases": {
+        "n": 3,
+        "mean": 5136,
+        "sample_sd": 0.0,
+        "min": 5136,
+        "max": 5136,
+        "descriptive_t95": [
+          5136.0,
+          5136.0
+        ]
+      },
+      "erase_per_gib": {
+        "n": 3,
+        "mean": 1222.8580313967977,
+        "sample_sd": 0.0,
+        "min": 1222.8580313967977,
+        "max": 1222.8580313967977,
+        "descriptive_t95": [
+          1222.8580313967977,
+          1222.8580313967977
+        ]
+      },
+      "physical_gib": {
+        "n": 3,
+        "mean": 5.01654052734375,
+        "sample_sd": 0.0,
+        "min": 5.01654052734375,
+        "max": 5.01654052734375,
+        "descriptive_t95": [
+          5.01654052734375,
+          5.01654052734375
+        ]
+      },
+      "runtime_seconds": {
+        "n": 3,
+        "mean": 232.00787432026118,
+        "sample_sd": 0.07896220738008577,
+        "min": 231.9464992498979,
+        "max": 232.0969558255747,
+        "descriptive_t95": [
+          231.81172132309788,
+          232.20402731742448
+        ]
+      }
+    },
+    "random": {
+      "waf": {
+        "n": 3,
+        "mean": 1.9049361612976277,
+        "sample_sd": 0.00023446941532375394,
+        "min": 1.9046879030412243,
+        "max": 1.9051538414029376,
+        "descriptive_t95": [
+          1.904353706980748,
+          1.9055186156145074
+        ]
+      },
+      "block_erases": {
+        "n": 3,
+        "mean": 8192,
+        "sample_sd": 0.0,
+        "min": 8192,
+        "max": 8192,
+        "descriptive_t95": [
+          8192.0,
+          8192.0
+        ]
+      },
+      "erase_per_gib": {
+        "n": 3,
+        "mean": 1950.4776077107804,
+        "sample_sd": 0.0,
+        "min": 1950.4776077107804,
+        "max": 1950.4776077107804,
+        "descriptive_t95": [
+          1950.4776077107804,
+          1950.4776077107804
+        ]
+      },
+      "physical_gib": {
+        "n": 3,
+        "mean": 8.000726064046225,
+        "sample_sd": 0.000984770828816143,
+        "min": 7.999683380126953,
+        "max": 8.001640319824219,
+        "descriptive_t95": [
+          7.998279757692838,
+          8.00317237039961
+        ]
+      },
+      "runtime_seconds": {
+        "n": 3,
+        "mean": 244.1639522705227,
+        "sample_sd": 0.004927020358499583,
+        "min": 244.15921494364738,
+        "max": 244.1690492723137,
+        "descriptive_t95": [
+          244.15171287344313,
+          244.1761916676023
+        ]
+      }
+    }
+  },
+  "paired": [
+    {
+      "seed": 42,
+      "waf_difference_random_minus_seq": 0.7102726238960078,
+      "erase_per_gib_difference_random_minus_seq": 727.6195763139826
+    },
+    {
+      "seed": 43,
+      "waf_difference_random_minus_seq": 0.7105514603035048,
+      "erase_per_gib_difference_random_minus_seq": 727.6195763139826
+    },
+    {
+      "seed": 44,
+      "waf_difference_random_minus_seq": 0.7107385622577211,
+      "erase_per_gib_difference_random_minus_seq": 727.6195763139826
+    }
+  ],
+  "differences": {
+    "waf": {
+      "absolute": 0.7105208821524112,
+      "relative_random_over_seq_minus_one": 0.5948692172297859,
+      "pooled_sample_sd": 0.0001657949135562714,
+      "same_direction_all_pairs": true,
+      "effect_exceeds_three_pooled_sd": true,
+      "paired_difference_stats": {
+        "n": 3,
+        "mean": 0.7105208821524113,
+        "sample_sd": 0.00023446941532375394,
+        "min": 0.7102726238960078,
+        "max": 0.7107385622577211,
+        "descriptive_t95": [
+          0.7099384278355316,
+          0.7111033364692909
+        ]
+      }
+    },
+    "erase_per_gib": {
+      "absolute": 727.6195763139826,
+      "relative_random_over_seq_minus_one": 0.5950155763239877,
+      "pooled_sample_sd": 0.0,
+      "same_direction_all_pairs": true,
+      "effect_exceeds_three_pooled_sd": true,
+      "paired_difference_stats": {
+        "n": 3,
+        "mean": 727.6195763139826,
+        "sample_sd": 0.0,
+        "min": 727.6195763139826,
+        "max": 727.6195763139826,
+        "descriptive_t95": [
+          727.6195763139826,
+          727.6195763139826
+        ]
+      }
+    }
+  },
+  "classification": "strong-local-pilot-support",
+  "scope": "Finite-window single FEMU/geometry/fill pilot; not real hardware, wear lifetime, service accounting or policy validation",
+  "same_observed_initial_state": true,
+  "full_mapping_state_verified": false,
+  "interval_note": "n=3 descriptive t intervals; identical deterministic sequential runs do not establish external validity",
+  "runtime_caveat": "Wall runtime includes SSH fio launch; intermittent read-only live QMP diagnostics were not identically scheduled. Shared-host activity also varies. Runtime is recorded, not a controlled performance claim.",
+  "next_experiment_candidate": "Same config/fill/patterns, longer overwrite budget with fixed-size window counters to test convergence and preconditioning transients; needs user approval",
+  "input_sha256": "a3bf8cd48ffb8b9287d47d94f594b350ae9d87bfae01786de78463dc744218b6"
+}

@@ -1,6 +1,7 @@
 """Check generated offline documents, original hashes and local links."""
 import hashlib
 import json
+import math
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -8,7 +9,18 @@ from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-PAGES = ["index.html", "research-map.html", "phase-01.html", "experiment-log.html", "decision-log.html", "glossary.html"]
+PAGES = ["index.html", "research-map.html", "phase-01.html", "phase-02.html", "experiment-log.html", "decision-log.html", "glossary.html"]
+
+
+def same_summary(a, b):
+    """Exact structure/integers; tolerate insignificant Python-version float rounding."""
+    if isinstance(a, float) and isinstance(b, float):
+        return math.isclose(a, b, rel_tol=1e-12, abs_tol=1e-12)
+    if isinstance(a, dict) and isinstance(b, dict):
+        return a.keys() == b.keys() and all(same_summary(a[k], b[k]) for k in a)
+    if isinstance(a, list) and isinstance(b, list):
+        return len(a) == len(b) and all(same_summary(x, y) for x, y in zip(a, b))
+    return a == b
 
 
 class Check(HTMLParser):
@@ -78,9 +90,23 @@ def validate():
                                   ('pages-per-block', 'pgs_per_blk')]:
             if run['native_after']['reply']['return']['namespaces'][0]['geometry'][field] != expected['device'][config_key]:
                 errors.append('Realized geometry mismatch: ' + field)
+    if (ROOT / 'records/phase-02-summary.json').exists():
+        from tools.summarize_phase2 import summarize
+        batch_path = ROOT / 'records/phase-02-pilot.json'
+        summary = json.loads((ROOT / 'records/phase-02-summary.json').read_text(encoding='utf-8'))
+        batch = json.loads(batch_path.read_text(encoding='utf-8'))
+        if not same_summary(summarize(batch), {k: v for k, v in summary.items() if k != 'input_sha256'}):
+            errors.append('Phase 2 recomputed summary differs from archived summary')
+        if hashlib.sha256(batch_path.read_bytes()).hexdigest() != summary['input_sha256']:
+            errors.append('Phase 2 raw input hash mismatch')
+        plan = ROOT / 'configs/experiments/phase2-pilot.json'
+        if hashlib.sha256(plan.read_bytes()).hexdigest() != batch['plan_sha256']:
+            errors.append('Phase 2 plan hash mismatch')
+        if config_hash != batch['config_sha256']:
+            errors.append('Phase 2 device config hash mismatch')
     if errors:
         raise ValueError("\n".join(errors))
-    print("6 HTML notes: offline assets, Korean layout, local links, original hashes and config provenance pass.")
+    print("7 HTML notes: offline assets, Korean layout, local links, original hashes and config/measurement provenance pass.")
 
 
 if __name__ == "__main__":

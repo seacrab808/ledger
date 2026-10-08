@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from tools.validate_config import audit
 NAV = [("index.html", "대시보드"), ("research-map.html", "가능성 지도"),
-       ("phase-01.html", "Phase 1"), ("experiment-log.html", "실험 기록"),
+       ("phase-01.html", "Phase 1"), ("phase-02.html", "Phase 2 pilot"), ("experiment-log.html", "실험 기록"),
        ("decision-log.html", "결정 기록"), ("glossary.html", "용어 사전")]
 CSS = """
 :root{--ink:#202e2a;--muted:#5c6c65;--accent:#226653;--paper:#fffef9;--bg:#f1f3ec;--line:#d6ded2;--warn:#8e581c}
@@ -67,6 +67,11 @@ def render():
     stamp = dt.datetime.fromisoformat(record["captured_at_utc"]).astimezone(dt.timezone(dt.timedelta(hours=9))).strftime("%Y-%m-%d %H:%M KST")
     source_links = '<ul>' + ''.join('<li>' + link(Path(s["path"]).name, Path(s["path"]).name) + ' <span class="tiny">원본·수정 없음</span></li>' for s in record["source_documents"]) + '</ul>'
     status = '<div class="statusline"><span class="tag">연구 방향 · provisional</span><span class="tag">Phase 1 · sanity 통과</span><span class="tag warn">Phase 2 · 승인 대기 / 미시작</span></div>'
+    pilot_present = (ROOT / 'records/phase-02-summary.json').exists()
+    if pilot_present:
+        status = status.replace('Phase 2 · 승인 대기 / 미시작', 'Phase 2 pilot · 완료 / 다음 승인 대기')
+        stamp = dt.datetime.fromisoformat(load('records/phase-02-pilot.json')['end_utc']).astimezone(
+            dt.timezone(dt.timedelta(hours=9))).strftime('%Y-%m-%d %H:%M KST')
     runtime_rows = [(e(k), e(v if v is not None else "미측정 / 없음")) for k, v in record["runtime"].items()]
     geometry_rows = [
         ("Guest", f'{config["guest"]["ram_mib"]} MiB RAM / {config["guest"]["vcpus"]} vCPU'),
@@ -176,6 +181,20 @@ def render():
         ("Sanity / research result", "sanity는 장비가 제대로 쓰고 읽는지 확인하는 작은 점검입니다. 패턴 차이·수명 위험을 입증하는 본 실험과 다릅니다.")]
     pages["glossary.html"] = ("용어 사전 · 그림 없이도 이해하기", "전문용어를 만날 때 다시 돌아올 수 있는 설명입니다. 수치 예시는 config에서 유래하거나 교육용이며 연구 결과가 아닙니다.", '<div class="terms">' + ''.join('<article><h2>' + e(name) + '</h2><p>' + e(desc) + '</p></article>' for name, desc in terms) + '</div>')
     refs = '<details><summary>공식 출처 · 고정 commit</summary><ul>' + ''.join('<li>' + link(r["url"], r["topic"]) + '</li>' for r in record["references"]) + '</ul></details>'
+    if pilot_present:
+        from tools.phase2_notes import add_notes
+        add_notes(pages, load('records/phase-02-summary.json'), load('records/phase-02-pilot.json'),
+                  (e, table, section, link), load('records/phase-02-footprint.json'))
+        title, lead, body = pages['index.html']
+        body = body.replace('❓ 플랫폼 확인은 끝났지만 GC·pattern 차이를 검증한 연구 결과는 아직 없습니다. Phase 2는 승인 후 시작합니다.',
+                            '✅ Phase 2 pilot 완료: GC가 발생하는 같은 초기 상태에서 sequential/random을 각 3회 비교했습니다. <a href="phase-02.html">차이와 한계 보기</a>. 다음 실험은 승인 대기입니다.')
+        body = body.replace('원본 보존, negative result 기록, native/derived·모델/실기기 구분, Phase 1에서 중단',
+                            '원본 보존, negative result 기록, native/derived·모델/실기기 구분, 승인된 Phase 2 pilot에서 중단')
+        pages['index.html'] = (title, lead, body)
+        title, lead, body = pages['phase-01.html']
+        body = body.replace('Phase 2는 미실행입니다.',
+                            '이 문단은 Phase 1 종료 시점의 판단입니다. 이후 사용자 승인으로 Phase 2 pilot만 완료했습니다. <a href="phase-02.html">현재 pilot 기록</a>을 별도로 읽어 주세요.')
+        pages['phase-01.html'] = (title, lead, body)
     for filename, (title, lead, content) in pages.items():
         nav = '<nav aria-label="연구 노트">' + ''.join('<a' + (' class="active" aria-current="page"' if file == filename else '') + ' href="' + file + '">' + label + '</a>' for file, label in NAV) + '</nav>'
         out = '<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + e(title) + ' | LEDGER 연구 노트</title><style>' + CSS + '</style></head><body><div class="shell"><div class="top"><span class="brand">LEDGER / EXPLORATION</span><span>기록 시각 ' + stamp + '</span></div>' + nav + '<header><div class="eyebrow">RESEARCH NOTE · PROVISIONAL</div><h1>' + e(title) + '</h1><p class="lead">' + e(lead) + '</p></header><main>' + content + '</main><footer><p>생성 원본: records/*.json · config. HTML은 설명 layer이며 실측 원본은 JSON/CSV/log입니다. 기존 연구 HTML은 별도 원본입니다.</p>' + refs + '</footer></div></body></html>\n'
