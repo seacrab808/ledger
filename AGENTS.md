@@ -40,6 +40,10 @@ change with evidence. Measurement validity comes before preserving an idea.
   Use fixed byte windows and frozen convergence/comparison criteria. Sequential/permutation/
   replacement comparison is DESIGN ONLY; no other workloads, sweeps or phase transitions are authorized.
 
+
+- The two authorized three-pass history-control runs are COMPLETE. Do not rerun/extend them.
+  The next three-pattern experiment is DESIGN ONLY and must not execute without new approval.
+
 ## Documents and evidence
 
 - Preserve docs/LEDGER*.html byte for byte. These are historical source records.

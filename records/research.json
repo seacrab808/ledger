@@ -1,14 +1,14 @@
 {
   "status": "provisional",
   "question": "여러 서비스와 LLM이 저장장치를 함께 쓸 때, logical bytes 회계는 내부 NAND 작업과 마모를 충분히 표현하는가?",
-  "scope": "Phase 1, Phase 2 pilot와 승인된 동일 설정의 긴 overwrite 확인만 완료했다. 해결 방향은 아직 미정이며 다음 실행은 승인 대기다.",
+  "scope": "Phase 2 pilot·긴 overwrite·작은 initial-history control 완료. 세 패턴 비교는 설계만 했다. solution 미구현, 추가 실행 승인 대기.",
   "directions": [
     {
       "name": "서비스별 소거 비용 회계",
       "status": "open",
       "why": "같은 1 MiB를 쓴 두 서비스의 내부 비용이 다르면 바이트 예산은 부담을 잘못 나눌 수 있다.",
       "needed": "독립 FTL에서 패턴 차이, 혼합에서도 유지되는 rate, held-out 예측과 집행 개선",
-      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.\n추가 관측: 동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.",
+      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.\n추가 관측: 동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.\nHistory control: seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다. 후반 random WAF 상대차=+0.0093%, 두 패턴 erase/GiB 차이는 0%. 반면 sequential 첫 window WAF는 +16.44%였다. 초기 비용과 후반 rate의 history 민감도를 구분한다.",
       "objection": "서비스 혼합·상태에 따라 rate가 크게 바뀌면 정적 표가 쓸모없을 수 있다."
     },
     {
@@ -53,7 +53,7 @@
     {
       "phase": 2,
       "name": "E0: 동일 bytes에서 pattern별 내부 작업 차이",
-      "status": "steady-check-complete-next-experiment-not-authorized"
+      "status": "history-control-complete-three-pattern-design-only"
     },
     {
       "phase": 3,
@@ -243,7 +243,31 @@
       "reason": "같은 두 패턴·3회씩만 실행하고 모든 소유 VM을 종료했다. 다음 후보는 같은 조건에서 preconditioning 이력만 바꾸는 확인이다.",
       "alternatives": "fill/geometry/서비스/정책 실험으로 자동 진입",
       "why_not": "추가 조건은 사용자 판단과 별도 승인이 필요하다.",
-      "status": "awaiting-user-review"
+      "status": "review-complete-history-control-authorized-see-D022"
+    },
+    {
+      "id": "D022",
+      "title": "작은 history control은 3회 조건 두 runs만 실행",
+      "reason": "seed 42의 각 패턴 한 run씩, 16.8 GiB/4 windows로 제한했다. 기존 1회 history run의 같은 horizon을 재사용했다. 동일 seed의 random preconditioning 세 번 외 설정은 유지했다.",
+      "alternatives": "1회 조건도 rerun하거나 seed 3개와 25.2 GiB를 모두 반복",
+      "why_not": "작은 control 요청에 맞춰 같은 byte window의 기존 원본을 재사용한다. n=1이라는 범위 제한을 명시한다.",
+      "status": "completed"
+    },
+    {
+      "id": "D023",
+      "title": "Near 판정과 통계적 동등성을 구분",
+      "reason": "seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다.",
+      "alternatives": "선택한 history 두 개의 작은 차이를 모든 초기 상태에 일반화",
+      "why_not": "수렴 gate와 ±1% 기술적 tolerance는 실행 전에 동결했다. 다른 history/seed/FTL로의 일반화는 아직 열려 있다.",
+      "status": "low-selected-history-sensitivity"
+    },
+    {
+      "id": "D024",
+      "title": "주소 순서와 coverage를 구분하는 세 패턴 실험은 설계만",
+      "reason": "S/P는 exact round coverage를 맞추고 P/R은 replacement/coverage 묶음을 비교한다. 검증된 offset sequence와 공통 replay 경로가 필요하다.",
+      "alternatives": "바로 solution/서비스/LLM 실험 또는 이름만 permutation인 random workload 실행",
+      "why_not": "현재는 메커니즘을 좁히는 단계다. generator/trace correctness를 별도 gate로 설계하고 main 실행은 사용자 승인 후다.",
+      "status": "designed-not-executed"
     }
   ],
   "new_questions": [

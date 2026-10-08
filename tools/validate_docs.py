@@ -118,6 +118,20 @@ def validate():
             errors.append('Long-run frozen plan hash mismatch')
         if config_hash != raw['config_sha256'] or raw['qemu_sha256'] != pilot['qemu_sha256']:
             errors.append('Long-run device or binary changed')
+    if (ROOT / 'records/phase-02-history-summary.json').exists():
+        from tools.summarize_history import summarize as summarize_history
+        raw_path = ROOT / 'records/phase-02-history.json'
+        raw = json.loads(raw_path.read_bytes())
+        summary = json.loads((ROOT / 'records/phase-02-history-summary.json').read_bytes())
+        archive = json.loads((ROOT / 'records/phase-02-steady.json').read_bytes())
+        if not same_summary(summarize_history(raw, archive), {k: v for k, v in summary.items() if k != 'input_sha256'}):
+            errors.append('History-control summary disagrees with actual windows')
+        if hashlib.sha256(raw_path.read_bytes()).hexdigest() != summary['input_sha256']:
+            errors.append('History-control raw hash mismatch')
+        if hashlib.sha256((ROOT / 'configs/experiments/phase2-history.json').read_bytes()).hexdigest() != raw['plan_sha256']:
+            errors.append('History-control frozen plan mismatch')
+        if hashlib.sha256((ROOT / 'tools/phase2_history.py').read_bytes()).hexdigest() != raw['runner_sha256']:
+            errors.append('History-control runner mismatch')
     if errors:
         raise ValueError("\n".join(errors))
     print("7 HTML notes: offline assets, Korean layout, local links, original hashes and config/measurement provenance pass.")

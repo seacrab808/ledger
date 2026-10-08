@@ -1,0 +1,85 @@
+{
+  "status": "design-only-not-authorized-to-run",
+  "question": "Distinguish randomized address order with exact round coverage from repeat visits and uneven coverage",
+  "profile": "configs/femu/blackbox-small.json",
+  "region_bytes": 2254856192,
+  "pages_per_round": 550502,
+  "request_bytes": 4096,
+  "direct": 1,
+  "iodepth": 1,
+  "numjobs": 1,
+  "patterns": [
+    {
+      "name": "sequential",
+      "round": "0,1,...,N-1; each page exactly once"
+    },
+    {
+      "name": "random-permutation",
+      "round": "Seeded Fisher-Yates shuffle of all N pages; independent deterministic permutation per round; every page exactly once"
+    },
+    {
+      "name": "uniform-random-with-replacement",
+      "round": "N draws over the same N pages using the pinned current fio randwrite/tausworthe64/norandommap=1 semantics; revisits allowed"
+    }
+  ],
+  "proposed_seeds": [
+    42,
+    43,
+    44
+  ],
+  "proposed_order": [
+    "S42",
+    "P42",
+    "R42",
+    "P43",
+    "R43",
+    "S43",
+    "R44",
+    "S44",
+    "P44"
+  ],
+  "preconditioning": "One common history for all arms, frozen before execution after reviewing the history control; no arm-specific warmup",
+  "proposed_budget": "Reuse a common 25.199981689 GiB ceiling, six 4.199996948 GiB report windows, final three assessed with the existing convergence gate; do not choose a different horizon per arm",
+  "request_path": "Preferred common fio 3.36 libaio/QD1 direct replay for all three traces. Before main execution, validate replay equality with native direct S/R and hash verified offset sequences. If exact current replacement sequence cannot be preserved/verified, stop and revise the plan; do not silently swap generators.",
+  "permutation_warning": "fio lfsr has no repeated offsets but is not a uniform random permutation. norandommap=0 alone does not certify the requested shuffle. Use an explicitly audited permutation, not a renamed randwrite workload.",
+  "trace_validation": [
+    "Exactly N requests and N*4096 host bytes per round for every arm",
+    "All offsets aligned and inside the same region; all writes exactly 4096 bytes",
+    "Sequential and permutation: distinct address count=N, each address frequency=1, identical address multiset",
+    "Permutation: reproducible per-round seed and hash; no trace sorting by the submission layer; verify issued order at QD1",
+    "Replacement: record unique-address fraction, repeated requests, page frequency histogram and revisit gaps; expected coverage approximately 63.2% is an analytical reference, never an acceptance target",
+    "Trace-only offline checks and actual replay correctness are separate gates; both need future approval before runtime"
+  ],
+  "metrics": [
+    "host pages/bytes",
+    "NAND user pages",
+    "GC copied pages",
+    "block erases",
+    "window WAF",
+    "erase/GiB",
+    "coverage",
+    "revisit gaps",
+    "runtime descriptive only"
+  ],
+  "contrasts": [
+    "P minus S: randomized order at equal exact per-round coverage",
+    "R minus P: replacement/uneven coverage and associated temporal-locality bundle, not an isolated single revisit effect",
+    "P approximately S below R: replacement/coverage bundle is the stronger candidate explanation in this profile",
+    "S below P approximately R: order loss alone can explain much of the observed gap in this profile",
+    "S below P below R: both contrasts contribute; do not assign universal causal percentages",
+    "Non-convergence, unexpected ranking or byte/trace mismatch: retain all results and investigate before interpreting"
+  ],
+  "analysis": "Pair by seed; rates from native window deltas and ratio of sums; mean and sample SD across three runs per arm. Reuse exact frozen 1% near tolerance as a descriptive screen, not a statistical equivalence test. No treating adjacent windows as independent replicates.",
+  "safety": "One small VM at a time; fresh QEMU and common deterministic history per run; same shared-server limits; project-local traces/caches/images; exclude large traces from Git",
+  "exclusions": "No solution, policies, FDP, fill/OP/geometry/request-size sweep, LLM or real-device experiment",
+  "references": [
+    "https://github.com/axboe/fio/blob/fio-3.36/HOWTO.rst",
+    "https://github.com/axboe/fio/blob/fio-3.36/iolog.c"
+  ],
+  "preferred_common_history_after_control": {
+    "fill_passes": 1,
+    "random_preconditioning_passes": 1,
+    "seed": 20261007,
+    "reason": "Retain the archived protocol as the common candidate: the selected 1-vs-3 history control passed the descriptive near gate. This does not establish permutation convergence; freeze after user review."
+  }
+}

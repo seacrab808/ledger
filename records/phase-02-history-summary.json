@@ -1,0 +1,475 @@
+{
+  "status": "validated",
+  "batch_id": "P2-HISTORY-20261008T071416Z",
+  "window_rows": [
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 1,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 5.01654052734375,
+      "waf": 1.1944152791452165,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 214052,
+      "block-erases": 5136,
+      "erase_per_gib": 1222.8580313967977,
+      "runtime_seconds": 231.96389595419168
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 2,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 4.1999969482421875,
+      "waf": 1.0,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 0,
+      "block-erases": 4304,
+      "erase_per_gib": 1024.7626493636717,
+      "runtime_seconds": 228.5459867026657
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 3,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 4.1999969482421875,
+      "waf": 1.0,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 0,
+      "block-erases": 4304,
+      "erase_per_gib": 1024.7626493636717,
+      "runtime_seconds": 228.53714425768703
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 4,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 4.1999969482421875,
+      "waf": 1.0,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 0,
+      "block-erases": 4304,
+      "erase_per_gib": 1024.7626493636717,
+      "runtime_seconds": 228.60628216713667
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 1,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 5.841022491455078,
+      "waf": 1.3907206513327834,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 430185,
+      "block-erases": 5984,
+      "erase_per_gib": 1424.762940007484,
+      "runtime_seconds": 235.4142386764288
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 2,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 4.1999969482421875,
+      "waf": 1.0,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 0,
+      "block-erases": 4304,
+      "erase_per_gib": 1024.7626493636717,
+      "runtime_seconds": 229.15528113767505
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 3,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 4.1999969482421875,
+      "waf": 1.0,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 0,
+      "block-erases": 4304,
+      "erase_per_gib": 1024.7626493636717,
+      "runtime_seconds": 228.65595986694098
+    },
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 4,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 4.1999969482421875,
+      "waf": 1.0,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 0,
+      "block-erases": 4304,
+      "erase_per_gib": 1024.7626493636717,
+      "runtime_seconds": 228.631824885495
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 1,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.999683380126953,
+      "waf": 1.9046879030412243,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 996065,
+      "block-erases": 8192,
+      "erase_per_gib": 1950.4776077107804,
+      "runtime_seconds": 244.2221273900941
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 2,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.984764099121094,
+      "waf": 1.9011356906968548,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 992154,
+      "block-erases": 8176,
+      "erase_per_gib": 1946.6680811332203,
+      "runtime_seconds": 244.12744786776602
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 3,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.987003326416016,
+      "waf": 1.90166884044018,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 992741,
+      "block-erases": 8176,
+      "erase_per_gib": 1946.6680811332203,
+      "runtime_seconds": 244.07157017383724
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 1,
+      "window": 4,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.983280181884766,
+      "waf": 1.9007823768124366,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 991765,
+      "block-erases": 8176,
+      "erase_per_gib": 1946.6680811332203,
+      "runtime_seconds": 244.0178192742169
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 1,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 8.013198852539062,
+      "waf": 1.9079058750013624,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 999608,
+      "block-erases": 8208,
+      "erase_per_gib": 1954.2871342883404,
+      "runtime_seconds": 244.51857200730592
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 2,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.984737396240234,
+      "waf": 1.901129332863459,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 992147,
+      "block-erases": 8176,
+      "erase_per_gib": 1946.6680811332203,
+      "runtime_seconds": 244.36087983008474
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 3,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.988006591796875,
+      "waf": 1.9019077133234756,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 993004,
+      "block-erases": 8176,
+      "erase_per_gib": 1946.6680811332203,
+      "runtime_seconds": 244.2612964855507
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "history_passes": 3,
+      "window": 4,
+      "host_gib": 4.1999969482421875,
+      "physical_gib": 7.984523773193359,
+      "waf": 1.9010784701962935,
+      "host-write-pages": 1101004,
+      "nand-write-pages": 1101004,
+      "gc-write-pages": 992091,
+      "block-erases": 8176,
+      "erase_per_gib": 1946.6680811332203,
+      "runtime_seconds": 244.23877461068332
+    }
+  ],
+  "comparisons": [
+    {
+      "pattern": "sequential",
+      "seed": 42,
+      "one_pass_matched": {
+        "host_gib": 12.599990844726562,
+        "physical_gib": 12.599990844726562,
+        "waf": 1.0,
+        "erase_per_gib": 1024.7626493636717
+      },
+      "three_pass": {
+        "host_gib": 12.599990844726562,
+        "physical_gib": 12.599990844726562,
+        "waf": 1.0,
+        "erase_per_gib": 1024.7626493636717
+      },
+      "first_report_window": {
+        "one_pass": {
+          "pattern": "sequential",
+          "seed": 42,
+          "history_passes": 1,
+          "window": 1,
+          "host_gib": 4.1999969482421875,
+          "physical_gib": 5.01654052734375,
+          "waf": 1.1944152791452165,
+          "host-write-pages": 1101004,
+          "nand-write-pages": 1101004,
+          "gc-write-pages": 214052,
+          "block-erases": 5136,
+          "erase_per_gib": 1222.8580313967977,
+          "runtime_seconds": 231.96389595419168
+        },
+        "three_pass": {
+          "pattern": "sequential",
+          "seed": 42,
+          "history_passes": 3,
+          "window": 1,
+          "host_gib": 4.1999969482421875,
+          "physical_gib": 5.841022491455078,
+          "waf": 1.3907206513327834,
+          "host-write-pages": 1101004,
+          "nand-write-pages": 1101004,
+          "gc-write-pages": 430185,
+          "block-erases": 5984,
+          "erase_per_gib": 1424.762940007484,
+          "runtime_seconds": 235.4142386764288
+        },
+        "relative_difference_pct": {
+          "waf": 16.43526967672859,
+          "erase_per_gib": 16.51090342679129
+        }
+      },
+      "one_pass_archived_late": {
+        "host_gib": 12.599990844726562,
+        "physical_gib": 12.599990844726562,
+        "waf": 1.0,
+        "erase_per_gib": 1023.4928071711516
+      },
+      "relative_difference_pct": {
+        "waf": 0.0,
+        "erase_per_gib": 0.0
+      },
+      "convergence": {
+        "1": {
+          "waf": {
+            "values": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "relative_range": 0.0,
+            "abs_relative_slope_per_window": 0.0,
+            "passed": true
+          },
+          "erase_per_gib": {
+            "values": [
+              1024.7626493636717,
+              1024.7626493636717,
+              1024.7626493636717
+            ],
+            "relative_range": 0.0,
+            "abs_relative_slope_per_window": 0.0,
+            "passed": true
+          }
+        },
+        "3": {
+          "waf": {
+            "values": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "relative_range": 0.0,
+            "abs_relative_slope_per_window": 0.0,
+            "passed": true
+          },
+          "erase_per_gib": {
+            "values": [
+              1024.7626493636717,
+              1024.7626493636717,
+              1024.7626493636717
+            ],
+            "relative_range": 0.0,
+            "abs_relative_slope_per_window": 0.0,
+            "passed": true
+          }
+        }
+      },
+      "near": true,
+      "both_histories_converged": true
+    },
+    {
+      "pattern": "random",
+      "seed": 42,
+      "one_pass_matched": {
+        "host_gib": 12.599990844726562,
+        "physical_gib": 23.955047607421875,
+        "waf": 1.9011956359831572,
+        "erase_per_gib": 1946.6680811332203
+      },
+      "three_pass": {
+        "host_gib": 12.599990844726562,
+        "physical_gib": 23.95726776123047,
+        "waf": 1.9013718387944094,
+        "erase_per_gib": 1946.6680811332203
+      },
+      "first_report_window": {
+        "one_pass": {
+          "pattern": "random",
+          "seed": 42,
+          "history_passes": 1,
+          "window": 1,
+          "host_gib": 4.1999969482421875,
+          "physical_gib": 7.999683380126953,
+          "waf": 1.9046879030412243,
+          "host-write-pages": 1101004,
+          "nand-write-pages": 1101004,
+          "gc-write-pages": 996065,
+          "block-erases": 8192,
+          "erase_per_gib": 1950.4776077107804,
+          "runtime_seconds": 244.2221273900941
+        },
+        "three_pass": {
+          "pattern": "random",
+          "seed": 42,
+          "history_passes": 3,
+          "window": 1,
+          "host_gib": 4.1999969482421875,
+          "physical_gib": 8.013198852539062,
+          "waf": 1.9079058750013624,
+          "host-write-pages": 1101004,
+          "nand-write-pages": 1101004,
+          "gc-write-pages": 999608,
+          "block-erases": 8208,
+          "erase_per_gib": 1954.2871342883404,
+          "runtime_seconds": 244.51857200730592
+        },
+        "relative_difference_pct": {
+          "waf": 0.16895009177093634,
+          "erase_per_gib": 0.1953125
+        }
+      },
+      "one_pass_archived_late": {
+        "host_gib": 12.599990844726562,
+        "physical_gib": 23.952938079833984,
+        "waf": 1.9010282130370704,
+        "erase_per_gib": 1946.6680811332203
+      },
+      "relative_difference_pct": {
+        "waf": 0.009267999984707842,
+        "erase_per_gib": 0.0
+      },
+      "convergence": {
+        "1": {
+          "waf": {
+            "values": [
+              1.9011356906968548,
+              1.90166884044018,
+              1.9007823768124366
+            ],
+            "relative_range": 0.0004662663909835135,
+            "abs_relative_slope_per_window": 9.291886582612917e-05,
+            "passed": true
+          },
+          "erase_per_gib": {
+            "values": [
+              1946.6680811332203,
+              1946.6680811332203,
+              1946.6680811332203
+            ],
+            "relative_range": 0.0,
+            "abs_relative_slope_per_window": 0.0,
+            "passed": true
+          }
+        },
+        "3": {
+          "waf": {
+            "values": [
+              1.901129332863459,
+              1.9019077133234756,
+              1.9010784701962935
+            ],
+            "relative_range": 0.00043612885720865945,
+            "abs_relative_slope_per_window": 1.3375255204640974e-05,
+            "passed": true
+          },
+          "erase_per_gib": {
+            "values": [
+              1946.6680811332203,
+              1946.6680811332203,
+              1946.6680811332203
+            ],
+            "relative_range": 0.0,
+            "abs_relative_slope_per_window": 0.0,
+            "passed": true
+          }
+        }
+      },
+      "near": true,
+      "both_histories_converged": true
+    }
+  ],
+  "both_histories_converged": true,
+  "low_selected_history_sensitivity": true,
+  "classification": "low-selected-history-sensitivity",
+  "scope": "One paired seed per pattern, two selected histories, finite horizon; descriptive tolerance, not statistical equivalence or all-history invariance",
+  "full_mapping_state_verified": false,
+  "baseline_reused_not_rerun": true,
+  "input_sha256": "032a0310e6dabd3968285e735a685a369920b055af340f69a87f5789f1ea8a4e"
+}

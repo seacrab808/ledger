@@ -90,3 +90,9 @@ steady state, 실기기 수명, 서비스 회계, LEDGER 정책 효과로 일반
 동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.
 
 [36 windows와 수렴 판정](docs/phase-02.html). 원본: records/phase-02-steady*.json. 추가 실험은 실행하지 않았습니다.
+
+## 작은 history control
+
+seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다.
+
+[결과와 설계](docs/phase-02.html) · [세 패턴 상세 설계](docs/THREE_PATTERN_PLAN.md). 다음 실험은 미실행입니다.
