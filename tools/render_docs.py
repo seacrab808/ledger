@@ -35,7 +35,8 @@ def link(path, label):
 
 
 def table(headers, rows):
-    return '<div class="scroll"><table><thead><tr>' + ''.join(f'<th>{e(h)}</th>' for h in headers) + '</tr></thead><tbody>' + ''.join('<tr>' + ''.join(f'<td>{v}</td>' for v in row) + '</tr>' for row in rows) + '</tbody></table></div>'
+    size = f' style="min-width:{max(640, len(headers)*110)}px"' if len(headers) >= 4 else ''
+    return '<div class="scroll"><table' + size + '><thead><tr>' + ''.join(f'<th>{e(h)}</th>' for h in headers) + '</tr></thead><tbody>' + ''.join('<tr>' + ''.join(f'<td>{v}</td>' for v in row) + '</tr>' for row in rows) + '</tbody></table></div>'
 
 
 def section(title, body):
@@ -195,10 +196,17 @@ def render():
         body = body.replace('Phase 2는 미실행입니다.',
                             '이 문단은 Phase 1 종료 시점의 판단입니다. 이후 사용자 승인으로 Phase 2 pilot만 완료했습니다. <a href="phase-02.html">현재 pilot 기록</a>을 별도로 읽어 주세요.')
         pages['phase-01.html'] = (title, lead, body)
+    if (ROOT / 'records/phase-02-steady-summary.json').exists():
+        from tools.steady_notes import add_notes as add_steady_notes
+        steady_batch = load('records/phase-02-steady.json')
+        add_steady_notes(pages, load('records/phase-02-steady-summary.json'), steady_batch,
+                         (ROOT / 'results/phase-02-steady-convergence.svg').read_text(encoding='utf-8'),
+                         (e, table, section, link))
+        stamp = dt.datetime.fromisoformat(steady_batch['end_utc']).astimezone(dt.timezone(dt.timedelta(hours=9))).strftime('%Y-%m-%d %H:%M KST')
     for filename, (title, lead, content) in pages.items():
         nav = '<nav aria-label="연구 노트">' + ''.join('<a' + (' class="active" aria-current="page"' if file == filename else '') + ' href="' + file + '">' + label + '</a>' for file, label in NAV) + '</nav>'
         out = '<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + e(title) + ' | LEDGER 연구 노트</title><style>' + CSS + '</style></head><body><div class="shell"><div class="top"><span class="brand">LEDGER / EXPLORATION</span><span>기록 시각 ' + stamp + '</span></div>' + nav + '<header><div class="eyebrow">RESEARCH NOTE · PROVISIONAL</div><h1>' + e(title) + '</h1><p class="lead">' + e(lead) + '</p></header><main>' + content + '</main><footer><p>생성 원본: records/*.json · config. HTML은 설명 layer이며 실측 원본은 JSON/CSV/log입니다. 기존 연구 HTML은 별도 원본입니다.</p>' + refs + '</footer></div></body></html>\n'
-        (ROOT / "docs" / filename).write_text(out, encoding="utf-8")
+        (ROOT / "docs" / filename).write_text(out, encoding="utf-8", newline='\n')
     print(f"Generated {len(pages)} self-contained notes.")
 
 

@@ -1,14 +1,14 @@
 {
   "status": "provisional",
   "question": "여러 서비스와 LLM이 저장장치를 함께 쓸 때, logical bytes 회계는 내부 NAND 작업과 마모를 충분히 표현하는가?",
-  "scope": "Phase 1과 승인된 Phase 2 pilot만 완료했다. 단일 FEMU 조건의 pattern 효과를 관찰했으며 해결 방향은 아직 미정이다.",
+  "scope": "Phase 1, Phase 2 pilot와 승인된 동일 설정의 긴 overwrite 확인만 완료했다. 해결 방향은 아직 미정이며 다음 실행은 승인 대기다.",
   "directions": [
     {
       "name": "서비스별 소거 비용 회계",
       "status": "open",
       "why": "같은 1 MiB를 쓴 두 서비스의 내부 비용이 다르면 바이트 예산은 부담을 잘못 나눌 수 있다.",
       "needed": "독립 FTL에서 패턴 차이, 혼합에서도 유지되는 rate, held-out 예측과 집행 개선",
-      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.",
+      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.\n추가 관측: 동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.",
       "objection": "서비스 혼합·상태에 따라 rate가 크게 바뀌면 정적 표가 쓸모없을 수 있다."
     },
     {
@@ -53,7 +53,7 @@
     {
       "phase": 2,
       "name": "E0: 동일 bytes에서 pattern별 내부 작업 차이",
-      "status": "pilot-complete-further-experiments-not-authorized"
+      "status": "steady-check-complete-next-experiment-not-authorized"
     },
     {
       "phase": 3,
@@ -219,6 +219,30 @@
       "reason": "6회 측정과 검증·HTML 기록만 완료했다. 다음 후보는 동일 조건의 더 긴 overwrite에서 window별 수렴 확인이다.",
       "alternatives": "자동으로 warmup/budget 또는 workload를 확대",
       "why_not": "추가 실험은 별도 사용자 승인과 byte/runtime 자원 예산을 먼저 정한다.",
+      "status": "review-complete-long-overwrite-authorized-see-D019"
+    },
+    {
+      "id": "D019",
+      "title": "동일 설정의 긴 overwrite와 수렴 기준을 실행 전에 동결",
+      "reason": "기존 2.10 GiB subwindow를 12번 이어 쓰고 두 개씩 4.20 GiB report window로 묶었다. 마지막 3 windows의 상대 범위 ≤1%, 상대 기울기 ≤0.5%/window를 두 metric·모든 replicate에 요구했다.",
+      "alternatives": "결과를 보고 budget·설정·seed를 바꾸거나 window를 선택",
+      "why_not": "초기 transient와 지속되는 패턴 차이를 구분하려면 비교 프로토콜과 판정 기준을 고정해야 한다.",
+      "status": "completed"
+    },
+    {
+      "id": "D020",
+      "title": "짧은 pilot와 긴 구간의 관측을 구분해 보존",
+      "reason": "동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다. 첫 report window native delta는 기존 pilot 6회와 모두 일치했다.",
+      "alternatives": "기존 59.5%를 steady-state 차이라고 그대로 사용",
+      "why_not": "초기 혼합 배치를 정리하는 비용과 이후 rate가 다를 수 있다. 수렴은 유한 길이의 운영상 기준이며 엄밀한 stationarity 증명은 아니다.",
+      "status": "observed-plateau"
+    },
+    {
+      "id": "D021",
+      "title": "긴 확인 종료 후 다음 실험 중단",
+      "reason": "같은 두 패턴·3회씩만 실행하고 모든 소유 VM을 종료했다. 다음 후보는 같은 조건에서 preconditioning 이력만 바꾸는 확인이다.",
+      "alternatives": "fill/geometry/서비스/정책 실험으로 자동 진입",
+      "why_not": "추가 조건은 사용자 판단과 별도 승인이 필요하다.",
       "status": "awaiting-user-review"
     }
   ],

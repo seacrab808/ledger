@@ -35,7 +35,7 @@ change with evidence. Measurement validity comes before preserving an idea.
   source/docs preparation is not successful build, boot or sanity.
 
 - The six original Phase 2 pilot runs are COMPLETE and must be preserved.
-  The user now authorizes longer overwrites of the same two patterns at the same fill.
+  The six longer same-profile overwrite runs are also COMPLETE. Do not rerun or extend them.
   Preserve the original preconditioning, use fixed byte windows and preregister the
   convergence criterion. No other workloads, sweeps or phase transitions are authorized.
 

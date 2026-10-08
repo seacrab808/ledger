@@ -1,6 +1,6 @@
 # LEDGER / shared-flash research exploration
 
-**연구 방향: provisional · Phase 1 통과 · Phase 2 pilot 완료 · 추가 실험 승인 대기**
+**연구 방향: provisional · Phase 1 통과 · Phase 2 pilot/긴 overwrite 확인 완료 · 추가 실험 승인 대기**
 
 이 저장소는 정해진 LEDGER의 최종 구현 명세가 아닙니다. 여러 서비스와 LLM이
 저장장치를 쓸 때 논리 쓰기 바이트가 내부 NAND 쓰기·소거 비용을 충분히
@@ -71,7 +71,7 @@ limit로 실행했습니다. CPU 수치는 전체 QEMU process이며 짧은 fio 
 
 Phase 2 pilot의 차이는 단일 FEMU 조건의 유한 overwrite 구간에서 얻은 evidence입니다.
 steady state, 실기기 수명, 서비스 회계, LEDGER 정책 효과로 일반화하지 않습니다.
-다음 후보는 같은 설정에서 더 긴 overwrite의 window별 수렴 확인이며 아직 미승인입니다.
+이후 승인된 긴 overwrite의 window별 수렴 확인도 완료했습니다. 다음 실험은 승인 대기입니다.
 
 ## 구조
 
@@ -84,3 +84,9 @@ steady state, 실기기 수명, 서비스 회계, LEDGER 정책 효과로 일반
 - results/summary/: 작은 기계 판독 결과. 큰 artifact는 Git 밖에 보관.
 
 기존 remote는 public입니다. 이번 작업에서 visibility는 바꾸지 않습니다.
+
+## 긴 overwrite 추가 확인
+
+동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.
+
+[36 windows와 수렴 판정](docs/phase-02.html). 원본: records/phase-02-steady*.json. 추가 실험은 실행하지 않았습니다.

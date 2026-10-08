@@ -38,6 +38,12 @@ const { pathToFileURL } = require('node:url');
               .screenshot({ path: path.join(output, filename + '.png') });
           }
         }
+        if (name === 'phase-02') {
+          const figureSection = page.locator('section').filter({ has: page.getByRole('heading', { name: 'Window별 변화 · 3회 평균', exact: true }) });
+          if (await figureSection.count()) {
+            await figureSection.screenshot({ path: path.join(output, `steady-convergence-${width}.png`) });
+          }
+        }
         console.log(`${name}/${width}: offline layout passed`);
       }
       await context.close();

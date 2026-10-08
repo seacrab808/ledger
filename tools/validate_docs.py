@@ -104,6 +104,20 @@ def validate():
             errors.append('Phase 2 plan hash mismatch')
         if config_hash != batch['config_sha256']:
             errors.append('Phase 2 device config hash mismatch')
+    if (ROOT / 'records/phase-02-steady-summary.json').exists():
+        from tools.summarize_steady import summarize as summarize_steady
+        raw_path = ROOT / 'records/phase-02-steady.json'
+        raw = json.loads(raw_path.read_text(encoding='utf-8'))
+        steady = json.loads((ROOT / 'records/phase-02-steady-summary.json').read_text(encoding='utf-8'))
+        pilot = json.loads((ROOT / 'records/phase-02-pilot.json').read_text(encoding='utf-8'))
+        if not same_summary(summarize_steady(raw, pilot), {k: v for k, v in steady.items() if k != 'input_sha256'}):
+            errors.append('Long-run summary differs from actual native windows')
+        if hashlib.sha256(raw_path.read_bytes()).hexdigest() != steady['input_sha256']:
+            errors.append('Long-run raw input hash mismatch')
+        if hashlib.sha256((ROOT / 'configs/experiments/phase2-steady.json').read_bytes()).hexdigest() != raw['plan_sha256']:
+            errors.append('Long-run frozen plan hash mismatch')
+        if config_hash != raw['config_sha256'] or raw['qemu_sha256'] != pilot['qemu_sha256']:
+            errors.append('Long-run device or binary changed')
     if errors:
         raise ValueError("\n".join(errors))
     print("7 HTML notes: offline assets, Korean layout, local links, original hashes and config/measurement provenance pass.")
