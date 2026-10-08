@@ -10,13 +10,14 @@ if __name__=='__main__':
     evidence='seed 42의 history control 2개 새 runs: '+label+'. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다.'
     seq=next(c for c in s['comparisons'] if c['pattern']=='sequential')
     rand=next(c for c in s['comparisons'] if c['pattern']=='random')
-    evidence+=f' 후반 random WAF 상대차={rand["relative_difference_pct"]["waf"]:+.4f}%, 두 패턴 erase/GiB 차이는 0%. 반면 sequential 첫 window WAF는 {seq["first_report_window"]["relative_difference_pct"]["waf"]:+.2f}%였다. 초기 비용과 후반 rate의 history 민감도를 구분한다.'
+    evidence+=f' 후반 random WAF 상대차={rand["relative_difference_pct"]["waf"]:+.4f}%, erase/GiB 상대차는 sequential={seq["relative_difference_pct"]["erase_per_gib"]:+.4f}% / random={rand["relative_difference_pct"]["erase_per_gib"]:+.4f}%. 반면 sequential 첫 window WAF는 {seq["first_report_window"]["relative_difference_pct"]["waf"]:+.2f}%였다. 초기 비용과 후반 rate의 history 민감도를 구분한다.'
     r['scope']='Phase 2 pilot·긴 overwrite·작은 initial-history control 완료. 세 패턴 비교는 설계만 했다. solution 미구현, 추가 실행 승인 대기.'
     r['directions'][0]['evidence']=r['directions'][0]['evidence'].split('\nHistory control:')[0]+'\nHistory control: '+evidence
     for p in r['roadmap']:
         if p['phase']==2: p['status']='history-control-complete-three-pattern-design-only'
     for d in r['decisions']:
         if d['id']=='D021':d['status']='review-complete-history-control-authorized-see-D022'
+        if d['id']=='D023':d['reason']=evidence
     decisions=[
         {'id':'D022','title':'작은 history control은 3회 조건 두 runs만 실행',
          'reason':'seed 42의 각 패턴 한 run씩, 16.8 GiB/4 windows로 제한했다. 기존 1회 history run의 같은 horizon을 재사용했다. 동일 seed의 random preconditioning 세 번 외 설정은 유지했다.',

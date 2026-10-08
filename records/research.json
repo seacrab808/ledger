@@ -8,7 +8,7 @@
       "status": "open",
       "why": "같은 1 MiB를 쓴 두 서비스의 내부 비용이 다르면 바이트 예산은 부담을 잘못 나눌 수 있다.",
       "needed": "독립 FTL에서 패턴 차이, 혼합에서도 유지되는 rate, held-out 예측과 집행 개선",
-      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.\n추가 관측: 동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.\nHistory control: seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다. 후반 random WAF 상대차=+0.0093%, 두 패턴 erase/GiB 차이는 0%. 반면 sequential 첫 window WAF는 +16.44%였다. 초기 비용과 후반 rate의 history 민감도를 구분한다.",
+      "evidence": "기존 ftlsim 보고와 별개로: 독립 FEMU pilot에서 동일 host 4.20 GiB·70% logical fill·3회씩 비교했다. 평균 WAF sequential=1.1944, random=1.9049; erase/GiB=1222.858 / 1950.478. GC gate와 동일 observed baseline이 통과했다. 단일 geometry의 유한 구간이며 service attribution은 미검증이다.\n추가 관측: 동일 FEMU 설정과 70% fill에서 25.20 GiB overwrite를 각 3회 실행했다. 마지막 3 windows 평균 WAF=1.000000/1.900780, erase/GiB=1023.493/1946.245. 6회 모두 수렴 기준 통과=True. 유한 관측 구간과 단일 geometry의 FEMU 모델 근거이며 실기기나 서비스 정책 효과는 미검증이다.\nHistory control: seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다. 후반 random WAF 상대차=+0.0093%, erase/GiB 상대차는 sequential=+0.0000% / random=+0.0000%. 반면 sequential 첫 window WAF는 +16.44%였다. 초기 비용과 후반 rate의 history 민감도를 구분한다.",
       "objection": "서비스 혼합·상태에 따라 rate가 크게 바뀌면 정적 표가 쓸모없을 수 있다."
     },
     {
@@ -256,7 +256,7 @@
     {
       "id": "D023",
       "title": "Near 판정과 통계적 동등성을 구분",
-      "reason": "seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다.",
+      "reason": "seed 42의 history control 2개 새 runs: 선택한 두 history의 민감도가 낮음. 1회 조건은 보존된 archive에서 같은 horizon으로 비교했다. n=1/패턴의 기술적 비교이며 전체 초기 상태의 무관함이나 equivalence를 입증하지 않는다. 후반 random WAF 상대차=+0.0093%, erase/GiB 상대차는 sequential=+0.0000% / random=+0.0000%. 반면 sequential 첫 window WAF는 +16.44%였다. 초기 비용과 후반 rate의 history 민감도를 구분한다.",
       "alternatives": "선택한 history 두 개의 작은 차이를 모든 초기 상태에 일반화",
       "why_not": "수렴 gate와 ±1% 기술적 tolerance는 실행 전에 동결했다. 다른 history/seed/FTL로의 일반화는 아직 열려 있다.",
       "status": "low-selected-history-sensitivity"
