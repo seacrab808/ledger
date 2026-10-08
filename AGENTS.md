@@ -8,7 +8,7 @@ work/wear for services and LLMs on shared edge storage. Problem statement,
 contributions, accounting, placement, architecture, KV policy and even LEDGER may
 change with evidence. Measurement validity comes before preserving an idea.
 
-- Current authorization is Phase 2 pilot only: same 4 GiB raw / 3 GiB exposed,
+- Current authorization extends Phase 2 with a steady-state check only: same 4 GiB raw / 3 GiB exposed,
   approximately 70% live logical fill, identical deterministic preconditioning,
   GC/erase gate, 4 KiB sequential versus uniform random overwrites, direct I/O,
   QD1/job1/equal byte budgets and three runs each. Commit/push remains authorized.
@@ -31,11 +31,13 @@ change with evidence. Measurement validity comes before preserving an idea.
   2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
   12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
   are project-local. Stop the owned VM after each run; never stop other users' jobs.
-- Stop after Phase 2 pilot for the user's decision. A blocked runtime stays incomplete;
+- Stop after the Phase 2 steady-state check for the user's decision. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
 
-- The six authorized Phase 2 pilot runs are COMPLETE. Do not rerun them,
-  extend overwrite/preconditioning, or enter another phase without new user approval.
+- The six original Phase 2 pilot runs are COMPLETE and must be preserved.
+  The user now authorizes longer overwrites of the same two patterns at the same fill.
+  Preserve the original preconditioning, use fixed byte windows and preregister the
+  convergence criterion. No other workloads, sweeps or phase transitions are authorized.
 
 ## Documents and evidence
 
