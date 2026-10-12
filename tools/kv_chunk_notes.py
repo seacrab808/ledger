@@ -129,7 +129,7 @@ def add_notes(pages,s,helpers):
     body=section('추가 실행 · 같은 trace의 chunk paired replay',
         '<p>264개 요청의 같은 token trace를 64/128/256/512로 offline 재생했다. 최초 요청 60개는 같은 session의 이전 저장 상태가 없고, 후속 204개에서 실제 token LCP를 구했다. 저장 객체가 남는다는 가정 아래의 분석 상한이며 native chunk backend 실행 결과가 아니다.</p>'+table(['Chunk','가능 reuse tokens','저장된 chunk 경계 손실','미저장 tail 재계산','총 손실 / oracle'],rows))
     for name in ('lcp-distribution.svg','chunk-loss-decomposition.svg'):
-        svg=(ROOT/'results/kv_chunk_replay/figures'/name).read_text();svg=svg[svg.index('<svg'):]
+        svg=(ROOT/'results/kv_chunk_replay/figures'/name).read_text(encoding='utf-8');svg=svg[svg.index('<svg'):]
         svg=re.sub(r'<style\b[^>]*>.*?</style>','',svg,flags=re.S)
         for identifier in re.findall(r'id="([^"]+)"',svg):
             replacement='replay-'+name[:3]+'-'+identifier

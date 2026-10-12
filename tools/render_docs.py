@@ -221,6 +221,11 @@ def render():
         replay_record = load('records/kv-chunk-replay.json')
         add_chunk_notes(pages, replay_record, (e, table, section, link))
         stamp = dt.datetime.fromisoformat(replay_record['ended_at_utc']).astimezone(dt.timezone(dt.timedelta(hours=9))).strftime('%Y-%m-%d %H:%M KST')
+    if (ROOT / 'records/lmcache-audit.json').exists():
+        from tools.lmcache_notes import add_notes as add_lmcache_notes
+        lmcache_record = load('records/lmcache-audit.json')
+        add_lmcache_notes(pages, lmcache_record, (e, table, section, link))
+        stamp = dt.datetime.fromisoformat(lmcache_record['recorded_at_utc']).astimezone(dt.timezone(dt.timedelta(hours=9))).strftime('%Y-%m-%d %H:%M KST')
     for filename, (title, lead, content) in pages.items():
         nav = '<nav aria-label="연구 노트">' + ''.join('<a' + (' class="active" aria-current="page"' if file == filename else '') + ' href="' + file + '">' + label + '</a>' for file, label in NAV) + '</nav>'
         out = '<!doctype html>\n<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + e(title) + ' | LEDGER 연구 노트</title><style>' + CSS + '</style></head><body><div class="shell"><div class="top"><span class="brand">LEDGER / EXPLORATION</span><span>기록 시각 ' + stamp + '</span></div>' + nav + '<header><div class="eyebrow">RESEARCH NOTE · PROVISIONAL</div><h1>' + e(title) + '</h1><p class="lead">' + e(lead) + '</p></header><main>' + content + '</main><footer><p>생성 원본: records/*.json · config. HTML은 설명 layer이며 실측 원본은 JSON/CSV/log입니다. 기존 연구 HTML은 별도 원본입니다.</p>' + refs + '</footer></div></body></html>\n'

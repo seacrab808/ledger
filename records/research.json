@@ -300,6 +300,14 @@
       "alternatives": "큰 chunk의 미사용 감소를 효율 개선으로 해석하거나 실제 backend 결과로 주장",
       "why_not": "짧은 synthetic trace, strict complete-chunk reference, source retention 가정이다. Bytes/I/O/latency와 batching 효과를 측정하지 않았다.",
       "status": "completed-analytical-replay-only"
+    },
+    {
+      "id": "D029",
+      "title": "LMCache native partial/batching audit 후 실제 계측 gate 확인",
+      "reason": "사용자가 실제 64/128/256 비교를 승인했다. LMCache 0.5.5 source에서 tail 저장과 prefix 부분 조회, 메시지/읽기 batching과 개별 disk writes를 구분했다. 공유 GPU 사용 확인 및 자원/IPC gate는 아직 미해결이다.",
+      "alternatives": "기존 offline token replay를 실제 prefill·disk 비용으로 표현하거나 공유 GPU를 임의 사용",
+      "why_not": "Native backend 모델 실행과 디스크 계측은 아직 없다. CPU MP의 POSIX SHM도 ledger 밖 쓰기 제한과 조정이 필요하다.",
+      "status": "source-audit-complete-runtime-pending"
     }
   ],
   "new_questions": [
@@ -313,6 +321,7 @@
   "kv_screening": {
     "status": "runtime-complete-research-go-undetermined",
     "chunk_replay": "offline-paired-replay-complete",
-    "summary": "records/kv-screen-summary.json"
+    "summary": "records/kv-screen-summary.json",
+    "lmcache_native": "source-audit-complete-runtime-pending"
   }
 }

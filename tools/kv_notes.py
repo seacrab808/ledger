@@ -148,7 +148,7 @@ def add_notes(pages,summary,helpers):
     body=section('먼저 무엇을 확인했나','<p>실제 KV 저장 구현이 없어서 pinned 공개 backend를 준비했다. 계측이 원래 native 복원 동작을 보존하고 실제 prompt 계산을 줄이는지 smoke로 확인한 뒤 4종 synthetic workload를 각 3회 실행했다. FEMU와 기존 결과는 수정하지 않았다.</p>')
     body+=section('관측 · n=3 평균 ± sample SD',table(['fixture','horizon 미사용 token','disk 절약 tokens','serialized MiB','scores array 비중'],rows)+'<p>저장 버전별 token 구간을 분모로 사용한다. 파일 bytes는 순수 KV가 아니며 NAND 쓰기도 아니다. 아직 살아 있거나 미래 복구에 쓸 수 있는 데이터를 영구적인 dead로 단정하지 않는다.</p>')
     for name,title in [('01-token-use.svg','고유 token 구간의 사용과 horizon 미사용'),('02-unused-disposition.svg','관측한 객체 처분 · causal 원인과 다름'),('03-benefit-vs-bytes.svg','실제 prefill 절약과 serialized record bytes')]:
-        svg=(ROOT/'results/kv_lifecycle/figures'/name).read_text()
+        svg=(ROOT/'results/kv_lifecycle/figures'/name).read_text(encoding='utf-8')
         svg=svg[svg.index('<svg'):]
         svg=re.sub(r'<style\b[^>]*>.*?</style>','',svg,flags=re.S)
         ids=re.findall(r'id="([^"]+)"',svg)

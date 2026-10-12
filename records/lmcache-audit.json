@@ -1,0 +1,234 @@
+{
+  "recorded_at_utc": "2026-10-12T08:06:04.090001+00:00",
+  "status": "source-audit-complete-runtime-not-started",
+  "backend": "LMCache",
+  "version": "0.5.5",
+  "commit": "05a013b29da78cf2321b9b46ec5039dde2fb0bb0",
+  "source_files": [
+    {
+      "path": "lmcache/__init__.py",
+      "sha256": "381ba80225a6110a1b9d6d9dd8118e105b28e11bf0c4fafeb7569544dd495dea",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/__init__.py"
+    },
+    {
+      "path": "lmcache/integration/vllm/lmcache_mp_connector.py",
+      "sha256": "afa0665fe589b1c7561be3b5b37eea304a1501712aadfa6c6f9e6ddf5b1c8708",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/integration/vllm/lmcache_mp_connector.py"
+    },
+    {
+      "path": "lmcache/integration/vllm/utils.py",
+      "sha256": "b977383605724457027bc62692ca786e2b27eef0783576fe94f3c5fda57ba6f5",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/integration/vllm/utils.py"
+    },
+    {
+      "path": "lmcache/integration/vllm/vllm_v1_adapter.py",
+      "sha256": "cbabc76d723b27b61a94ab88839d474bc53700ed2a34232362887e33d4e7c7e0",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/integration/vllm/vllm_v1_adapter.py"
+    },
+    {
+      "path": "lmcache/v1/cache_engine.py",
+      "sha256": "beb3295d303fb3ad7253de139bddb40547f20f90f789f298bf3244251561d944",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/cache_engine.py"
+    },
+    {
+      "path": "lmcache/v1/config.py",
+      "sha256": "fabc4d7a7560f99e8efcb8bb65ffe26326d6bb894f5cf43132f70e91733174b9",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/config.py"
+    },
+    {
+      "path": "lmcache/v1/gpu_connector/__init__.py",
+      "sha256": "a0df027df808c3312128fa18a2aa3053d5d8ed48c4c904f8b8ba27749a73b6e6",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/gpu_connector/__init__.py"
+    },
+    {
+      "path": "lmcache/v1/gpu_connector/gpu_connectors.py",
+      "sha256": "94b230d6ac7cb2fb1676a54a52dfdd322553180729e0eb812d9371d4a494a221",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/gpu_connector/gpu_connectors.py"
+    },
+    {
+      "path": "lmcache/v1/gpu_connector/mock_gpu_connector.py",
+      "sha256": "bc508fa189a83cd887e79d0b9c6ded085e6bce78d392bc46c473f93b40c7e197",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/gpu_connector/mock_gpu_connector.py"
+    },
+    {
+      "path": "lmcache/v1/memory_allocators/mixed_memory_allocator.py",
+      "sha256": "3867bf1fe2394d95a359a34e269852fb0ac9363f8a48d3c3d362dcaf93f8ae46",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/memory_allocators/mixed_memory_allocator.py"
+    },
+    {
+      "path": "lmcache/v1/memory_management.py",
+      "sha256": "4587d5bc230c3a0590bdf16e68eafbcd51cfcff72c9dd9c0258717d9425f5dd2",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/memory_management.py"
+    },
+    {
+      "path": "lmcache/v1/multiprocess/transfer_context/__init__.py",
+      "sha256": "1f592449cbd83ed3bcc09f818237b985b670d824153f7cc0564d7b93c8efe111",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/multiprocess/transfer_context/__init__.py"
+    },
+    {
+      "path": "lmcache/v1/multiprocess/transfer_context/async_engine_driven.py",
+      "sha256": "c410e2e88f4514d5d527e9499147fe8477cfc39902e220b44b34fbc2ab2bbc32",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/multiprocess/transfer_context/async_engine_driven.py"
+    },
+    {
+      "path": "lmcache/v1/multiprocess/transfer_context/base.py",
+      "sha256": "b62f6398adb87d99a87911b241fa6399a7f4d51cd956af4ba2d1d1466566217e",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/multiprocess/transfer_context/base.py"
+    },
+    {
+      "path": "lmcache/v1/multiprocess/transfer_context/pickle.py",
+      "sha256": "4b0beff9060b060b3c29abeec0f67eed80b8216148aa7a34f9c15d38ee2da664",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/multiprocess/transfer_context/pickle.py"
+    },
+    {
+      "path": "lmcache/v1/multiprocess/transfer_context/shm.py",
+      "sha256": "0afb4cee5ab689da4ec1183a2cc9dbe8eb07d70d85aa567ead212a382f176a28",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/multiprocess/transfer_context/shm.py"
+    },
+    {
+      "path": "lmcache/v1/multiprocess/transfer_context/worker_transfer.py",
+      "sha256": "d6260cf1386c2a4f7d5f3ada24acd4e37832e104201a96ce56494c431bc1d1b9",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/multiprocess/transfer_context/worker_transfer.py"
+    },
+    {
+      "path": "lmcache/v1/platform/__init__.py",
+      "sha256": "ba6dbdc9d4e5d85aa393a54ad000485d09e4487fc6e98bd37863160c664e66ff",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/platform/__init__.py"
+    },
+    {
+      "path": "lmcache/v1/platform/cpu/stub_cpu_device.py",
+      "sha256": "f2efb34fce5b39d06bff4ac7f73cfc95b4f993c249e131dd721dce1ca96f9327",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/platform/cpu/stub_cpu_device.py"
+    },
+    {
+      "path": "lmcache/v1/storage_backend/local_cpu_backend.py",
+      "sha256": "9d5d9eab6f27339d8207102487b8091356cbf9bb76237a82a1a315c36083eb43",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/storage_backend/local_cpu_backend.py"
+    },
+    {
+      "path": "lmcache/v1/storage_backend/local_disk_backend.py",
+      "sha256": "562aef8e1443bda0cdd2270184d601a9796899a20a91b08453a5e98ecc81ce80",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/storage_backend/local_disk_backend.py"
+    },
+    {
+      "path": "lmcache/v1/token_database.py",
+      "sha256": "e21489195a6735fd4d3914a515f289ef71039effbb2051cb838d13d56155fc5c",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/lmcache/v1/token_database.py"
+    },
+    {
+      "path": "setup.py",
+      "sha256": "0cc464d2a79780dbfaefdcf4b389e806a5300fd0c3646c31ca69149521ff5793",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup.py"
+    },
+    {
+      "path": "setup_extensions/__init__.py",
+      "sha256": "8f977da01f11d69fa5bdc1b4c452750069fca2eaeae11432e08825dfb80cc013",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/__init__.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/__init__.py",
+      "sha256": "7f4d9d4373b914aed7fc2ccfe29f683576868aca5e37481cd83da42964c6303f",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/__init__.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/ascend.py",
+      "sha256": "da10284e87bdbba7db45de8ac18ee55e447f47956569f91c50626bc8d66ce1c0",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/ascend.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/cuda.py",
+      "sha256": "9c6b44e7f2ad5028f7ec204e830697f7eb9e26804431936c1ebffd35df523276",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/cuda.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/maca.py",
+      "sha256": "55d61e364bb570a65ba3bab57ecd16c592ccc4f0ac1c4a491a93cbb8176a8a12",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/maca.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/musa.py",
+      "sha256": "1d80fa0eeeadaf715c2738ac29b9a95683f7345c8288c195c01db9dd1c9b029e",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/musa.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/rocm.py",
+      "sha256": "54ff21f8c59f24271e408e17eb4b086e7d7ce0e94399fbc1af7f631f1656543c",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/rocm.py"
+    },
+    {
+      "path": "setup_extensions/build_profiles/sycl.py",
+      "sha256": "e0f65034a30d208561a42d27b9ff842544086088295f614fd68fd319998fcd05",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/build_profiles/sycl.py"
+    },
+    {
+      "path": "setup_extensions/common_cpp.py",
+      "sha256": "dd4c1fa55ce1711101a04fc42b475cfe453729ab0ffd02b84a2d1198c4aa4867",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/common_cpp.py"
+    },
+    {
+      "path": "setup_extensions/policy.py",
+      "sha256": "a3999ec2c9ef0828df5026a8377ae7e1955a9dd9c203c645a02953453c078e9e",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/policy.py"
+    },
+    {
+      "path": "setup_extensions/storage_backend_profiles/__init__.py",
+      "sha256": "f555582b7f4528a8337d311c034baee2e2bfa43ae07529482920fffbd797927b",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/storage_backend_profiles/__init__.py"
+    },
+    {
+      "path": "setup_extensions/storage_backend_profiles/aerospike.py",
+      "sha256": "eaf26eb042a946f17065ab49564a0df1540867dc567731df434dc56f7d0c798d",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/storage_backend_profiles/aerospike.py"
+    },
+    {
+      "path": "setup_extensions/storage_backend_profiles/mooncake.py",
+      "sha256": "a96c4d73bc5d8ece1f7def5096288392c86c54d39a6b69d0350e7254235c50b8",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/setup_extensions/storage_backend_profiles/mooncake.py"
+    },
+    {
+      "path": "tests/v1/multiprocess/test_async_engine_driven_transfer_context.py",
+      "sha256": "7ec96fa4a9915a0661d1c076f1f1b9a4c8b93297a12cbac1ee26c0a36739872f",
+      "url": "https://github.com/LMCache/LMCache/blob/05a013b29da78cf2321b9b46ec5039dde2fb0bb0/tests/v1/multiprocess/test_async_engine_driven_transfer_context.py"
+    }
+  ],
+  "raw_trace_manifest_verified_files": 38,
+  "host_probe": {
+    "fresh_ssh": true,
+    "gpu": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition",
+    "gpu_total_MiB": 97887,
+    "gpu_used_MiB": 83185,
+    "gpu_utilization_percent_at_probe": 0,
+    "existing_venv_modules": {
+      "torch": false,
+      "vllm": false,
+      "lmcache": false,
+      "transformers": false
+    },
+    "python312_on_PATH": false,
+    "nvcc_on_PATH": false,
+    "strace_available": true
+  },
+  "audit": {
+    "partial_tail_storage": "save_unfull_chunk controls retention of the final short chunk",
+    "partial_prefix_reuse": "ChunkedTokenDatabase hashes the complete emitted token chunk with prior prefix hash; saving a short tail does not allow querying an arbitrary shorter prefix of a longer stored chunk",
+    "write_batching": "LocalDiskBackend.batched_submit_put_task calls submit_put_task once per key; not file coalescing",
+    "read_batching": "batched_get_blocking combines metadata lookup and dispatches per-file reads to thread pool",
+    "controller_batching": "BatchedMessageSender aggregates control-plane admission/eviction messages, not KV payload writes",
+    "durability": "write_file closes the file but does not call fsync; async completion is not a crash-durability guarantee"
+  },
+  "runtime_metrics": {
+    "actual_prefill_saved_tokens": null,
+    "disk_payload_write_bytes": null,
+    "process_write_bytes": null,
+    "io_syscalls": null,
+    "metadata_bytes": null,
+    "TTFT_ms": null,
+    "batching_effect": null
+  },
+  "blockers": [
+    "Shared GPU use authorization/reservation pending; do not infer permission from free memory",
+    "CPU MP route uses POSIX shared memory; reconcile with strict remote-writes-within-ledger rule before using it",
+    "ABI, runtime size and address-space fit need validation before install/run; existing GGUF runtime is not an LMCache connector"
+  ],
+  "scope": "No package installation, model download, remote write, new policy or FEMU runtime in this audit"
+}
