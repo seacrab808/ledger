@@ -1,0 +1,453 @@
+[32;20m[2026-10-12 18:28:30,626] LMCache INFO:[0m torch_dev=<module 'torch.cuda' from '/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/torch/cuda/__init__.py'>, torch_device_type=cuda [3m(_device_detect.py:312:lmcache.v1.platform._device_detect)[0m
+[32;20m[2026-10-12 18:28:30,626] LMCache INFO:[0m Auto-selected backend [cuda] for accelerator 'cuda' from candidate backends [cuda, rocm]. [3m(__init__.py:148:lmcache.v1.platform)[0m
+
+ _     __  __    ____           _          
+| |   |  \/  |  / ___|__ _  ___| |__   ___      LMCache v0.5.5 (g05a013b2)
+| |   | |\/| | | |   / _` |/ __| '_ \ / _ \     Website:  https://lmcache.ai/
+| |___| |  | | | |__| (_| | (__| | | |  __/     Recipes:  https://docs.lmcache.ai/recipes
+|_____|_|  |_|  \____\__,_|\___|_| |_|\___|     LinkedIn: https://www.linkedin.com/company/lmcache-lab
+Set LMCACHE_DISABLE_BANNER=1 to hide this banner.
+
+[32;20m[2026-10-12 18:28:31,022] LMCache INFO:[0m multi_layer_block_kv_transfer mode: ptr [3m(base.py:95:lmcache.v1.multiprocess.transfer_context.base)[0m
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.bigtable_admin_v2 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.bigtable_admin_v2.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.bigtable_v2 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.bigtable_v2.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.monitoring_v3 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.monitoring_v3.
+  warnings.warn(message, FutureWarning)
+[32;20m[2026-10-12 18:28:32,086] LMCache INFO:[0m Discovered API module: cache_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,086] LMCache INFO:[0m Discovered API module: env_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,088] LMCache INFO:[0m Discovered API module: loglevel_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,088] LMCache INFO:[0m Discovered API module: metrics_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,089] LMCache INFO:[0m Discovered API module: periodic_thread_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,089] LMCache INFO:[0m Discovered API module: run_script_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,090] LMCache INFO:[0m Discovered API module: thread_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,092] LMCache INFO:[0m Discovered API module: common_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,092] LMCache INFO:[0m Discovered API module: config_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,093] LMCache INFO:[0m Discovered API module: info_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,095] LMCache INFO:[0m Discovered API module: quota_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,097] LMCache INFO:[0m Discovered API module: reconfigure_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:28:32,112] LMCache INFO:[0m Starting LMCache HTTP server on http://127.0.0.1:55449 [3m(http_server.py:259:lmcache.v1.multiprocess.http_server)[0m
+INFO:     Started server process [673634]
+INFO:     Waiting for application startup.
+[32;20m[2026-10-12 18:28:32,119] LMCache INFO:[0m Starting LMCache HTTP server... (accelerator available: True) [3m(http_server.py:77:lmcache.v1.multiprocess.http_server)[0m
+[32;20m[2026-10-12 18:28:32,239] LMCache INFO:[0m Starting L1EvictionController... [3m(eviction_controller.py:53:lmcache.v1.distributed.storage_controllers.eviction_controller)[0m
+[32;20m[2026-10-12 18:28:32,240] LMCache INFO:[0m Initialized FSL2Adapter with base_path=/home/miruware/ledger/artifacts/lmcache-runtime/native-01-results/cache-128, relative_tmp_dir=None, read_ahead_size=None, use_odirect=False [3m(fs_l2_adapter.py:304:lmcache.v1.distributed.l2_adapters.fs_l2_adapter)[0m
+[32;20m[2026-10-12 18:28:32,240] LMCache INFO:[0m Starting L2EvictionController... [3m(eviction_controller.py:250:lmcache.v1.distributed.storage_controllers.eviction_controller)[0m
+[32;20m[2026-10-12 18:28:32,240] LMCache INFO:[0m Starting StoreController... [3m(store_controller.py:305:lmcache.v1.distributed.storage_controllers.store_controller)[0m
+[32;20m[2026-10-12 18:28:32,240] LMCache INFO:[0m Starting PrefetchController... [3m(prefetch_controller.py:596:lmcache.v1.distributed.storage_controllers.prefetch_controller)[0m
+[32;20m[2026-10-12 18:28:32,240] LMCache INFO:[0m Using blake3 hash function [3m(token_hasher.py:79:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-10-12 18:28:32,241] LMCache INFO:[0m Computed NONE_HASH=b"~>\xff\x9e\xf7a:P4\x0e\xb1&w\xee\x03\xb8:\xc7Y\xfc\xba\x9b\xb3'\x05\xf0rH\xd5mG;" using hash function [3m(token_hasher.py:180:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-10-12 18:28:32,241] LMCache INFO:[0m TokenHasher initialized: chunk_size=128, hash_algorithm=blake3 [3m(token_hasher.py:67:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-10-12 18:28:32,241] LMCache INFO:[0m PeriodicThread SessionManager-cleanup-thread-7f3b9e29f760 entering main loop (interval=60.0s) [3m(periodic_thread.py:304:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:28:32,241] LMCache INFO:[0m Started PeriodicThread: SessionManager-cleanup-thread-7f3b9e29f760 (level=medium, interval=60.0s, init_wait=0.0s) [3m(periodic_thread.py:248:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:28:32,241] LMCache INFO:[0m PeriodicThread DeviceHostFuncDispatcher entering main loop (interval=0.0s) [3m(periodic_thread.py:304:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:28:32,241] LMCache INFO:[0m Started PeriodicThread: DeviceHostFuncDispatcher (level=high, interval=0.0s, init_wait=0.0s) [3m(periodic_thread.py:248:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:28:32,242] LMCache INFO:[0m Supported transfer mode: lmcache_driven [3m(server.py:188:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:28:32,242] LMCache INFO:[0m PeriodicThread lmcache-mp-worker-reaper entering main loop (interval=30.0s) [3m(periodic_thread.py:304:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:28:32,242] LMCache INFO:[0m Started PeriodicThread: lmcache-mp-worker-reaper (level=medium, interval=30.0s, init_wait=0.0s) [3m(periodic_thread.py:248:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:28:32,244] LMCache INFO:[0m Created AffinityThreadPool 'affinity-pool-0' with 1 worker slots: up to 1 distinct affinity keys each bind to their own thread before slots are shared. Compare this against the number of clients expected to connect to confirm routing. [3m(affinity_pool.py:60:lmcache.v1.multiprocess.affinity_pool)[0m
+[32;20m[2026-10-12 18:28:32,244] LMCache INFO:[0m LMCache ZMQ cache server is running on tcp://127.0.0.1:35271 [3m(server.py:386:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:28:32,245] LMCache INFO:[0m LMCache cache server is running... [3m(server.py:401:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:28:32,245] LMCache INFO:[0m LMCache HTTP server initialized [3m(http_server.py:164:lmcache.v1.multiprocess.http_server)[0m
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:55449 (Press CTRL+C to quit)
+[32;20m[2026-10-12 18:28:41,462] LMCache INFO:[0m Engine KV Format: EngineKVFormat.NL_X_NB_BS_NH_CS NL x [NB, BS, NH, CS] [3m(detection.py:69:lmcache.v1.gpu_connector.kv_format.detection)[0m
+[32;20m[2026-10-12 18:28:41,462] LMCache INFO:[0m Engine KV Format: EngineKVFormat.NL_X_NB_BS_NH_CS NL x [NB, BS, NH, CS] [3m(detection.py:69:lmcache.v1.gpu_connector.kv_format.detection)[0m
+[32;20m[2026-10-12 18:28:41,462] LMCache INFO:[0m Group 0 first-layer tensor: layer_idx=0 shape=(682, 16, 2, 128) stride=(4096, 256, 128, 1) is_contiguous=True dtype=torch.float16 device=cuda:0 storage_offset=0 numel=2793472 storage_nbytes=5586944 padding_per_block=0 [3m(utils.py:608:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-10-12 18:28:41,462] LMCache INFO:[0m KV layer groups: ---
+KernelGroupInfo(layers=24, indices=0-23, shape_desc=(kv=1, nl=24, nb=682, bs=16, nh=2, hs=128, element_size=2, block_stride_elems=4096), dtype=torch.float16, tokens_per_block=16, slots_per_block=16, engine_group_idx=0, sw_size_tokens=-1)
+--- [3m(kv_layer_groups.py:474:lmcache.v1.kv_layer_groups)[0m
+[32;20m[2026-10-12 18:28:41,466] LMCache INFO:[0m Allocated timeline-semaphore event buffer on cuda:0 (4096 slots) [3m(timeline_semaphore_event_ipc.py:622:lmcache.v1.platform.cuda.timeline_semaphore_event_ipc)[0m
+[32;20m[2026-10-12 18:28:41,466] LMCache INFO:[0m Registered KV cache for GPU ID 245069007270129377 with 24 layers [3m(lmcache_driven_transfer.py:1009:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:41,466] LMCache INFO:[0m Initialized cuda stream on device cuda:0 [3m(cache_context.py:463:lmcache.v1.platform.cuda.cache_context)[0m
+[33;20m[2026-10-12 18:28:42,684] LMCache WARNING:[0m Session 0-8227cb5d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:42,795] LMCache WARNING:[0m Session 1-9c9027f3 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:43,111] LMCache WARNING:[0m Session 2-a19ec5c7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:43,465] LMCache WARNING:[0m Session 3-8e93967e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:43,783] LMCache WARNING:[0m Session 4-bfddaf22 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:44,130] LMCache WARNING:[0m Session 5-87dad8f9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:44,812] LMCache WARNING:[0m Session 6-a5cede0b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:45,226] LMCache WARNING:[0m Session 7-9b10373c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:45,538] LMCache WARNING:[0m Session 8-96ad7b50 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:28:45,903] LMCache INFO:[0m AffinityThreadPool: affinity_key=-7989165495013372359 assigned to worker slot 0 of 1 (thread affinity-pool-0-0); 1 distinct key(s) now bound [3m(affinity_pool.py:108:lmcache.v1.multiprocess.affinity_pool)[0m
+[32;20m[2026-10-12 18:28:45,905] LMCache INFO:[0m Stored 128 tokens in 0.002 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:46,227] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:46,600] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:46,950] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:47,255] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 1.6 ms (external_request_id=13-9da8cfd5, prefetch_request_id=4) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:47,343] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:47,722] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 5.9 ms (external_request_id=14-8687c401, prefetch_request_id=5) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:47,729] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:48,057] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 13.9 ms (external_request_id=15-b2d12a63, prefetch_request_id=6) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:48,075] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:48,413] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 23.5 ms (external_request_id=16-be9aa4e7, prefetch_request_id=7) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:48,420] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:48,764] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 30.0 ms (external_request_id=17-8edd101d, prefetch_request_id=8) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:48,791] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:48,801] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:49,110] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 6.3 ms (external_request_id=18-ab3227ea, prefetch_request_id=9) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:49,112] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:49,122] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:49,430] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 5.1 ms (external_request_id=19-b5efdf76, prefetch_request_id=10) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:49,432] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:49,442] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:49,764] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 18.5 ms (external_request_id=20-b1da0080, prefetch_request_id=11) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:49,779] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:49,792] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:50,103] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 3.2 ms (external_request_id=21-9ab9bf81, prefetch_request_id=12) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:50,107] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:50,423] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 1.8 ms (external_request_id=22-94bda9cf, prefetch_request_id=13) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:50,464] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:50,824] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 25.8 ms (external_request_id=23-84fdf56b, prefetch_request_id=14) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:50,876] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:51,193] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 3.4 ms (external_request_id=24-b5b2b369, prefetch_request_id=15) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:51,195] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:28:51,558] LMCache WARNING:[0m Session 25-a8e44b98 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:51,971] LMCache WARNING:[0m Session 26-9b8f4ee1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:52,285] LMCache WARNING:[0m Session 27-8b2bd5bf has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:52,636] LMCache WARNING:[0m Session 28-8428696c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:53,078] LMCache WARNING:[0m Session 29-8545a25c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:53,518] LMCache WARNING:[0m Session 30-87e0a1de has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:53,832] LMCache WARNING:[0m Session 31-a32e60eb has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:28:54,146] LMCache WARNING:[0m Session 32-8abbe6f3 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:28:54,546] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:54,898] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:55,214] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:56,150] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:56,457] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 5.4 ms (external_request_id=37-a1bb7d0d, prefetch_request_id=20) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:56,500] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:56,861] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 9.8 ms (external_request_id=38-9658facb, prefetch_request_id=21) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:56,902] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:57,319] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 34.4 ms (external_request_id=39-83ef84eb, prefetch_request_id=22) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:57,336] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:57,666] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.5 ms (external_request_id=40-a3078954, prefetch_request_id=23) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:57,668] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,006] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 10.9 ms (external_request_id=41-b75d5c00, prefetch_request_id=24) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:58,017] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,035] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,341] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 3.3 ms (external_request_id=42-8d6218ee, prefetch_request_id=25) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:58,354] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,365] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,670] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 2.9 ms (external_request_id=43-8383e9d5, prefetch_request_id=26) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:58,672] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,682] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:58,990] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 3.9 ms (external_request_id=44-a42c8b63, prefetch_request_id=27) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:58,993] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:59,019] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:59,356] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 29.8 ms (external_request_id=45-92aa4c59, prefetch_request_id=28) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:59,400] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:28:59,738] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 18.8 ms (external_request_id=46-b91fd0dc, prefetch_request_id=29) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:28:59,749] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:00,109] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 34.1 ms (external_request_id=47-9fb1b616, prefetch_request_id=30) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:00,128] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:00,448] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 3.4 ms (external_request_id=48-8274fcf4, prefetch_request_id=31) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:00,450] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:00,840] LMCache WARNING:[0m Session 49-8ce59e92 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:01,171] LMCache WARNING:[0m Session 50-9d9b2db4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:01,485] LMCache WARNING:[0m Session 51-9e336075 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:01,837] LMCache WARNING:[0m Session 52-a8d09841 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:02,151] LMCache WARNING:[0m Session 53-884e1cc0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:02,552] LMCache WARNING:[0m Session 54-bd6a82e7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:02,897] LMCache WARNING:[0m Session 55-8c616deb has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:03,249] LMCache WARNING:[0m Session 56-b55e7b33 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:03,565] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:03,889] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:04,225] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:04,608] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:04,918] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 6.8 ms (external_request_id=61-a11c7272, prefetch_request_id=36) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:04,922] LMCache INFO:[0m Retrieved 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:05,242] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 4.4 ms (external_request_id=62-93d467e5, prefetch_request_id=37) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:05,244] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:05,594] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 36.2 ms (external_request_id=63-8e237238, prefetch_request_id=38) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:05,611] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:05,928] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.3 ms (external_request_id=64-9a6b0ac3, prefetch_request_id=39) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:05,930] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:06,281] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 12.0 ms (external_request_id=65-a8e7e9bf, prefetch_request_id=40) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:06,294] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:06,308] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:07,174] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 479.9 ms (external_request_id=66-b1ca0438, prefetch_request_id=41) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:07,230] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:07,243] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:07,553] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 2.7 ms (external_request_id=67-9028810d, prefetch_request_id=42) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:07,555] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:07,565] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:07,877] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 1.9 ms (external_request_id=68-8fb464c5, prefetch_request_id=43) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:07,911] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:07,921] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:08,238] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 4.0 ms (external_request_id=69-bfc75997, prefetch_request_id=44) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:08,265] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:08,614] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 4.9 ms (external_request_id=70-bd78ad04, prefetch_request_id=45) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:08,616] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:08,937] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 4.3 ms (external_request_id=71-88316e7b, prefetch_request_id=46) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:08,945] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:09,270] LMCache INFO:[0m Prefetch request completed (L1+L2): 2/2 retained keys (0 L1, 2 L2) in 10.9 ms (external_request_id=72-a040e15a, prefetch_request_id=47) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:09,277] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:09,615] LMCache WARNING:[0m Session 73-979b82a5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:09,947] LMCache WARNING:[0m Session 74-a9f68581 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:10,313] LMCache WARNING:[0m Session 75-b0b5e901 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:10,637] LMCache WARNING:[0m Session 76-a8fb5a44 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:10,952] LMCache WARNING:[0m Session 77-a5d28912 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:11,268] LMCache WARNING:[0m Session 78-8f791c6b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:11,621] LMCache WARNING:[0m Session 79-87bec364 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:11,937] LMCache WARNING:[0m Session 80-923fc94a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:12,271] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:12,625] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:12,941] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:13,297] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:13,655] LMCache WARNING:[0m Session 85-b43d1128 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:13,969] LMCache WARNING:[0m Session 86-83b1c3c7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:14,315] LMCache WARNING:[0m Session 87-975c2650 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:14,672] LMCache WARNING:[0m Session 88-a7ebafc0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:14,989] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:15,370] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:15,700] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:16,039] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:16,347] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 3.2 ms (external_request_id=93-bbd012fc, prefetch_request_id=56) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:16,392] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:16,728] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.7 ms (external_request_id=94-8f4a3cbe, prefetch_request_id=57) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:16,730] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:17,107] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 41.0 ms (external_request_id=95-ad9e1a62, prefetch_request_id=58) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:17,137] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:17,478] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 15.8 ms (external_request_id=96-8996d5ba, prefetch_request_id=59) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:17,874] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:18,436] LMCache WARNING:[0m Session 97-be2fe023 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:18,752] LMCache WARNING:[0m Session 98-9a0f0180 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:19,101] LMCache WARNING:[0m Session 99-a5d60c5c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:19,446] LMCache WARNING:[0m Session 100-be0010dc has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:19,786] LMCache WARNING:[0m Session 101-a1663b5e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:20,146] LMCache WARNING:[0m Session 102-85d4f635 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:20,461] LMCache WARNING:[0m Session 103-bead8503 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:20,839] LMCache WARNING:[0m Session 104-87b599a3 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:21,167] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:21,482] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:21,846] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:22,163] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:22,522] LMCache WARNING:[0m Session 109-b452bc2c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:22,883] LMCache WARNING:[0m Session 110-b2e73d45 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:23,251] LMCache WARNING:[0m Session 111-894fed5f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:23,602] LMCache WARNING:[0m Session 112-a19b548a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:23,922] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:24,245] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:24,598] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:24,923] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:25,239] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 5.3 ms (external_request_id=117-ba00e77d, prefetch_request_id=68) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:25,251] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:25,571] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 1.4 ms (external_request_id=118-9178012d, prefetch_request_id=69) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:25,578] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:25,898] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.6 ms (external_request_id=119-a8120d87, prefetch_request_id=70) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:25,900] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:26,219] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 3.6 ms (external_request_id=120-92f6cb8b, prefetch_request_id=71) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:26,222] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:26,559] LMCache WARNING:[0m Session 121-9e8f76cd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:26,917] LMCache WARNING:[0m Session 122-8af42306 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:27,305] LMCache WARNING:[0m Session 123-b8f082d2 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:27,640] LMCache WARNING:[0m Session 124-8a58c5f1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:27,955] LMCache WARNING:[0m Session 125-9be25cfe has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:28,405] LMCache WARNING:[0m Session 126-8015e86a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:29,278] LMCache WARNING:[0m Session 127-b17cf035 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:29,595] LMCache WARNING:[0m Session 128-a39ea70f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:29,940] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:30,271] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:30,604] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:30,964] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:31,293] LMCache WARNING:[0m Session 133-8ecae5b9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:31,671] LMCache WARNING:[0m Session 134-848eb17f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:31,995] LMCache WARNING:[0m Session 135-902caa19 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:32,318] LMCache WARNING:[0m Session 136-8ac05f9b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:32,635] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:33,012] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:33,333] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:33,707] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:34,014] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 1.4 ms (external_request_id=141-8651cba4, prefetch_request_id=80) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:34,016] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:34,369] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 28.2 ms (external_request_id=142-891c030a, prefetch_request_id=81) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:34,393] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:34,718] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 7.7 ms (external_request_id=143-9acfc7b2, prefetch_request_id=82) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:34,727] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:35,050] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 5.3 ms (external_request_id=144-a7a24598, prefetch_request_id=83) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:35,078] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:35,407] LMCache WARNING:[0m Session 145-9105faf8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:35,730] LMCache WARNING:[0m Session 146-aded37f9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:36,056] LMCache WARNING:[0m Session 147-bfdb2f4e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:36,492] LMCache WARNING:[0m Session 148-b17dfe2f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:36,840] LMCache WARNING:[0m Session 149-8781d815 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:37,157] LMCache WARNING:[0m Session 150-b7bd32d4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:37,503] LMCache WARNING:[0m Session 151-87c4f310 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:37,834] LMCache WARNING:[0m Session 152-960d8168 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:38,152] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:38,469] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:38,846] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:39,163] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:39,533] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 64.0 ms (external_request_id=157-bba96936, prefetch_request_id=88) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:39,538] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:40,385] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 15.8 ms (external_request_id=158-b8989fcd, prefetch_request_id=89) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:40,389] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:40,723] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 9.8 ms (external_request_id=159-82b82365, prefetch_request_id=90) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:40,726] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:41,062] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 4.0 ms (external_request_id=160-aaea676f, prefetch_request_id=91) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:41,073] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:41,406] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 4.0 ms (external_request_id=161-a75f29f7, prefetch_request_id=92) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:41,427] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:41,749] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 5.6 ms (external_request_id=162-a2f92905, prefetch_request_id=93) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:41,759] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:42,120] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 20.5 ms (external_request_id=163-9901222d, prefetch_request_id=94) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:42,139] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:42,471] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 7.9 ms (external_request_id=164-b2fc3cde, prefetch_request_id=95) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:42,475] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:42,813] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 6.1 ms (external_request_id=165-992a31b0, prefetch_request_id=96) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:42,815] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:42,825] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:43,134] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 2.8 ms (external_request_id=166-9bfd73f7, prefetch_request_id=97) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:43,136] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:43,146] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:43,477] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 24.5 ms (external_request_id=167-b222f356, prefetch_request_id=98) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:43,495] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:43,507] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:43,847] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 33.3 ms (external_request_id=168-ba333736, prefetch_request_id=99) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:43,869] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:43,885] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:44,212] LMCache WARNING:[0m Session 169-98702918 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:44,554] LMCache WARNING:[0m Session 170-bff8bccb has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:44,869] LMCache WARNING:[0m Session 171-b4593952 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:45,253] LMCache WARNING:[0m Session 172-b9c7f6d8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:45,569] LMCache WARNING:[0m Session 173-a537fdcf has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:45,928] LMCache WARNING:[0m Session 174-848c2a3a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:46,286] LMCache WARNING:[0m Session 175-ab6cff44 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:46,630] LMCache WARNING:[0m Session 176-94c6fd67 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:46,975] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:47,323] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:47,651] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:47,979] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:48,340] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 54.2 ms (external_request_id=181-b1f23ef2, prefetch_request_id=104) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:48,360] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:48,693] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 18.3 ms (external_request_id=182-bd54d8e8, prefetch_request_id=105) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:48,700] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:49,038] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 7.6 ms (external_request_id=183-90b7feac, prefetch_request_id=106) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:49,064] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:49,397] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 12.2 ms (external_request_id=184-a77d1516, prefetch_request_id=107) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:49,410] LMCache INFO:[0m Retrieved 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:49,753] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 11.9 ms (external_request_id=185-831508d1, prefetch_request_id=108) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:49,785] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:50,106] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 4.8 ms (external_request_id=186-a84918cd, prefetch_request_id=109) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:50,108] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:50,488] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 62.1 ms (external_request_id=187-ba4655a7, prefetch_request_id=110) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:50,549] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:51,494] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 64.5 ms (external_request_id=188-aad87725, prefetch_request_id=111) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:51,534] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:51,878] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 7.3 ms (external_request_id=189-9a3ed252, prefetch_request_id=112) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:51,903] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:51,918] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:52,226] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 1.4 ms (external_request_id=190-9c324e7c, prefetch_request_id=113) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:52,284] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:52,314] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:52,626] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 4.6 ms (external_request_id=191-bd686483, prefetch_request_id=114) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:52,648] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:52,658] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:52,972] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 2.6 ms (external_request_id=192-a99fe04c, prefetch_request_id=115) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:52,974] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:52,989] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:29:53,311] LMCache WARNING:[0m Session 193-a7ba9486 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:53,658] LMCache WARNING:[0m Session 194-a73da9d8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:53,979] LMCache WARNING:[0m Session 195-bdab8c8f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:54,335] LMCache WARNING:[0m Session 196-b27936b5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:54,662] LMCache WARNING:[0m Session 197-b7dc782e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:54,980] LMCache WARNING:[0m Session 198-be9b5d48 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:55,313] LMCache WARNING:[0m Session 199-9f004a74 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:29:55,657] LMCache WARNING:[0m Session 200-a4707fc9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:29:56,004] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:56,384] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:56,702] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:57,067] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:57,385] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 7.9 ms (external_request_id=205-a5f77a04, prefetch_request_id=120) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:57,397] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:57,721] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 6.8 ms (external_request_id=206-ad894be9, prefetch_request_id=121) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:57,776] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:58,118] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 8.1 ms (external_request_id=207-b8c0d600, prefetch_request_id=122) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:58,122] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:58,450] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.6 ms (external_request_id=208-9bbf540e, prefetch_request_id=123) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:58,452] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:58,813] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 27.3 ms (external_request_id=209-925e9a92, prefetch_request_id=124) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:58,815] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:59,156] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.5 ms (external_request_id=210-987718ca, prefetch_request_id=125) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:59,158] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:59,482] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 6.7 ms (external_request_id=211-ab5bdd3f, prefetch_request_id=126) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:59,484] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:29:59,805] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 1.4 ms (external_request_id=212-95d5d2ca, prefetch_request_id=127) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:29:59,815] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:00,145] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 2.8 ms (external_request_id=213-8cb37fe3, prefetch_request_id=128) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:00,146] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:00,156] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:00,472] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 2.6 ms (external_request_id=214-a8c45770, prefetch_request_id=129) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:00,474] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:00,484] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:00,796] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 1.8 ms (external_request_id=215-ad73f7a4, prefetch_request_id=130) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:00,806] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:00,818] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:01,142] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/2 retained keys (0 L1, 1 L2) in 18.1 ms (external_request_id=216-b1b182d1, prefetch_request_id=131) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:01,159] LMCache INFO:[0m Retrieved 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:01,173] LMCache INFO:[0m Stored 128 tokens in 0.000 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:01,489] LMCache WARNING:[0m Session 217-81c9ae40 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:01,847] LMCache WARNING:[0m Session 218-bb6af92b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:02,612] LMCache WARNING:[0m Session 219-b88f060c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:02,990] LMCache WARNING:[0m Session 220-a9523956 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:03,308] LMCache WARNING:[0m Session 221-b4e5db70 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:03,687] LMCache WARNING:[0m Session 222-a671da42 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:04,004] LMCache WARNING:[0m Session 223-88ecd7fd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:04,357] LMCache WARNING:[0m Session 224-95564f70 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:04,704] LMCache WARNING:[0m Session 225-8b897309 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:05,030] LMCache WARNING:[0m Session 226-b197db7a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:05,363] LMCache WARNING:[0m Session 227-b9c99e39 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:05,714] LMCache WARNING:[0m Session 228-99ed6a89 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:30:06,033] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:06,363] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:06,700] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:07,040] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:07,400] LMCache WARNING:[0m Session 233-ad3078a4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:07,809] LMCache WARNING:[0m Session 234-985bd74b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:08,154] LMCache WARNING:[0m Session 235-850968cc has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:08,486] LMCache WARNING:[0m Session 236-b9d132d1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:08,840] LMCache WARNING:[0m Session 237-adb4f59d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:09,163] LMCache WARNING:[0m Session 238-8f17125c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:09,481] LMCache WARNING:[0m Session 239-835e68c7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:09,846] LMCache WARNING:[0m Session 240-bca1e93a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:10,177] LMCache WARNING:[0m Session 241-9154b7a9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:10,542] LMCache WARNING:[0m Session 242-b2813c76 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:10,874] LMCache WARNING:[0m Session 243-8b1d0c2d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:11,224] LMCache WARNING:[0m Session 244-8196c8c0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:30:11,549] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:11,884] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:12,203] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:12,592] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:12,910] LMCache WARNING:[0m Session 249-8a18b64b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:13,783] LMCache WARNING:[0m Session 250-ac8f4356 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:14,103] LMCache WARNING:[0m Session 251-b185b6a2 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:14,431] LMCache WARNING:[0m Session 252-9200b4f7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:14,838] LMCache WARNING:[0m Session 253-932fdb64 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:15,156] LMCache WARNING:[0m Session 254-83d9137a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:15,474] LMCache WARNING:[0m Session 255-a3f7f76a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:15,828] LMCache WARNING:[0m Session 256-acd14089 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:16,189] LMCache WARNING:[0m Session 257-9a557085 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:16,506] LMCache WARNING:[0m Session 258-b4ec71ab has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:16,843] LMCache WARNING:[0m Session 259-8f77bdc9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:17,201] LMCache WARNING:[0m Session 260-a40d00ca has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:30:17,520] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:17,858] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:18,184] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:18,502] LMCache INFO:[0m Stored 128 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32;20m[2026-10-12 18:30:19,102] LMCache INFO:[0m Shutting down LMCache HTTP server... [3m(http_server.py:169:lmcache.v1.multiprocess.http_server)[0m
+[32;20m[2026-10-12 18:30:19,508] LMCache INFO:[0m Stopping PeriodicThread: lmcache-mp-worker-reaper [3m(periodic_thread.py:267:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:19,508] LMCache INFO:[0m PeriodicThread lmcache-mp-worker-reaper loop stopped [3m(periodic_thread.py:371:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:19,509] LMCache INFO:[0m Stopping PeriodicThread: DeviceHostFuncDispatcher [3m(periodic_thread.py:267:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:19,509] LMCache INFO:[0m PeriodicThread DeviceHostFuncDispatcher loop stopped [3m(periodic_thread.py:371:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:19,511] LMCache INFO:[0m Stopping PeriodicThread: SessionManager-cleanup-thread-7f3b9e29f760 [3m(periodic_thread.py:267:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:19,511] LMCache INFO:[0m PeriodicThread SessionManager-cleanup-thread-7f3b9e29f760 loop stopped [3m(periodic_thread.py:371:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:20,692] LMCache INFO:[0m FSL2Adapter closed [3m(fs_l2_adapter.py:487:lmcache.v1.distributed.l2_adapters.fs_l2_adapter)[0m
+[32;20m[2026-10-12 18:30:20,710] LMCache INFO:[0m MPCacheServer closed [3m(server.py:115:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:30:20,710] LMCache INFO:[0m LMCache HTTP server stopped [3m(http_server.py:187:lmcache.v1.multiprocess.http_server)[0m
+INFO:     Application shutdown complete.
+INFO:     Finished server process [673634]

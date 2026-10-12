@@ -3,7 +3,7 @@ def add_notes(pages, record, helpers):
     e, table, section, link = helpers
     metrics = [[name, '미측정' if value is None else str(value)]
                for name, value in record['runtime_metrics'].items()]
-    body = section('LMCache 실제 backend 비교 · source audit 완료 / 실측 대기',
+    body = section('과거 기록: LMCache source audit와 실행 전 계획',
         '<p>사용자가 64/128/256 비교를 요청했다. LMCache 0.5.5의 고정 commit '
         + e(record['commit']) + '을 확인했다. 기존 token replay는 분석 상한이며 '
         '실제 prefill 절약이나 디스크 비용 측정으로 재사용하지 않는다.</p>'

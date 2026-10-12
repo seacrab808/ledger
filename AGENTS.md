@@ -2,6 +2,16 @@
 
 ## Intent and authorization
 
+- Latest user authorization: compare existing LMCache 64/128/256 native chunk
+  storage/reuse and existing batching on recorded paired traces, including actual
+  prefill, disk bytes, I/O, metadata and latency; no new policy or FEMU.
+  Shared GPU use is approved conservatively: at most 4 GiB, never expand when
+  other jobs exit. Leave spare memory and never change others' processes.
+  User explicitly approved relaxing only the GPU runtime's virtual-address limit
+  after CUDA initialization failed at 12 GiB. Actual RSS 8 GiB, GPU 4 GiB,
+  2-CPU affinity/nice 10 and extra artifacts 10 GiB remain mandatory.
+  Earlier CPU screening/replay scope below is historical; preserve its results.
+
 This is early exploration, not implementation of a final LEDGER specification.
 The question is whether logical write bytes adequately represent physical NAND
 work/wear for services and LLMs on shared edge storage. Problem statement,

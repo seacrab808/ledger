@@ -1,0 +1,3005 @@
+{
+  "method": "derived union of reused token-prefix ranges, native chunk hashes, measured forward token deltas, observed payload bytes/token; not byte-level model probes",
+  "objects": [
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "740294bcdff7d7e9aa687801be686a483ad3d4270dfdc9f44bc2f131f16ac306",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@740294bcdff7d7e9aa687801be686a483ad3d4270dfdc9f44bc2f131f16ac306@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "8c9c7ae36527e73a46d21471f48294b5ee7f12870d8df72e06be0e12c04dac31",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8c9c7ae36527e73a46d21471f48294b5ee7f12870d8df72e06be0e12c04dac31@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "595f19ce4616cd2e935ed81f0f13908e7e7feaffff4708826ec9af8d90cc2c2c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@595f19ce4616cd2e935ed81f0f13908e7e7feaffff4708826ec9af8d90cc2c2c@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "9271107b173cc1d3686f82e8d22ebe2bfa5f8969d470a313436b2ee1b70a1a9e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9271107b173cc1d3686f82e8d22ebe2bfa5f8969d470a313436b2ee1b70a1a9e@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "a7ebbb8445c909e564dcc3c1852fab9639b03165dae4d1af9305320d5968a773",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a7ebbb8445c909e564dcc3c1852fab9639b03165dae4d1af9305320d5968a773@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "bedd21c55b5e5a4ec1d4a5d706009d131b347bb3d626cc02737dc29142052c46",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bedd21c55b5e5a4ec1d4a5d706009d131b347bb3d626cc02737dc29142052c46@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "393a75bc807c6c15480f445e02f4d1ed1a7b67c2914ab0dca02fbf9e5e09b315",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@393a75bc807c6c15480f445e02f4d1ed1a7b67c2914ab0dca02fbf9e5e09b315@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "f791fb3af5db981bf32564720b27412e663a11e8dca31b5da0b205eb06045471",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f791fb3af5db981bf32564720b27412e663a11e8dca31b5da0b205eb06045471@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "16f54e572fa9781f3b3ba0112fd7c5b2089e2091db0e9d56897744a41c8b9105",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@16f54e572fa9781f3b3ba0112fd7c5b2089e2091db0e9d56897744a41c8b9105@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "6b5a30530bb2f7a0958e2c5303ec4ff4fd118bb4dca29c754e871130061c96e6",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6b5a30530bb2f7a0958e2c5303ec4ff4fd118bb4dca29c754e871130061c96e6@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "5971d62476a086f3b2dfeb7eca0cb307925a829085bb4e0556d7eed709d8cd56",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5971d62476a086f3b2dfeb7eca0cb307925a829085bb4e0556d7eed709d8cd56@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "cf2f0d675feb89c0a9597ebe66cf1e1888dad590b2b94f90b74f1c86326b2d3d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@cf2f0d675feb89c0a9597ebe66cf1e1888dad590b2b94f90b74f1c86326b2d3d@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "109e2c56c2e1cff442ed4d120408be5da5112c54d54eac292893d3d1d5f51fbf",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@109e2c56c2e1cff442ed4d120408be5da5112c54d54eac292893d3d1d5f51fbf@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "0e5d2ec55681f8d7bb16f2f3682360e042e4ca7a9e00af54c57d5398889ce94d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0e5d2ec55681f8d7bb16f2f3682360e042e4ca7a9e00af54c57d5398889ce94d@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "e64856f9e599d4e705f95a43d43948924a3cdccf7c952f136cfcea30ae388e85",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e64856f9e599d4e705f95a43d43948924a3cdccf7c952f136cfcea30ae388e85@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "b661b66c3f21823f0ed0fac20955c17c24c8fa32638708db2d9e244921db7632",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b661b66c3f21823f0ed0fac20955c17c24c8fa32638708db2d9e244921db7632@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "424ee5b13a227a673699ec9e993c7ebacd0c35f17e65e7bfadd079e33f422709",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@424ee5b13a227a673699ec9e993c7ebacd0c35f17e65e7bfadd079e33f422709@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "08c4ebeedf9af70b1c205c49d8b45a597307ca75fcc75ab6a7efda40295cb826",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@08c4ebeedf9af70b1c205c49d8b45a597307ca75fcc75ab6a7efda40295cb826@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "a432183398da9aa8e03bab01e59de952b4cbb6460d6fa6f127a92f9f221fa526",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a432183398da9aa8e03bab01e59de952b4cbb6460d6fa6f127a92f9f221fa526@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "1f7d7bc8e0171210618aa93e7da2eca9a5c5c6f9f63ac0b504dea4fbf52badd4",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1f7d7bc8e0171210618aa93e7da2eca9a5c5c6f9f63ac0b504dea4fbf52badd4@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "c1a4f7e0d5dcf487f9542be9b488889b96339a7fe29071bde1330f890c59523c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c1a4f7e0d5dcf487f9542be9b488889b96339a7fe29071bde1330f890c59523c@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "049170d1fb90d395a62ce4cbf08a1a332a715e147788f9e6da55512835124471",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@049170d1fb90d395a62ce4cbf08a1a332a715e147788f9e6da55512835124471@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "f542e62dd97c5f543b0e3045ff44944beb7e9de4af4fe48d92f4b23eac990dda",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f542e62dd97c5f543b0e3045ff44944beb7e9de4af4fe48d92f4b23eac990dda@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "ce2a4e78ac6c050798da19cd91efb2de5f6417c6c20edba0ff868d14fe3792a1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@ce2a4e78ac6c050798da19cd91efb2de5f6417c6c20edba0ff868d14fe3792a1@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "174f3ed1e1b2e42afe12f0802df32176f863daf814a96a181054981d2f9ffad5",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@174f3ed1e1b2e42afe12f0802df32176f863daf814a96a181054981d2f9ffad5@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "50c6d98867e6d1de35d4e336725e143366ecedc35f6c40e3220997bb0ebf1f0d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@50c6d98867e6d1de35d4e336725e143366ecedc35f6c40e3220997bb0ebf1f0d@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "fdc7f8a6f78e5ef0271356f29d04cbbd3783479592770265e49baf8e7f7a634c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@fdc7f8a6f78e5ef0271356f29d04cbbd3783479592770265e49baf8e7f7a634c@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "b95e32f5b313acbd195635e45f299aa020177b2f47cdb9b07035d53f0178fc4d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b95e32f5b313acbd195635e45f299aa020177b2f47cdb9b07035d53f0178fc4d@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "b56951a645c44ef9fc5e176afc3fcd7e19e108304897fc31d3393d4631e68c89",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b56951a645c44ef9fc5e176afc3fcd7e19e108304897fc31d3393d4631e68c89@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "665e871b5a25c7c6ba83ad44d0013f63a655d73167d9f38748dac46ab7854ac7",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@665e871b5a25c7c6ba83ad44d0013f63a655d73167d9f38748dac46ab7854ac7@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "a9125c9016e808efd2912ef9e41c2973d9f8da857a634cb8606a29505e21533d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a9125c9016e808efd2912ef9e41c2973d9f8da857a634cb8606a29505e21533d@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "6817f52c808246eab6c2c70f639ca1987cbcfa502928f8754cf19e780019ccf7",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6817f52c808246eab6c2c70f639ca1987cbcfa502928f8754cf19e780019ccf7@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "6485b1bf50eb68ce32e5ccebed028ccb479b02576e29474d48fa6317bf566340",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6485b1bf50eb68ce32e5ccebed028ccb479b02576e29474d48fa6317bf566340@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "40d1aa6c92ce92ade88d0f0c6a2bccd4684868216fc903c8bc5fd5503587df1b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@40d1aa6c92ce92ade88d0f0c6a2bccd4684868216fc903c8bc5fd5503587df1b@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "c039d44643f325d1a8f9f243921fccbaa7ddc35452ce4b11da054c4e419b5258",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c039d44643f325d1a8f9f243921fccbaa7ddc35452ce4b11da054c4e419b5258@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "230c1e0cbade2baf01e227fe9e24f796c0588c83ec11acfdff4a2a4544f2ff57",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@230c1e0cbade2baf01e227fe9e24f796c0588c83ec11acfdff4a2a4544f2ff57@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "b8d2477a69837c786e75da5daa45c40ce5c7a4241875b1ff5164711f36558e5d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b8d2477a69837c786e75da5daa45c40ce5c7a4241875b1ff5164711f36558e5d@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "2dab2f0580ee168c4c919357acb764857d802e26464b9dceed538d4febc55940",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2dab2f0580ee168c4c919357acb764857d802e26464b9dceed538d4febc55940@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "3d1859a5b881b614f94c3b1ef2e1c992c738f7cc2a461ecfbe50eaac9ce7d1af",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@3d1859a5b881b614f94c3b1ef2e1c992c738f7cc2a461ecfbe50eaac9ce7d1af@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "29dcec9a01265f8707780c7c87531fb209bfe4c60ba1dd4c6f37b61c5e73a489",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@29dcec9a01265f8707780c7c87531fb209bfe4c60ba1dd4c6f37b61c5e73a489@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "779f31475012496cf09dd5d254cb01245fb27f9cf8019aed38d420a7f89983f0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@779f31475012496cf09dd5d254cb01245fb27f9cf8019aed38d420a7f89983f0@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "0fe06085ddebedc35cc0907ae51f8b3a657b919e722948070a140e612921d919",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0fe06085ddebedc35cc0907ae51f8b3a657b919e722948070a140e612921d919@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "4da23a013482b4ea207a66358ed1b76811bb82e78118313c68eceecbf4106f73",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4da23a013482b4ea207a66358ed1b76811bb82e78118313c68eceecbf4106f73@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "2195b349d45b0d2574bcf588e7a8eda3366694a56b6b3196c90123a2ed32b203",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2195b349d45b0d2574bcf588e7a8eda3366694a56b6b3196c90123a2ed32b203@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "c85a8725f415fc19e4f8fa0fa3b45eed52c0e7f8d1afcf887a9469bda77dd8af",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c85a8725f415fc19e4f8fa0fa3b45eed52c0e7f8d1afcf887a9469bda77dd8af@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "1c2ce031148db701ab2715d174667f8fda38e3be43bf2578c717308c35891060",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1c2ce031148db701ab2715d174667f8fda38e3be43bf2578c717308c35891060@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "191f10a976e1b6b07cffd8cb75cac8b707f4acce755795d4201c9cfa725f7def",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@191f10a976e1b6b07cffd8cb75cac8b707f4acce755795d4201c9cfa725f7def@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "426b44cf6add4289caeaf33f5b2cb50ad38f8774a855fcda9281021dbf00df0f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@426b44cf6add4289caeaf33f5b2cb50ad38f8774a855fcda9281021dbf00df0f@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "4b8a5a94e52677e9d221bcabb6cba4f2db2d2647b1ce31b630c89dcd4e8e7f22",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4b8a5a94e52677e9d221bcabb6cba4f2db2d2647b1ce31b630c89dcd4e8e7f22@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "6108c187a9ace0b180f8cd2f206986b48599ec2903b0b89e4d4b4deeb712f861",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6108c187a9ace0b180f8cd2f206986b48599ec2903b0b89e4d4b4deeb712f861@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "fc9d93502fd7fc25434e08d42bd1d12ab5a07d5f2b5c10b7be0d5fcb3c6adfb9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@fc9d93502fd7fc25434e08d42bd1d12ab5a07d5f2b5c10b7be0d5fcb3c6adfb9@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "be58f883f61af16368d59aca519e95b649cdb007e04c04a6e9d29c9b0b98b095",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@be58f883f61af16368d59aca519e95b649cdb007e04c04a6e9d29c9b0b98b095@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "04930b128bf843b2248f07dd117262d65e8b9308467fb7e1e913a379af790c3f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@04930b128bf843b2248f07dd117262d65e8b9308467fb7e1e913a379af790c3f@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "e432c3eb067fe33b65875a1d3bdbca92a745b345e5493bd385a41588c0556296",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e432c3eb067fe33b65875a1d3bdbca92a745b345e5493bd385a41588c0556296@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "c7ae1464e585b3735143bc20ec40bdc5b9354d9c65d06e3d68cb6cfde5f11aec",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c7ae1464e585b3735143bc20ec40bdc5b9354d9c65d06e3d68cb6cfde5f11aec@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "2c6600ea2d0f42f6249e5ab373522fc1353ea479f10fd481f334692df8b7982c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2c6600ea2d0f42f6249e5ab373522fc1353ea479f10fd481f334692df8b7982c@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "92902e5c3a844cef8531b6eb2c3cfd395556132eca8afd42c1e4faa6ff23a241",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@92902e5c3a844cef8531b6eb2c3cfd395556132eca8afd42c1e4faa6ff23a241@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "25203ab64f9d93d5cbc02d957e86881e87d1db79c618e54d45436596bb1d9bf9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@25203ab64f9d93d5cbc02d957e86881e87d1db79c618e54d45436596bb1d9bf9@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "8aa1d1ed5d593fee8c00dbcff689093e80d3b15cd44206ecd894c8a2e9e1b1ee",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8aa1d1ed5d593fee8c00dbcff689093e80d3b15cd44206ecd894c8a2e9e1b1ee@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "5111b7b0f08f099a9c1113f9c5dd5a526e195a4a950616d5234347d102215d0b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5111b7b0f08f099a9c1113f9c5dd5a526e195a4a950616d5234347d102215d0b@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "4a4804a3ae4266d08b46dc9cab8a74925c4514ea01b3083fa5388991b5e9e160",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4a4804a3ae4266d08b46dc9cab8a74925c4514ea01b3083fa5388991b5e9e160@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "a9ec71d5dc8512e9cf3804b84840d7d7f0a9c3fa6254250eb01714466593e2e5",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a9ec71d5dc8512e9cf3804b84840d7d7f0a9c3fa6254250eb01714466593e2e5@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "6a9c64df598af313749da817a1a0eaff7a035529fb725a55ab628bade39194f0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6a9c64df598af313749da817a1a0eaff7a035529fb725a55ab628bade39194f0@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "69f732b81e70b94bee10598e6b711b49af3cd8b1018c3deab1508030d9cea894",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@69f732b81e70b94bee10598e6b711b49af3cd8b1018c3deab1508030d9cea894@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "b5ba34377b2df1a7d8a9a3999d0e7aaff0d5a69929b19ece37a16f4c3a651ceb",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b5ba34377b2df1a7d8a9a3999d0e7aaff0d5a69929b19ece37a16f4c3a651ceb@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "6806cc8bac5812d2babf38a817403274039b6568f14205959aa755172e49d374",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6806cc8bac5812d2babf38a817403274039b6568f14205959aa755172e49d374@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "be60180f97704ca5450a30fb67a91b2f4843443dac6e1c9f60145feab57585e6",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@be60180f97704ca5450a30fb67a91b2f4843443dac6e1c9f60145feab57585e6@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "da83771c723c28c7572f5d466731ed222dd516a22369a77efa3c765e0b561229",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@da83771c723c28c7572f5d466731ed222dd516a22369a77efa3c765e0b561229@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "367c0d05dea3d10e8423119d4010468b74d3a1c7fcfb2daf17a54992a16b2ea6",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@367c0d05dea3d10e8423119d4010468b74d3a1c7fcfb2daf17a54992a16b2ea6@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "b5bb7cc3de848c306089288d7e9b67bf657e76f68c1bd0d71dec37e0da17004f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b5bb7cc3de848c306089288d7e9b67bf657e76f68c1bd0d71dec37e0da17004f@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "8cdedd20cb07498bd4be2a1a98d10481cd2ca7abf5ea77d4bb3027203344a743",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8cdedd20cb07498bd4be2a1a98d10481cd2ca7abf5ea77d4bb3027203344a743@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "282df65047ddb6797caf59a4029c0268ec34dc9beba2ed33b75adc452e3b7a6d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@282df65047ddb6797caf59a4029c0268ec34dc9beba2ed33b75adc452e3b7a6d@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "13083398a46c3fe6c5e7e93e8203f38053bd559e79500c3588d2adad154c1e4f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@13083398a46c3fe6c5e7e93e8203f38053bd559e79500c3588d2adad154c1e4f@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "f06cb64132c9c56d4163d8f1be2fde9f1f722e563b5fe00cf9b2c6480f487e01",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f06cb64132c9c56d4163d8f1be2fde9f1f722e563b5fe00cf9b2c6480f487e01@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "4305ea22769d62e31cab93557f482d9766f4e6bb723fd0942dc13970d940f28c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4305ea22769d62e31cab93557f482d9766f4e6bb723fd0942dc13970d940f28c@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "e2fb76b4cf522fc4cf1a94769f696802a15e65a03056fb31504e1f31b4c5f999",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e2fb76b4cf522fc4cf1a94769f696802a15e65a03056fb31504e1f31b4c5f999@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "3709e881fb94ac98cc14d4db7f1f26e9e19e7a806cedddd9340b07f23009020e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@3709e881fb94ac98cc14d4db7f1f26e9e19e7a806cedddd9340b07f23009020e@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "2b6e83def4a86b345431714547cd631064deb8e60f1232975704f4c839e9144c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2b6e83def4a86b345431714547cd631064deb8e60f1232975704f4c839e9144c@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "94f93f9efb6bab875a3ba607bc364b3b4fe0a7de00411f1f2ab487b4909de7dd",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@94f93f9efb6bab875a3ba607bc364b3b4fe0a7de00411f1f2ab487b4909de7dd@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "d36c516a0a0566a887731ead65638b14b4cd481fe5e4159391f2f01937a984d2",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d36c516a0a0566a887731ead65638b14b4cd481fe5e4159391f2f01937a984d2@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "990be6ea0d7e6c8e0c4423355eb2afa67df363498d6e13c619fcacc2246c2205",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@990be6ea0d7e6c8e0c4423355eb2afa67df363498d6e13c619fcacc2246c2205@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "bef7fabccc9ede43924285656873569ccff77976b12b76ab49554b18100bfcee",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bef7fabccc9ede43924285656873569ccff77976b12b76ab49554b18100bfcee@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "966f9f0cbc15dac64b1077b878f64b8e9b0bec63fb725b8fff613adfff05476f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@966f9f0cbc15dac64b1077b878f64b8e9b0bec63fb725b8fff613adfff05476f@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "a2c7fe9235cd5048b5a9fd7a5c3b9b1d2965e5c08b8888726e83acf5ecf2683d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a2c7fe9235cd5048b5a9fd7a5c3b9b1d2965e5c08b8888726e83acf5ecf2683d@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "5a1011f2691dfec69abbdaef97542d93feaaf4af7ff6cc64c73fe201d64716df",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5a1011f2691dfec69abbdaef97542d93feaaf4af7ff6cc64c73fe201d64716df@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "dda0a61683d5a579b5c84cff21d492d99554fd3d682975de6eb97b4e830ee597",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@dda0a61683d5a579b5c84cff21d492d99554fd3d682975de6eb97b4e830ee597@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "4e62e577a336ac0835ad81d6d7af9a787d610870124334c9ea4286389b979da4",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4e62e577a336ac0835ad81d6d7af9a787d610870124334c9ea4286389b979da4@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "c28423964c31a41a7fa21fcd63ba21f99365f6e422d1a00fe2f50393baf56a49",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c28423964c31a41a7fa21fcd63ba21f99365f6e422d1a00fe2f50393baf56a49@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "e89977c0e1b7502e62aff2bf579e7a83448e820b8c4ff84b31ba46e9e4771f4b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e89977c0e1b7502e62aff2bf579e7a83448e820b8c4ff84b31ba46e9e4771f4b@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "a210cc73f159d8a91e2be9e3baa7a8e8f0ee829b4ec38f734be3b617c0920e60",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a210cc73f159d8a91e2be9e3baa7a8e8f0ee829b4ec38f734be3b617c0920e60@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "dfd02d36467b7b61d2d7722a424658051a2a6833271464415c1c60b400cdbef1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@dfd02d36467b7b61d2d7722a424658051a2a6833271464415c1c60b400cdbef1@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "bf670a1668f066e123d039e49474b3323e583123a766b62d1bf9946ea6d0eb28",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bf670a1668f066e123d039e49474b3323e583123a766b62d1bf9946ea6d0eb28@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "60ca4b94e34bd841aaafb80c3287d155e9ceed510eeb8fe873d6f242450ac5bb",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@60ca4b94e34bd841aaafb80c3287d155e9ceed510eeb8fe873d6f242450ac5bb@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "2f69bbb03347a228998299c37a55ee5aa04420fc51797e92ff687ad568a539fe",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2f69bbb03347a228998299c37a55ee5aa04420fc51797e92ff687ad568a539fe@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "a7997f46e856eb53740d6a6d93da1c4c3c5e29813ce644732f30f0e2419c2be7",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a7997f46e856eb53740d6a6d93da1c4c3c5e29813ce644732f30f0e2419c2be7@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "c7b197791a7bde849e482f92ed5210fa7c795be595071220767f025867079937",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c7b197791a7bde849e482f92ed5210fa7c795be595071220767f025867079937@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "1d2d3c4870f1b962a74136fcc0a041e7bb5c4d93f558ea26d1caa00021cd9635",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1d2d3c4870f1b962a74136fcc0a041e7bb5c4d93f558ea26d1caa00021cd9635@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "999edef9131e4250c99541d3f2ed1c50234897d1ef35972fb8e890c7e322ddb3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@999edef9131e4250c99541d3f2ed1c50234897d1ef35972fb8e890c7e322ddb3@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "668852dea0211c7c47564ab789bb4b092101b9919400bbc6dc7acb25568eed38",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@668852dea0211c7c47564ab789bb4b092101b9919400bbc6dc7acb25568eed38@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "45a3e8050258d2223b7c16bf06dd7ec2038b6011ea248a118407e27a5ab44652",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@45a3e8050258d2223b7c16bf06dd7ec2038b6011ea248a118407e27a5ab44652@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "5ee2bc9146513b5240a2de989363a93a0a8975859b663a10b7bbc9273d6a806c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5ee2bc9146513b5240a2de989363a93a0a8975859b663a10b7bbc9273d6a806c@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "d3dd1508893eaf4e0ce41c00170f7e9c961eb753799c90b8bc863205ee929ea6",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d3dd1508893eaf4e0ce41c00170f7e9c961eb753799c90b8bc863205ee929ea6@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "bd37b4b1110664d7dcc106927c99803667b6cb5b83bd8467a0d459a0174dc082",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bd37b4b1110664d7dcc106927c99803667b6cb5b83bd8467a0d459a0174dc082@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "d3a178fde8b6b88d401769ad8f5d8047ffdaa027792cb29463195b1618f40d0e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d3a178fde8b6b88d401769ad8f5d8047ffdaa027792cb29463195b1618f40d0e@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "4f1afdc3d70b85e28314466959b02f3d2674fce02511ad496ac750417bb3fd9d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4f1afdc3d70b85e28314466959b02f3d2674fce02511ad496ac750417bb3fd9d@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "1553143307fc05ea743ff6a5d2207bbc37c400011c1c70825774b211b75b135e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1553143307fc05ea743ff6a5d2207bbc37c400011c1c70825774b211b75b135e@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "00178f8b94502e149d27c3e11ba6a1e791770a1c7326dca56abcf717ff3e2f36",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@00178f8b94502e149d27c3e11ba6a1e791770a1c7326dca56abcf717ff3e2f36@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "03fda783ce07c8048fb72a843ef3676deba61cd5ec3681a9e40aca3cb50faa8a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@03fda783ce07c8048fb72a843ef3676deba61cd5ec3681a9e40aca3cb50faa8a@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "8ffcc995d8d7920430fe8aed13b2e6402ab2873142d5c6c39fdcead867846a50",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8ffcc995d8d7920430fe8aed13b2e6402ab2873142d5c6c39fdcead867846a50@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "53029faee6f5680674dce65de19b66d23872d95ca5d09914645aead5a93b2431",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@53029faee6f5680674dce65de19b66d23872d95ca5d09914645aead5a93b2431@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "2312b4a9a72f2062c6bd8344e54a1a6b091debf775ee1b56bae97b4fdaeeb6ee",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2312b4a9a72f2062c6bd8344e54a1a6b091debf775ee1b56bae97b4fdaeeb6ee@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "286dd26bcd11e4b696e2e2eeca1e2001c9f434468d51dffc77b835bc179d8459",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@286dd26bcd11e4b696e2e2eeca1e2001c9f434468d51dffc77b835bc179d8459@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "050f44d3ebc5491ce8b5fa5f90aba1e045a46151fd2b6a1406755c46b5544b50",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@050f44d3ebc5491ce8b5fa5f90aba1e045a46151fd2b6a1406755c46b5544b50@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "22fa2e363bbef1bd92df6ce9ede139a0f50910c591c2cca77ad09f6f473b84c1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@22fa2e363bbef1bd92df6ce9ede139a0f50910c591c2cca77ad09f6f473b84c1@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "6ffdec080da58ca83bddee8bc1ed06bce6f0602a89d73ac7d20150d62c3dc323",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6ffdec080da58ca83bddee8bc1ed06bce6f0602a89d73ac7d20150d62c3dc323@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "930f6ebec4642ac9e25107aa3f8c7e14a394771616417687f86eccf9b7e9840e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@930f6ebec4642ac9e25107aa3f8c7e14a394771616417687f86eccf9b7e9840e@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "45af64ae7f74497bbbf1e7b610304d6f47b31331568e488da6cb5e06649cb309",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@45af64ae7f74497bbbf1e7b610304d6f47b31331568e488da6cb5e06649cb309@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "e2573e37082d179c32ff05501f1a252c258a1ea9c95a750a728b1c1ee077dad1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e2573e37082d179c32ff05501f1a252c258a1ea9c95a750a728b1c1ee077dad1@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "0a732f5ca01592a01b36b85b67cbb3434e19c1f0f1ce35ce89b1232c4c0f89da",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0a732f5ca01592a01b36b85b67cbb3434e19c1f0f1ce35ce89b1232c4c0f89da@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "eb2b6455018439a90a77809ecfd3bbd817cbf17b0d81c73fbdd160649975de7a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@eb2b6455018439a90a77809ecfd3bbd817cbf17b0d81c73fbdd160649975de7a@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "63510ca998668e5902b7fac1f8e4c73a5af378a9aeb0f6b6e1eaa9d638c8f7a3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@63510ca998668e5902b7fac1f8e4c73a5af378a9aeb0f6b6e1eaa9d638c8f7a3@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "7be0731f3611c34c8ac52af19d558b5e2b55edb6619947d6ed380f9858fd7ba9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7be0731f3611c34c8ac52af19d558b5e2b55edb6619947d6ed380f9858fd7ba9@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "24a6d78e14ed6b932cff4a7bd8c79c54b3ae89ab46d5383448563951e9780500",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@24a6d78e14ed6b932cff4a7bd8c79c54b3ae89ab46d5383448563951e9780500@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "62a0e7261e96997f3c31f83c2530ec2d8fc7cd38555dd9ca73567ba111d17440",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@62a0e7261e96997f3c31f83c2530ec2d8fc7cd38555dd9ca73567ba111d17440@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "9db0cd873f26016a4273212629eb59e6c3a4e9392c6b34f1e8f54fce685cd8f7",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9db0cd873f26016a4273212629eb59e6c3a4e9392c6b34f1e8f54fce685cd8f7@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "edf093444f59227ec4e97b3751bb1e1902dbd09ee5963c81de9491e99dea08ca",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@edf093444f59227ec4e97b3751bb1e1902dbd09ee5963c81de9491e99dea08ca@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "18ddcd5a94ba7b27ad44c687a1483b2b9dbcc6968b4256b8c3052217c687dd1f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@18ddcd5a94ba7b27ad44c687a1483b2b9dbcc6968b4256b8c3052217c687dd1f@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "c22fa6a6940be323463a4fa277b66de39763de90d4b03ee86729db90780526ca",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c22fa6a6940be323463a4fa277b66de39763de90d4b03ee86729db90780526ca@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "948498137256e583af62ceabe21fceec55fdafa90e68ad4d9bbaac8831f5a912",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@948498137256e583af62ceabe21fceec55fdafa90e68ad4d9bbaac8831f5a912@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "5daf01dfb1a43cc6bf5a3f1c339d70cf3d1ee0bf6112f3869bca7902fb8d0034",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5daf01dfb1a43cc6bf5a3f1c339d70cf3d1ee0bf6112f3869bca7902fb8d0034@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "8fbfb6bd8d50eb2766033b2fd9867742744b87848218c20331246d517738440f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8fbfb6bd8d50eb2766033b2fd9867742744b87848218c20331246d517738440f@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "98a2101607636ab4fd056acea70e7aeb1b5ddb0a744bff83cc4466b64b71e1de",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@98a2101607636ab4fd056acea70e7aeb1b5ddb0a744bff83cc4466b64b71e1de@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "0ded56e42e639becbaa24ed16a1ea8e89a4baefb3f03e1431eb39d07209166b9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0ded56e42e639becbaa24ed16a1ea8e89a4baefb3f03e1431eb39d07209166b9@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "18efdf2474ef78ab4f9a384f32667fac2021752e0114206ca388ce2fb1fa1c57",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@18efdf2474ef78ab4f9a384f32667fac2021752e0114206ca388ce2fb1fa1c57@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "df19f355cd79d01d5dd386e84d82e7ccceeb8c7b1707ef7bca1ad6f2148a1a36",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@df19f355cd79d01d5dd386e84d82e7ccceeb8c7b1707ef7bca1ad6f2148a1a36@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "6ab3e37fc8ec4e7ea0bc836f19524f191006546f496e087aa988d6532706d8d9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6ab3e37fc8ec4e7ea0bc836f19524f191006546f496e087aa988d6532706d8d9@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "40568e178b097e0cc62572add133a279f05fbc36cfb9360af3c12a36e0912219",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@40568e178b097e0cc62572add133a279f05fbc36cfb9360af3c12a36e0912219@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "da04eceb55e2d08eb4a11e2571adc3b9e4f1dcdf74e8dc897de8357ac0c61ffe",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@da04eceb55e2d08eb4a11e2571adc3b9e4f1dcdf74e8dc897de8357ac0c61ffe@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "238ce22a92068ebf004e3f067391f8ca8de28290e32f5eaa8734a40977de3a16",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@238ce22a92068ebf004e3f067391f8ca8de28290e32f5eaa8734a40977de3a16@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "39db90a5f146541e008e126a5108f603c1e0a0ae58ddd6b50a4eb33c162f64f9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@39db90a5f146541e008e126a5108f603c1e0a0ae58ddd6b50a4eb33c162f64f9@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "f7c7b919a769944fa91945395c199ea9df3ea51149771e8b27abcce79e92b23e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f7c7b919a769944fa91945395c199ea9df3ea51149771e8b27abcce79e92b23e@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "6d40a2777d236459958ecbcf519f7ca1484a84393e18c1313169cb02d9dea2fc",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6d40a2777d236459958ecbcf519f7ca1484a84393e18c1313169cb02d9dea2fc@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "15a2bf37d555f48f2fe5704e83a27fb6a3818405e481e419f448f8a1533d9bcf",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@15a2bf37d555f48f2fe5704e83a27fb6a3818405e481e419f448f8a1533d9bcf@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "f64cded5ed13c26de73b129678ae4e87db68e9b63a11a09c39b3d3047795d67b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f64cded5ed13c26de73b129678ae4e87db68e9b63a11a09c39b3d3047795d67b@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "9471aa77622fa0a3cd567dd84ad88fa1367afcfae3e02799774a20943f32b530",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9471aa77622fa0a3cd567dd84ad88fa1367afcfae3e02799774a20943f32b530@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "c43c5666a4bc29f5c4e1cbf4a1f29f5d0c6e39d57878a42644d72b43d0b8ef94",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c43c5666a4bc29f5c4e1cbf4a1f29f5d0c6e39d57878a42644d72b43d0b8ef94@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "9bd31e280ad0d5cf85ebe86e793df8374e92a128e01bd7f5de8da2264b3863ea",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9bd31e280ad0d5cf85ebe86e793df8374e92a128e01bd7f5de8da2264b3863ea@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "9ba8da0b7a3866d8ff3152c17ea73763a4f5ff15f4097eaf273ea7fda6d48ca6",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9ba8da0b7a3866d8ff3152c17ea73763a4f5ff15f4097eaf273ea7fda6d48ca6@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "f45011d2369afea4d99a135a11fa692aec3b52a8a99fb0275212686fb0beeb60",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f45011d2369afea4d99a135a11fa692aec3b52a8a99fb0275212686fb0beeb60@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "72a7c148ff561e32eab5aed23801902512385f71418123da41a95b8385303695",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@72a7c148ff561e32eab5aed23801902512385f71418123da41a95b8385303695@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "e17f1de11be066e46f295950aa79004d86d6e239216c6e3d0f93433c886aed17",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e17f1de11be066e46f295950aa79004d86d6e239216c6e3d0f93433c886aed17@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "95b21dc67e71ae35a7ab6e0f0d929672ca0a7e7947570a98819b9f7da0670824",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@95b21dc67e71ae35a7ab6e0f0d929672ca0a7e7947570a98819b9f7da0670824@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "e43267b8cb79066e47d455e368f8022b7050ff797702c284ef94892e43a664c3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e43267b8cb79066e47d455e368f8022b7050ff797702c284ef94892e43a664c3@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "1b07b6b0873d147580131086511b79068c1c1c557e4ab8a4da14a9fafdf67565",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1b07b6b0873d147580131086511b79068c1c1c557e4ab8a4da14a9fafdf67565@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "9b1682bcbb4485b3e87df88fd8293aeaceae992b7f6c089212be8f17120d1083",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9b1682bcbb4485b3e87df88fd8293aeaceae992b7f6c089212be8f17120d1083@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "3a53cdd59c1d1721a929e6fd997d559168d3bf55ba63dce8e5e80cfbf288df6d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@3a53cdd59c1d1721a929e6fd997d559168d3bf55ba63dce8e5e80cfbf288df6d@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "5053722f0b89727a4283587ac0e1b23da1f0f73fe0151df30d96c7989b42a51b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5053722f0b89727a4283587ac0e1b23da1f0f73fe0151df30d96c7989b42a51b@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "c5c01bdd4eaebc85564bd3dc4c277e8b98f74d39b7d471ccf514a88b76d4cf72",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c5c01bdd4eaebc85564bd3dc4c277e8b98f74d39b7d471ccf514a88b76d4cf72@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "d1856a2ef8cc028c5b11a5278c27f8a9edc72b8580e5a5268b345df0970321c8",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d1856a2ef8cc028c5b11a5278c27f8a9edc72b8580e5a5268b345df0970321c8@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "4ce10d93b905a6b0c956ab6bc672d099874e6b1d8a44ba7bcce2429a17260de0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4ce10d93b905a6b0c956ab6bc672d099874e6b1d8a44ba7bcce2429a17260de0@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "18418fc6d8e789b62b0af0f9798011193b78e6e126302d0a1a41476d1bd4aa3b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@18418fc6d8e789b62b0af0f9798011193b78e6e126302d0a1a41476d1bd4aa3b@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "ca6abda2aadbec209e3d6e1cc56d428c77333dac905d148ac77f199b6805dbbb",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@ca6abda2aadbec209e3d6e1cc56d428c77333dac905d148ac77f199b6805dbbb@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "b2363163b743afdf32e61e79c23fe218aadf2ce30f8f7e859cf680bae8afb86e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b2363163b743afdf32e61e79c23fe218aadf2ce30f8f7e859cf680bae8afb86e@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "9ff9bf076369bd3e84c75cf6819fb65aeb87f82bb4dc00ba1a22de40c584f647",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9ff9bf076369bd3e84c75cf6819fb65aeb87f82bb4dc00ba1a22de40c584f647@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "458443d050fc880a1c60e9e32a382ce8ef2290de3987268d8a37668b64e69100",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@458443d050fc880a1c60e9e32a382ce8ef2290de3987268d8a37668b64e69100@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "321e3b42d1daac26219dd34192ce031b9cd49740ce674b52756691e7f8892377",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@321e3b42d1daac26219dd34192ce031b9cd49740ce674b52756691e7f8892377@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "550d57ccab69a0bcbf710fb8bfc5eac9fe5783b07cbb5eaed315e761636d3be1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@550d57ccab69a0bcbf710fb8bfc5eac9fe5783b07cbb5eaed315e761636d3be1@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "4890c228eb3a650ccdd2eb558ac50275b0746191015f1d5e2cef8a2915984bb0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4890c228eb3a650ccdd2eb558ac50275b0746191015f1d5e2cef8a2915984bb0@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-44",
+      "hash": "4dc1a445726a63014c6cdc6a5a36d8098f26ff76e61942099f23c83d31f233fc",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4dc1a445726a63014c6cdc6a5a36d8098f26ff76e61942099f23c83d31f233fc@retry-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "5b5edd04bd9d89ca35a8e7ab44c51ab553d7bb08f58f39373f398f15380702d0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5b5edd04bd9d89ca35a8e7ab44c51ab553d7bb08f58f39373f398f15380702d0@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "fa0ba80b704bd2645494e7cc3dd5336df5ea166c9b0cb5df8050634870980424",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@fa0ba80b704bd2645494e7cc3dd5336df5ea166c9b0cb5df8050634870980424@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-44",
+      "hash": "57323dbc0d29322053053d9a166541dc9bc1d7af5f916a61fea55961e86352f2",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@57323dbc0d29322053053d9a166541dc9bc1d7af5f916a61fea55961e86352f2@session_end-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "33654b14f6df2daa1c884d522cf2a25c9f4b106bfe955227bd11547dacd2d4cd",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@33654b14f6df2daa1c884d522cf2a25c9f4b106bfe955227bd11547dacd2d4cd@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "e94f6e3a3c12fabf80a802880a6803c5c3ba61293dd0738920c57e519c49fca0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@e94f6e3a3c12fabf80a802880a6803c5c3ba61293dd0738920c57e519c49fca0@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "6539cc8f6b4a5905b7bd9a3548a04399073b14b9f2c8182fe54dc2244449cbb3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6539cc8f6b4a5905b7bd9a3548a04399073b14b9f2c8182fe54dc2244449cbb3@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "2ff868c91227cc602c68b348d14e0b0a69e86963dc7649f2594b61d050ea4c5a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2ff868c91227cc602c68b348d14e0b0a69e86963dc7649f2594b61d050ea4c5a@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-44",
+      "hash": "44301e0f64680594fd4b9be0caa9c5e973d20b56d14b4446fd6f2ec499aa58dd",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@44301e0f64680594fd4b9be0caa9c5e973d20b56d14b4446fd6f2ec499aa58dd@edit-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-43",
+      "hash": "7103e0a64c5e5d64bf24b15e46390876ea4ed1c9e0b95c221a0c2df297751f86",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7103e0a64c5e5d64bf24b15e46390876ea4ed1c9e0b95c221a0c2df297751f86@session_end-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-43",
+      "hash": "d12090917ca77c696332d3950aa0dff0e6ee400d15f01021f60b1041c6ce635b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d12090917ca77c696332d3950aa0dff0e6ee400d15f01021f60b1041c6ce635b@retry-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "retry-42",
+      "hash": "87f8ee446b6825bcbe54ebaf0a473ffad1d372ec94a20bee277de97a70668d87",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@87f8ee446b6825bcbe54ebaf0a473ffad1d372ec94a20bee277de97a70668d87@retry-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-44",
+      "hash": "1e1d9d9f5e33d8f97517dc4384e22885f9725558e2c73f29a18fbd697f47827f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1e1d9d9f5e33d8f97517dc4384e22885f9725558e2c73f29a18fbd697f47827f@append-44.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 2,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "36166d83c43a639572120f25acfac3ef730a0d2882d82a050176fc04d7447828",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@36166d83c43a639572120f25acfac3ef730a0d2882d82a050176fc04d7447828@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "188fa7073700f8a2ea907f23551af4a6cfb5aed5b6aa90587b93e3c41f9bd9ae",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@188fa7073700f8a2ea907f23551af4a6cfb5aed5b6aa90587b93e3c41f9bd9ae@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "5e3383e8d17bdc874fd6fcc4606e73546ad398e0fa6b52665e26d10429306254",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5e3383e8d17bdc874fd6fcc4606e73546ad398e0fa6b52665e26d10429306254@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "0d30ab3a2e6abb9b984a34469efc1df5c2e95916eb8becf893b1cd3edfdb1c55",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0d30ab3a2e6abb9b984a34469efc1df5c2e95916eb8becf893b1cd3edfdb1c55@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-42",
+      "hash": "0e93ac067a0e8edffa14ee0bc204a3a73decb64c273d7009be782925f73628ec",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0e93ac067a0e8edffa14ee0bc204a3a73decb64c273d7009be782925f73628ec@append-42.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "59761c64a031917cc79a5d1f168cfece181ad774dbeda3f177349eb1e31288d3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@59761c64a031917cc79a5d1f168cfece181ad774dbeda3f177349eb1e31288d3@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "eb502ee3b0f36a4d8a2a7d650cee1860d29dee355e264d6fde6ea9cb6ad410d6",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@eb502ee3b0f36a4d8a2a7d650cee1860d29dee355e264d6fde6ea9cb6ad410d6@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 4,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-42",
+      "hash": "bc0fe6c8dd1f568bfdb6fea4a7ca262e2a988351427dfa6f3fc66f5dc8dcd3bc",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bc0fe6c8dd1f568bfdb6fea4a7ca262e2a988351427dfa6f3fc66f5dc8dcd3bc@edit-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "session_end-42",
+      "hash": "938c31cc69184c3e1e353137d17cef74115d66d72487748f2cfc54f675652306",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@938c31cc69184c3e1e353137d17cef74115d66d72487748f2cfc54f675652306@session_end-42.data",
+      "bytes": 786432,
+      "covered_tokens": 64,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 786432
+    },
+    {
+      "chunk": 64,
+      "trace": "append-43",
+      "hash": "a6639a4b67c01f0015479d2f6ebbd6c958c1272fb69fd829cdd998f3632a631f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a6639a4b67c01f0015479d2f6ebbd6c958c1272fb69fd829cdd998f3632a631f@append-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 64,
+      "trace": "edit-43",
+      "hash": "c45667016959e4047df86fe10623d914c523384b93a58bca4decc3b3c4594cc5",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c45667016959e4047df86fe10623d914c523384b93a58bca4decc3b3c4594cc5@edit-43.data",
+      "bytes": 786432,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "5878c07ec0b252115060f319fefc77615289b97595c0d1c794f7e44c72ce3335",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5878c07ec0b252115060f319fefc77615289b97595c0d1c794f7e44c72ce3335@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-44",
+      "hash": "b8f401c855e42da094ee6517e7c559f740b14965b329a82a04ec40c9913e3d7c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b8f401c855e42da094ee6517e7c559f740b14965b329a82a04ec40c9913e3d7c@session_end-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-42",
+      "hash": "2b31f9b86dc74bbca5bce1890700373a045cd6992a142c559d2e6469a9372c86",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2b31f9b86dc74bbca5bce1890700373a045cd6992a142c559d2e6469a9372c86@session_end-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-42",
+      "hash": "b280e226301ad2ba89a76400e4e32e75135d3d67b2656599d85ff11f444ba996",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b280e226301ad2ba89a76400e4e32e75135d3d67b2656599d85ff11f444ba996@session_end-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "cd3153cd542feb7bb4c1610ea37805f4b8ff889518efb462817351c5b0aefb4d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@cd3153cd542feb7bb4c1610ea37805f4b8ff889518efb462817351c5b0aefb4d@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "2e0a799451db228058720214cec18a37eb3ca484ce2c26bdd23e39cb929e032d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2e0a799451db228058720214cec18a37eb3ca484ce2c26bdd23e39cb929e032d@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "60fb2a1b8366174a206d2e354fc8cae7fdb56df74828729073ec650cab24d01f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@60fb2a1b8366174a206d2e354fc8cae7fdb56df74828729073ec650cab24d01f@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "fd31e6d25079c9ef51005fea8caa035d6b11506cd2f16f963fdadfb0ccd3727c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@fd31e6d25079c9ef51005fea8caa035d6b11506cd2f16f963fdadfb0ccd3727c@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "9854bd8cad74ee98a728b1d78f8369478e3c554ad55414724cfa3816c06f1ee8",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@9854bd8cad74ee98a728b1d78f8369478e3c554ad55414724cfa3816c06f1ee8@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-44",
+      "hash": "cd66dad86a556f13f5d20731866e56645b1c5dd8e378805e732783e405ef159e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@cd66dad86a556f13f5d20731866e56645b1c5dd8e378805e732783e405ef159e@session_end-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "ee1bdab19b87a64215414779894baefb3abc69f1f7062444354af5424c0d2525",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@ee1bdab19b87a64215414779894baefb3abc69f1f7062444354af5424c0d2525@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "b92a275f40b539c819934beb4d26e2d9819d010f07337b05d1846505e87242e2",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b92a275f40b539c819934beb4d26e2d9819d010f07337b05d1846505e87242e2@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "642b3ceef953336d092591514e9357ebf0fbb7efecbc9fbfe0c53e3a9d70f91f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@642b3ceef953336d092591514e9357ebf0fbb7efecbc9fbfe0c53e3a9d70f91f@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "701279e3367de1c797ac68ba5f96d6b073bd443efd0b4ae869608470afb84fbb",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@701279e3367de1c797ac68ba5f96d6b073bd443efd0b4ae869608470afb84fbb@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "7d39688876859dd046c8ddd4cc23db806dce65c1bbc3cbe8c1aca5eeeedf961d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7d39688876859dd046c8ddd4cc23db806dce65c1bbc3cbe8c1aca5eeeedf961d@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-44",
+      "hash": "472039af1be5eacdb750d5362b73cbdbd5fbc3f7b01eb1007210e9fb348534f2",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@472039af1be5eacdb750d5362b73cbdbd5fbc3f7b01eb1007210e9fb348534f2@session_end-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "bb0060f5f2078cf880c4e749bcbf25322dd2eb0a1fa72fa2e2f6ae77a641ef7c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bb0060f5f2078cf880c4e749bcbf25322dd2eb0a1fa72fa2e2f6ae77a641ef7c@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "5b5d4c923026040fd100d3947c663cce6351b50e107cda5b8a8706831f28bc04",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5b5d4c923026040fd100d3947c663cce6351b50e107cda5b8a8706831f28bc04@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "959bacea9e6ec649937de8a9dc8fc161af4488a27483224142e648795b0d3863",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@959bacea9e6ec649937de8a9dc8fc161af4488a27483224142e648795b0d3863@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-43",
+      "hash": "22ac50f6a3f66331690fad541af30c253d0e3d9b3a6ca593e907487a9343cba5",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@22ac50f6a3f66331690fad541af30c253d0e3d9b3a6ca593e907487a9343cba5@session_end-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "fef1d316b57ea1d2a2dc82271495cbc4df0733fba8fefb91ecb531e7f7592eaa",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@fef1d316b57ea1d2a2dc82271495cbc4df0733fba8fefb91ecb531e7f7592eaa@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "52327a7b10a66a447680fe09fde1c581ccc76b1d3a67ed8c1c5d83e1fdd1dce2",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@52327a7b10a66a447680fe09fde1c581ccc76b1d3a67ed8c1c5d83e1fdd1dce2@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "cfdc0d25bbf6df0931d148b0972b063fd6d76bc5cb91c8cf7408069c5779d934",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@cfdc0d25bbf6df0931d148b0972b063fd6d76bc5cb91c8cf7408069c5779d934@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-43",
+      "hash": "1521816c4f0124ae3390c6f48d1a06f7b73dfaa5c82fcf4cbbf125530fc842b1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1521816c4f0124ae3390c6f48d1a06f7b73dfaa5c82fcf4cbbf125530fc842b1@session_end-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "5c2e9bfd86cf295def817a446993f51f026e9250dc062dd180400e7349947e7a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5c2e9bfd86cf295def817a446993f51f026e9250dc062dd180400e7349947e7a@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "d937872a3f4c7214c53327d3f6858e63b6437bfd79dccea1df65bf19a163f699",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d937872a3f4c7214c53327d3f6858e63b6437bfd79dccea1df65bf19a163f699@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "75fc861cf4063b2d1f042b29d1322dafc81c1a46276d32e712334aaa15a9d584",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@75fc861cf4063b2d1f042b29d1322dafc81c1a46276d32e712334aaa15a9d584@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "2ed5b42df6355a5aa969de92c7dba36de2c89f75552c1e49f2d66ff6c2ba9645",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2ed5b42df6355a5aa969de92c7dba36de2c89f75552c1e49f2d66ff6c2ba9645@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "09e1d4dbfdc0a049b2899ee176e8049f3fae9a3e6f79c7e76cb50b11f4079a0b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@09e1d4dbfdc0a049b2899ee176e8049f3fae9a3e6f79c7e76cb50b11f4079a0b@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "d193f847c00b05440a7e405f6270421e871b2d44cda9456edd194e3c207396e9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@d193f847c00b05440a7e405f6270421e871b2d44cda9456edd194e3c207396e9@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "5ba84d58bcec95284249dfebb695e9672728bdb51c40cd1553f2594ba994dab1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5ba84d58bcec95284249dfebb695e9672728bdb51c40cd1553f2594ba994dab1@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "4419524e404b4ab73ecba7a608cdbe36711ba2ab642aafc81d95ec2d06206cdb",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@4419524e404b4ab73ecba7a608cdbe36711ba2ab642aafc81d95ec2d06206cdb@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "b8ce94ed32b33d62a2d3523ee964d34d67c619a3ae6bc21bb1d922cef4530b6c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b8ce94ed32b33d62a2d3523ee964d34d67c619a3ae6bc21bb1d922cef4530b6c@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "bb62c2922963f788508f16591638609567f4aa34a1df2bed91d62504e4f2e83a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@bb62c2922963f788508f16591638609567f4aa34a1df2bed91d62504e4f2e83a@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "b5d7129eeb7235644371e58989f973b83e62f447a842fa1f06192e9dab407f0b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b5d7129eeb7235644371e58989f973b83e62f447a842fa1f06192e9dab407f0b@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "8d9632275f2d354461447f94e28a2121a844dc764169694e8aff51dd025a0c1a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8d9632275f2d354461447f94e28a2121a844dc764169694e8aff51dd025a0c1a@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-42",
+      "hash": "c72d04a5cb60a888fd1ae80efab3387d9850ea0283b5032978939a3707bc028d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c72d04a5cb60a888fd1ae80efab3387d9850ea0283b5032978939a3707bc028d@session_end-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "8038330c93170d6f8385e1637b07173a960de3921764c82df67b65d626ae2dbb",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8038330c93170d6f8385e1637b07173a960de3921764c82df67b65d626ae2dbb@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "00bae65c9beaa7a400197ec05a5c064299ddd09a3c46900617c4a8a97a78f87e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@00bae65c9beaa7a400197ec05a5c064299ddd09a3c46900617c4a8a97a78f87e@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "cab8d75a82c5ab886edf76b1104732d410395138223c27d0f482f6f561a64dfc",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@cab8d75a82c5ab886edf76b1104732d410395138223c27d0f482f6f561a64dfc@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "0ab0aebf91d1228e418550100f5b108e9c248f17c9728b18ff8b8b99b8782cfe",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@0ab0aebf91d1228e418550100f5b108e9c248f17c9728b18ff8b8b99b8782cfe@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "a99b98fe77400f84b95509688c2d455518dca18517e08e5d4e0c32f7beddb003",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a99b98fe77400f84b95509688c2d455518dca18517e08e5d4e0c32f7beddb003@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-42",
+      "hash": "1f4101e792ebe2342cbdb126d4cd1149582485a97d2e58bfb321cc8e33e0a65a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1f4101e792ebe2342cbdb126d4cd1149582485a97d2e58bfb321cc8e33e0a65a@session_end-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "7777aa8019cd6000bed69f22359f6aeb5c4baeb9e26d5f91f9bbf7b3fb15859b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7777aa8019cd6000bed69f22359f6aeb5c4baeb9e26d5f91f9bbf7b3fb15859b@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "7adfcb1cb594e1e7052013a048f3d9ec98f28a54b448e57f53af02ed8c47973e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7adfcb1cb594e1e7052013a048f3d9ec98f28a54b448e57f53af02ed8c47973e@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "c49b718fe82c345eb5936ddd686814728f90e54040bd4e445c814dc812f3bb6b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c49b718fe82c345eb5936ddd686814728f90e54040bd4e445c814dc812f3bb6b@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "b124f0cf990dbabbc494e43f2f82ccc4665f0a05d6cc9c83bcac3ebe141e19fa",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b124f0cf990dbabbc494e43f2f82ccc4665f0a05d6cc9c83bcac3ebe141e19fa@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "ae2dcb0dd56dfa5c0ed40346b8200b0f0c6ef1b882f7dd65544d728570fbd585",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@ae2dcb0dd56dfa5c0ed40346b8200b0f0c6ef1b882f7dd65544d728570fbd585@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "f00b6c38b9e15d9d7516e214919195d048cac012d72eca05f8f9c058bbe44c1a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f00b6c38b9e15d9d7516e214919195d048cac012d72eca05f8f9c058bbe44c1a@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-44",
+      "hash": "5385f3eb6e1e10fb5d967e09e0b706350f895c99e6fa9dc90256488b422c2a16",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5385f3eb6e1e10fb5d967e09e0b706350f895c99e6fa9dc90256488b422c2a16@session_end-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "21e1c1d74e966ce7b3189b26991f29455bbcbce709bf0d677dfcb90d1b6adce4",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@21e1c1d74e966ce7b3189b26991f29455bbcbce709bf0d677dfcb90d1b6adce4@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "1ba2308a73521bb6c41072866061274c69bf6d89fcd74f81e872ffe58f967b3b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1ba2308a73521bb6c41072866061274c69bf6d89fcd74f81e872ffe58f967b3b@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-42",
+      "hash": "f69eca12fdf7ee7d7d83f9f02cafbeca9580337c6d3eaa6658938cba4911796c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f69eca12fdf7ee7d7d83f9f02cafbeca9580337c6d3eaa6658938cba4911796c@edit-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "625a067c4b496a2f37bb01e8237934293742715ce748dc3e3e73df9bc7489f9b",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@625a067c4b496a2f37bb01e8237934293742715ce748dc3e3e73df9bc7489f9b@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "6e40367f2b4fcd266aaff2c1bf92ae4983dea2cbeb191a625b45361faf5794aa",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6e40367f2b4fcd266aaff2c1bf92ae4983dea2cbeb191a625b45361faf5794aa@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "fe62d158e364d46ab0fcd4b8e1ecf0816bd92d352c9a560050694304ec29d6f5",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@fe62d158e364d46ab0fcd4b8e1ecf0816bd92d352c9a560050694304ec29d6f5@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "3eb26bfee7bb831453ee470c9d294564442034b027c089ae85fd98822e973fa2",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@3eb26bfee7bb831453ee470c9d294564442034b027c089ae85fd98822e973fa2@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "1407798eaa02ca91121ca37ff0da1cffc5db61433f5fdc931daa54147857fa38",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1407798eaa02ca91121ca37ff0da1cffc5db61433f5fdc931daa54147857fa38@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-43",
+      "hash": "340ec6423d6b360a896a6d95aa493d1168fb5644082c8f691654c6a509671e52",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@340ec6423d6b360a896a6d95aa493d1168fb5644082c8f691654c6a509671e52@session_end-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "6ac4228988cf51532dc363bc8c07916c948bf4357cdc6c6ea5e0413820365e27",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6ac4228988cf51532dc363bc8c07916c948bf4357cdc6c6ea5e0413820365e27@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "6dfac9e870c05d8d0f3a485709bba45877f3d8d2dc3793ed3b1b9a26c6dbfa40",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6dfac9e870c05d8d0f3a485709bba45877f3d8d2dc3793ed3b1b9a26c6dbfa40@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "34d87cabd792f2fb84a85a7aac0ca0a14179b3537e0cb73641a0473165a7250f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@34d87cabd792f2fb84a85a7aac0ca0a14179b3537e0cb73641a0473165a7250f@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "a55a57bdeedc6e9e27e4efec9736091b8f5abb6c661a1cd018ce315c07b7ec40",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a55a57bdeedc6e9e27e4efec9736091b8f5abb6c661a1cd018ce315c07b7ec40@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "07977057179061d05c5411b504df94ef6bf3f69f59dd1652cd4c90dc9769e075",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@07977057179061d05c5411b504df94ef6bf3f69f59dd1652cd4c90dc9769e075@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "8c2f8c8f15258071df93850c6c17c1a362fed2fcdebcab37eb8ec85d77f1b941",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8c2f8c8f15258071df93850c6c17c1a362fed2fcdebcab37eb8ec85d77f1b941@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "600628ff4ec0a16e52f6195419361c57814c5debe73e5507c8befec6518e9dad",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@600628ff4ec0a16e52f6195419361c57814c5debe73e5507c8befec6518e9dad@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-44",
+      "hash": "1ed2bcdbd72c781dacb1a9d7432ff23ce3dcedac0c671283b8b7ea0f5cf44be1",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1ed2bcdbd72c781dacb1a9d7432ff23ce3dcedac0c671283b8b7ea0f5cf44be1@retry-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-42",
+      "hash": "87eb704e99c38df3393a7b350c116dc655c23f9d4b5722b0822688adabfbe8d9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@87eb704e99c38df3393a7b350c116dc655c23f9d4b5722b0822688adabfbe8d9@append-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "7a9d23d640500735ba1ada518268617fb90cbbf6a01def0f0e22d190cfa0c654",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7a9d23d640500735ba1ada518268617fb90cbbf6a01def0f0e22d190cfa0c654@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "2db46eb0df1449a8f7c95e629a00a1474d51337b820421ed24717280a0ab69b4",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2db46eb0df1449a8f7c95e629a00a1474d51337b820421ed24717280a0ab69b4@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "717b14e7f840371ac31f54b3d52f84a132da603be5917853c49837029d87863c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@717b14e7f840371ac31f54b3d52f84a132da603be5917853c49837029d87863c@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "8edc59e63a7e11b4426893ae4147f8ad3d2ea6945bb14cd6300699c8c1c398e4",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@8edc59e63a7e11b4426893ae4147f8ad3d2ea6945bb14cd6300699c8c1c398e4@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "append-44",
+      "hash": "7eb8c9212501e9d69f9f6c48f2af51fc0032e5e6071a85e6329f5c92be8dba60",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7eb8c9212501e9d69f9f6c48f2af51fc0032e5e6071a85e6329f5c92be8dba60@append-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "786f4e7b3d835d60aaac1df34139d72f8066ff5b009aa83dcb63311d0fd43a2d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@786f4e7b3d835d60aaac1df34139d72f8066ff5b009aa83dcb63311d0fd43a2d@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "1d99e2e7a38861a7b9c7b1fd14d94128b60a7d3b16b6e1545d242993e6020c1d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1d99e2e7a38861a7b9c7b1fd14d94128b60a7d3b16b6e1545d242993e6020c1d@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "29b4448f7553b49313020116e9444e9d165bdd399ca22c1837c37b8511998109",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@29b4448f7553b49313020116e9444e9d165bdd399ca22c1837c37b8511998109@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "900b61323ce53c93607c128c1906eb1d1cb760e8caa0d7b2c03f462bb4a49748",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@900b61323ce53c93607c128c1906eb1d1cb760e8caa0d7b2c03f462bb4a49748@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "edba8aca1a09d1e440978f7b3994324d56a78730061e97fbad5bd9c209af808e",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@edba8aca1a09d1e440978f7b3994324d56a78730061e97fbad5bd9c209af808e@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-43",
+      "hash": "7a10e7cb0402e162d36be23da6a279d9f87a66037a23efe67e865232f0352d4f",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7a10e7cb0402e162d36be23da6a279d9f87a66037a23efe67e865232f0352d4f@retry-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "session_end-43",
+      "hash": "2582130967d50cbb29654c7b280e10a370fc0ad93db2b25e01ad4dfc5daa7ed3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2582130967d50cbb29654c7b280e10a370fc0ad93db2b25e01ad4dfc5daa7ed3@session_end-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "append-43",
+      "hash": "2193019fa26177c9c2104ce8fc2b7bf53a8474a574ac435449e81f331426add8",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2193019fa26177c9c2104ce8fc2b7bf53a8474a574ac435449e81f331426add8@append-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-43",
+      "hash": "aba0234eb22ff23bb50ef13069e4d680a501063bb7cf28bf8157391a365509ad",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@aba0234eb22ff23bb50ef13069e4d680a501063bb7cf28bf8157391a365509ad@edit-43.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "edit-44",
+      "hash": "36276e92f10fb7e514aac03a820c1698b853a5b0eadf0301ad53f8211ecc6c55",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@36276e92f10fb7e514aac03a820c1698b853a5b0eadf0301ad53f8211ecc6c55@edit-44.data",
+      "bytes": 1572864,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 128,
+      "trace": "retry-42",
+      "hash": "37bdc24e706146c0ebd848caea438d7d65f25355d6546e18042add61077304a7",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@37bdc24e706146c0ebd848caea438d7d65f25355d6546e18042add61077304a7@retry-42.data",
+      "bytes": 1572864,
+      "covered_tokens": 128,
+      "reuse_requests": 3,
+      "derived_unique_consumed_bytes": 1572864
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-42",
+      "hash": "51c70ea03c7ff178cd5800204eedcbe284b03fc9c1a53abc4f03bf333d3fce53",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@51c70ea03c7ff178cd5800204eedcbe284b03fc9c1a53abc4f03bf333d3fce53@retry-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "append-42",
+      "hash": "72395614690e47c40d42b50e418eac0dc2a56fef1688daa0dc3ce0aac82c9dea",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@72395614690e47c40d42b50e418eac0dc2a56fef1688daa0dc3ce0aac82c9dea@append-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-43",
+      "hash": "38ca1db8c4cd73156920fea9f929843199c42e998e35f932ae8370cd593c8f90",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@38ca1db8c4cd73156920fea9f929843199c42e998e35f932ae8370cd593c8f90@append-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-42",
+      "hash": "742d382970c9c672a7c8a40dbeb8a1451885bb2c81ba587be406e37d5c5f5f9a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@742d382970c9c672a7c8a40dbeb8a1451885bb2c81ba587be406e37d5c5f5f9a@append-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-44",
+      "hash": "f6e9563568b0e371a8d56109efbb60594b1699e3d2f7feeff23d1800c816257c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@f6e9563568b0e371a8d56109efbb60594b1699e3d2f7feeff23d1800c816257c@append-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-44",
+      "hash": "c7b4c2bdb06f28e312996da691cc11e15e64be412842f4fa73f21ccb35cc9fee",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c7b4c2bdb06f28e312996da691cc11e15e64be412842f4fa73f21ccb35cc9fee@retry-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-43",
+      "hash": "c558fb345e19cce68a3003047dffcddff1a6ba5b423b8a29f6c61e721a17246d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@c558fb345e19cce68a3003047dffcddff1a6ba5b423b8a29f6c61e721a17246d@retry-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "append-44",
+      "hash": "adca43e949d778cf17f8d4465fbcd2347dd04ecc7b1f1f01789fd3399f6d4565",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@adca43e949d778cf17f8d4465fbcd2347dd04ecc7b1f1f01789fd3399f6d4565@append-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-42",
+      "hash": "270cd308d1a14c197efc939e0175b6b7239d09cf8be22447adb99a6775d7f5e5",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@270cd308d1a14c197efc939e0175b6b7239d09cf8be22447adb99a6775d7f5e5@append-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-44",
+      "hash": "6d996aebd27c4d00c5716966c9ea7a989e8266a7276eb6c66fe416a20cb37623",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6d996aebd27c4d00c5716966c9ea7a989e8266a7276eb6c66fe416a20cb37623@append-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-43",
+      "hash": "2d29de8766db77d5825aeadd7c1a4ca6f614ac30b0626b07ab7e3ddbf8c503a3",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@2d29de8766db77d5825aeadd7c1a4ca6f614ac30b0626b07ab7e3ddbf8c503a3@retry-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "append-43",
+      "hash": "1fef37744ff41f0f3adb23d60a09fc6cdc1d6d836fdae4a31c65b37ca99659e0",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@1fef37744ff41f0f3adb23d60a09fc6cdc1d6d836fdae4a31c65b37ca99659e0@append-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-43",
+      "hash": "5202a81f50d8dd07871dbfa1ecb36abfed9b6bf9deeb5c5742f515ebd112527d",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@5202a81f50d8dd07871dbfa1ecb36abfed9b6bf9deeb5c5742f515ebd112527d@append-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "append-42",
+      "hash": "524f0eb5b7ba7e8ec53bce8d7331704c4f644ab793b3fa43882dcc211bb2b69c",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@524f0eb5b7ba7e8ec53bce8d7331704c4f644ab793b3fa43882dcc211bb2b69c@append-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-42",
+      "hash": "b2da1741257f31524d51abbac478399f5ef9be07b79bf6b52bfaa86e9a6e3bd9",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b2da1741257f31524d51abbac478399f5ef9be07b79bf6b52bfaa86e9a6e3bd9@retry-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "append-43",
+      "hash": "472f55189142bf3cb361fcf1bfecf7099161025bea8b60fae7d47fb12988f3d7",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@472f55189142bf3cb361fcf1bfecf7099161025bea8b60fae7d47fb12988f3d7@append-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-42",
+      "hash": "7b9b0ce059f095b34ea01585783f88748bc9f4cc98471c0b64d590903cebc125",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@7b9b0ce059f095b34ea01585783f88748bc9f4cc98471c0b64d590903cebc125@retry-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "append-44",
+      "hash": "68cfbe49f9f5889997430607a5cd5ace1911a85b0bbb3aa45ab997c7198bb2ed",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@68cfbe49f9f5889997430607a5cd5ace1911a85b0bbb3aa45ab997c7198bb2ed@append-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 256,
+      "reuse_requests": 1,
+      "derived_unique_consumed_bytes": 3145728
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-44",
+      "hash": "19a1a887f68830739637c45bfc79ed8b2a6152d37533614e91c7ed8fec306314",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@19a1a887f68830739637c45bfc79ed8b2a6152d37533614e91c7ed8fec306314@retry-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-44",
+      "hash": "185c3ebc81c0e4dac434fe3c7d43bf2c05bab609b92535b3a8232d66382cf449",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@185c3ebc81c0e4dac434fe3c7d43bf2c05bab609b92535b3a8232d66382cf449@retry-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-43",
+      "hash": "529684f7630d88eef46d4578fa87521d1cfc38db5a323fe1bae96c06dc6ed4ca",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@529684f7630d88eef46d4578fa87521d1cfc38db5a323fe1bae96c06dc6ed4ca@retry-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-42",
+      "hash": "b3a3e712c81096a5fbfa284fce64816845aadf1230514be581d6c699a684627a",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b3a3e712c81096a5fbfa284fce64816845aadf1230514be581d6c699a684627a@retry-42.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-43",
+      "hash": "a2f243d34b1f2805b802a6f7935604da801828638fdd3a261dfa8d640f835c85",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@a2f243d34b1f2805b802a6f7935604da801828638fdd3a261dfa8d640f835c85@retry-43.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    },
+    {
+      "chunk": 256,
+      "trace": "retry-44",
+      "hash": "6dc6ff6daae1948eb9e7c78c183ab7e5f04681ff9a2d87abbf5cc6651fc21388",
+      "file": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@6dc6ff6daae1948eb9e7c78c183ab7e5f04681ff9a2d87abbf5cc6651fc21388@retry-44.data",
+      "bytes": 3145728,
+      "covered_tokens": 0,
+      "reuse_requests": 0,
+      "derived_unique_consumed_bytes": 0
+    }
+  ]
+}

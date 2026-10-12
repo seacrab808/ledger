@@ -1,0 +1,58 @@
+{
+  "status": {
+    "label": "mp-smoke-01",
+    "started_at_utc": "2026-10-12T09:20:06.128061+00:00",
+    "RSS_limit": 8589934592,
+    "GPU_limit": 4294967296,
+    "artifact_limit": 10737418240,
+    "address_space": "default; user-approved GPU virtual-address exception",
+    "max_RSS": 2898972672,
+    "max_GPU": 2065694720,
+    "max_artifact_bytes": 9879825405,
+    "command": [
+      "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+      "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_mp_smoke_remote.py"
+    ],
+    "status": "failed",
+    "pid": 619375,
+    "exit_code": 1,
+    "ended_at_utc": "2026-10-12T09:20:25.626146+00:00"
+  },
+  "files": {
+    "source.py": {
+      "sha256": "8bed8f6de142ceeb2217cc6e28a8009764ff427b01a8adf7f8ed76b81939b7e4",
+      "bytes": 6364
+    },
+    "config.json": {
+      "sha256": "c8b5fad50d09898053f66bc8aa67d1852565ad08ae6c061b24871b02157da0d8",
+      "bytes": 706
+    },
+    "baseline.json": {
+      "sha256": "0fe832021093ddda08d28a8aa3fe970d2b9cf9aaaf518ed25af1a7f9a65daf7e",
+      "bytes": 3501
+    },
+    "baseline.log": {
+      "sha256": "2ce853e10203df0e21cdf5f4943d07822904a0b5922bf64eda9667cbff4ef532",
+      "bytes": 9835
+    },
+    "failure.json": {
+      "sha256": "8730732ec2456a3dc90514a8f79b7789364fa5dd3c5d542bb013c5e017b4796c",
+      "bytes": 56
+    },
+    "server.log": {
+      "sha256": "f7e22a427e444090c15d6f13c071e0919f8465e1f2979a68d4a7188cb2216a65",
+      "bytes": 7360
+    }
+  },
+  "cache_inventory": {
+    "cache": {
+      "directory_allocated_bytes": 4096,
+      "files": []
+    }
+  },
+  "host": {
+    "kernel": "5.15.0-78-generic",
+    "machine": "x86_64",
+    "python": "3.10.12"
+  }
+}

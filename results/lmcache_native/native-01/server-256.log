@@ -1,0 +1,357 @@
+[32;20m[2026-10-12 18:30:21,633] LMCache INFO:[0m torch_dev=<module 'torch.cuda' from '/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/torch/cuda/__init__.py'>, torch_device_type=cuda [3m(_device_detect.py:312:lmcache.v1.platform._device_detect)[0m
+[32;20m[2026-10-12 18:30:21,633] LMCache INFO:[0m Auto-selected backend [cuda] for accelerator 'cuda' from candidate backends [cuda, rocm]. [3m(__init__.py:148:lmcache.v1.platform)[0m
+
+ _     __  __    ____           _          
+| |   |  \/  |  / ___|__ _  ___| |__   ___      LMCache v0.5.5 (g05a013b2)
+| |   | |\/| | | |   / _` |/ __| '_ \ / _ \     Website:  https://lmcache.ai/
+| |___| |  | | | |__| (_| | (__| | | |  __/     Recipes:  https://docs.lmcache.ai/recipes
+|_____|_|  |_|  \____\__,_|\___|_| |_|\___|     LinkedIn: https://www.linkedin.com/company/lmcache-lab
+Set LMCACHE_DISABLE_BANNER=1 to hide this banner.
+
+[32;20m[2026-10-12 18:30:22,030] LMCache INFO:[0m multi_layer_block_kv_transfer mode: ptr [3m(base.py:95:lmcache.v1.multiprocess.transfer_context.base)[0m
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.bigtable_admin_v2 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.bigtable_admin_v2.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.bigtable_v2 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.bigtable_v2.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.monitoring_v3 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.monitoring_v3.
+  warnings.warn(message, FutureWarning)
+[32;20m[2026-10-12 18:30:23,152] LMCache INFO:[0m Discovered API module: cache_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,152] LMCache INFO:[0m Discovered API module: env_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,154] LMCache INFO:[0m Discovered API module: loglevel_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,154] LMCache INFO:[0m Discovered API module: metrics_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,155] LMCache INFO:[0m Discovered API module: periodic_thread_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,155] LMCache INFO:[0m Discovered API module: run_script_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,156] LMCache INFO:[0m Discovered API module: thread_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,158] LMCache INFO:[0m Discovered API module: common_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,158] LMCache INFO:[0m Discovered API module: config_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,160] LMCache INFO:[0m Discovered API module: info_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,161] LMCache INFO:[0m Discovered API module: quota_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,163] LMCache INFO:[0m Discovered API module: reconfigure_api [3m(router_discovery.py:53:lmcache.v1.utils.router_discovery)[0m
+[32;20m[2026-10-12 18:30:23,178] LMCache INFO:[0m Starting LMCache HTTP server on http://127.0.0.1:36249 [3m(http_server.py:259:lmcache.v1.multiprocess.http_server)[0m
+INFO:     Started server process [677906]
+INFO:     Waiting for application startup.
+[32;20m[2026-10-12 18:30:23,186] LMCache INFO:[0m Starting LMCache HTTP server... (accelerator available: True) [3m(http_server.py:77:lmcache.v1.multiprocess.http_server)[0m
+[32;20m[2026-10-12 18:30:23,324] LMCache INFO:[0m Starting L1EvictionController... [3m(eviction_controller.py:53:lmcache.v1.distributed.storage_controllers.eviction_controller)[0m
+[32;20m[2026-10-12 18:30:23,324] LMCache INFO:[0m Initialized FSL2Adapter with base_path=/home/miruware/ledger/artifacts/lmcache-runtime/native-01-results/cache-256, relative_tmp_dir=None, read_ahead_size=None, use_odirect=False [3m(fs_l2_adapter.py:304:lmcache.v1.distributed.l2_adapters.fs_l2_adapter)[0m
+[32;20m[2026-10-12 18:30:23,324] LMCache INFO:[0m Starting L2EvictionController... [3m(eviction_controller.py:250:lmcache.v1.distributed.storage_controllers.eviction_controller)[0m
+[32;20m[2026-10-12 18:30:23,325] LMCache INFO:[0m Starting StoreController... [3m(store_controller.py:305:lmcache.v1.distributed.storage_controllers.store_controller)[0m
+[32;20m[2026-10-12 18:30:23,325] LMCache INFO:[0m Starting PrefetchController... [3m(prefetch_controller.py:596:lmcache.v1.distributed.storage_controllers.prefetch_controller)[0m
+[32;20m[2026-10-12 18:30:23,325] LMCache INFO:[0m Using blake3 hash function [3m(token_hasher.py:79:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m Computed NONE_HASH=b"~>\xff\x9e\xf7a:P4\x0e\xb1&w\xee\x03\xb8:\xc7Y\xfc\xba\x9b\xb3'\x05\xf0rH\xd5mG;" using hash function [3m(token_hasher.py:180:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m TokenHasher initialized: chunk_size=256, hash_algorithm=blake3 [3m(token_hasher.py:67:lmcache.v1.multiprocess.token_hasher)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m PeriodicThread SessionManager-cleanup-thread-7fe9c19e7760 entering main loop (interval=60.0s) [3m(periodic_thread.py:304:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m Started PeriodicThread: SessionManager-cleanup-thread-7fe9c19e7760 (level=medium, interval=60.0s, init_wait=0.0s) [3m(periodic_thread.py:248:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m PeriodicThread DeviceHostFuncDispatcher entering main loop (interval=0.0s) [3m(periodic_thread.py:304:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m Started PeriodicThread: DeviceHostFuncDispatcher (level=high, interval=0.0s, init_wait=0.0s) [3m(periodic_thread.py:248:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:23,326] LMCache INFO:[0m Supported transfer mode: lmcache_driven [3m(server.py:188:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:30:23,327] LMCache INFO:[0m PeriodicThread lmcache-mp-worker-reaper entering main loop (interval=30.0s) [3m(periodic_thread.py:304:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:23,327] LMCache INFO:[0m Started PeriodicThread: lmcache-mp-worker-reaper (level=medium, interval=30.0s, init_wait=0.0s) [3m(periodic_thread.py:248:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:30:23,329] LMCache INFO:[0m Created AffinityThreadPool 'affinity-pool-0' with 1 worker slots: up to 1 distinct affinity keys each bind to their own thread before slots are shared. Compare this against the number of clients expected to connect to confirm routing. [3m(affinity_pool.py:60:lmcache.v1.multiprocess.affinity_pool)[0m
+[32;20m[2026-10-12 18:30:23,329] LMCache INFO:[0m LMCache ZMQ cache server is running on tcp://127.0.0.1:48371 [3m(server.py:386:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:30:23,330] LMCache INFO:[0m LMCache cache server is running... [3m(server.py:401:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:30:23,330] LMCache INFO:[0m LMCache HTTP server initialized [3m(http_server.py:164:lmcache.v1.multiprocess.http_server)[0m
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:36249 (Press CTRL+C to quit)
+[32;20m[2026-10-12 18:30:32,493] LMCache INFO:[0m Engine KV Format: EngineKVFormat.NL_X_NB_BS_NH_CS NL x [NB, BS, NH, CS] [3m(detection.py:69:lmcache.v1.gpu_connector.kv_format.detection)[0m
+[32;20m[2026-10-12 18:30:32,493] LMCache INFO:[0m Engine KV Format: EngineKVFormat.NL_X_NB_BS_NH_CS NL x [NB, BS, NH, CS] [3m(detection.py:69:lmcache.v1.gpu_connector.kv_format.detection)[0m
+[32;20m[2026-10-12 18:30:32,493] LMCache INFO:[0m Group 0 first-layer tensor: layer_idx=0 shape=(682, 16, 2, 128) stride=(4096, 256, 128, 1) is_contiguous=True dtype=torch.float16 device=cuda:0 storage_offset=0 numel=2793472 storage_nbytes=5586944 padding_per_block=0 [3m(utils.py:608:lmcache.v1.gpu_connector.utils)[0m
+[32;20m[2026-10-12 18:30:32,493] LMCache INFO:[0m KV layer groups: ---
+KernelGroupInfo(layers=24, indices=0-23, shape_desc=(kv=1, nl=24, nb=682, bs=16, nh=2, hs=128, element_size=2, block_stride_elems=4096), dtype=torch.float16, tokens_per_block=16, slots_per_block=16, engine_group_idx=0, sw_size_tokens=-1)
+--- [3m(kv_layer_groups.py:474:lmcache.v1.kv_layer_groups)[0m
+[32;20m[2026-10-12 18:30:32,496] LMCache INFO:[0m Initialized cuda stream on device cuda:0 [3m(cache_context.py:463:lmcache.v1.platform.cuda.cache_context)[0m
+[32;20m[2026-10-12 18:30:32,497] LMCache INFO:[0m Allocated timeline-semaphore event buffer on cuda:0 (4096 slots) [3m(timeline_semaphore_event_ipc.py:622:lmcache.v1.platform.cuda.timeline_semaphore_event_ipc)[0m
+[32;20m[2026-10-12 18:30:32,497] LMCache INFO:[0m Registered KV cache for GPU ID 721361525017084604 with 24 layers [3m(lmcache_driven_transfer.py:1009:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:33,740] LMCache WARNING:[0m Session 0-91b4bf97 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:33,871] LMCache WARNING:[0m Session 1-be7dbe41 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:34,200] LMCache WARNING:[0m Session 2-8a19b7c4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:34,519] LMCache WARNING:[0m Session 3-89b11fa2 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:34,845] LMCache WARNING:[0m Session 4-8f910506 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:35,157] LMCache WARNING:[0m Session 5-91e59e02 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:35,972] LMCache WARNING:[0m Session 6-88999f4a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:36,286] LMCache WARNING:[0m Session 7-8bbe57d0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:36,642] LMCache WARNING:[0m Session 8-a3590fe9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:36,956] LMCache WARNING:[0m Session 9-81ec17c4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:37,279] LMCache WARNING:[0m Session 10-bf30bc73 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:37,685] LMCache WARNING:[0m Session 11-aae9addf has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:38,040] LMCache WARNING:[0m Session 12-a729ad86 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:38,379] LMCache WARNING:[0m Session 13-aa451a99 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:38,698] LMCache WARNING:[0m Session 14-85ef8952 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:39,035] LMCache WARNING:[0m Session 15-ac704513 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:39,375] LMCache WARNING:[0m Session 16-b5c8694b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:30:39,723] LMCache INFO:[0m AffinityThreadPool: affinity_key=-7989165495013372359 assigned to worker slot 0 of 1 (thread affinity-pool-0-0); 1 distinct key(s) now bound [3m(affinity_pool.py:108:lmcache.v1.multiprocess.affinity_pool)[0m
+[32;20m[2026-10-12 18:30:39,725] LMCache INFO:[0m Stored 256 tokens in 0.002 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:40,059] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:40,390] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:40,704] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:41,009] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.7 ms (external_request_id=21-aec16d26, prefetch_request_id=4) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:41,011] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:41,330] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 6.8 ms (external_request_id=22-b642eb90, prefetch_request_id=5) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:41,332] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:41,649] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.8 ms (external_request_id=23-964dece9, prefetch_request_id=6) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:41,652] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:41,997] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 30.4 ms (external_request_id=24-a4afad8a, prefetch_request_id=7) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:42,019] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:42,422] LMCache WARNING:[0m Session 25-939acbe0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:42,738] LMCache WARNING:[0m Session 26-9d77f5bf has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:43,066] LMCache WARNING:[0m Session 27-9eef4afb has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:43,395] LMCache WARNING:[0m Session 28-9d5d52d0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:43,830] LMCache WARNING:[0m Session 29-881f9788 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:44,175] LMCache WARNING:[0m Session 30-bcc6d170 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:44,538] LMCache WARNING:[0m Session 31-83d345a6 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:44,859] LMCache WARNING:[0m Session 32-97b6dae7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:45,201] LMCache WARNING:[0m Session 33-9e17c02b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:45,563] LMCache WARNING:[0m Session 34-9ec9f487 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:45,882] LMCache WARNING:[0m Session 35-9e468873 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:46,951] LMCache WARNING:[0m Session 36-afaf85c1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:47,265] LMCache WARNING:[0m Session 37-8ac5556d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:47,613] LMCache WARNING:[0m Session 38-9ab1517c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:47,976] LMCache WARNING:[0m Session 39-9f6a62c8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:48,309] LMCache WARNING:[0m Session 40-a7ab1a6e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:30:48,623] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:48,964] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:49,279] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:49,607] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:49,914] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.5 ms (external_request_id=45-bba66829, prefetch_request_id=12) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:49,916] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:50,243] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 12.6 ms (external_request_id=46-8268311b, prefetch_request_id=13) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:50,253] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:50,582] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 6.8 ms (external_request_id=47-be56ac58, prefetch_request_id=14) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:50,584] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:50,904] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 4.7 ms (external_request_id=48-b9f1b0bd, prefetch_request_id=15) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:50,915] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:51,237] LMCache WARNING:[0m Session 49-82744f1d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:51,599] LMCache WARNING:[0m Session 50-8a180b6d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:51,963] LMCache WARNING:[0m Session 51-948a932a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:52,277] LMCache WARNING:[0m Session 52-87fbe81e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:52,634] LMCache WARNING:[0m Session 53-9578186d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:52,948] LMCache WARNING:[0m Session 54-a4dfe5a0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:53,268] LMCache WARNING:[0m Session 55-ba1d4454 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:53,591] LMCache WARNING:[0m Session 56-92e16444 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:53,906] LMCache WARNING:[0m Session 57-b647f523 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:54,255] LMCache WARNING:[0m Session 58-8231d6ce has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:54,647] LMCache WARNING:[0m Session 59-97cf873a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:54,963] LMCache WARNING:[0m Session 60-801590ac has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:55,298] LMCache WARNING:[0m Session 61-a57460a3 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:55,619] LMCache WARNING:[0m Session 62-adadfc10 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:55,934] LMCache WARNING:[0m Session 63-969b2a9b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:30:56,287] LMCache WARNING:[0m Session 64-a6b8a874 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:30:56,611] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:56,937] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:57,253] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:58,066] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:58,373] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 2.6 ms (external_request_id=69-bdb6bdc0, prefetch_request_id=20) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:58,375] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:58,716] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 13.5 ms (external_request_id=70-bc1183ee, prefetch_request_id=21) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:58,721] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:59,050] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 8.4 ms (external_request_id=71-b4273bbc, prefetch_request_id=22) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:59,058] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:30:59,379] LMCache INFO:[0m Prefetch request completed (L1+L2): 1/1 retained keys (0 L1, 1 L2) in 3.6 ms (external_request_id=72-a1a94108, prefetch_request_id=23) [3m(storage_manager.py:726:lmcache.v1.distributed.storage_manager)[0m
+[32;20m[2026-10-12 18:30:59,393] LMCache INFO:[0m Retrieved 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1520:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:30:59,722] LMCache WARNING:[0m Session 73-9b145411 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:00,090] LMCache WARNING:[0m Session 74-a2201a1f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:00,405] LMCache WARNING:[0m Session 75-adc1b1fc has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:00,737] LMCache WARNING:[0m Session 76-880054e4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:01,082] LMCache WARNING:[0m Session 77-b7ba8c32 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:01,398] LMCache WARNING:[0m Session 78-b26e6b84 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:01,729] LMCache WARNING:[0m Session 79-ab04fd72 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:02,045] LMCache WARNING:[0m Session 80-990af1bd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:02,371] LMCache WARNING:[0m Session 81-a05aa75f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:02,736] LMCache WARNING:[0m Session 82-89bd4ab8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:03,054] LMCache WARNING:[0m Session 83-865a353b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:03,379] LMCache WARNING:[0m Session 84-ac2a557c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:03,738] LMCache WARNING:[0m Session 85-94dd600b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:04,075] LMCache WARNING:[0m Session 86-9a3d03dd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:04,429] LMCache WARNING:[0m Session 87-84f4ace1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:04,763] LMCache WARNING:[0m Session 88-affeec92 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:05,092] LMCache WARNING:[0m Session 89-9a315d43 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:05,411] LMCache WARNING:[0m Session 90-b852ba94 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:05,769] LMCache WARNING:[0m Session 91-a4b57ef0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:06,112] LMCache WARNING:[0m Session 92-9debb473 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:06,439] LMCache WARNING:[0m Session 93-866e689d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:06,758] LMCache WARNING:[0m Session 94-90a2aa61 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:07,116] LMCache WARNING:[0m Session 95-a7518c5f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:07,460] LMCache WARNING:[0m Session 96-a66b3dc4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:07,820] LMCache WARNING:[0m Session 97-879e7425 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:08,188] LMCache WARNING:[0m Session 98-9aaac191 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:09,135] LMCache WARNING:[0m Session 99-a15a4e28 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:09,449] LMCache WARNING:[0m Session 100-af93e031 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:09,856] LMCache WARNING:[0m Session 101-aa26daac has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:10,214] LMCache WARNING:[0m Session 102-b9521953 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:10,529] LMCache WARNING:[0m Session 103-adf8ccb8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:10,854] LMCache WARNING:[0m Session 104-bee46349 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:11,203] LMCache WARNING:[0m Session 105-85dacb13 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:11,526] LMCache WARNING:[0m Session 106-9bf8390e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:11,848] LMCache WARNING:[0m Session 107-b16fd86f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:12,180] LMCache WARNING:[0m Session 108-b0352044 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:12,556] LMCache WARNING:[0m Session 109-a34fc2dd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:12,874] LMCache WARNING:[0m Session 110-9d73746a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:13,238] LMCache WARNING:[0m Session 111-bbe7e628 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:13,565] LMCache WARNING:[0m Session 112-8d794033 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:13,881] LMCache WARNING:[0m Session 113-a7e8df17 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:14,248] LMCache WARNING:[0m Session 114-8642fe33 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:14,577] LMCache WARNING:[0m Session 115-9865b188 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:14,908] LMCache WARNING:[0m Session 116-8e3c0de6 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:15,227] LMCache WARNING:[0m Session 117-b961e2ff has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:15,696] LMCache WARNING:[0m Session 118-b49d2c85 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:16,012] LMCache WARNING:[0m Session 119-967f4866 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:16,347] LMCache WARNING:[0m Session 120-987cc08b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:16,708] LMCache WARNING:[0m Session 121-800068a2 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:17,110] LMCache WARNING:[0m Session 122-86589db2 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:17,425] LMCache WARNING:[0m Session 123-b8625a84 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:17,747] LMCache WARNING:[0m Session 124-ba416115 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:18,100] LMCache WARNING:[0m Session 125-bec55d1a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:18,475] LMCache WARNING:[0m Session 126-8833aefa has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:18,787] LMCache WARNING:[0m Session 127-a7281c17 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:19,102] LMCache WARNING:[0m Session 128-8393c4bf has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:19,442] LMCache WARNING:[0m Session 129-acbfee1e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:19,980] LMCache WARNING:[0m Session 130-bdbe2326 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:20,292] LMCache WARNING:[0m Session 131-b1e37d67 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:20,639] LMCache WARNING:[0m Session 132-aa01d151 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:20,958] LMCache WARNING:[0m Session 133-8a8890d6 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:21,311] LMCache WARNING:[0m Session 134-b39baf14 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:21,673] LMCache WARNING:[0m Session 135-b6580b1d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:22,029] LMCache WARNING:[0m Session 136-abe7ac09 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:22,355] LMCache WARNING:[0m Session 137-973ee794 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:22,726] LMCache WARNING:[0m Session 138-84e0083e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:23,074] LMCache WARNING:[0m Session 139-a2bcb761 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:23,412] LMCache WARNING:[0m Session 140-b888ed7f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:23,766] LMCache WARNING:[0m Session 141-87a947b5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:24,082] LMCache WARNING:[0m Session 142-8e1b87e5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:24,398] LMCache WARNING:[0m Session 143-b56bde1a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:24,713] LMCache WARNING:[0m Session 144-8547719b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:25,029] LMCache WARNING:[0m Session 145-9d694f6c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:25,406] LMCache WARNING:[0m Session 146-82d7d014 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:25,792] LMCache WARNING:[0m Session 147-87b326fe has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:26,108] LMCache WARNING:[0m Session 148-acda197a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:26,436] LMCache WARNING:[0m Session 149-b981a995 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:26,801] LMCache WARNING:[0m Session 150-9c02ed9e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:27,120] LMCache WARNING:[0m Session 151-864f3c12 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:27,471] LMCache WARNING:[0m Session 152-b8b37ffa has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:27,791] LMCache WARNING:[0m Session 153-b485b82c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:28,150] LMCache WARNING:[0m Session 154-80aa4955 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:28,467] LMCache WARNING:[0m Session 155-82abd107 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:28,848] LMCache WARNING:[0m Session 156-a4ad2a06 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:29,193] LMCache WARNING:[0m Session 157-be4f83ec has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:29,527] LMCache WARNING:[0m Session 158-964740a4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:29,857] LMCache WARNING:[0m Session 159-9a5686dd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:30,173] LMCache WARNING:[0m Session 160-8aca9434 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:30,507] LMCache WARNING:[0m Session 161-bbe4fee4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:31,383] LMCache WARNING:[0m Session 162-b30e9e68 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:31,699] LMCache WARNING:[0m Session 163-a505bd46 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:32,016] LMCache WARNING:[0m Session 164-a4d2fef5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:31:32,347] LMCache INFO:[0m Stored 256 tokens in 0.003 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:32,729] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:33,047] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:33,392] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:31:33,711] LMCache WARNING:[0m Session 169-b52b0a3b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:34,028] LMCache WARNING:[0m Session 170-9348955c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:34,354] LMCache WARNING:[0m Session 171-98b2e993 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:34,671] LMCache WARNING:[0m Session 172-b0a47703 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:34,997] LMCache WARNING:[0m Session 173-954fecb9 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:35,431] LMCache WARNING:[0m Session 174-ab5ce453 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:35,753] LMCache WARNING:[0m Session 175-a5000999 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:36,069] LMCache WARNING:[0m Session 176-bb416a2e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:36,420] LMCache WARNING:[0m Session 177-b55244a3 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:36,737] LMCache WARNING:[0m Session 178-95685d26 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:37,111] LMCache WARNING:[0m Session 179-ae4ffcc5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:37,429] LMCache WARNING:[0m Session 180-8422fbc4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:37,781] LMCache WARNING:[0m Session 181-947f46a4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:38,098] LMCache WARNING:[0m Session 182-95e52b2d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:38,416] LMCache WARNING:[0m Session 183-88a3c413 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:38,782] LMCache WARNING:[0m Session 184-b053e522 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:39,132] LMCache WARNING:[0m Session 185-b46beb9e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:39,449] LMCache WARNING:[0m Session 186-9af6410f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:39,855] LMCache WARNING:[0m Session 187-8555fe3a has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:40,172] LMCache WARNING:[0m Session 188-85814403 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:31:40,531] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:40,849] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:41,231] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:41,559] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:31:41,903] LMCache WARNING:[0m Session 193-9f75af79 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:42,493] LMCache WARNING:[0m Session 194-9152d4d1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:42,809] LMCache WARNING:[0m Session 195-aeb5f061 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:43,159] LMCache WARNING:[0m Session 196-ac43f2d4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:43,477] LMCache WARNING:[0m Session 197-85d16908 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:43,793] LMCache WARNING:[0m Session 198-a985e1ae has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:44,119] LMCache WARNING:[0m Session 199-a7300469 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:44,482] LMCache WARNING:[0m Session 200-b4196ba3 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:44,806] LMCache WARNING:[0m Session 201-b6673f3c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:45,122] LMCache WARNING:[0m Session 202-b1362abb has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:45,446] LMCache WARNING:[0m Session 203-bfe36018 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:45,803] LMCache WARNING:[0m Session 204-91f59238 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:46,121] LMCache WARNING:[0m Session 205-bd6104aa has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:46,479] LMCache WARNING:[0m Session 206-ac704397 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:46,888] LMCache WARNING:[0m Session 207-98e9ea34 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:47,205] LMCache WARNING:[0m Session 208-8cf63c04 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:47,543] LMCache WARNING:[0m Session 209-8b19d0c4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:47,880] LMCache WARNING:[0m Session 210-8567fc2b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:48,248] LMCache WARNING:[0m Session 211-94d0c723 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:48,566] LMCache WARNING:[0m Session 212-8c5a2407 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[32;20m[2026-10-12 18:31:48,995] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:49,328] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:49,694] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[32;20m[2026-10-12 18:31:50,014] LMCache INFO:[0m Stored 256 tokens in 0.001 seconds [3m(lmcache_driven_transfer.py:1276:lmcache.v1.multiprocess.modules.lmcache_driven_transfer)[0m
+[33;20m[2026-10-12 18:31:50,335] LMCache WARNING:[0m Session 217-85ff12a6 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:50,653] LMCache WARNING:[0m Session 218-907bdd89 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:51,013] LMCache WARNING:[0m Session 219-8135336b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:51,331] LMCache WARNING:[0m Session 220-9d00ce33 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:51,687] LMCache WARNING:[0m Session 221-ae96a6ba has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:52,017] LMCache WARNING:[0m Session 222-a07e8e39 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:52,344] LMCache WARNING:[0m Session 223-9fe4bc34 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:52,677] LMCache WARNING:[0m Session 224-bd22a22c has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:53,571] LMCache WARNING:[0m Session 225-8907c0a6 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:53,889] LMCache WARNING:[0m Session 226-916067ca has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:54,235] LMCache WARNING:[0m Session 227-a3416ace has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:54,568] LMCache WARNING:[0m Session 228-a573a0aa has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:54,895] LMCache WARNING:[0m Session 229-b6583d55 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:55,213] LMCache WARNING:[0m Session 230-805fe710 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:55,541] LMCache WARNING:[0m Session 231-813cb455 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:55,963] LMCache WARNING:[0m Session 232-802aa234 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:56,281] LMCache WARNING:[0m Session 233-b79ed54b has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:56,615] LMCache WARNING:[0m Session 234-92f0c019 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:56,951] LMCache WARNING:[0m Session 235-85a84440 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:57,287] LMCache WARNING:[0m Session 236-bef37d08 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:57,618] LMCache WARNING:[0m Session 237-80902fc5 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:57,950] LMCache WARNING:[0m Session 238-ab314d1f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:58,313] LMCache WARNING:[0m Session 239-8fb89401 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:58,629] LMCache WARNING:[0m Session 240-95de3963 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:58,956] LMCache WARNING:[0m Session 241-a8cfd7f4 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:59,280] LMCache WARNING:[0m Session 242-a879719d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:59,635] LMCache WARNING:[0m Session 243-8ddd679f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:31:59,964] LMCache WARNING:[0m Session 244-bdb878a6 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:00,294] LMCache WARNING:[0m Session 245-931e99e1 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:00,619] LMCache WARNING:[0m Session 246-a7609a70 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:00,948] LMCache WARNING:[0m Session 247-b457dfb7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:01,307] LMCache WARNING:[0m Session 248-ae1d4b35 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:01,625] LMCache WARNING:[0m Session 249-bed34b28 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:01,943] LMCache WARNING:[0m Session 250-8c72d99f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:02,268] LMCache WARNING:[0m Session 251-871c84c7 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:02,585] LMCache WARNING:[0m Session 252-9cb18058 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:02,906] LMCache WARNING:[0m Session 253-bdc8b0ee has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:03,233] LMCache WARNING:[0m Session 254-b8bcc3cb has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:03,552] LMCache WARNING:[0m Session 255-bb68b2af has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:03,880] LMCache WARNING:[0m Session 256-8a449cdd has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:04,285] LMCache WARNING:[0m Session 257-81595fc0 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:04,691] LMCache WARNING:[0m Session 258-8916232f has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:05,015] LMCache WARNING:[0m Session 259-8999d93d has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:05,375] LMCache WARNING:[0m Session 260-bbf583c8 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:05,715] LMCache WARNING:[0m Session 261-b702d6ff has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:06,038] LMCache WARNING:[0m Session 262-8dc7493e has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:06,399] LMCache WARNING:[0m Session 263-a8faa360 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+[33;20m[2026-10-12 18:32:06,723] LMCache WARNING:[0m Session 264-a9a4b842 has no lookup ipc key, skipping touch [3m(lookup.py:534:lmcache.v1.multiprocess.modules.lookup)[0m
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[32;20m[2026-10-12 18:32:07,351] LMCache INFO:[0m Shutting down LMCache HTTP server... [3m(http_server.py:169:lmcache.v1.multiprocess.http_server)[0m
+[32;20m[2026-10-12 18:32:07,728] LMCache INFO:[0m Stopping PeriodicThread: lmcache-mp-worker-reaper [3m(periodic_thread.py:267:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:32:07,729] LMCache INFO:[0m PeriodicThread lmcache-mp-worker-reaper loop stopped [3m(periodic_thread.py:371:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:32:07,729] LMCache INFO:[0m Stopping PeriodicThread: DeviceHostFuncDispatcher [3m(periodic_thread.py:267:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:32:07,729] LMCache INFO:[0m PeriodicThread DeviceHostFuncDispatcher loop stopped [3m(periodic_thread.py:371:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:32:07,731] LMCache INFO:[0m Stopping PeriodicThread: SessionManager-cleanup-thread-7fe9c19e7760 [3m(periodic_thread.py:267:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:32:07,731] LMCache INFO:[0m PeriodicThread SessionManager-cleanup-thread-7fe9c19e7760 loop stopped [3m(periodic_thread.py:371:lmcache.v1.periodic_thread)[0m
+[32;20m[2026-10-12 18:32:07,766] LMCache INFO:[0m FSL2Adapter closed [3m(fs_l2_adapter.py:487:lmcache.v1.distributed.l2_adapters.fs_l2_adapter)[0m
+[32;20m[2026-10-12 18:32:07,775] LMCache INFO:[0m MPCacheServer closed [3m(server.py:115:lmcache.v1.multiprocess.server)[0m
+[32;20m[2026-10-12 18:32:07,775] LMCache INFO:[0m LMCache HTTP server stopped [3m(http_server.py:187:lmcache.v1.multiprocess.http_server)[0m
+INFO:     Application shutdown complete.
+INFO:     Finished server process [677906]

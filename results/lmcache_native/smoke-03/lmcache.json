@@ -1,0 +1,1 @@
+{"chunk_size": 128, "local_cpu": false, "max_local_cpu_size": 0.125, "local_disk": "/home/miruware/ledger/artifacts/lmcache-runtime/smoke-03-results/cache", "max_local_disk_size": 0.25, "save_unfull_chunk": false, "save_decode_cache": false, "use_layerwise": false, "enable_async_loading": false, "extra_config": {"disk_io_threads": 2}, "lmcache_instance_id": "ledger-smoke-01"}

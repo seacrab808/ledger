@@ -1,0 +1,1424 @@
+[
+  {
+    "chunk": 64,
+    "repeat": 0,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 6291456,
+    "write_seconds": 0.004683158011175692,
+    "read_seconds": 0.0033235900045838207,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 64,
+    "repeat": 0,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 6291456,
+    "write_seconds": 0.00447952002286911,
+    "read_seconds": 0.003199332015356049,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 64,
+    "repeat": 1,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 6291456,
+    "write_seconds": 0.004227719007758424,
+    "read_seconds": 0.0031936930026859045,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 64,
+    "repeat": 1,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 6291456,
+    "write_seconds": 0.004904181987512857,
+    "read_seconds": 0.0033227590029127896,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 64,
+    "repeat": 2,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 6291456,
+    "write_seconds": 0.00429056299617514,
+    "read_seconds": 0.003209838003385812,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 64,
+    "repeat": 2,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 6291456,
+    "write_seconds": 0.0053162359981797636,
+    "read_seconds": 0.003212942014215514,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      },
+      {
+        "type": "write",
+        "bytes": 786432
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      },
+      {
+        "type": "read",
+        "bytes": 786432
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 128,
+    "repeat": 0,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 12582912,
+    "write_seconds": 0.006248545978451148,
+    "read_seconds": 0.0032887469860725105,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 128,
+    "repeat": 0,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 12582912,
+    "write_seconds": 0.009516250982414931,
+    "read_seconds": 0.0031904589850455523,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 128,
+    "repeat": 1,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 12582912,
+    "write_seconds": 0.007399477995932102,
+    "read_seconds": 0.003180013009114191,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 128,
+    "repeat": 1,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 12582912,
+    "write_seconds": 0.005794689990580082,
+    "read_seconds": 0.0035483410174492747,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 128,
+    "repeat": 2,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 12582912,
+    "write_seconds": 0.0060927210142835975,
+    "read_seconds": 0.003464823996182531,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 128,
+    "repeat": 2,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 12582912,
+    "write_seconds": 0.007407561002764851,
+    "read_seconds": 0.003181595995556563,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      },
+      {
+        "type": "write",
+        "bytes": 1572864
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      },
+      {
+        "type": "read",
+        "bytes": 1572864
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 256,
+    "repeat": 0,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 25165824,
+    "write_seconds": 0.009737237996887416,
+    "read_seconds": 0.003474008000921458,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 256,
+    "repeat": 0,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 25165824,
+    "write_seconds": 0.012708785972790793,
+    "read_seconds": 0.004246555006830022,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 256,
+    "repeat": 1,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 25165824,
+    "write_seconds": 0.011628589010797441,
+    "read_seconds": 0.004245835996698588,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 256,
+    "repeat": 1,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 25165824,
+    "write_seconds": 0.009396533016115427,
+    "read_seconds": 0.004275532002793625,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 256,
+    "repeat": 2,
+    "mode": "single",
+    "objects": 8,
+    "payload_bytes": 25165824,
+    "write_seconds": 0.008966421999502927,
+    "read_seconds": 0.00333889399189502,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  },
+  {
+    "chunk": 256,
+    "repeat": 2,
+    "mode": "batch",
+    "objects": 8,
+    "payload_bytes": 25165824,
+    "write_seconds": 0.011617373995250091,
+    "read_seconds": 0.0042652940028347075,
+    "write_events": [
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      },
+      {
+        "type": "write",
+        "bytes": 3145728
+      }
+    ],
+    "read_events": [
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      },
+      {
+        "type": "read",
+        "bytes": 3145728
+      }
+    ],
+    "hash_correctness": true,
+    "cache_condition": "OS page-cache warm; no global cache drop"
+  }
+]

@@ -1,0 +1,1 @@
+{"gpu": "0, NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 97887 MiB, 0 MiB, 97248 MiB, 580.105.08", "address_space_GiB": 12, "affinity": [0, 1], "cuInit": 2, "cuDeviceGet": 3, "cuCtxCreate": 3, "peak_RSS_KiB": 18140}

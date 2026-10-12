@@ -1,7 +1,7 @@
 {
   "status": "provisional",
   "question": "저장·재사용 경계와 memory/storage 계층의 상호작용이 기존 효율 지표나 시스템 선택을 뒤집는 실제 조건이 있는가?",
-  "scope": "기존 FEMU와 full-state 12 runs 보존. 기존 synthetic token trace의 chunk 64/128/256/512 offline paired replay 완료. 새 policy/controller/backend/FEMU 실행 없음.",
+  "scope": "기존 FEMU/full-state/analytical replay 보존. 기존 LMCache MP filesystem에서 archived synthetic 12 traces를 baseline/64/128/256 paired 평가했고 native FS batch component 비교도 완료했다. 엄격한 top20 집합 gate 14건 미해결. 새 policy/controller/backend 구현과 FEMU 실행 없음.",
   "directions": [
     {
       "name": "서비스별 소거 비용 회계",
@@ -307,7 +307,15 @@
       "reason": "사용자가 실제 64/128/256 비교를 승인했다. LMCache 0.5.5 source에서 tail 저장과 prefix 부분 조회, 메시지/읽기 batching과 개별 disk writes를 구분했다. 공유 GPU 사용 확인 및 자원/IPC gate는 아직 미해결이다.",
       "alternatives": "기존 offline token replay를 실제 prefill·disk 비용으로 표현하거나 공유 GPU를 임의 사용",
       "why_not": "Native backend 모델 실행과 디스크 계측은 아직 없다. CPU MP의 POSIX SHM도 ledger 밖 쓰기 제한과 조정이 필요하다.",
-      "status": "source-audit-complete-runtime-pending"
+      "status": "historical-audit-followed-by-native-screening-D030"
+    },
+    {
+      "id": "D030",
+      "title": "Native MP 파일 backend에서 chunk 상충을 실측하되 correctness 한계 보존",
+      "reason": "12 paired synthetic traces × baseline/64/128/256 완료. 실제 forward 절약은 17664/12288/3072 tokens, payload writes 144/126/72 MiB. V1 smoke 실패 후 기존 MP 경로를 사용했다. 본 비교 greedy 792/792와 common logprob 0.05 기준은 통과했으나 top20 key-set gate 14건 실패. Native FS batch 18조건의 bytes hash는 통과했고 파일/bytes 비용은 줄지 않았다.",
+      "alternatives": "사후 correctness 기준 완화, 작은 chunk를 최종 solution으로 선언, batching API를 새로운 정책으로 수정",
+      "why_not": "Synthetic 짧은 trace와 단일 backend다. 공유 GPU/고정 실행 순서/OS cache 조건의 latency를 일반화할 수 없고 엄격한 추가 gate가 미해결이다.",
+      "status": "native-screening-complete-with-correctness-qualification"
     }
   ],
   "new_questions": [
@@ -322,6 +330,6 @@
     "status": "runtime-complete-research-go-undetermined",
     "chunk_replay": "offline-paired-replay-complete",
     "summary": "records/kv-screen-summary.json",
-    "lmcache_native": "source-audit-complete-runtime-pending"
+    "lmcache_native": "runtime-complete-correctness-qualified-no-new-policy"
   }
 }

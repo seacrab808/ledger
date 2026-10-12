@@ -121,8 +121,33 @@ prefix dedup이 더 잘되면 작은 C의 total bytes가 줄 수도 있다.
 선택 역전이 반복되고 실제 trace에서도 유지되어야 새로운 시스템 mismatch 후보로
 발전시킨다. 이번에는 synthetic 외삽, NAND/wear 주장, 새로운 정책 구현을 하지 않는다.
 
-## 현재 상태
+## 실행 전 상태 (historical)
 
 source audit 및 read-only host probe만 완료했다. 실제 prefill / disk bytes /
 syscalls / metadata 비용 / latency / batching 수치는 **미측정(null)**이다.
 공유 GPU 사용 확인과 실행 환경 gate가 해결되기 전에는 완료 결과로 표현하지 않는다.
+
+## 2026-10-12 실행 기록
+
+사용자가 GPU 최대 4 GiB와 GPU 가상 주소 제한 예외를 승인했다. 실제 RSS 8 GiB,
+2-CPU affinity/nice 10, project-local 추가 artifact 10 GiB 제한은 유지했다.
+Pinned 패키지의 설치/import와 CUDA preflight를 완료했다. V1 LocalDisk smoke는
+correctness 실패로 보존하고, 기존 MP connector + FSL2Adapter로 작은 smoke를
+통과한 뒤 12 traces × baseline/64/128/256을 실행했다. Library source나 새 정책은
+구현하지 않았다. 기존 `skip_l1`과 temporary-prefetch 설정으로 RAM hot-cache와
+디스크 복원을 분리했다. 모든 입력은 archived prompt token IDs 그대로다.
+
+본 비교 greedy 792/792와 공통 logprob 차이 0.05 기준은 통과했지만 추가 top20
+key-set gate는 14건 실패했다. 기준을 사후 완화하지 않고 screening 결과로만
+보고한다. 실행 옵션은 `configs/experiments/lmcache-native-mp.json`, 실제 source,
+입력, counter events와 실패 기록은 `results/lmcache_native/`에 있다.
+
+실제 파일 API bytes/operation 수, forward tokens, 1-token wall time, 파일/key
+수와 파생 고유 소비 bytes를 측정했다. Kernel syscall, metadata-only RAM,
+filesystem metadata writes, isolated GPU prefill time, NAND writes는 미측정이다.
+기존 MP FS list API와 단일-key API의 component 비교는 동일 실제 KV 객체 8개,
+순서 교대 및 3회 반복으로 완료했다. Bytes hash 18/18 통과, bytes와 파일 API
+호출 수는 동일했다. Integrated engine batching의 on/off 성능 비교로 부르지 않는다.
+
+설명은 `docs/kv-screen.html`, 수치는 `records/lmcache-native-summary.json`을
+참고한다. 다음 최소 진단은 14건의 top20 순위 차이 확인이며 아직 실행하지 않았다.

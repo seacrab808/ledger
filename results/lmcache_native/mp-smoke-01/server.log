@@ -1,0 +1,84 @@
+[32;20m[2026-10-12 18:20:23,145] LMCache INFO:[0m torch_dev=<module 'torch.cuda' from '/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/torch/cuda/__init__.py'>, torch_device_type=cuda [3m(_device_detect.py:312:lmcache.v1.platform._device_detect)[0m
+[32;20m[2026-10-12 18:20:23,145] LMCache INFO:[0m Auto-selected backend [cuda] for accelerator 'cuda' from candidate backends [cuda, rocm]. [3m(__init__.py:148:lmcache.v1.platform)[0m
+
+ _     __  __    ____           _          
+| |   |  \/  |  / ___|__ _  ___| |__   ___      LMCache v0.5.5 (g05a013b2)
+| |   | |\/| | | |   / _` |/ __| '_ \ / _ \     Website:  https://lmcache.ai/
+| |___| |  | | | |__| (_| | (__| | | |  __/     Recipes:  https://docs.lmcache.ai/recipes
+|_____|_|  |_|  \____\__,_|\___|_| |_|\___|     LinkedIn: https://www.linkedin.com/company/lmcache-lab
+Set LMCACHE_DISABLE_BANNER=1 to hide this banner.
+
+[32;20m[2026-10-12 18:20:23,558] LMCache INFO:[0m multi_layer_block_kv_transfer mode: ptr [3m(base.py:95:lmcache.v1.multiprocess.transfer_context.base)[0m
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.api_core supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.api_core.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.bigtable_admin_v2 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.bigtable_admin_v2.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.bigtable_v2 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.bigtable_v2.
+  warnings.warn(message, FutureWarning)
+/home/miruware/ledger/artifacts/lmcache-runtime/venv/lib/python3.10/site-packages/google/api_core/_python_version_support.py:223: FutureWarning: You are using a non-supported Python version (3.10.12). Google will not post any further updates to google.cloud.monitoring_v3 supporting this Python version. Please upgrade to the latest Python version, or at least Python 3.11, and then update google.cloud.monitoring_v3.
+  warnings.warn(message, FutureWarning)
+usage: lmcache server [-h] [--instance-id INSTANCE_ID]
+                      [--transport {zmq,grpc}] [--host HOST] [--port PORT]
+                      [--chunk-size CHUNK_SIZE] [--max-workers MAX_WORKERS]
+                      [--max-gpu-workers MAX_GPU_WORKERS]
+                      [--max-cpu-workers MAX_CPU_WORKERS]
+                      [--hash-algorithm HASH_ALGORITHM]
+                      [--engine-type {default,blend}]
+                      [--supported-transfer-mode {lmcache_driven,engine_driven,auto}]
+                      [--isolated-ipc | --no-isolated-ipc]
+                      [--runtime-plugin-locations [RUNTIME_PLUGIN_LOCATIONS ...]]
+                      [--runtime-plugin-config RUNTIME_PLUGIN_CONFIG]
+                      [--shm-name SHM_NAME]
+                      [--script-allowed-imports [SCRIPT_ALLOWED_IMPORTS ...]]
+                      [--separate-object-groups | --no-separate-object-groups]
+                      [--worker-reap-timeout-seconds WORKER_REAP_TIMEOUT_SECONDS]
+                      [--worker-registration-grace-seconds WORKER_REGISTRATION_GRACE_SECONDS]
+                      [--enable-segmented-prefix] [--enable-dedup-content]
+                      [--enable [ENABLE ...]]
+                      [--p2p-advertise-url P2P_ADVERTISE_URL]
+                      [--p2p-listen-url P2P_LISTEN_URL]
+                      [--p2p-lookup-timeout P2P_LOOKUP_TIMEOUT]
+                      [--p2p-load-timeout P2P_LOAD_TIMEOUT]
+                      [--p2p-transfer-engine P2P_TRANSFER_ENGINE] --l1-size-gb
+                      L1_SIZE_GB [--l1-use-lazy | --no-l1-use-lazy]
+                      [--l1-init-size-gb L1_INIT_SIZE_GB]
+                      [--l1-align-bytes L1_ALIGN_BYTES]
+                      [--l1-devdax-path L1_DEVDAX_PATH]
+                      [--gds-l1-path GDS_L1_PATH]
+                      [--gds-l1-use-direct-io | --no-gds-l1-use-direct-io]
+                      [--gds-l1-backend {auto,cufile,hipfile,ugds,phx}]
+                      [--l1-write-ttl-seconds L1_WRITE_TTL_SECONDS]
+                      [--l1-read-ttl-seconds L1_READ_TTL_SECONDS]
+                      --eviction-policy {LRU,IsolatedLRU,noop}
+                      [--eviction-trigger-watermark EVICTION_TRIGGER_WATERMARK]
+                      [--eviction-ratio EVICTION_RATIO]
+                      [--l2-store-policy {default,skip_l1}]
+                      [--l2-prefetch-policy {default,retain}]
+                      [--l2-prefetch-max-in-flight L2_PREFETCH_MAX_IN_FLIGHT]
+                      [--periodic-notifier-interval-ms PERIODIC_NOTIFIER_INTERVAL_MS]
+                      [--l2-adapter JSON] [--http-host HTTP_HOST]
+                      [--http-port HTTP_PORT] [--disable-observability]
+                      [--disable-metrics] [--disable-logging]
+                      [--enable-tracing] [--otlp-endpoint OTLP_ENDPOINT]
+                      [--event-bus-queue-size EVENT_BUS_QUEUE_SIZE]
+                      [--prometheus-port PROMETHEUS_PORT]
+                      [--metrics-sample-rate METRICS_SAMPLE_RATE]
+                      [--lookup-hash-log-dir LOOKUP_HASH_LOG_DIR]
+                      [--lookup-hash-log-rotation-interval LOOKUP_HASH_LOG_ROTATION_INTERVAL]
+                      [--lookup-hash-log-rotation-max-size LOOKUP_HASH_LOG_ROTATION_MAX_SIZE]
+                      [--lookup-hash-log-max-files LOOKUP_HASH_LOG_MAX_FILES]
+                      [--enable-gc-monitor]
+                      [--gc-monitor-min-pause-ms GC_MONITOR_MIN_PAUSE_MS]
+                      [--gc-monitor-top-objects GC_MONITOR_TOP_OBJECTS]
+                      [--enable-extra-logging]
+                      [--extra-logging-interval EXTRA_LOGGING_INTERVAL]
+                      [--trace-level {storage}] [--trace-output TRACE_OUTPUT]
+                      [--coordinator-url COORDINATOR_URL]
+                      [--coordinator-advertise-ip COORDINATOR_ADVERTISE_IP]
+                      [--coordinator-heartbeat-interval COORDINATOR_HEARTBEAT_INTERVAL]
+                      [--coordinator-event-reporting]
+                      [--coordinator-event-flush-interval COORDINATOR_EVENT_FLUSH_INTERVAL]
+                      [--coordinator-blend-timeout COORDINATOR_BLEND_TIMEOUT]
+                      [--coordinator-blend-match-concurrency COORDINATOR_BLEND_MATCH_CONCURRENCY]
+                      [--format FORMAT] [--output PATH] [-q]
+lmcache server: error: the following arguments are required: --eviction-policy

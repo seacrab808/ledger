@@ -1,0 +1,7130 @@
+[
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0270538330078125,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02114391326904297,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.021276473999023438,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011774539947509766,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.018224716186523438,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01915264129638672,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015485286712646484,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015980243682861328,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019535064697265625,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011974811553955078,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02118539810180664,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012324333190917969,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019330501556396484,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.008027076721191406,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.018460750579833984,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "append-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015640735626220703,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0156097412109375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023077011108398438,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.027820587158203125,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02556467056274414,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.008570313453674316,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02030181884765625,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.037928104400634766,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007962226867675781,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.018067359924316406,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.009836912155151367,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.03024768829345703,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011879920959472656,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.00786733627319336,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012009143829345703,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007829666137695312,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023281097412109375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015451431274414062,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02266407012939453,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01591634750366211,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023857593536376953,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019843578338623047,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02768421173095703,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.008638501167297363,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017942428588867188,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01891469955444336,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02316570281982422,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015184879302978516,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.013898849487304688,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015309810638427734,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.026120662689208984,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.013444662094116211,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "append-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015276908874511719,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020133495330810547,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.031033992767333984,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015498161315917969,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015376091003417969,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011904239654541016,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014768123626708984,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02326679229736328,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.024791717529296875,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015725135803222656,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011615991592407227,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012571334838867188,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01870107650756836,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01429128646850586,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.038168907165527344,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015589237213134766,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017504215240478516,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.00796651840209961,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015795230865478516,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023491859436035156,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015786170959472656,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017984867095947266,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01243901252746582,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015492439270019531,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.014751434326171875,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01567363739013672,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007816791534423828,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015438079833984375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.024587631225585938,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.038213253021240234,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01574420928955078,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007854461669921875,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.02141094207763672,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014190673828125,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011830806732177734,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02171468734741211,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "edit-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023212432861328125,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020239830017089844,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014772415161132812,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012970447540283203,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012624740600585938,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.04031848907470703,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014536857604980469,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02042388916015625,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007874488830566406,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.016396522521972656,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019459962844848633,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014400482177734375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0079193115234375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.00809621810913086,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.016825199127197266,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015347003936767578,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01284480094909668,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02468109130859375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014925956726074219,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.019489288330078125,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015527725219726562,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.016851425170898438,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014687061309814453,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.015572071075439453,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015756607055664062,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015194892883300781,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019471168518066406,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01681041717529297,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.021367788314819336,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.012539386749267578,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01710224151611328,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023800373077392578,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020984172821044922,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015726089477539062,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01641976833343506,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.03507566452026367,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014945030212402344,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.024532318115234375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.010914444923400879,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012141108512878418,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019205570220947266,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015197277069091797,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020278453826904297,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014763355255126953,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.028593063354492188,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.025012969970703125,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02647876739501953,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007903099060058594,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "retry-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01601409912109375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019002914428710938,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.01290130615234375,
+    "passed": false
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020050048828125,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014836311340332031,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023563385009765625,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01806926727294922,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02834796905517578,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020961761474609375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015538215637207031,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007839202880859375,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015544414520263672,
+    "passed": true
+  },
+  {
+    "arm": "64",
+    "trace": "session_end-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019767045974731445,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015048742294311523,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015247821807861328,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017377853393554688,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015400409698486328,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012425899505615234,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.025656700134277344,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015395641326904297,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014902114868164062,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.04583740234375,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011920928955078125,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007862091064453125,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023872852325439453,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015212059020996094,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01591014862060547,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.030786514282226562,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017566680908203125,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015656471252441406,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020417213439941406,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015861988067626953,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023003101348876953,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019511699676513672,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017793655395507812,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015543937683105469,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.018739700317382812,
+    "passed": false
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011650562286376953,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0230560302734375,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01486063003540039,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.018067359924316406,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019501686096191406,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015207767486572266,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.013616561889648438,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01244497299194336,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.018845558166503906,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.022408485412597656,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.023429393768310547,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "append-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.010233044624328613,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02299785614013672,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.010557174682617188,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.021010875701904297,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.010761499404907227,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011759757995605469,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.022140979766845703,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007922649383544922,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.014620780944824219,
+    "passed": false
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011956334114074707,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011790752410888672,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0160064697265625,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "edit-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015148162841796875,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015530586242675781,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007592678070068359,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.025765538215637207,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.019968032836914062,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.015572071075439453,
+    "passed": false
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01565694808959961,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007927894592285156,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01592111587524414,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01871490478515625,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.024871826171875,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.022811412811279297,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007959365844726562,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015612602233886719,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011749744415283203,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.015492439270019531,
+    "passed": false
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007899284362792969,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01710987091064453,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011797785758972168,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017478466033935547,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01842641830444336,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": false,
+    "max_abs_logprob_difference": 0.022916316986083984,
+    "passed": false
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015195369720458984,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01587820053100586,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020546436309814453,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015576839447021484,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.007884502410888672,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0154266357421875,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0189666748046875,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.013679981231689453,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.017427921295166016,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015998363494873047,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.03156900405883789,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.011972427368164062,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015336036682128906,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.008711040019989014,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "retry-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014920711517333984,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "128",
+    "trace": "session_end-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.018536090850830078,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.02130270004272461,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012725114822387695,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015678882598876953,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.012579917907714844,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.021259307861328125,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.014024019241333008,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015413284301757812,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.015311241149902344,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.01976776123046875,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.020873069763183594,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "append-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.010297298431396484,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "edit-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-42",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-43",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 16,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 17,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 18,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 19,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 20,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 21,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 22,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "retry-44",
+    "index": 23,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-42",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-43",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 0,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 1,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 2,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 3,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 4,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 5,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 6,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 7,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 8,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 9,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 10,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 11,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 12,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 13,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 14,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  },
+  {
+    "arm": "256",
+    "trace": "session_end-44",
+    "index": 15,
+    "greedy_identical": true,
+    "keys_identical": true,
+    "max_abs_logprob_difference": 0.0,
+    "passed": true
+  }
+]

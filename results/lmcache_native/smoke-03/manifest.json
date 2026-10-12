@@ -1,0 +1,50 @@
+{
+  "status": {
+    "label": "smoke-03",
+    "started_at_utc": "2026-10-12T09:00:49.400469+00:00",
+    "RSS_limit": 8589934592,
+    "GPU_limit": 4294967296,
+    "artifact_limit": 10737418240,
+    "address_space": "default; user-approved GPU virtual-address exception",
+    "max_RSS": 3557830656,
+    "max_GPU": 2065694720,
+    "max_artifact_bytes": 9879798359,
+    "command": [
+      "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+      "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_smoke_remote.py"
+    ],
+    "status": "failed",
+    "pid": 473551,
+    "exit_code": -15,
+    "ended_at_utc": "2026-10-12T09:03:02.341949+00:00"
+  },
+  "files": {
+    "source.py": {
+      "sha256": "a7cff05d77c2d81cd1e224c89a14dc6278bc26851b946080fbedafec6a62b3dc",
+      "bytes": 5929
+    },
+    "lmcache.json": {
+      "sha256": "721b2abe6449a9f4345750723c8c041980c068c346b05855d28f6a74e93c0acb",
+      "bytes": 378
+    },
+    "partial-results.json": {
+      "sha256": "5cff03439da56eb5ec49945cdcf6041d79ffca664177c685f7feb221e92626c0",
+      "bytes": 7806
+    },
+    "result.json": {
+      "sha256": "e524e3782247eedde7e66e18309072d03e5fc4d06620fc4e2df73e935f73019b",
+      "bytes": 11153
+    }
+  },
+  "cache_inventory": {
+    "cache": {
+      "directory_allocated_bytes": 4096,
+      "files": []
+    }
+  },
+  "host": {
+    "kernel": "5.15.0-78-generic",
+    "machine": "x86_64",
+    "python": "3.10.12"
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "lmcache_commit": "05a013b29da78cf2321b9b46ec5039dde2fb0bb0",
+  "sources": [
+    {
+      "path": "artifacts/lmcache-audit/lmcache/__init__.py",
+      "sha256": "381ba80225a6110a1b9d6d9dd8118e105b28e11bf0c4fafeb7569544dd495dea"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/cache_engine.py",
+      "sha256": "beb3295d303fb3ad7253de139bddb40547f20f90f789f298bf3244251561d944"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/config.py",
+      "sha256": "fabc4d7a7560f99e8efcb8bb65ffe26326d6bb894f5cf43132f70e91733174b9"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/config_base.py",
+      "sha256": "16c7ad0dfffcad529c3bb6678e229f0d4e165392570994067b2a10c43b8e9126"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/memory_management.py",
+      "sha256": "4587d5bc230c3a0590bdf16e68eafbcd51cfcff72c9dd9c0258717d9425f5dd2"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/metadata.py",
+      "sha256": "b72ea7cad18548238dc15c65b621d81bca48ef5ad4c364f5a5e77d0a97590550"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/token_database.py",
+      "sha256": "e21489195a6735fd4d3914a515f289ef71039effbb2051cb838d13d56155fc5c"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/distributed/config.py",
+      "sha256": "6fa41c6d4ce33320d08e8af93794ab7fa54c521facaa21bdfd09552b3d09db3f"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/gpu_connector/gpu_connectors.py",
+      "sha256": "94b230d6ac7cb2fb1676a54a52dfdd322553180729e0eb812d9371d4a494a221"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/gpu_connector/mock_gpu_connector.py",
+      "sha256": "bc508fa189a83cd887e79d0b9c6ded085e6bce78d392bc46c473f93b40c7e197"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/gpu_connector/__init__.py",
+      "sha256": "a0df027df808c3312128fa18a2aa3053d5d8ed48c4c904f8b8ba27749a73b6e6"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/memory_allocators/mixed_memory_allocator.py",
+      "sha256": "3867bf1fe2394d95a359a34e269852fb0ac9363f8a48d3c3d362dcaf93f8ae46"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/mp_observability/config.py",
+      "sha256": "e2a0721b2c5395f8c037cae398ace2946ee8e499c32564a119d33bf484134a87"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/config.py",
+      "sha256": "c81894db9d4ca77ce57075d7aefce6780ff0bab3c5a886505d96e4928d32d962"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/http_server.py",
+      "sha256": "ac6a6d4e52f86b32a3d817a603be92b0397989577cae8da896924b512106c2db"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/token_hasher.py",
+      "sha256": "022f0f09aa8fee8c4039a379609ae7269eb4fc79fb6f0069cc411577ac5f06c0"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/platform/__init__.py",
+      "sha256": "ba6dbdc9d4e5d85aa393a54ad000485d09e4487fc6e98bd37863160c664e66ff"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/storage_backend/local_cpu_backend.py",
+      "sha256": "9d5d9eab6f27339d8207102487b8091356cbf9bb76237a82a1a315c36083eb43"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/storage_backend/local_disk_backend.py",
+      "sha256": "562aef8e1443bda0cdd2270184d601a9796899a20a91b08453a5e98ecc81ce80"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/storage_backend/storage_manager.py",
+      "sha256": "52d933c7c588f29f7915ae83b76ff90d023acd2872ba146f89eb3d50bd8a4d7b"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/platform/cpu/stub_cpu_device.py",
+      "sha256": "f2efb34fce5b39d06bff4ac7f73cfc95b4f993c249e131dd721dce1ca96f9327"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/transfer_context/async_engine_driven.py",
+      "sha256": "c410e2e88f4514d5d527e9499147fe8477cfc39902e220b44b34fbc2ab2bbc32"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/transfer_context/base.py",
+      "sha256": "b62f6398adb87d99a87911b241fa6399a7f4d51cd956af4ba2d1d1466566217e"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/transfer_context/pickle.py",
+      "sha256": "4b0beff9060b060b3c29abeec0f67eed80b8216148aa7a34f9c15d38ee2da664"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/transfer_context/shm.py",
+      "sha256": "0afb4cee5ab689da4ec1183a2cc9dbe8eb07d70d85aa567ead212a382f176a28"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/transfer_context/worker_transfer.py",
+      "sha256": "d6260cf1386c2a4f7d5f3ada24acd4e37832e104201a96ce56494c431bc1d1b9"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/multiprocess/transfer_context/__init__.py",
+      "sha256": "1f592449cbd83ed3bcc09f818237b985b670d824153f7cc0564d7b93c8efe111"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/distributed/l2_adapters/config.py",
+      "sha256": "84394e5c3d1f3177e73ab3efe0efae63386209c4d08dfbe528b93cc3d673994f"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/distributed/l2_adapters/fs_l2_adapter.py",
+      "sha256": "b24e98dda60cdf7efce9f175987fd6c7ee7b408c17b7eb2b1da1fb86b0b50bd4"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/distributed/storage_controllers/prefetch_policy.py",
+      "sha256": "d743920d43d749bc4cfa8c5b091f2dec8d8fe0e8981f27a43f5a70e0995dcebf"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/v1/distributed/storage_controllers/store_policy.py",
+      "sha256": "4caf038366ec299ede7dd7aedd29164a433e51e0165631e6a803da53ce6bd26b"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/integration/vllm/lmcache_connector_v1.py",
+      "sha256": "160073c03e9a33a0cb59b2cdc40092cd54a45dc6dd6b2736a26a5bbcff49f8bd"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/integration/vllm/lmcache_mp_connector.py",
+      "sha256": "afa0665fe589b1c7561be3b5b37eea304a1501712aadfa6c6f9e6ddf5b1c8708"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/integration/vllm/utils.py",
+      "sha256": "b977383605724457027bc62692ca786e2b27eef0783576fe94f3c5fda57ba6f5"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/integration/vllm/vllm_multi_process_adapter.py",
+      "sha256": "5c206088992514bed745106f15c555f993fc41f633c5adbf9c42df80d3b880fc"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/integration/vllm/vllm_v1_adapter.py",
+      "sha256": "cbabc76d723b27b61a94ab88839d474bc53700ed2a34232362887e33d4e7c7e0"
+    },
+    {
+      "path": "artifacts/lmcache-audit/lmcache/cli/commands/server.py",
+      "sha256": "f1addaaca39483b81e6d2ea2fae017e76f05b883521c891142c8113903c1068b"
+    }
+  ],
+  "findings": [
+    "MP compute_chunk_hashes discards partial chunks",
+    "default prefetch objects are temporary; skip_l1 removes persisted objects from L1",
+    "MP FS list API iterates per file, no payload coalescing",
+    "isolated_ipc config default false despite release wording; explicit true used",
+    "V1 packed K/V incompatibility reported in upstream issue 4463 is a candidate cause, not independently proven"
+  ]
+}

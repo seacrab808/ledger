@@ -1,0 +1,2891 @@
+{
+  "status": "runtime-complete-correctness-failed",
+  "valid_performance_claim": false,
+  "requests_per_arm": 264,
+  "checks_passed": 778,
+  "checks_total": 792,
+  "limits": {
+    "label": "native-01",
+    "started_at_utc": "2026-10-12T09:25:02.482726+00:00",
+    "RSS_limit": 8589934592,
+    "GPU_limit": 4294967296,
+    "artifact_limit": 10737418240,
+    "address_space": "default; user-approved GPU virtual-address exception",
+    "max_RSS": 3914436608,
+    "max_GPU": 2728394752,
+    "max_artifact_bytes": 10243946316,
+    "command": [
+      "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+      "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_native_remote.py"
+    ],
+    "status": "completed",
+    "pid": 665660,
+    "exit_code": 0,
+    "ended_at_utc": "2026-10-12T09:32:08.808637+00:00"
+  },
+  "seed_level": [
+    {
+      "trace": "append-42",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 4793,
+      "oracle_LCP_tokens": 3360,
+      "prefill_tokens_saved": 2560,
+      "actual_forward_tokens": 2233,
+      "recompute_vs_LCP_tokens": 800,
+      "saved_token_fraction": 0.5341122470269143,
+      "disk_write_bytes": 15728640,
+      "disk_read_bytes": 31457280,
+      "file_write_operations": 20,
+      "file_read_operations": 40,
+      "stored_unique_bytes": 15728640,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 0.8,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 24,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 0.8,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 40,
+      "metadata_file_count": 20,
+      "filename_UTF8_bytes": 3400,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 71.32832695666973,
+      "baseline_wall_mean_ms": 14.533318088069791,
+      "native_read_total_ms": 6.325066991848871,
+      "native_write_total_ms": 8.253525971667841
+    },
+    {
+      "trace": "append-43",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 4889,
+      "oracle_LCP_tokens": 3456,
+      "prefill_tokens_saved": 2560,
+      "actual_forward_tokens": 2329,
+      "recompute_vs_LCP_tokens": 896,
+      "saved_token_fraction": 0.5236244630803846,
+      "disk_write_bytes": 15728640,
+      "disk_read_bytes": 31457280,
+      "file_write_operations": 20,
+      "file_read_operations": 40,
+      "stored_unique_bytes": 15728640,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 0.8,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 24,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 0.8,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 40,
+      "metadata_file_count": 20,
+      "filename_UTF8_bytes": 3400,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 72.10203170810321,
+      "baseline_wall_mean_ms": 18.091250291035976,
+      "native_read_total_ms": 6.2727550393901765,
+      "native_write_total_ms": 8.212251035729423
+    },
+    {
+      "trace": "append-44",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 4889,
+      "oracle_LCP_tokens": 3456,
+      "prefill_tokens_saved": 2560,
+      "actual_forward_tokens": 2329,
+      "recompute_vs_LCP_tokens": 896,
+      "saved_token_fraction": 0.5236244630803846,
+      "disk_write_bytes": 15728640,
+      "disk_read_bytes": 31457280,
+      "file_write_operations": 20,
+      "file_read_operations": 40,
+      "stored_unique_bytes": 15728640,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 0.8,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 24,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 0.8,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 40,
+      "metadata_file_count": 20,
+      "filename_UTF8_bytes": 3400,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 73.09718175262485,
+      "baseline_wall_mean_ms": 16.71969758172054,
+      "native_read_total_ms": 5.277269927319139,
+      "native_write_total_ms": 7.876880961703137
+    },
+    {
+      "trace": "edit-42",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 3122,
+      "oracle_LCP_tokens": 1609,
+      "prefill_tokens_saved": 1024,
+      "actual_forward_tokens": 2098,
+      "recompute_vs_LCP_tokens": 585,
+      "saved_token_fraction": 0.32799487508007685,
+      "disk_write_bytes": 15728640,
+      "disk_read_bytes": 12582912,
+      "file_write_operations": 20,
+      "file_read_operations": 16,
+      "stored_unique_bytes": 15728640,
+      "read_at_least_once_unique_bytes": 9437184,
+      "unique_read_fraction": 0.6,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 4,
+      "derived_unique_consumed_bytes": 9437184,
+      "derived_unique_consumed_fraction": 0.6,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 16,
+      "metadata_file_count": 20,
+      "filename_UTF8_bytes": 3360,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 39.920642084325664,
+      "baseline_wall_mean_ms": 15.489782711180547,
+      "native_read_total_ms": 2.8086990932933986,
+      "native_write_total_ms": 10.727793967816979
+    },
+    {
+      "trace": "edit-43",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 3212,
+      "oracle_LCP_tokens": 1701,
+      "prefill_tokens_saved": 1024,
+      "actual_forward_tokens": 2188,
+      "recompute_vs_LCP_tokens": 677,
+      "saved_token_fraction": 0.31880448318804483,
+      "disk_write_bytes": 15728640,
+      "disk_read_bytes": 12582912,
+      "file_write_operations": 20,
+      "file_read_operations": 16,
+      "stored_unique_bytes": 15728640,
+      "read_at_least_once_unique_bytes": 9437184,
+      "unique_read_fraction": 0.6,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 4,
+      "derived_unique_consumed_bytes": 9437184,
+      "derived_unique_consumed_fraction": 0.6,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 16,
+      "metadata_file_count": 20,
+      "filename_UTF8_bytes": 3360,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 66.63776787536335,
+      "baseline_wall_mean_ms": 16.1111887524991,
+      "native_read_total_ms": 2.8127469995524734,
+      "native_write_total_ms": 9.291464928537607
+    },
+    {
+      "trace": "edit-44",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 3208,
+      "oracle_LCP_tokens": 1699,
+      "prefill_tokens_saved": 1024,
+      "actual_forward_tokens": 2184,
+      "recompute_vs_LCP_tokens": 675,
+      "saved_token_fraction": 0.3192019950124688,
+      "disk_write_bytes": 15728640,
+      "disk_read_bytes": 12582912,
+      "file_write_operations": 20,
+      "file_read_operations": 16,
+      "stored_unique_bytes": 15728640,
+      "read_at_least_once_unique_bytes": 9437184,
+      "unique_read_fraction": 0.6,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 4,
+      "derived_unique_consumed_bytes": 9437184,
+      "derived_unique_consumed_fraction": 0.6,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 16,
+      "metadata_file_count": 20,
+      "filename_UTF8_bytes": 3360,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 65.70195987296756,
+      "baseline_wall_mean_ms": 14.07723762531532,
+      "native_read_total_ms": 2.401329023996368,
+      "native_write_total_ms": 8.944956993218511
+    },
+    {
+      "trace": "retry-42",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 4038,
+      "oracle_LCP_tokens": 2857,
+      "prefill_tokens_saved": 2048,
+      "actual_forward_tokens": 1990,
+      "recompute_vs_LCP_tokens": 809,
+      "saved_token_fraction": 0.5071817731550272,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 25165824,
+      "file_write_operations": 16,
+      "file_read_operations": 32,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 9437184,
+      "unique_read_fraction": 0.75,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 20,
+      "derived_unique_consumed_bytes": 9437184,
+      "derived_unique_consumed_fraction": 0.75,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 32,
+      "metadata_file_count": 16,
+      "filename_UTF8_bytes": 2704,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 71.76334708249972,
+      "baseline_wall_mean_ms": 14.84094687596856,
+      "native_read_total_ms": 4.174620029516518,
+      "native_write_total_ms": 6.9066749420017
+    },
+    {
+      "trace": "retry-43",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 4086,
+      "oracle_LCP_tokens": 2921,
+      "prefill_tokens_saved": 2048,
+      "actual_forward_tokens": 2038,
+      "recompute_vs_LCP_tokens": 873,
+      "saved_token_fraction": 0.5012236906510035,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 25165824,
+      "file_write_operations": 16,
+      "file_read_operations": 32,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 9437184,
+      "unique_read_fraction": 0.75,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 20,
+      "derived_unique_consumed_bytes": 9437184,
+      "derived_unique_consumed_fraction": 0.75,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 32,
+      "metadata_file_count": 16,
+      "filename_UTF8_bytes": 2704,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 66.5975037930669,
+      "baseline_wall_mean_ms": 14.728887826398326,
+      "native_read_total_ms": 5.00666003790684,
+      "native_write_total_ms": 6.738556985510513
+    },
+    {
+      "trace": "retry-44",
+      "chunk": 64,
+      "requests": 24,
+      "prompt_tokens": 4033,
+      "oracle_LCP_tokens": 2885,
+      "prefill_tokens_saved": 2048,
+      "actual_forward_tokens": 1985,
+      "recompute_vs_LCP_tokens": 837,
+      "saved_token_fraction": 0.5078105628564344,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 25165824,
+      "file_write_operations": 16,
+      "file_read_operations": 32,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 9437184,
+      "unique_read_fraction": 0.75,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 20,
+      "derived_unique_consumed_bytes": 9437184,
+      "derived_unique_consumed_fraction": 0.75,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 32,
+      "metadata_file_count": 16,
+      "filename_UTF8_bytes": 2704,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 43.912999039700175,
+      "baseline_wall_mean_ms": 13.615411501329314,
+      "native_read_total_ms": 5.683648050762713,
+      "native_write_total_ms": 6.3743409991730005
+    },
+    {
+      "trace": "session_end-42",
+      "chunk": 64,
+      "requests": 16,
+      "prompt_tokens": 1387,
+      "oracle_LCP_tokens": 612,
+      "prefill_tokens_saved": 256,
+      "actual_forward_tokens": 1131,
+      "recompute_vs_LCP_tokens": 356,
+      "saved_token_fraction": 0.18457101658255226,
+      "disk_write_bytes": 6291456,
+      "disk_read_bytes": 3145728,
+      "file_write_operations": 8,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 6291456,
+      "read_at_least_once_unique_bytes": 3145728,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 3145728,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1400,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 67.30055893422104,
+      "baseline_wall_mean_ms": 12.852464064053493,
+      "native_read_total_ms": 0.6564809591509402,
+      "native_write_total_ms": 3.764175024116412
+    },
+    {
+      "trace": "session_end-43",
+      "chunk": 64,
+      "requests": 16,
+      "prompt_tokens": 1451,
+      "oracle_LCP_tokens": 660,
+      "prefill_tokens_saved": 256,
+      "actual_forward_tokens": 1195,
+      "recompute_vs_LCP_tokens": 404,
+      "saved_token_fraction": 0.17643004824259131,
+      "disk_write_bytes": 6291456,
+      "disk_read_bytes": 3145728,
+      "file_write_operations": 8,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 6291456,
+      "read_at_least_once_unique_bytes": 3145728,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 3145728,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1400,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 29.868431001887075,
+      "baseline_wall_mean_ms": 15.269328685462824,
+      "native_read_total_ms": 0.59601801331155,
+      "native_write_total_ms": 4.435756040038541
+    },
+    {
+      "trace": "session_end-44",
+      "chunk": 64,
+      "requests": 16,
+      "prompt_tokens": 1466,
+      "oracle_LCP_tokens": 660,
+      "prefill_tokens_saved": 256,
+      "actual_forward_tokens": 1210,
+      "recompute_vs_LCP_tokens": 404,
+      "saved_token_fraction": 0.17462482946793997,
+      "disk_write_bytes": 6291456,
+      "disk_read_bytes": 3145728,
+      "file_write_operations": 8,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 6291456,
+      "read_at_least_once_unique_bytes": 3145728,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 3145728,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 3145728,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 3145728,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1400,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 60.630635627603624,
+      "baseline_wall_mean_ms": 16.37555287379655,
+      "native_read_total_ms": 0.5593330133706331,
+      "native_write_total_ms": 3.0941740260459483
+    },
+    {
+      "trace": "append-42",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 4793,
+      "oracle_LCP_tokens": 3360,
+      "prefill_tokens_saved": 2048,
+      "actual_forward_tokens": 2745,
+      "recompute_vs_LCP_tokens": 1312,
+      "saved_token_fraction": 0.4272897976215314,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 25165824,
+      "file_write_operations": 8,
+      "file_read_operations": 16,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 1.0,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 8,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 1.0,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 16,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1360,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 61.60896033179597,
+      "baseline_wall_mean_ms": 14.533318088069791,
+      "native_read_total_ms": 3.7654570187442005,
+      "native_write_total_ms": 5.731701967306435
+    },
+    {
+      "trace": "append-43",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 4889,
+      "oracle_LCP_tokens": 3456,
+      "prefill_tokens_saved": 2048,
+      "actual_forward_tokens": 2841,
+      "recompute_vs_LCP_tokens": 1408,
+      "saved_token_fraction": 0.41889957046430765,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 25165824,
+      "file_write_operations": 8,
+      "file_read_operations": 16,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 1.0,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 8,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 1.0,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 16,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1360,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 83.32621141623046,
+      "baseline_wall_mean_ms": 18.091250291035976,
+      "native_read_total_ms": 3.6222160269971937,
+      "native_write_total_ms": 5.7744880323298275
+    },
+    {
+      "trace": "append-44",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 4889,
+      "oracle_LCP_tokens": 3456,
+      "prefill_tokens_saved": 2048,
+      "actual_forward_tokens": 2841,
+      "recompute_vs_LCP_tokens": 1408,
+      "saved_token_fraction": 0.41889957046430765,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 25165824,
+      "file_write_operations": 8,
+      "file_read_operations": 16,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 1.0,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 8,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 1.0,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 16,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1360,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 65.0247915412668,
+      "baseline_wall_mean_ms": 16.71969758172054,
+      "native_read_total_ms": 3.7370440550148487,
+      "native_write_total_ms": 6.4417529792990535
+    },
+    {
+      "trace": "edit-42",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 3122,
+      "oracle_LCP_tokens": 1609,
+      "prefill_tokens_saved": 512,
+      "actual_forward_tokens": 2610,
+      "recompute_vs_LCP_tokens": 1097,
+      "saved_token_fraction": 0.16399743754003843,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 6291456,
+      "file_write_operations": 8,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 6291456,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 6291456,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1344,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 64.21801470545081,
+      "baseline_wall_mean_ms": 15.489782711180547,
+      "native_read_total_ms": 0.8411309972871095,
+      "native_write_total_ms": 6.844027055194601
+    },
+    {
+      "trace": "edit-43",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 3212,
+      "oracle_LCP_tokens": 1701,
+      "prefill_tokens_saved": 512,
+      "actual_forward_tokens": 2700,
+      "recompute_vs_LCP_tokens": 1189,
+      "saved_token_fraction": 0.15940224159402241,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 6291456,
+      "file_write_operations": 8,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 6291456,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 6291456,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1344,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 34.8104352512261,
+      "baseline_wall_mean_ms": 16.1111887524991,
+      "native_read_total_ms": 1.077512017218396,
+      "native_write_total_ms": 6.239615002414212
+    },
+    {
+      "trace": "edit-44",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 3208,
+      "oracle_LCP_tokens": 1699,
+      "prefill_tokens_saved": 512,
+      "actual_forward_tokens": 2696,
+      "recompute_vs_LCP_tokens": 1187,
+      "saved_token_fraction": 0.1596009975062344,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 6291456,
+      "file_write_operations": 8,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 6291456,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 6291456,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1344,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 63.882153044687584,
+      "baseline_wall_mean_ms": 14.07723762531532,
+      "native_read_total_ms": 0.8721069898456335,
+      "native_write_total_ms": 6.883404974360019
+    },
+    {
+      "trace": "retry-42",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 4038,
+      "oracle_LCP_tokens": 2857,
+      "prefill_tokens_saved": 1536,
+      "actual_forward_tokens": 2502,
+      "recompute_vs_LCP_tokens": 1321,
+      "saved_token_fraction": 0.3803863298662704,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 18874368,
+      "file_write_operations": 8,
+      "file_read_operations": 12,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 6291456,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 8,
+      "derived_unique_consumed_bytes": 6291456,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 12,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1352,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 61.35096803821701,
+      "baseline_wall_mean_ms": 14.84094687596856,
+      "native_read_total_ms": 2.5077809987124056,
+      "native_write_total_ms": 5.7840100198518485
+    },
+    {
+      "trace": "retry-43",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 4086,
+      "oracle_LCP_tokens": 2921,
+      "prefill_tokens_saved": 1536,
+      "actual_forward_tokens": 2550,
+      "recompute_vs_LCP_tokens": 1385,
+      "saved_token_fraction": 0.37591776798825255,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 18874368,
+      "file_write_operations": 8,
+      "file_read_operations": 12,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 6291456,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 8,
+      "derived_unique_consumed_bytes": 6291456,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 12,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1352,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 74.22165317135902,
+      "baseline_wall_mean_ms": 14.728887826398326,
+      "native_read_total_ms": 5.284581071464345,
+      "native_write_total_ms": 4.565726965665817
+    },
+    {
+      "trace": "retry-44",
+      "chunk": 128,
+      "requests": 24,
+      "prompt_tokens": 4033,
+      "oracle_LCP_tokens": 2885,
+      "prefill_tokens_saved": 1536,
+      "actual_forward_tokens": 2497,
+      "recompute_vs_LCP_tokens": 1349,
+      "saved_token_fraction": 0.38085792214232583,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 18874368,
+      "file_write_operations": 8,
+      "file_read_operations": 12,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 6291456,
+      "unique_read_fraction": 0.5,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 8,
+      "derived_unique_consumed_bytes": 6291456,
+      "derived_unique_consumed_fraction": 0.5,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 12,
+      "metadata_file_count": 8,
+      "filename_UTF8_bytes": 1352,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 34.761727498941276,
+      "baseline_wall_mean_ms": 13.615411501329314,
+      "native_read_total_ms": 2.7704919630195946,
+      "native_write_total_ms": 5.897877039387822
+    },
+    {
+      "trace": "session_end-42",
+      "chunk": 128,
+      "requests": 16,
+      "prompt_tokens": 1387,
+      "oracle_LCP_tokens": 612,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 1387,
+      "recompute_vs_LCP_tokens": 612,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 6291456,
+      "disk_read_bytes": 0,
+      "file_write_operations": 4,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 6291456,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": 0.0,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": 0.0,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 700,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 59.45588405666058,
+      "baseline_wall_mean_ms": 12.852464064053493,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 4.938511963700876
+    },
+    {
+      "trace": "session_end-43",
+      "chunk": 128,
+      "requests": 16,
+      "prompt_tokens": 1451,
+      "oracle_LCP_tokens": 660,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 1451,
+      "recompute_vs_LCP_tokens": 660,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 6291456,
+      "disk_read_bytes": 0,
+      "file_write_operations": 4,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 6291456,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": 0.0,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": 0.0,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 700,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 40.11451674341515,
+      "baseline_wall_mean_ms": 15.269328685462824,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 2.9315659776329994
+    },
+    {
+      "trace": "session_end-44",
+      "chunk": 128,
+      "requests": 16,
+      "prompt_tokens": 1466,
+      "oracle_LCP_tokens": 660,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 1466,
+      "recompute_vs_LCP_tokens": 660,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 6291456,
+      "disk_read_bytes": 0,
+      "file_write_operations": 4,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 6291456,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": 0.0,
+      "unused_unique_bytes": 6291456,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": 0.0,
+      "derived_never_consumed_bytes": 6291456,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 700,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 62.540036500649876,
+      "baseline_wall_mean_ms": 16.37555287379655,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 3.8325169880408794
+    },
+    {
+      "trace": "append-42",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 4793,
+      "oracle_LCP_tokens": 3360,
+      "prefill_tokens_saved": 1024,
+      "actual_forward_tokens": 3769,
+      "recompute_vs_LCP_tokens": 2336,
+      "saved_token_fraction": 0.2136448988107657,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 12582912,
+      "file_write_operations": 4,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 1.0,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 1.0,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 680,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 51.81635087744022,
+      "baseline_wall_mean_ms": 14.533318088069791,
+      "native_read_total_ms": 1.9037200254388154,
+      "native_write_total_ms": 5.940480972640216
+    },
+    {
+      "trace": "append-43",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 4889,
+      "oracle_LCP_tokens": 3456,
+      "prefill_tokens_saved": 1024,
+      "actual_forward_tokens": 3865,
+      "recompute_vs_LCP_tokens": 2432,
+      "saved_token_fraction": 0.20944978523215382,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 12582912,
+      "file_write_operations": 4,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 1.0,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 1.0,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 680,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 66.08642858069895,
+      "baseline_wall_mean_ms": 18.091250291035976,
+      "native_read_total_ms": 2.0442549721337855,
+      "native_write_total_ms": 7.0097369607537985
+    },
+    {
+      "trace": "append-44",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 4889,
+      "oracle_LCP_tokens": 3456,
+      "prefill_tokens_saved": 1024,
+      "actual_forward_tokens": 3865,
+      "recompute_vs_LCP_tokens": 2432,
+      "saved_token_fraction": 0.20944978523215382,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 12582912,
+      "file_write_operations": 4,
+      "file_read_operations": 4,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 12582912,
+      "unique_read_fraction": 1.0,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 12582912,
+      "derived_unique_consumed_fraction": 1.0,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 4,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 680,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 50.54761062759402,
+      "baseline_wall_mean_ms": 16.71969758172054,
+      "native_read_total_ms": 1.6346700140275061,
+      "native_write_total_ms": 6.343813962303102
+    },
+    {
+      "trace": "edit-42",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 3122,
+      "oracle_LCP_tokens": 1609,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 3122,
+      "recompute_vs_LCP_tokens": 1609,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 0,
+      "disk_read_bytes": 0,
+      "file_write_operations": 0,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 0,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": null,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": null,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 0,
+      "filename_UTF8_bytes": 0,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 31.807160961761838,
+      "baseline_wall_mean_ms": 15.489782711180547,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 0
+    },
+    {
+      "trace": "edit-43",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 3212,
+      "oracle_LCP_tokens": 1701,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 3212,
+      "recompute_vs_LCP_tokens": 1701,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 0,
+      "disk_read_bytes": 0,
+      "file_write_operations": 0,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 0,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": null,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": null,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 0,
+      "filename_UTF8_bytes": 0,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 66.49091254318289,
+      "baseline_wall_mean_ms": 16.1111887524991,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 0
+    },
+    {
+      "trace": "edit-44",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 3208,
+      "oracle_LCP_tokens": 1699,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 3208,
+      "recompute_vs_LCP_tokens": 1699,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 0,
+      "disk_read_bytes": 0,
+      "file_write_operations": 0,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 0,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": null,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": null,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 0,
+      "filename_UTF8_bytes": 0,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 44.09027574729407,
+      "baseline_wall_mean_ms": 14.07723762531532,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 0
+    },
+    {
+      "trace": "retry-42",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 4038,
+      "oracle_LCP_tokens": 2857,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 4038,
+      "recompute_vs_LCP_tokens": 2857,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 0,
+      "file_write_operations": 4,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": 0.0,
+      "unused_unique_bytes": 12582912,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": 0.0,
+      "derived_never_consumed_bytes": 12582912,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 676,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 56.248570788739016,
+      "baseline_wall_mean_ms": 14.84094687596856,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 8.550966012990102
+    },
+    {
+      "trace": "retry-43",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 4086,
+      "oracle_LCP_tokens": 2921,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 4086,
+      "recompute_vs_LCP_tokens": 2921,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 0,
+      "file_write_operations": 4,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": 0.0,
+      "unused_unique_bytes": 12582912,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": 0.0,
+      "derived_never_consumed_bytes": 12582912,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 676,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 34.707213505801825,
+      "baseline_wall_mean_ms": 14.728887826398326,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 6.436365045374259
+    },
+    {
+      "trace": "retry-44",
+      "chunk": 256,
+      "requests": 24,
+      "prompt_tokens": 4033,
+      "oracle_LCP_tokens": 2885,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 4033,
+      "recompute_vs_LCP_tokens": 2885,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 12582912,
+      "disk_read_bytes": 0,
+      "file_write_operations": 4,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 12582912,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": 0.0,
+      "unused_unique_bytes": 12582912,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": 0.0,
+      "derived_never_consumed_bytes": 12582912,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 4,
+      "filename_UTF8_bytes": 676,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 45.94549512815623,
+      "baseline_wall_mean_ms": 13.615411501329314,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 5.981861992040649
+    },
+    {
+      "trace": "session_end-42",
+      "chunk": 256,
+      "requests": 16,
+      "prompt_tokens": 1387,
+      "oracle_LCP_tokens": 612,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 1387,
+      "recompute_vs_LCP_tokens": 612,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 0,
+      "disk_read_bytes": 0,
+      "file_write_operations": 0,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 0,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": null,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": null,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 0,
+      "filename_UTF8_bytes": 0,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 64.33526987530058,
+      "baseline_wall_mean_ms": 12.852464064053493,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 0
+    },
+    {
+      "trace": "session_end-43",
+      "chunk": 256,
+      "requests": 16,
+      "prompt_tokens": 1451,
+      "oracle_LCP_tokens": 660,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 1451,
+      "recompute_vs_LCP_tokens": 660,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 0,
+      "disk_read_bytes": 0,
+      "file_write_operations": 0,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 0,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": null,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": null,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 0,
+      "filename_UTF8_bytes": 0,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 24.97389768541325,
+      "baseline_wall_mean_ms": 15.269328685462824,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 0
+    },
+    {
+      "trace": "session_end-44",
+      "chunk": 256,
+      "requests": 16,
+      "prompt_tokens": 1466,
+      "oracle_LCP_tokens": 660,
+      "prefill_tokens_saved": 0,
+      "actual_forward_tokens": 1466,
+      "recompute_vs_LCP_tokens": 660,
+      "saved_token_fraction": 0.0,
+      "disk_write_bytes": 0,
+      "disk_read_bytes": 0,
+      "file_write_operations": 0,
+      "file_read_operations": 0,
+      "stored_unique_bytes": 0,
+      "read_at_least_once_unique_bytes": 0,
+      "unique_read_fraction": null,
+      "unused_unique_bytes": 0,
+      "repeated_read_operations": 0,
+      "derived_unique_consumed_bytes": 0,
+      "derived_unique_consumed_fraction": null,
+      "derived_never_consumed_bytes": 0,
+      "chunk_reuse_events": 0,
+      "metadata_file_count": 0,
+      "filename_UTF8_bytes": 0,
+      "payload_header_bytes": 0,
+      "request_wall_mean_ms": 30.96294406168454,
+      "baseline_wall_mean_ms": 16.37555287379655,
+      "native_read_total_ms": 0,
+      "native_write_total_ms": 0
+    }
+  ],
+  "overall": [
+    {
+      "chunk": 64,
+      "prompt_tokens": 40574,
+      "oracle_LCP_tokens": 25876,
+      "prefill_tokens_saved": 17664,
+      "actual_forward_tokens": 22910,
+      "recompute_vs_LCP_tokens": 8212,
+      "disk_write_bytes": 150994944,
+      "disk_read_bytes": 217055232,
+      "file_write_operations": 192,
+      "file_read_operations": 276,
+      "stored_unique_bytes": 150994944,
+      "read_at_least_once_unique_bytes": 103809024,
+      "unused_unique_bytes": 47185920,
+      "derived_unique_consumed_bytes": 103809024,
+      "derived_never_consumed_bytes": 47185920,
+      "chunk_reuse_events": 276,
+      "metadata_file_count": 192,
+      "filename_UTF8_bytes": 32592,
+      "seed_summary": {
+        "prompt_tokens": {
+          "mean": 13524.666666666666,
+          "sample_SD": 161.29889439588027
+        },
+        "oracle_LCP_tokens": {
+          "mean": 8625.333333333334,
+          "sample_SD": 163.34421732443832
+        },
+        "prefill_tokens_saved": {
+          "mean": 5888,
+          "sample_SD": 0.0
+        },
+        "actual_forward_tokens": {
+          "mean": 7636.666666666667,
+          "sample_SD": 161.29889439588027
+        },
+        "recompute_vs_LCP_tokens": {
+          "mean": 2737.3333333333335,
+          "sample_SD": 163.34421732443832
+        },
+        "disk_write_bytes": {
+          "mean": 50331648,
+          "sample_SD": 0.0
+        },
+        "disk_read_bytes": {
+          "mean": 72351744,
+          "sample_SD": 0.0
+        },
+        "file_write_operations": {
+          "mean": 64,
+          "sample_SD": 0.0
+        },
+        "file_read_operations": {
+          "mean": 92,
+          "sample_SD": 0.0
+        },
+        "stored_unique_bytes": {
+          "mean": 50331648,
+          "sample_SD": 0.0
+        },
+        "read_at_least_once_unique_bytes": {
+          "mean": 34603008,
+          "sample_SD": 0.0
+        },
+        "unused_unique_bytes": {
+          "mean": 15728640,
+          "sample_SD": 0.0
+        },
+        "derived_unique_consumed_bytes": {
+          "mean": 34603008,
+          "sample_SD": 0.0
+        },
+        "derived_never_consumed_bytes": {
+          "mean": 15728640,
+          "sample_SD": 0.0
+        },
+        "chunk_reuse_events": {
+          "mean": 92,
+          "sample_SD": 0.0
+        },
+        "metadata_file_count": {
+          "mean": 64,
+          "sample_SD": 0.0
+        },
+        "filename_UTF8_bytes": {
+          "mean": 10864,
+          "sample_SD": 0.0
+        },
+        "request_wall_mean_ms": {
+          "mean": 61.478319140102634,
+          "sample_SD": 0.6485472080812498
+        }
+      },
+      "request_wall_mean_ms": 61.478319140102634,
+      "unique_read_fraction": 0.6875
+    },
+    {
+      "chunk": 128,
+      "prompt_tokens": 40574,
+      "oracle_LCP_tokens": 25876,
+      "prefill_tokens_saved": 12288,
+      "actual_forward_tokens": 28286,
+      "recompute_vs_LCP_tokens": 13588,
+      "disk_write_bytes": 132120576,
+      "disk_read_bytes": 150994944,
+      "file_write_operations": 84,
+      "file_read_operations": 96,
+      "stored_unique_bytes": 132120576,
+      "read_at_least_once_unique_bytes": 75497472,
+      "unused_unique_bytes": 56623104,
+      "derived_unique_consumed_bytes": 75497472,
+      "derived_never_consumed_bytes": 56623104,
+      "chunk_reuse_events": 96,
+      "metadata_file_count": 84,
+      "filename_UTF8_bytes": 14268,
+      "seed_summary": {
+        "prompt_tokens": {
+          "mean": 13524.666666666666,
+          "sample_SD": 161.29889439588027
+        },
+        "oracle_LCP_tokens": {
+          "mean": 8625.333333333334,
+          "sample_SD": 163.34421732443832
+        },
+        "prefill_tokens_saved": {
+          "mean": 4096,
+          "sample_SD": 0.0
+        },
+        "actual_forward_tokens": {
+          "mean": 9428.666666666666,
+          "sample_SD": 161.29889439588027
+        },
+        "recompute_vs_LCP_tokens": {
+          "mean": 4529.333333333333,
+          "sample_SD": 163.34421732443832
+        },
+        "disk_write_bytes": {
+          "mean": 44040192,
+          "sample_SD": 0.0
+        },
+        "disk_read_bytes": {
+          "mean": 50331648,
+          "sample_SD": 0.0
+        },
+        "file_write_operations": {
+          "mean": 28,
+          "sample_SD": 0.0
+        },
+        "file_read_operations": {
+          "mean": 32,
+          "sample_SD": 0.0
+        },
+        "stored_unique_bytes": {
+          "mean": 44040192,
+          "sample_SD": 0.0
+        },
+        "read_at_least_once_unique_bytes": {
+          "mean": 25165824,
+          "sample_SD": 0.0
+        },
+        "unused_unique_bytes": {
+          "mean": 18874368,
+          "sample_SD": 0.0
+        },
+        "derived_unique_consumed_bytes": {
+          "mean": 25165824,
+          "sample_SD": 0.0
+        },
+        "derived_never_consumed_bytes": {
+          "mean": 18874368,
+          "sample_SD": 0.0
+        },
+        "chunk_reuse_events": {
+          "mean": 32,
+          "sample_SD": 0.0
+        },
+        "metadata_file_count": {
+          "mean": 28,
+          "sample_SD": 0.0
+        },
+        "filename_UTF8_bytes": {
+          "mean": 4756,
+          "sample_SD": 0.0
+        },
+        "request_wall_mean_ms": {
+          "mean": 59.20713998784777,
+          "sample_SD": 2.9636441606644643
+        }
+      },
+      "request_wall_mean_ms": 59.20713998784777,
+      "unique_read_fraction": 0.5714285714285714
+    },
+    {
+      "chunk": 256,
+      "prompt_tokens": 40574,
+      "oracle_LCP_tokens": 25876,
+      "prefill_tokens_saved": 3072,
+      "actual_forward_tokens": 37502,
+      "recompute_vs_LCP_tokens": 22804,
+      "disk_write_bytes": 75497472,
+      "disk_read_bytes": 37748736,
+      "file_write_operations": 24,
+      "file_read_operations": 12,
+      "stored_unique_bytes": 75497472,
+      "read_at_least_once_unique_bytes": 37748736,
+      "unused_unique_bytes": 37748736,
+      "derived_unique_consumed_bytes": 37748736,
+      "derived_never_consumed_bytes": 37748736,
+      "chunk_reuse_events": 12,
+      "metadata_file_count": 24,
+      "filename_UTF8_bytes": 4068,
+      "seed_summary": {
+        "prompt_tokens": {
+          "mean": 13524.666666666666,
+          "sample_SD": 161.29889439588027
+        },
+        "oracle_LCP_tokens": {
+          "mean": 8625.333333333334,
+          "sample_SD": 163.34421732443832
+        },
+        "prefill_tokens_saved": {
+          "mean": 1024,
+          "sample_SD": 0.0
+        },
+        "actual_forward_tokens": {
+          "mean": 12500.666666666666,
+          "sample_SD": 161.29889439588027
+        },
+        "recompute_vs_LCP_tokens": {
+          "mean": 7601.333333333333,
+          "sample_SD": 163.34421732443832
+        },
+        "disk_write_bytes": {
+          "mean": 25165824,
+          "sample_SD": 0.0
+        },
+        "disk_read_bytes": {
+          "mean": 12582912,
+          "sample_SD": 0.0
+        },
+        "file_write_operations": {
+          "mean": 8,
+          "sample_SD": 0.0
+        },
+        "file_read_operations": {
+          "mean": 4,
+          "sample_SD": 0.0
+        },
+        "stored_unique_bytes": {
+          "mean": 25165824,
+          "sample_SD": 0.0
+        },
+        "read_at_least_once_unique_bytes": {
+          "mean": 12582912,
+          "sample_SD": 0.0
+        },
+        "unused_unique_bytes": {
+          "mean": 12582912,
+          "sample_SD": 0.0
+        },
+        "derived_unique_consumed_bytes": {
+          "mean": 12582912,
+          "sample_SD": 0.0
+        },
+        "derived_never_consumed_bytes": {
+          "mean": 12582912,
+          "sample_SD": 0.0
+        },
+        "chunk_reuse_events": {
+          "mean": 4,
+          "sample_SD": 0.0
+        },
+        "metadata_file_count": {
+          "mean": 8,
+          "sample_SD": 0.0
+        },
+        "filename_UTF8_bytes": {
+          "mean": 1356,
+          "sample_SD": 0.0
+        },
+        "request_wall_mean_ms": {
+          "mean": 47.992856955357695,
+          "sample_SD": 3.4870828801996794
+        }
+      },
+      "request_wall_mean_ms": 47.992856955357695,
+      "unique_read_fraction": 0.5
+    }
+  ],
+  "measurement_scope": "controlled synthetic archived token IDs; native MP filesystem backend; buffered page-cache condition; one-token request wall time, not isolated GPU prefill time",
+  "not_measured": {
+    "physical_NAND_bytes": null,
+    "FS_metadata_write_bytes": null,
+    "metadata_only_RAM_bytes": null,
+    "kernel_syscall_count": null,
+    "isolated_prefill_seconds": null
+  },
+  "partial_chunk": "Pinned MP token_hasher discards partial chunks; partial-tail saving option from V1 is not supported by this MP path.",
+  "provenance": {
+    "model_lock": "external/lmcache-model.lock.json",
+    "runtime_lock": "external/lmcache-runtime.lock.json",
+    "executed_source_sha256": "502116c9397a5ad63d09aa22e13e19dea4c4f93d6a2cfd70c19662e3ebaf9c8e",
+    "input_sha256": "9aec8928624de5a25d91802fad1dd7061b415a88ec02853ffe4f2f4b185aa865",
+    "coverage_sha256": "2d68deffb4d1015430e75be9f6f01dcc87b825df15bf3eac97fe876830bfd28d",
+    "fixed_arm_order": [
+      "baseline",
+      64,
+      128,
+      256
+    ],
+    "asynchronous_write_gap_seconds": 0.3,
+    "project_commit_at_launch": "6328a98",
+    "working_tree_dirty_at_launch": true
+  },
+  "quality": {
+    "greedy_identical": 792,
+    "common_top20_logprob_within_limit": 792,
+    "max_abs_logprob_difference": 0.04583740234375,
+    "top20_key_set_mismatches": 14,
+    "interpretation": "All fixed greedy/common-logprob limits passed; stricter top20-key-set gate failed in 14 cases. Preserve both; do not declare full correctness or relax retrospectively."
+  },
+  "baseline_wall_mean_ms": 15.26114712142964,
+  "batch_component": [
+    {
+      "chunk": 64,
+      "repeat": 0,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 6291456,
+      "write_seconds": 0.004683158011175692,
+      "read_seconds": 0.0033235900045838207,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 64,
+      "repeat": 0,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 6291456,
+      "write_seconds": 0.00447952002286911,
+      "read_seconds": 0.003199332015356049,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 64,
+      "repeat": 1,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 6291456,
+      "write_seconds": 0.004227719007758424,
+      "read_seconds": 0.0031936930026859045,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 64,
+      "repeat": 1,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 6291456,
+      "write_seconds": 0.004904181987512857,
+      "read_seconds": 0.0033227590029127896,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 64,
+      "repeat": 2,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 6291456,
+      "write_seconds": 0.00429056299617514,
+      "read_seconds": 0.003209838003385812,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 64,
+      "repeat": 2,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 6291456,
+      "write_seconds": 0.0053162359981797636,
+      "read_seconds": 0.003212942014215514,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        },
+        {
+          "type": "write",
+          "bytes": 786432
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        },
+        {
+          "type": "read",
+          "bytes": 786432
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 128,
+      "repeat": 0,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 12582912,
+      "write_seconds": 0.006248545978451148,
+      "read_seconds": 0.0032887469860725105,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 128,
+      "repeat": 0,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 12582912,
+      "write_seconds": 0.009516250982414931,
+      "read_seconds": 0.0031904589850455523,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 128,
+      "repeat": 1,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 12582912,
+      "write_seconds": 0.007399477995932102,
+      "read_seconds": 0.003180013009114191,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 128,
+      "repeat": 1,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 12582912,
+      "write_seconds": 0.005794689990580082,
+      "read_seconds": 0.0035483410174492747,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 128,
+      "repeat": 2,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 12582912,
+      "write_seconds": 0.0060927210142835975,
+      "read_seconds": 0.003464823996182531,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 128,
+      "repeat": 2,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 12582912,
+      "write_seconds": 0.007407561002764851,
+      "read_seconds": 0.003181595995556563,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        },
+        {
+          "type": "write",
+          "bytes": 1572864
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        },
+        {
+          "type": "read",
+          "bytes": 1572864
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 256,
+      "repeat": 0,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 25165824,
+      "write_seconds": 0.009737237996887416,
+      "read_seconds": 0.003474008000921458,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 256,
+      "repeat": 0,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 25165824,
+      "write_seconds": 0.012708785972790793,
+      "read_seconds": 0.004246555006830022,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 256,
+      "repeat": 1,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 25165824,
+      "write_seconds": 0.011628589010797441,
+      "read_seconds": 0.004245835996698588,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 256,
+      "repeat": 1,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 25165824,
+      "write_seconds": 0.009396533016115427,
+      "read_seconds": 0.004275532002793625,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 256,
+      "repeat": 2,
+      "mode": "single",
+      "objects": 8,
+      "payload_bytes": 25165824,
+      "write_seconds": 0.008966421999502927,
+      "read_seconds": 0.00333889399189502,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    },
+    {
+      "chunk": 256,
+      "repeat": 2,
+      "mode": "batch",
+      "objects": 8,
+      "payload_bytes": 25165824,
+      "write_seconds": 0.011617373995250091,
+      "read_seconds": 0.0042652940028347075,
+      "write_events": [
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        },
+        {
+          "type": "write",
+          "bytes": 3145728
+        }
+      ],
+      "read_events": [
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        },
+        {
+          "type": "read",
+          "bytes": 3145728
+        }
+      ],
+      "hash_correctness": true,
+      "cache_condition": "OS page-cache warm; no global cache drop"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "status": {
+    "label": "batch-02",
+    "started_at_utc": "2026-10-12T09:33:39.779308+00:00",
+    "RSS_limit": 8589934592,
+    "GPU_limit": 4294967296,
+    "artifact_limit": 10737418240,
+    "address_space": "default; user-approved GPU virtual-address exception",
+    "max_RSS": 6119424,
+    "max_GPU": 0,
+    "max_artifact_bytes": 10250552544,
+    "command": [
+      "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+      "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_batch_remote.py"
+    ],
+    "status": "completed",
+    "pid": 685752,
+    "exit_code": 0,
+    "ended_at_utc": "2026-10-12T09:33:41.597363+00:00"
+  },
+  "files": {
+    "source.py": {
+      "sha256": "45b17d6ac6981cd3fb3c2ee65250380e6e403aa520713a0570f0743f7057d809",
+      "bytes": 3934
+    },
+    "result.json": {
+      "sha256": "9df0d6ee99d80e779183cc4e52bca42dbb80f22f70f3bf6ae5c2076e5239ce90",
+      "bytes": 25361
+    }
+  },
+  "cache_inventory": {},
+  "host": {
+    "kernel": "5.15.0-78-generic",
+    "machine": "x86_64",
+    "python": "3.10.12"
+  }
+}

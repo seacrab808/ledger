@@ -11,3 +11,6 @@ records/phase-01-executed-config.json -text
 # Runtime evidence and its SHA256 manifest must survive Windows/Linux checkouts byte-for-byte.
 results/kv_lifecycle/** -text whitespace=-blank-at-eol,-blank-at-eof
 results/kv_chunk_replay/** -text whitespace=-blank-at-eol,-blank-at-eof
+# Preserve native runtime text and manifests byte-for-byte across platforms.
+results/lmcache_native/** -text -whitespace
+docs/assets/*.svg text eol=lf

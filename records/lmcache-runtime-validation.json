@@ -1,0 +1,120 @@
+{
+  "install-03": {
+    "status": {
+      "label": "install-03",
+      "started_at_utc": "2026-10-12T08:53:29.369207+00:00",
+      "RSS_limit": 8589934592,
+      "GPU_limit": 4294967296,
+      "artifact_limit": 10737418240,
+      "address_space": "default; user-approved GPU virtual-address exception",
+      "max_RSS": 838164480,
+      "max_GPU": 0,
+      "max_artifact_bytes": 9827968798,
+      "command": [
+        "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+        "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_install_remote.py"
+      ],
+      "status": "completed",
+      "pid": 458048,
+      "exit_code": 0,
+      "ended_at_utc": "2026-10-12T08:54:12.681122+00:00"
+    },
+    "owned_group_alive": []
+  },
+  "mp-smoke-02": {
+    "status": {
+      "label": "mp-smoke-02",
+      "started_at_utc": "2026-10-12T09:20:47.055843+00:00",
+      "RSS_limit": 8589934592,
+      "GPU_limit": 4294967296,
+      "artifact_limit": 10737418240,
+      "address_space": "default; user-approved GPU virtual-address exception",
+      "max_RSS": 3913871360,
+      "max_GPU": 2728394752,
+      "max_artifact_bytes": 9883059551,
+      "command": [
+        "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+        "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_mp_smoke_remote.py"
+      ],
+      "status": "completed",
+      "pid": 626783,
+      "exit_code": 0,
+      "ended_at_utc": "2026-10-12T09:21:32.611385+00:00"
+    },
+    "owned_group_alive": []
+  },
+  "native-01": {
+    "status": {
+      "label": "native-01",
+      "started_at_utc": "2026-10-12T09:25:02.482726+00:00",
+      "RSS_limit": 8589934592,
+      "GPU_limit": 4294967296,
+      "artifact_limit": 10737418240,
+      "address_space": "default; user-approved GPU virtual-address exception",
+      "max_RSS": 3914436608,
+      "max_GPU": 2728394752,
+      "max_artifact_bytes": 10243946316,
+      "command": [
+        "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+        "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_native_remote.py"
+      ],
+      "status": "completed",
+      "pid": 665660,
+      "exit_code": 0,
+      "ended_at_utc": "2026-10-12T09:32:08.808637+00:00"
+    },
+    "owned_group_alive": []
+  },
+  "coverage-01": {
+    "status": {
+      "label": "coverage-01",
+      "started_at_utc": "2026-10-12T09:32:51.411165+00:00",
+      "RSS_limit": 8589934592,
+      "GPU_limit": 4294967296,
+      "artifact_limit": 10737418240,
+      "address_space": "default; user-approved GPU virtual-address exception",
+      "max_RSS": 6062080,
+      "max_GPU": 0,
+      "max_artifact_bytes": 10244108538,
+      "command": [
+        "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+        "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_coverage_remote.py"
+      ],
+      "status": "completed",
+      "pid": 683314,
+      "exit_code": 0,
+      "ended_at_utc": "2026-10-12T09:32:53.197931+00:00"
+    },
+    "owned_group_alive": []
+  },
+  "batch-02": {
+    "status": {
+      "label": "batch-02",
+      "started_at_utc": "2026-10-12T09:33:39.779308+00:00",
+      "RSS_limit": 8589934592,
+      "GPU_limit": 4294967296,
+      "artifact_limit": 10737418240,
+      "address_space": "default; user-approved GPU virtual-address exception",
+      "max_RSS": 6119424,
+      "max_GPU": 0,
+      "max_artifact_bytes": 10250552544,
+      "command": [
+        "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+        "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_batch_remote.py"
+      ],
+      "status": "completed",
+      "pid": 685752,
+      "exit_code": 0,
+      "ended_at_utc": "2026-10-12T09:33:41.597363+00:00"
+    },
+    "owned_group_alive": []
+  },
+  "install_validation": {
+    "status": "installed-and-imported",
+    "lmcache": "0.5.5",
+    "vllm": "0.28.0",
+    "torch": "2.13.0"
+  },
+  "GPU_total_used_MiB": "84103",
+  "project_runtime_bytes": 10514828470
+}

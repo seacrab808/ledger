@@ -1,0 +1,79 @@
+{
+  "status": {
+    "label": "mp-smoke-02",
+    "started_at_utc": "2026-10-12T09:20:47.055843+00:00",
+    "RSS_limit": 8589934592,
+    "GPU_limit": 4294967296,
+    "artifact_limit": 10737418240,
+    "address_space": "default; user-approved GPU virtual-address exception",
+    "max_RSS": 3913871360,
+    "max_GPU": 2728394752,
+    "max_artifact_bytes": 9883059551,
+    "command": [
+      "/home/miruware/ledger/artifacts/lmcache-runtime/venv/bin/python",
+      "/home/miruware/ledger/artifacts/lmcache-runtime/lmcache_mp_smoke_remote.py"
+    ],
+    "status": "completed",
+    "pid": 626783,
+    "exit_code": 0,
+    "ended_at_utc": "2026-10-12T09:21:32.611385+00:00"
+  },
+  "files": {
+    "cached.log": {
+      "sha256": "f1934b98102af773772154c70ce58f4075ce159e541a480e69f7cc7164e70802",
+      "bytes": 21836
+    },
+    "source.py": {
+      "sha256": "5010893b48d41705af3ede836670621c5adaec6350f28efc58ebc5db372a6f5f",
+      "bytes": 6390
+    },
+    "config.json": {
+      "sha256": "d54eea89d2762db1b1a3efe05a06feede3115b8813b8a798e48ac0741d92ace7",
+      "bytes": 742
+    },
+    "baseline.json": {
+      "sha256": "b7d51c4995dc424228b180fc5b7b2f51fb8cae826f93efb26f79b0ff622f797f",
+      "bytes": 3499
+    },
+    "baseline.log": {
+      "sha256": "5e5e7d846e5adb15b01fef01ae0d8fc48e79c96bd48623a7fc22b6448a5830e3",
+      "bytes": 10129
+    },
+    "cached.json": {
+      "sha256": "c7fbfff9297457f075474a51461cfa0e1febda0071419943bae3923c00e7d225",
+      "bytes": 3472
+    },
+    "result.json": {
+      "sha256": "0990e190ffeee935324581144e02dcbece485748569c1e75fe91db830913b4b8",
+      "bytes": 8441
+    },
+    "server.log": {
+      "sha256": "ec92900261fb1804f220f2cd409e528df109bfac2a9ab3306adc3c0ece176dea",
+      "bytes": 16659
+    }
+  },
+  "cache_inventory": {
+    "cache": {
+      "directory_allocated_bytes": 4096,
+      "files": [
+        {
+          "name": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b124f0cf990dbabbc494e43f2f82ccc4665f0a05d6cc9c83bcac3ebe141e19fa.data",
+          "bytes": 1572864,
+          "allocated_bytes": 1572864,
+          "sha256": "b60b8fb92f8515750cab7502793250b0f2b74a108f22acbf382f4baa575ecb83"
+        },
+        {
+          "name": "-SEP-home-SEP-miruware-SEP-ledger-SEP-artifacts-SEP-lmcache-runtime-SEP-model@0x01000100@0@b92a275f40b539c819934beb4d26e2d9819d010f07337b05d1846505e87242e2.data",
+          "bytes": 1572864,
+          "allocated_bytes": 1572864,
+          "sha256": "75dce047b49cb46cd61476ecb93e604b1f189f8cd0e0f725cf234c780be0c688"
+        }
+      ]
+    }
+  },
+  "host": {
+    "kernel": "5.15.0-78-generic",
+    "machine": "x86_64",
+    "python": "3.10.12"
+  }
+}
