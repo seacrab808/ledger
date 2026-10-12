@@ -1,0 +1,21 @@
+{
+  "analysis_kind": "paired offline token-trace replay; not native chunk backend runtime",
+  "chunk_sizes": [64, 128, 256, 512],
+  "patterns": ["append", "retry", "edit", "session_end"],
+  "seeds": [42, 43, 44],
+  "source": "immutable results/kv_lifecycle/{pattern}-{seed}/run.json and events.jsonl",
+  "retained_reference": "unlimited prior snapshots within same session, no eviction, no cross-session sharing; potential upper bound",
+  "source_selection": "maximum exact token LCP among strictly earlier persisted snapshots; most recent snapshot breaks ties, fixed across chunk sizes",
+  "native_reference": "reproduce recorded disk lookup/load decision and resident prefix; chunk size alone cannot change source retention",
+  "chunk_model": "strict complete-chunk storage and full-chunk matching, no partial-tail storage, no dedup or padding",
+  "oracle_saved_tokens": "min(LCP, prompt_tokens-1)",
+  "chunk_saved_tokens": "min(floor(LCP/chunk_size)*chunk_size, prompt_tokens-1)",
+  "total_granularity_loss": "oracle_saved_tokens - chunk_saved_tokens",
+  "unpersisted_tail_loss": "oracle_saved_tokens - min(LCP, floor(source_snapshot_tokens/C)*C, prompt_tokens-1)",
+  "boundary_match_loss": "total_granularity_loss - unpersisted_tail_loss; excludes missing storage coverage",
+  "storage_accounting": "write-instance tokens per snapshot; per-version union of actually skipped prefix token ranges; repeated saves remain separate",
+  "bytes": "unavailable; no conversion from full-state serialized bytes to chunk KV payload bytes",
+  "percentiles": "linear interpolation at (n-1)*p; all requests and noninitial same-session requests separately",
+  "statistics": "per-trace values, n=3 fixture mean/sample SD per workload, paired differences on exactly identical token inputs",
+  "scope": "no model generation, new policy/controller, backend modification, network emulation or FEMU"
+}

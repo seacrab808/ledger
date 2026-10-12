@@ -1,5 +1,9 @@
 # 같은 trace의 paired token replay / chunk 분석 설계
 
+2026-10-12 후속 승인으로 아래 설계의 offline paired replay를 실행했다.
+[추가 실행 결과](kv_chunk_replay_report.md)를 읽어 주세요. 아래는 승인 전 설계 이력이며
+실제 chunk backend·batching·FEMU는 실행하지 않았다.
+
 이 문서는 설계이며 측정 결과나 새 policy 구현이 아니다. 12개 full-state
 screening runs와 chunk analytical replay는 다른 evidence이다. Synthetic trace는
 실제 agent 행동의 분포를 대표하지 않는다.

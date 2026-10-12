@@ -1,7 +1,7 @@
 {
   "status": "provisional",
   "question": "저장·재사용 경계와 memory/storage 계층의 상호작용이 기존 효율 지표나 시스템 선택을 뒤집는 실제 조건이 있는가?",
-  "scope": "기존 FEMU pilot/steady/history 보존. KV full-state audit·smoke·12 synthetic screening 완료. Native pop-on-lookup 지배로 future-reuse screening 부적합; chunk paired replay 설계만, solution 미구현.",
+  "scope": "기존 FEMU와 full-state 12 runs 보존. 기존 synthetic token trace의 chunk 64/128/256/512 offline paired replay 완료. 새 policy/controller/backend/FEMU 실행 없음.",
   "directions": [
     {
       "name": "서비스별 소거 비용 회계",
@@ -291,7 +291,15 @@
       "reason": "같은 기록 trace의 LCP와 chunk 64/128/256/512를 paired replay하는 설계만 남겼다. Native availability와 retained-object potential upper bound를 구분한다.",
       "alternatives": "full-state 관측을 fixed chunk 원인으로 표현하거나 새로운 policy 구현",
       "why_not": "actual chunk key, partial tail, dedup, batching flush 및 recovery 조건을 아직 측정하지 않았다.",
-      "status": "designed-not-executed"
+      "status": "design-historical-followed-by-approved-replay-see-D028"
+    },
+    {
+      "id": "D028",
+      "title": "같은 token trace에서 chunk 크기 손실을 분해",
+      "reason": "264 requests 중 후속 204개의 실제 LCP를 분석했다. Retained oracle 25507 tokens 대비 C=64의 총 손실 30.75%. Native availability에서는 모든 C의 reuse=0. 경계 matching과 미저장 tail을 분리했다.",
+      "alternatives": "큰 chunk의 미사용 감소를 효율 개선으로 해석하거나 실제 backend 결과로 주장",
+      "why_not": "짧은 synthetic trace, strict complete-chunk reference, source retention 가정이다. Bytes/I/O/latency와 batching 효과를 측정하지 않았다.",
+      "status": "completed-analytical-replay-only"
     }
   ],
   "new_questions": [
@@ -304,7 +312,7 @@
   "capacity_sensitivity_candidate": "서버에 충분한 RAM/CPU가 있어 향후 capacity/geometry sensitivity를 검토할 수 있다. 지금의 Phase 1과 초기 pilot E0는 4 GiB raw / 3 GiB exposed를 유지한다. 확장은 별도 승인·자원 예산·명시적 변수 통제 후 수행한다.",
   "kv_screening": {
     "status": "runtime-complete-research-go-undetermined",
-    "chunk_replay": "design-only",
+    "chunk_replay": "offline-paired-replay-complete",
     "summary": "records/kv-screen-summary.json"
   }
 }

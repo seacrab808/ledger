@@ -13,7 +13,9 @@ change with evidence. Measurement validity comes before preserving an idea.
   CPU-only, one process, 2 generation AND 2 prefill threads, nice 10, 2-CPU affinity,
   RSS ceiling 8 GiB / address space 12 GiB / extra artifacts 10 GiB.
   Pin llama-cpp-python 0.3.36 and the small Qwen model/config hashes.
-  Chunk sizes 64/128/256/512 are paired trace-replay DESIGN ONLY in this stage.
+  Latest authorization executes offline paired replay of the existing token traces
+  for chunk sizes 64/128/256/512, including exact LCP distribution and loss decomposition.
+  Do not regenerate traces or rerun the completed 12 full-state runs.
   Do not implement a new policy/controller or claim full-state evidence proves chunk mismatch.
   Commit/push remains authorized. Earlier initial-history control is complete and must not rerun.
 - Do NOT run other E0 workloads, fill/OP/GC/geometry sweeps,
@@ -35,7 +37,7 @@ change with evidence. Measurement validity comes before preserving an idea.
   2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
   12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
   are project-local. Stop the owned VM after each run; never stop other users' jobs.
-- Stop after the KV screening and unexecuted chunk replay design; preserve the earlier unexecuted three-pattern experiment. A blocked runtime stays incomplete;
+- Stop after offline chunk replay and documentation; preserve the earlier unexecuted three-pattern experiment. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
 
 - The six original Phase 2 pilot runs are COMPLETE and must be preserved.

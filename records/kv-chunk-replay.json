@@ -1,0 +1,1668 @@
+{
+  "status": "validated",
+  "evidence_kind": "synthetic-token-trace analytical replay",
+  "started_at_utc": "2026-10-12T07:15:21.250428+00:00",
+  "ended_at_utc": "2026-10-12T07:15:21.375128+00:00",
+  "analysis_runtime_seconds": 0.12470090002170764,
+  "config": {
+    "analysis_kind": "paired offline token-trace replay; not native chunk backend runtime",
+    "chunk_sizes": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "patterns": [
+      "append",
+      "retry",
+      "edit",
+      "session_end"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "source": "immutable results/kv_lifecycle/{pattern}-{seed}/run.json and events.jsonl",
+    "retained_reference": "unlimited prior snapshots within same session, no eviction, no cross-session sharing; potential upper bound",
+    "source_selection": "maximum exact token LCP among strictly earlier persisted snapshots; most recent snapshot breaks ties, fixed across chunk sizes",
+    "native_reference": "reproduce recorded disk lookup/load decision and resident prefix; chunk size alone cannot change source retention",
+    "chunk_model": "strict complete-chunk storage and full-chunk matching, no partial-tail storage, no dedup or padding",
+    "oracle_saved_tokens": "min(LCP, prompt_tokens-1)",
+    "chunk_saved_tokens": "min(floor(LCP/chunk_size)*chunk_size, prompt_tokens-1)",
+    "total_granularity_loss": "oracle_saved_tokens - chunk_saved_tokens",
+    "unpersisted_tail_loss": "oracle_saved_tokens - min(LCP, floor(source_snapshot_tokens/C)*C, prompt_tokens-1)",
+    "boundary_match_loss": "total_granularity_loss - unpersisted_tail_loss; excludes missing storage coverage",
+    "storage_accounting": "write-instance tokens per snapshot; per-version union of actually skipped prefix token ranges; repeated saves remain separate",
+    "bytes": "unavailable; no conversion from full-state serialized bytes to chunk KV payload bytes",
+    "percentiles": "linear interpolation at (n-1)*p; all requests and noninitial same-session requests separately",
+    "statistics": "per-trace values, n=3 fixture mean/sample SD per workload, paired differences on exactly identical token inputs",
+    "scope": "no model generation, new policy/controller, backend modification, network emulation or FEMU"
+  },
+  "inputs": [
+    {
+      "path": "results/kv_lifecycle/append-42/run.json",
+      "sha256": "d9d8201c2e7be115681c18d046b12f2c2672a2f229055722c69766fc4a3d9011"
+    },
+    {
+      "path": "results/kv_lifecycle/append-42/events.jsonl",
+      "sha256": "cb2e79c59a4a078e89501555c0041eb241100301bfba6dc8eabab13d8c971198"
+    },
+    {
+      "path": "results/kv_lifecycle/append-43/run.json",
+      "sha256": "af03141b95557af491cc17b7f3a9d7bf9262dc7fdf263a00e117593c64adb7fd"
+    },
+    {
+      "path": "results/kv_lifecycle/append-43/events.jsonl",
+      "sha256": "a6978336e0a92259ef7d1baaa2608848d79b41bb5f0833331dc3968878febc80"
+    },
+    {
+      "path": "results/kv_lifecycle/append-44/run.json",
+      "sha256": "1f0a32ecf548bf79207f7221da02a77fac75e642dfad66baeb75a07b6a8c52a0"
+    },
+    {
+      "path": "results/kv_lifecycle/append-44/events.jsonl",
+      "sha256": "ceddee9e9374e91ebccb2323e4b57b700200cf32e2b66916d86377ba2943e628"
+    },
+    {
+      "path": "results/kv_lifecycle/retry-42/run.json",
+      "sha256": "ffa37a203467d9dd54ea02cc868965af41f9ea96541beb303aa0d20c3fdde1c6"
+    },
+    {
+      "path": "results/kv_lifecycle/retry-42/events.jsonl",
+      "sha256": "7fcfce9f68dcef6053d294f1b53c161a3cee4724b1654731f4faeb78aa556124"
+    },
+    {
+      "path": "results/kv_lifecycle/retry-43/run.json",
+      "sha256": "51efe816542cf5df12d752cc1541c9782c25f92d938439bc53578a79788c60d5"
+    },
+    {
+      "path": "results/kv_lifecycle/retry-43/events.jsonl",
+      "sha256": "7b5538ccb2db55061851c3be0792ecb80cd1f418b16dc7b896ec4d9d892913b1"
+    },
+    {
+      "path": "results/kv_lifecycle/retry-44/run.json",
+      "sha256": "4eb03ef5886bc896b7e503787c40e8f4a49db4f3f2281e0089a9f9fd1fcf647f"
+    },
+    {
+      "path": "results/kv_lifecycle/retry-44/events.jsonl",
+      "sha256": "dba39d17700199c9c0a6a65ed7529657d2c0f0579b85ed26250463b126b64b46"
+    },
+    {
+      "path": "results/kv_lifecycle/edit-42/run.json",
+      "sha256": "ec01e7cb7f018db6be6db0f29e9de2d8c0eb8bc09d820034a666b92efb1a7aed"
+    },
+    {
+      "path": "results/kv_lifecycle/edit-42/events.jsonl",
+      "sha256": "e4350ac4fdc7cdb1781a04b9cfdc7b2ee20c994cf28d85b0250013cd11e59a38"
+    },
+    {
+      "path": "results/kv_lifecycle/edit-43/run.json",
+      "sha256": "450b25c3b0806c993bba4e020883e12151c85ce9a728fe7b667364ebd6598695"
+    },
+    {
+      "path": "results/kv_lifecycle/edit-43/events.jsonl",
+      "sha256": "b58eea54f361571fec4ce7cedd3af4d45afbecb5ee605a51d7f3af2a079bbd76"
+    },
+    {
+      "path": "results/kv_lifecycle/edit-44/run.json",
+      "sha256": "2c77cc058bf54febaac88fdd3fe1318d5d506fa904a8ad44ea387489bcb44d30"
+    },
+    {
+      "path": "results/kv_lifecycle/edit-44/events.jsonl",
+      "sha256": "293bcb85b411a8241f0a83a7c60cd1399cad15d1ea0c4f5dd18d0bb3260fba6c"
+    },
+    {
+      "path": "results/kv_lifecycle/session_end-42/run.json",
+      "sha256": "00caee0056548b5e2724775af0aca5d751984de213d3a34a8274ecf12abf057d"
+    },
+    {
+      "path": "results/kv_lifecycle/session_end-42/events.jsonl",
+      "sha256": "9b2d98a874bf6042858f5bb39cb88845d422a07c8a1689c294f0dc1aa98185c2"
+    },
+    {
+      "path": "results/kv_lifecycle/session_end-43/run.json",
+      "sha256": "eaeec5017995ef7c300db8b32476a5cc81c2a4a6f49d58a2dbb81787941ffd33"
+    },
+    {
+      "path": "results/kv_lifecycle/session_end-43/events.jsonl",
+      "sha256": "8a0d45b35147ded1eb28a6edccb80670dacca6ac79aa3099eb91bd9bb5d05762"
+    },
+    {
+      "path": "results/kv_lifecycle/session_end-44/run.json",
+      "sha256": "83eb1d5ad8bd287624fc6397256f75cc07893bb1de741df05c958b42e6607922"
+    },
+    {
+      "path": "results/kv_lifecycle/session_end-44/events.jsonl",
+      "sha256": "3ce9c26fb48340d0aed1978b98fc4997b40d3fc9c7d9d3a904311073c7a5c45a"
+    }
+  ],
+  "git_commit": "dea2a5c540a4945427f52c5456c4b0403000922e",
+  "git_dirty": true,
+  "analysis_code_sha256": "9d6da6385fcbab01494893ee2ccb3e0b79754dcc7303be25d0eab79c6d40476e",
+  "request_count": 264,
+  "noninitial_request_count": 204,
+  "distributions": [
+    {
+      "pattern": "append",
+      "all_requests": {
+        "n": 72,
+        "min": 0,
+        "max": 307,
+        "mean": 141.79166666666666,
+        "p50": 140.5,
+        "p90": 298.0,
+        "p95": 302.0
+      },
+      "noninitial_requests": {
+        "n": 60,
+        "min": 36,
+        "max": 307,
+        "mean": 170.15,
+        "p50": 170.0,
+        "p90": 298.1,
+        "p95": 302.0
+      }
+    },
+    {
+      "pattern": "retry",
+      "all_requests": {
+        "n": 72,
+        "min": 0,
+        "max": 238,
+        "mean": 119.44444444444444,
+        "p50": 138.5,
+        "p90": 230.9,
+        "p95": 234.45
+      },
+      "noninitial_requests": {
+        "n": 60,
+        "min": 36,
+        "max": 238,
+        "mean": 143.33333333333334,
+        "p50": 168.5,
+        "p90": 233.1,
+        "p95": 235.1
+      }
+    },
+    {
+      "pattern": "edit",
+      "all_requests": {
+        "n": 72,
+        "min": 0,
+        "max": 165,
+        "mean": 68.69444444444444,
+        "p50": 68.0,
+        "p90": 159.7,
+        "p95": 162.35000000000002
+      },
+      "noninitial_requests": {
+        "n": 60,
+        "min": 11,
+        "max": 165,
+        "mean": 82.43333333333334,
+        "p50": 96.0,
+        "p90": 160.1,
+        "p95": 164.0
+      }
+    },
+    {
+      "pattern": "session_end",
+      "all_requests": {
+        "n": 48,
+        "min": 0,
+        "max": 110,
+        "mean": 36.75,
+        "p50": 18.5,
+        "p90": 106.0,
+        "p95": 110.0
+      },
+      "noninitial_requests": {
+        "n": 24,
+        "min": 37,
+        "max": 110,
+        "mean": 73.5,
+        "p50": 73.5,
+        "p90": 110.0,
+        "p95": 110.0
+      }
+    },
+    {
+      "pattern": "all",
+      "all_requests": {
+        "n": 264,
+        "min": 0,
+        "max": 307,
+        "mean": 96.66287878787878,
+        "p50": 100.5,
+        "p90": 233.70000000000002,
+        "p95": 238.0
+      },
+      "noninitial_requests": {
+        "n": 204,
+        "min": 11,
+        "max": 307,
+        "mean": 125.09313725490196,
+        "p50": 106.0,
+        "p90": 234.70000000000002,
+        "p95": 294.0
+      }
+    }
+  ],
+  "aggregate": [
+    {
+      "pattern": "append",
+      "chunk_size": 64,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4857,
+          "sample_sd": 55.42562584220407
+        },
+        "oracle_saved_tokens": {
+          "mean": 3403,
+          "sample_sd": 55.42562584220407
+        },
+        "chunk_saved_tokens": {
+          "mean": 2560,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 843,
+          "sample_sd": 55.42562584220407
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 843,
+          "sample_sd": 55.42562584220407
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.24758827024625824,
+          "sample_sd": 0.012371074165712407
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.24758827024625824,
+          "sample_sd": 0.012371074165712407
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 42.15,
+          "sample_sd": 2.771281292110202
+        },
+        "stored_token_instances": {
+          "mean": 5376,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 2560,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2816,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 225,
+          "sample_sd": 55.42562584220407
+        },
+        "token_instance_utilization": {
+          "mean": 0.47619047619047616,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "append",
+      "chunk_size": 128,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4857,
+          "sample_sd": 55.42562584220407
+        },
+        "oracle_saved_tokens": {
+          "mean": 3403,
+          "sample_sd": 55.42562584220407
+        },
+        "chunk_saved_tokens": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 850,
+          "sample_sd": 27.712812921102035
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 505,
+          "sample_sd": 27.712812921102035
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 1355,
+          "sample_sd": 55.42562584220407
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.39807061619700657,
+          "sample_sd": 0.0098968593325699
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.24973492660730032,
+          "sample_sd": 0.004114831895353155
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 67.75,
+          "sample_sd": 2.771281292110202
+        },
+        "stored_token_instances": {
+          "mean": 4608,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2560,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 993,
+          "sample_sd": 55.42562584220407
+        },
+        "token_instance_utilization": {
+          "mean": 0.4444444444444444,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 12,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "append",
+      "chunk_size": 256,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4857,
+          "sample_sd": 55.42562584220407
+        },
+        "oracle_saved_tokens": {
+          "mean": 3403,
+          "sample_sd": 55.42562584220407
+        },
+        "chunk_saved_tokens": {
+          "mean": 1024,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 940,
+          "sample_sd": 16.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 1439,
+          "sample_sd": 42.33202097703345
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 2379,
+          "sample_sd": 55.42562584220407
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.6990353080985033,
+          "sample_sd": 0.004948429666284982
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.2762315417502037,
+          "sample_sd": 0.002368565283320274
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 118.95,
+          "sample_sd": 2.771281292110202
+        },
+        "stored_token_instances": {
+          "mean": 3072,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 1024,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 2529,
+          "sample_sd": 55.42562584220407
+        },
+        "token_instance_utilization": {
+          "mean": 0.3333333333333333,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 4,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "append",
+      "chunk_size": 512,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4857,
+          "sample_sd": 55.42562584220407
+        },
+        "oracle_saved_tokens": {
+          "mean": 3403,
+          "sample_sd": 55.42562584220407
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 3403,
+          "sample_sd": 55.42562584220407
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 3403,
+          "sample_sd": 55.42562584220407
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 170.15,
+          "sample_sd": 2.7712812921102103
+        },
+        "stored_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 5601,
+          "sample_sd": 55.42562584220407
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "retry",
+      "chunk_size": 64,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4052.3333333333335,
+          "sample_sd": 29.26317367158479
+        },
+        "oracle_saved_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "chunk_saved_tokens": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 814.6666666666666,
+          "sample_sd": 32.08322510804257
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 814.6666666666666,
+          "sample_sd": 32.08322510804257
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.28452330722206176,
+          "sample_sd": 0.008008045729129947
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.28452330722206176,
+          "sample_sd": 0.008008045729129947
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 40.733333333333334,
+          "sample_sd": 1.6041612554021265
+        },
+        "stored_token_instances": {
+          "mean": 4608,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2560,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 188.33333333333334,
+          "sample_sd": 29.26317367158479
+        },
+        "token_instance_utilization": {
+          "mean": 0.4444444444444444,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "retry",
+      "chunk_size": 128,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4052.3333333333335,
+          "sample_sd": 29.26317367158479
+        },
+        "oracle_saved_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "chunk_saved_tokens": {
+          "mean": 1536,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 839.3333333333334,
+          "sample_sd": 28.307831660749528
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 487.3333333333333,
+          "sample_sd": 15.01110699893027
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 1326.6666666666667,
+          "sample_sd": 32.08322510804257
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.46339248041654635,
+          "sample_sd": 0.006006034296847482
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.29315933725522636,
+          "sample_sd": 0.007106101170348706
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 66.33333333333333,
+          "sample_sd": 1.6041612554021298
+        },
+        "stored_token_instances": {
+          "mean": 3584,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 1536,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 1212.3333333333333,
+          "sample_sd": 29.26317367158479
+        },
+        "token_instance_utilization": {
+          "mean": 0.42857142857142855,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 12,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "retry",
+      "chunk_size": 256,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4052.3333333333335,
+          "sample_sd": 29.26317367158479
+        },
+        "oracle_saved_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 931.6666666666666,
+          "sample_sd": 16.502525059315417
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 1931,
+          "sample_sd": 26.888659319497503
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.3254580604753842,
+          "sample_sd": 0.0048665046141966855
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 143.13333333333333,
+          "sample_sd": 1.6041612554021372
+        },
+        "stored_token_instances": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2048,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 2748.3333333333335,
+          "sample_sd": 29.26317367158479
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "retry",
+      "chunk_size": 512,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 4052.3333333333335,
+          "sample_sd": 29.26317367158479
+        },
+        "oracle_saved_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 2862.6666666666665,
+          "sample_sd": 32.08322510804257
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 143.13333333333333,
+          "sample_sd": 1.6041612554021372
+        },
+        "stored_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 4796.333333333333,
+          "sample_sd": 29.26317367158479
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "edit",
+      "chunk_size": 64,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 3180.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "oracle_saved_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "chunk_saved_tokens": {
+          "mean": 1024,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 485,
+          "sample_sd": 132.59336333316233
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 139.66666666666666,
+          "sample_sd": 82.73048611807701
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 624.6666666666666,
+          "sample_sd": 52.54839039716948
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.3784632068207033,
+          "sample_sd": 0.02018120989343349
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.2926923041823457,
+          "sample_sd": 0.07260029730768922
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 31.233333333333334,
+          "sample_sd": 2.627419519858474
+        },
+        "stored_token_instances": {
+          "mean": 3434.6666666666665,
+          "sample_sd": 161.06313461910932
+        },
+        "unique_used_token_instances": {
+          "mean": 1024,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2410.6666666666665,
+          "sample_sd": 161.06313461910932
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 490,
+          "sample_sd": 117.32007500849971
+        },
+        "token_instance_utilization": {
+          "mean": 0.2985786907355535,
+          "sample_sd": 0.014144394204506087
+        },
+        "reuse_events": {
+          "mean": 12,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "edit",
+      "chunk_size": 128,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 3180.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "oracle_saved_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "chunk_saved_tokens": {
+          "mean": 512,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 595.6666666666666,
+          "sample_sd": 229.44352972645214
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 541,
+          "sample_sd": 205.7887266105702
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 1136.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.6892316034103516,
+          "sample_sd": 0.010090604946716744
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.35991660510853174,
+          "sample_sd": 0.13216252938394346
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 56.83333333333333,
+          "sample_sd": 2.627419519858474
+        },
+        "stored_token_instances": {
+          "mean": 2517.3333333333335,
+          "sample_sd": 266.453247931665
+        },
+        "unique_used_token_instances": {
+          "mean": 512,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 2005.3333333333333,
+          "sample_sd": 266.453247931665
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 1407.3333333333333,
+          "sample_sd": 259.03152961238777
+        },
+        "token_instance_utilization": {
+          "mean": 0.2048555732766259,
+          "sample_sd": 0.020790373030037154
+        },
+        "reuse_events": {
+          "mean": 4,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "edit",
+      "chunk_size": 256,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 3180.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "oracle_saved_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 82.43333333333334,
+          "sample_sd": 2.627419519858472
+        },
+        "stored_token_instances": {
+          "mean": 597.3333333333334,
+          "sample_sd": 147.8016689125442
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 597.3333333333334,
+          "sample_sd": 147.8016689125442
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 3327.3333333333335,
+          "sample_sd": 198.61856240878728
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "edit",
+      "chunk_size": 512,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 20,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 3180.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "oracle_saved_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 1648.6666666666667,
+          "sample_sd": 52.54839039716948
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 82.43333333333334,
+          "sample_sd": 2.627419519858472
+        },
+        "stored_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 3924.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "session_end",
+      "chunk_size": 64,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 8,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 1434.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "oracle_saved_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "chunk_saved_tokens": {
+          "mean": 256,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 332,
+          "sample_sd": 27.712812921102035
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 332,
+          "sample_sd": 27.712812921102035
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 0.5639620753728143,
+          "sample_sd": 0.0211255899155573
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.5639620753728143,
+          "sample_sd": 0.0211255899155573
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 41.5,
+          "sample_sd": 3.4641016151377544
+        },
+        "stored_token_instances": {
+          "mean": 1792,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 256,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 1536,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 138.66666666666666,
+          "sample_sd": 41.956326499508194
+        },
+        "token_instance_utilization": {
+          "mean": 0.14285714285714285,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 4,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "session_end",
+      "chunk_size": 128,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 8,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 1434.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "oracle_saved_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 424,
+          "sample_sd": 16.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 164,
+          "sample_sd": 16.0
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.7214255085997427,
+          "sample_sd": 0.017044571681422448
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 73.5,
+          "sample_sd": 3.4641016151377544
+        },
+        "stored_token_instances": {
+          "mean": 1024,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 1024,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 906.6666666666666,
+          "sample_sd": 41.956326499508194
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "session_end",
+      "chunk_size": 256,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 8,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 1434.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "oracle_saved_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 73.5,
+          "sample_sd": 3.4641016151377544
+        },
+        "stored_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 1930.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "session_end",
+      "chunk_size": 512,
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "noninitial_requests": {
+          "mean": 8,
+          "sample_sd": 0.0
+        },
+        "prompt_tokens": {
+          "mean": 1434.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "oracle_saved_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "chunk_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "boundary_recomputed_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_recomputed_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "total_chunk_recomputed_tokens": {
+          "mean": 588,
+          "sample_sd": 27.712812921102035
+        },
+        "total_loss_fraction_of_oracle": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "boundary_loss_fraction_of_oracle": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "total_loss_tokens_per_noninitial_request": {
+          "mean": 73.5,
+          "sample_sd": 3.4641016151377544
+        },
+        "stored_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unique_used_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "unpersisted_tail_tokens": {
+          "mean": 1930.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_reference_saved_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    }
+  ],
+  "pooled": [
+    {
+      "chunk_size": 64,
+      "oracle_saved_tokens": 25507,
+      "chunk_saved_tokens": 17664,
+      "boundary_recomputed_tokens": 7424,
+      "unpersisted_tail_recomputed_tokens": 419,
+      "total_chunk_recomputed_tokens": 7843,
+      "total_loss_fraction_of_oracle": 0.30748422001803427,
+      "stored_token_instances": 45632,
+      "unique_used_token_instances": 17664,
+      "horizon_unused_token_instances": 27968,
+      "unpersisted_tail_tokens": 3126
+    },
+    {
+      "chunk_size": 128,
+      "oracle_saved_tokens": 25507,
+      "chunk_saved_tokens": 12288,
+      "boundary_recomputed_tokens": 8127,
+      "unpersisted_tail_recomputed_tokens": 5092,
+      "total_chunk_recomputed_tokens": 13219,
+      "total_loss_fraction_of_oracle": 0.5182498921864587,
+      "stored_token_instances": 35200,
+      "unique_used_token_instances": 12288,
+      "horizon_unused_token_instances": 22912,
+      "unpersisted_tail_tokens": 13558
+    },
+    {
+      "chunk_size": 256,
+      "oracle_saved_tokens": 25507,
+      "chunk_saved_tokens": 3072,
+      "boundary_recomputed_tokens": 5615,
+      "unpersisted_tail_recomputed_tokens": 16820,
+      "total_chunk_recomputed_tokens": 22435,
+      "total_loss_fraction_of_oracle": 0.8795624730466146,
+      "stored_token_instances": 17152,
+      "unique_used_token_instances": 3072,
+      "horizon_unused_token_instances": 14080,
+      "unpersisted_tail_tokens": 31606
+    },
+    {
+      "chunk_size": 512,
+      "oracle_saved_tokens": 25507,
+      "chunk_saved_tokens": 0,
+      "boundary_recomputed_tokens": 0,
+      "unpersisted_tail_recomputed_tokens": 25507,
+      "total_chunk_recomputed_tokens": 25507,
+      "total_loss_fraction_of_oracle": 1.0,
+      "stored_token_instances": 0,
+      "unique_used_token_instances": 0,
+      "horizon_unused_token_instances": 0,
+      "unpersisted_tail_tokens": 48758
+    }
+  ],
+  "paired": [
+    {
+      "pattern": "append",
+      "comparison": "128->64",
+      "saved_additional_tokens_mean": 512,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "append",
+      "comparison": "256->64",
+      "saved_additional_tokens_mean": 1536,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "append",
+      "comparison": "512->64",
+      "saved_additional_tokens_mean": 2560,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "retry",
+      "comparison": "128->64",
+      "saved_additional_tokens_mean": 512,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "retry",
+      "comparison": "256->64",
+      "saved_additional_tokens_mean": 2048,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "retry",
+      "comparison": "512->64",
+      "saved_additional_tokens_mean": 2048,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "edit",
+      "comparison": "128->64",
+      "saved_additional_tokens_mean": 512,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "edit",
+      "comparison": "256->64",
+      "saved_additional_tokens_mean": 1024,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "edit",
+      "comparison": "512->64",
+      "saved_additional_tokens_mean": 1024,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "session_end",
+      "comparison": "128->64",
+      "saved_additional_tokens_mean": 256,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "session_end",
+      "comparison": "256->64",
+      "saved_additional_tokens_mean": 256,
+      "sample_sd": 0.0
+    },
+    {
+      "pattern": "session_end",
+      "comparison": "512->64",
+      "saved_additional_tokens_mean": 256,
+      "sample_sd": 0.0
+    }
+  ],
+  "native_saved_tokens_all_sizes": 0,
+  "max_persisted_snapshot_tokens": 399,
+  "kv_bytes": null,
+  "physical_bytes": null,
+  "latency": null,
+  "batching_effect": null,
+  "analysis_environment": {
+    "system": "Windows",
+    "python": "3.13.9",
+    "runtime": "local offline stdlib replay; existing matplotlib only for figures",
+    "remote_execution": false
+  },
+  "outputs": [
+    {
+      "path": "results/kv_chunk_replay/figures/chunk-loss-decomposition.svg",
+      "sha256": "c65c46348ef73ad6380112e4ec1a8f2e1c74a6dd8bc27232b8bf053f356e74ca"
+    },
+    {
+      "path": "results/kv_chunk_replay/figures/lcp-distribution.svg",
+      "sha256": "0c361bbb5cf2e152eacc8d23fc4dc275d82f1b5af44f5d59df1b9e0a86e0a1be"
+    },
+    {
+      "path": "results/kv_chunk_replay/lcp_requests.csv",
+      "sha256": "59b5bf61093b3b3c33018263185572733add7ebced2bbb41b6028b8a607bcfac"
+    },
+    {
+      "path": "results/kv_chunk_replay/native_reference.csv",
+      "sha256": "c7227891f002f33ff4d30e01eec748b90e006628ffcc6675d9da4ff34c203370"
+    },
+    {
+      "path": "results/kv_chunk_replay/object_accounting.csv",
+      "sha256": "89088e95b973b0a7af61af2cc6986da5a48671eed7e7eb463ebe6996f6c62c54"
+    },
+    {
+      "path": "results/kv_chunk_replay/paired_requests.csv",
+      "sha256": "f361bf3a546741548bb555c2658a6107697a29868b51faed424e21dec2c7a760"
+    },
+    {
+      "path": "results/kv_chunk_replay/seed_summary.csv",
+      "sha256": "2f1e16b90963b1b55d4cec69322c83390de46beb168febe398ab6448b200938f"
+    }
+  ]
+}
