@@ -1,0 +1,14 @@
+{
+  "backend": "llama-cpp-python",
+  "version": "0.3.36",
+  "source_url": "https://files.pythonhosted.org/packages/ec/e9/e7de2b0463ea3ffbf0ede6cb21b58c1258a8f6521aae45ca773a59fe7cf3/llama_cpp_python-0.3.36.tar.gz",
+  "source_sha256": "832db0699007f1be95a7e41ef12e88926b02ba836461e36a36372db2760c1a2e",
+  "native_source": "vendor/llama.cpp bundled in the hash-pinned source archive; no separate moving checkout",
+  "wheel_sha256": "b81d2eb11ebda3f1e2088280038c58f0bef65cc7cc839f7f1d103db87cece648",
+  "model_repository": "Qwen/Qwen2.5-0.5B-Instruct-GGUF",
+  "model_revision": "9217f5db79a29953eb74d5343926648285ec7e67",
+  "model_file": "qwen2.5-0.5b-instruct-q4_k_m.gguf",
+  "model_sha256": "74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db",
+  "runtime_dependencies": "results/kv_lifecycle/batch-provenance.json",
+  "scope": "controlled full-state characterization, not chunk or hardware evidence"
+}

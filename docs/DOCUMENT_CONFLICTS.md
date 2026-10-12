@@ -21,3 +21,12 @@
 
 미제공 자료: ftlsim source, 원시 block trace, 분석 스크립트·외부 부록 결과.
 보고 수치를 독립 재현했다고 표시하지 않는다.
+
+## 2026-10-12 추가 · 최신 탐색 지시
+
+사용자는 full-state KV audit/smoke/screening과 같은 trace의 chunk 64/128/256/512
+replay 설계를 승인했다. 이전 문서의 solution/policy/Phase 진행 순서는 확정 명세가
+아니다. Full-state screening은 기존 FEMU evidence와 별도 branch다. Fixed chunk
+기전, 현실적 agent 발생률, batching 효과와 cross-layer 선택 역전은 아직 미검증이다.
+새 연구 방향 종합 HTML의 후보/contribution과 첨부 screening 지시문은 가설·설계
+입력으로 사용했으며, 최신 사용자 메시지의 실행/설계 경계를 우선했다.

@@ -1,5 +1,19 @@
 # LEDGER / shared-flash research exploration
 
+## 현재 탐색 · KV lifecycle screening (2026-10-12)
+
+Pinned full-state backend audit와 correctness smoke, 4종 synthetic fixture × 3회가
+완료됐다. Screening의 disk saved tokens는 모두 0이며 252 disk read가 resident
+prefix보다 낫지 않아 pop 후 복원되지 않았다. 이 backend/fixture는 일반적인 future
+reuse characterization에 부적합하며, 미사용 100%를 KV/chunk 연구 GO로 해석하지 않는다.
+Serialized record의 scores array 비중은 약 96–98%이다. 순수 KV bytes와 다르다.
+Chunk 64/128/256/512 paired replay는 설계만 했고 새 policy/controller는 없다.
+
+[한국어 결과와 한계](docs/kv-screen.html) · [전체 보고서](research/kv_reuse_screening_report.md) ·
+[source audit](research/kv_reuse_audit.md) · [paired replay 설계](research/kv_chunk_replay_plan.md)
+
+아래 FEMU 문단들은 완료된 과거 단계의 기록이며 새 KV screening과 별도 evidence이다.
+
 **연구 방향: provisional · Phase 1 통과 · Phase 2 pilot/긴 overwrite 확인 완료 · 추가 실험 승인 대기**
 
 이 저장소는 정해진 LEDGER의 최종 구현 명세가 아닙니다. 여러 서비스와 LLM이

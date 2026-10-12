@@ -1,0 +1,17 @@
+{
+  "local_commit": "69b644a4d3b32d907e669923241f7644e8e463e8",
+  "local_dirty": true,
+  "remote_commit": "69b644a4d3b32d907e669923241f7644e8e463e8",
+  "remote_dirty": true,
+  "dependencies": [
+    "diskcache==5.6.3",
+    "Jinja2==3.1.6",
+    "llama_cpp_python @ file:///home/miruware/ledger/artifacts/kv-screen/llama_cpp_python-0.3.36.tar.gz",
+    "MarkupSafe==3.0.4",
+    "numpy==2.2.6",
+    "typing_extensions==4.16.0"
+  ],
+  "host_kernel": "5.15.0-78-generic",
+  "host_cpu": "AMD Ryzen Threadripper PRO 7975WX 32-Cores",
+  "host_mem_total_kib": 263322568
+}

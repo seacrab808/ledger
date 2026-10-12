@@ -1,7 +1,7 @@
 {
   "status": "provisional",
-  "question": "여러 서비스와 LLM이 저장장치를 함께 쓸 때, logical bytes 회계는 내부 NAND 작업과 마모를 충분히 표현하는가?",
-  "scope": "Phase 2 pilot·긴 overwrite·작은 initial-history control 완료. 세 패턴 비교는 설계만 했다. solution 미구현, 추가 실행 승인 대기.",
+  "question": "저장·재사용 경계와 memory/storage 계층의 상호작용이 기존 효율 지표나 시스템 선택을 뒤집는 실제 조건이 있는가?",
+  "scope": "기존 FEMU pilot/steady/history 보존. KV full-state audit·smoke·12 synthetic screening 완료. Native pop-on-lookup 지배로 future-reuse screening 부적합; chunk paired replay 설계만, solution 미구현.",
   "directions": [
     {
       "name": "서비스별 소거 비용 회계",
@@ -24,8 +24,8 @@
       "status": "open",
       "why": "다시 사용하지 않는 큰 KV 파일을 저장하지 않거나 변경된 부분만 저장하면 불필요한 쓰기를 줄일 수 있다.",
       "needed": "실제 저장·복원·해제 동작, 복귀 분포, bytes와 내부 비용, 지연·내구성 조건",
-      "evidence": "기존 보고서에 저장 정책 효과가 있지만 현재 저장소에서 실행하지 않았다.",
-      "objection": "cache reuse·crash recovery·partial restore 비용이 synthetic 패턴과 다를 수 있다."
+      "evidence": "2026-10-12: full-state 12 synthetic runs 모두 disk saved tokens=0. 252 disk reads가 resident보다 낫지 않아 복원 없이 pop됐다. Serialized record의 scores 비중 약 96–98%. Chunk 기전/현실 workload/physical saving은 미검증.",
+      "objection": "높은 horizon-unused가 retrieval/serialization 구현 특성에 지배될 수 있다. 실제 trace, 적합한 chunk backend, 단순 tuning/batching과 동등한 recovery contract를 먼저 확인해야 한다."
     },
     {
       "name": "compute ↔ flash work controller",
@@ -268,6 +268,30 @@
       "alternatives": "바로 solution/서비스/LLM 실험 또는 이름만 permutation인 random workload 실행",
       "why_not": "현재는 메커니즘을 좁히는 단계다. generator/trace correctness를 별도 gate로 설계하고 main 실행은 사용자 승인 후다.",
       "status": "designed-not-executed"
+    },
+    {
+      "id": "D025",
+      "title": "새 연구 문제 후보를 위한 full-state screening",
+      "reason": "사용자 승인으로 기존 FEMU 결과와 독립적인 audit·smoke·12 runs를 수행했다. 모델/코드/config를 pin하고 서로 다른 synthetic fixture와 동일 trace의 paired chunk 설계를 사용한다.",
+      "alternatives": "즉시 controller나 FEMU physical-cost 평가 구현",
+      "why_not": "좋은 문제와 측정 가능성을 먼저 확인한다.",
+      "status": "completed-screening-only"
+    },
+    {
+      "id": "D026",
+      "title": "미사용 100%를 KV/chunk 연구 GO로 해석하지 않는다",
+      "reason": "12 runs의 disk reuse는 0이고 252 lookups 모두 resident prefix보다 낫지 않아 pop 후 복원되지 않았다. Append disk-reuse positive baseline도 실패했다. Scores serialization 비중이 높아 file bytes를 KV bytes로 부를 수 없다.",
+      "alternatives": "20% screening threshold 초과만으로 새로운 문제 발견 선언",
+      "why_not": "backend/fixture-specific retrieval semantics가 지배한다. 현실적 발생률과 novelty는 보류한다.",
+      "status": "unsuitable-backend-fixture-for-general-screening"
+    },
+    {
+      "id": "D027",
+      "title": "chunk와 cross-layer mismatch는 다음 검증 후보",
+      "reason": "같은 기록 trace의 LCP와 chunk 64/128/256/512를 paired replay하는 설계만 남겼다. Native availability와 retained-object potential upper bound를 구분한다.",
+      "alternatives": "full-state 관측을 fixed chunk 원인으로 표현하거나 새로운 policy 구현",
+      "why_not": "actual chunk key, partial tail, dedup, batching flush 및 recovery 조건을 아직 측정하지 않았다.",
+      "status": "designed-not-executed"
     }
   ],
   "new_questions": [
@@ -277,5 +301,10 @@
     "KV를 덜 저장하면 재계산으로 늘어난 시간 동안 로그·DB가 더 쓰는 비용까지 줄어들까?",
     "주소 갱신을 묶는 host-side scheduling이 같은 bytes에서 GC 복사를 줄일 수 있을까? durability/latency를 지키는 해결 후보이며 아직 미실험이다."
   ],
-  "capacity_sensitivity_candidate": "서버에 충분한 RAM/CPU가 있어 향후 capacity/geometry sensitivity를 검토할 수 있다. 지금의 Phase 1과 초기 pilot E0는 4 GiB raw / 3 GiB exposed를 유지한다. 확장은 별도 승인·자원 예산·명시적 변수 통제 후 수행한다."
+  "capacity_sensitivity_candidate": "서버에 충분한 RAM/CPU가 있어 향후 capacity/geometry sensitivity를 검토할 수 있다. 지금의 Phase 1과 초기 pilot E0는 4 GiB raw / 3 GiB exposed를 유지한다. 확장은 별도 승인·자원 예산·명시적 변수 통제 후 수행한다.",
+  "kv_screening": {
+    "status": "runtime-complete-research-go-undetermined",
+    "chunk_replay": "design-only",
+    "summary": "records/kv-screen-summary.json"
+  }
 }

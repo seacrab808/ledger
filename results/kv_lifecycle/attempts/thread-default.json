@@ -1,0 +1,1 @@
+{"status": "stopped-before-screening", "reason": "n_threads_batch default oversubscribed 2-CPU affinity", "observed_threads": 64, "screening_runs_started": 0, "fix": "explicit n_threads_batch=2"}

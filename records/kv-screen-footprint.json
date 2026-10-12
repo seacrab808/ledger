@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "active_owned_experiment_processes": 0,
+  "kv_artifact_bytes": 853435826,
+  "fresh_run_cache_directories": 0,
+  "build_jobs": 2,
+  "runtime_affinity_cpus": 2,
+  "generation_threads": 2,
+  "prefill_threads": 2,
+  "system_changes": false,
+  "ssh_initial_tmpdir": null,
+  "initial_venv_bootstrap_tmpdir_explicitly_scoped": false,
+  "reproduction_script_bootstrap_scope_fixed": true
+}

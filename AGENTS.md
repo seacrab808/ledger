@@ -8,12 +8,16 @@ work/wear for services and LLMs on shared edge storage. Problem statement,
 contributions, accounting, placement, architecture, KV policy and even LEDGER may
 change with evidence. Measurement validity comes before preserving an idea.
 
-- Current authorization is a small initial-history control only: same 4 GiB raw / 3 GiB exposed,
-  approximately 70% live logical fill; only random preconditioning changes from one to three identical passes,
-  GC/erase gate, 4 KiB sequential versus uniform random overwrites, direct I/O,
-  QD1/job1/equal byte budgets. Reuse the archived one-pass seed 42 baseline; run two new three-pass runs, one per pattern. Commit/push remains authorized.
+- Current authorization (2026-10-12) is source audit, correctness smoke and
+  12 controlled-synthetic full-state KV screening runs (4 workloads × seeds 42/43/44),
+  CPU-only, one process, 2 generation AND 2 prefill threads, nice 10, 2-CPU affinity,
+  RSS ceiling 8 GiB / address space 12 GiB / extra artifacts 10 GiB.
+  Pin llama-cpp-python 0.3.36 and the small Qwen model/config hashes.
+  Chunk sizes 64/128/256/512 are paired trace-replay DESIGN ONLY in this stage.
+  Do not implement a new policy/controller or claim full-state evidence proves chunk mismatch.
+  Commit/push remains authorized. Earlier initial-history control is complete and must not rerun.
 - Do NOT run other E0 workloads, fill/OP/GC/geometry sweeps,
-  extra repetitions beyond the approved three per pattern, LLM downloads,
+  extra repetitions beyond the approved three per pattern, unapproved LLM downloads,
   accounting/Shapley/BPF, SAVE/DROP policies,
   threshold/paced, placement features or real-device experiments in this phase.
 - An unsuitable host is a recorded blocker. Do not install/run FEMU under WSL or
@@ -31,7 +35,7 @@ change with evidence. Measurement validity comes before preserving an idea.
   2 GiB/2 vCPUs, 4 GiB raw/3 GiB exposed, nice 10, at most 6-CPU affinity and
   12 GiB process address-space limit. All caches/TMPDIR/HOME for build tools
   are project-local. Stop the owned VM after each run; never stop other users' jobs.
-- Stop after the initial-history control and design of the unexecuted three-pattern experiment for the user's decision. A blocked runtime stays incomplete;
+- Stop after the KV screening and unexecuted chunk replay design; preserve the earlier unexecuted three-pattern experiment. A blocked runtime stays incomplete;
   source/docs preparation is not successful build, boot or sanity.
 
 - The six original Phase 2 pilot runs are COMPLETE and must be preserved.

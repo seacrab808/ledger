@@ -10,6 +10,8 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 PAGES = ["index.html", "research-map.html", "phase-01.html", "phase-02.html", "experiment-log.html", "decision-log.html", "glossary.html"]
+if (ROOT / 'records/kv-screen-summary.json').exists():
+    PAGES.append('kv-screen.html')
 
 
 def same_summary(a, b):
@@ -134,7 +136,7 @@ def validate():
             errors.append('History-control runner mismatch')
     if errors:
         raise ValueError("\n".join(errors))
-    print("7 HTML notes: offline assets, Korean layout, local links, original hashes and config/measurement provenance pass.")
+    print(f"{len(PAGES)} HTML notes: offline assets, Korean layout, local links, original hashes and config/measurement provenance pass.")
 
 
 if __name__ == "__main__":

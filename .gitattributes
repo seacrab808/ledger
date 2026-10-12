@@ -8,3 +8,5 @@
 # Historical HTML is immutable, including original line endings.
 docs/LEDGER* -text
 records/phase-01-executed-config.json -text
+# Runtime evidence and its SHA256 manifest must survive Windows/Linux checkouts byte-for-byte.
+results/kv_lifecycle/** -text

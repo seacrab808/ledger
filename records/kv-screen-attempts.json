@@ -1,0 +1,14 @@
+{
+  "date_kst": "2026-10-12",
+  "scope": "correctness smoke and launcher diagnostics; screening runs never rerun",
+  "attempts": [
+    {"stage":"initial-smoke","status":"stopped","reason":"n_threads_batch was not explicitly set; 64 threads observed within 2-CPU affinity","screening_started":false,"fix":"n_threads_batch=2; preserved failed cache/events","raw":"results/kv_lifecycle/attempts/smoke-prefill-thread-default/events.jsonl"},
+    {"stage":"fresh-cache-gate","status":"rejected","reason":"previous failed smoke left an owned cache directory; fresh-state guard rejected reuse","screening_started":false,"fix":"archive owned failed cache, do not overwrite it"},
+    {"stage":"partial-cold-output","status":"failed-gate","reason":"restored partial-prefix output differed from cold output","screening_started":false,"raw":"results/kv_lifecycle/attempts/smoke-partial-cold-output-difference/events.jsonl","followup":"compare identical native restore vs observer, retain cold/restore numerical limitation"},
+    {"stage":"successful-smoke-controller","status":"controller-error-after-smoke-passed","reason":"read-only artifact size sampling raced owned cache deletion","screening_started":false,"fix":"handle FileNotFoundError; resume without repeating passed smoke"},
+    {"stage":"bootstrap-scope-audit","status":"reproduction-fixed","reason":"initial EnvBuilder ran before parent TMPDIR/HOME was updated; actual transient temp path was not recorded","fix":"update os.environ before venv/ensurepip bootstrap","limitation":"cannot claim every initial temporary write was inside ledger"}
+  ],
+  "successful_screening_runs": 12,
+  "extra_screening_repetitions": 0,
+  "successful_smoke_repeated_on_resume": false
+}

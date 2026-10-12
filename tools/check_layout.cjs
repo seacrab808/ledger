@@ -15,7 +15,9 @@ const { pathToFileURL } = require('node:url');
     for (const width of [1280, 390]) {
       const context = await browser.newContext({ viewport: { width, height: 900 }, offline: true });
       const page = await context.newPage();
-      for (const name of ['index', 'research-map', 'phase-01', 'phase-02', 'experiment-log', 'decision-log', 'glossary']) {
+      const names = ['index', 'research-map', 'phase-01', 'phase-02', 'experiment-log', 'decision-log', 'glossary'];
+      if (fs.existsSync(path.join(root, 'records', 'kv-screen-summary.json'))) names.push('kv-screen');
+      for (const name of names) {
         await page.goto(pathToFileURL(path.join(root, 'docs', name + '.html')).href);
         const layout = await page.evaluate(() => ({
           width: document.documentElement.clientWidth,
@@ -23,7 +25,7 @@ const { pathToFileURL } = require('node:url');
           heading: document.querySelector('h1')?.textContent,
           navLinks: document.querySelectorAll('nav a').length
         }));
-        if (layout.scrollWidth > layout.width + 1 || !layout.heading || layout.navLinks !== 7) {
+        if (layout.scrollWidth > layout.width + 1 || !layout.heading || layout.navLinks !== names.length) {
           throw new Error(`${name}/${width}: ${JSON.stringify(layout)}`);
         }
         if (name === 'index' || name === 'phase-01' || name === 'phase-02') {

@@ -1,0 +1,3372 @@
+{
+  "status": "validated",
+  "kind": "controlled-synthetic-full-state-screening",
+  "run_count": 12,
+  "smoke_checks": {
+    "cold_matches_observed": true,
+    "restored_matches_cold": true,
+    "partial_native_restore_matches_observed": true,
+    "partial_native_restore_logits_match": true,
+    "cold_prompt_eval_exact": true,
+    "disk_restore_saves_tokens": true,
+    "exact_restore_recomputes_final_token": true,
+    "partial_restore_saves_tokens": true
+  },
+  "aggregates": [
+    {
+      "pattern": "append",
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "persisted_record_bytes": {
+          "mean": 1798143136,
+          "sample_sd": 10319934.96706331
+        },
+        "unique_ever_used_record_bytes": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_state_bytes": {
+          "mean": 68906724,
+          "sample_sd": 681735.1978591101
+        },
+        "serialized_scores_array_bytes": {
+          "mean": 1729031680,
+          "sample_sd": 9723904.0
+        },
+        "scores_array_fraction_of_record_bytes": {
+          "mean": 0.9615655355215584,
+          "sample_sd": 0.0002124159226691449
+        },
+        "never_used_record_bytes_at_horizon": {
+          "mean": 1798143136,
+          "sample_sd": 10319934.96706331
+        },
+        "record_ever_used_ratio": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "persisted_token_instances": {
+          "mean": 5601,
+          "sample_sd": 55.42562584220407
+        },
+        "unique_reused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 5601,
+          "sample_sd": 55.42562584220407
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_ratio": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "disk_saved_prefill_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "resident_saved_prefill_tokens": {
+          "mean": 161,
+          "sample_sd": 0.0
+        },
+        "runtime_seconds": {
+          "mean": 28.533648747009767,
+          "sample_sd": 0.27117036664448
+        },
+        "peak_rss_bytes": {
+          "mean": 1019777024,
+          "sample_sd": 226838.53612647037
+        },
+        "cpu_seconds": {
+          "mean": 54.935733666666664,
+          "sample_sd": 0.497666018299751
+        },
+        "capacity_evictions": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "retry",
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "persisted_record_bytes": {
+          "mean": 1787637988,
+          "sample_sd": 9699785.748933634
+        },
+        "unique_ever_used_record_bytes": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_state_bytes": {
+          "mean": 59009324,
+          "sample_sd": 359937.0361604929
+        },
+        "serialized_scores_array_bytes": {
+          "mean": 1728423936,
+          "sample_sd": 9723904.0
+        },
+        "scores_array_fraction_of_record_bytes": {
+          "mean": 0.9668751311773711,
+          "sample_sd": 0.0002754699527342024
+        },
+        "never_used_record_bytes_at_horizon": {
+          "mean": 1787637988,
+          "sample_sd": 9699785.748933634
+        },
+        "record_ever_used_ratio": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "persisted_token_instances": {
+          "mean": 4796.333333333333,
+          "sample_sd": 29.26317367158479
+        },
+        "unique_reused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 4796.333333333333,
+          "sample_sd": 29.26317367158479
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_ratio": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "disk_saved_prefill_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "resident_saved_prefill_tokens": {
+          "mean": 161,
+          "sample_sd": 0.0
+        },
+        "runtime_seconds": {
+          "mean": 25.781268814675666,
+          "sample_sd": 0.2371976770353372
+        },
+        "peak_rss_bytes": {
+          "mean": 1023894869.3333334,
+          "sample_sd": 1332568.8305965036
+        },
+        "cpu_seconds": {
+          "mean": 49.407735333333335,
+          "sample_sd": 0.49553213843940697
+        },
+        "capacity_evictions": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "edit",
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 24,
+          "sample_sd": 0.0
+        },
+        "persisted_record_bytes": {
+          "mean": 1771851949,
+          "sample_sd": 16463210.922168829
+        },
+        "unique_ever_used_record_bytes": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_state_bytes": {
+          "mean": 48287824,
+          "sample_sd": 625407.9308739217
+        },
+        "serialized_scores_array_bytes": {
+          "mean": 1723359402.6666667,
+          "sample_sd": 15898440.550961887
+        },
+        "scores_array_fraction_of_record_bytes": {
+          "mean": 0.9726321289197569,
+          "sample_sd": 0.00016321439698180036
+        },
+        "never_used_record_bytes_at_horizon": {
+          "mean": 1771851949,
+          "sample_sd": 16463210.922168829
+        },
+        "record_ever_used_ratio": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "persisted_token_instances": {
+          "mean": 3924.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "unique_reused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 3924.6666666666665,
+          "sample_sd": 50.84617324178225
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_ratio": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "disk_saved_prefill_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "resident_saved_prefill_tokens": {
+          "mean": 161,
+          "sample_sd": 0.0
+        },
+        "runtime_seconds": {
+          "mean": 22.693871744006174,
+          "sample_sd": 0.18188927076260125
+        },
+        "peak_rss_bytes": {
+          "mean": 1012502528,
+          "sample_sd": 1133252.9860397456
+        },
+        "cpu_seconds": {
+          "mean": 43.32418333333333,
+          "sample_sd": 0.3106593373734906
+        },
+        "capacity_evictions": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    },
+    {
+      "pattern": "session_end",
+      "n": 3,
+      "metrics": {
+        "requests": {
+          "mean": 16,
+          "sample_sd": 0.0
+        },
+        "persisted_record_bytes": {
+          "mean": 996283696,
+          "sample_sd": 19934417.269347604
+        },
+        "unique_ever_used_record_bytes": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "native_state_bytes": {
+          "mean": 23756816,
+          "sample_sd": 516062.8159439508
+        },
+        "serialized_scores_array_bytes": {
+          "mean": 972390400,
+          "sample_sd": 19447808.0
+        },
+        "scores_array_fraction_of_record_bytes": {
+          "mean": 0.9760177285457926,
+          "sample_sd": 0.00017082244370361202
+        },
+        "never_used_record_bytes_at_horizon": {
+          "mean": 996283696,
+          "sample_sd": 19934417.269347604
+        },
+        "record_ever_used_ratio": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "persisted_token_instances": {
+          "mean": 1930.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "unique_reused_token_instances": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_instances": {
+          "mean": 1930.6666666666667,
+          "sample_sd": 41.956326499508194
+        },
+        "token_instance_utilization": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "horizon_unused_token_ratio": {
+          "mean": 1.0,
+          "sample_sd": 0.0
+        },
+        "disk_saved_prefill_tokens": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "reuse_events": {
+          "mean": 0,
+          "sample_sd": 0.0
+        },
+        "resident_saved_prefill_tokens": {
+          "mean": 120,
+          "sample_sd": 0.0
+        },
+        "runtime_seconds": {
+          "mean": 12.698117539674664,
+          "sample_sd": 0.22789499359534876
+        },
+        "peak_rss_bytes": {
+          "mean": 992681984,
+          "sample_sd": 200704.0
+        },
+        "cpu_seconds": {
+          "mean": 24.391581666666667,
+          "sample_sd": 0.3910397607013038
+        },
+        "capacity_evictions": {
+          "mean": 0,
+          "sample_sd": 0.0
+        }
+      }
+    }
+  ],
+  "rows": [
+    {
+      "pattern": "append",
+      "seed": 42,
+      "requests": 24,
+      "persisted_record_bytes": 1787632032,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 68119524,
+      "serialized_scores_array_bytes": 1719307776,
+      "scores_array_fraction_of_record_bytes": 0.9617794631238741,
+      "never_used_record_bytes_at_horizon": 1787632032,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 5537,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 5537,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 28.222699959005695,
+      "peak_rss_bytes": 1020035072,
+      "cpu_seconds": 54.361520000000006,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "requests": 24,
+      "persisted_record_bytes": 1777737784,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 58833024,
+      "serialized_scores_array_bytes": 1718700032,
+      "scores_array_fraction_of_record_bytes": 0.9667905174028748,
+      "never_used_record_bytes_at_horizon": 1777737784,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 4782,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 4782,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 25.666170139971655,
+      "peak_rss_bytes": 1024999424,
+      "cpu_seconds": 49.134859000000006,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "requests": 24,
+      "persisted_record_bytes": 1754316099,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 47566224,
+      "serialized_scores_array_bytes": 1706545152,
+      "scores_array_fraction_of_record_bytes": 0.9727694757933131,
+      "never_used_record_bytes_at_horizon": 1754316099,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 3866,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 3866,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 22.511152164952364,
+      "peak_rss_bytes": 1012936704,
+      "cpu_seconds": 43.013259999999995,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "requests": 16,
+      "persisted_record_bytes": 976249588,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 23170516,
+      "serialized_scores_array_bytes": 952942592,
+      "scores_array_fraction_of_record_bytes": 0.9761259863394688,
+      "never_used_record_bytes_at_horizon": 976249588,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 1883,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 1883,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 120,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 12.435789231967647,
+      "peak_rss_bytes": 992538624,
+      "cpu_seconds": 23.940949,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "requests": 24,
+      "persisted_record_bytes": 1798536736,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 69300324,
+      "serialized_scores_array_bytes": 1729031680,
+      "scores_array_fraction_of_record_bytes": 0.9613546642619147,
+      "never_used_record_bytes_at_horizon": 1798536736,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 5633,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 5633,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 28.657240447035292,
+      "peak_rss_bytes": 1019686912,
+      "cpu_seconds": 55.203334999999996,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "requests": 24,
+      "persisted_record_bytes": 1788052088,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 59423424,
+      "serialized_scores_array_bytes": 1728423936,
+      "scores_array_fraction_of_record_bytes": 0.9666518931969726,
+      "never_used_record_bytes_at_horizon": 1788052088,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 4830,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 4830,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 26.054055136075476,
+      "peak_rss_bytes": 1024270336,
+      "cpu_seconds": 49.979726,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "requests": 24,
+      "persisted_record_bytes": 1774263162,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 48673224,
+      "serialized_scores_array_bytes": 1725385216,
+      "scores_array_fraction_of_record_bytes": 0.9724516931609495,
+      "never_used_record_bytes_at_horizon": 1774263162,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 3956,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 3956,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 22.695543890062254,
+      "peak_rss_bytes": 1013354496,
+      "cpu_seconds": 43.324712,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "requests": 16,
+      "persisted_record_bytes": 996484596,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 23957716,
+      "serialized_scores_array_bytes": 972390400,
+      "scores_array_fraction_of_record_bytes": 0.9758208043589266,
+      "never_used_record_bytes_at_horizon": 996484596,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 1947,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 1947,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 120,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 12.811281073052669,
+      "peak_rss_bytes": 992595968,
+      "cpu_seconds": 24.592205,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "requests": 24,
+      "persisted_record_bytes": 1808260640,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 69300324,
+      "serialized_scores_array_bytes": 1738755584,
+      "scores_array_fraction_of_record_bytes": 0.9615624791788865,
+      "never_used_record_bytes_at_horizon": 1808260640,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 5633,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 5633,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 28.72100583498832,
+      "peak_rss_bytes": 1019609088,
+      "cpu_seconds": 55.242346,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "requests": 24,
+      "persisted_record_bytes": 1797124092,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 58771524,
+      "serialized_scores_array_bytes": 1738147840,
+      "scores_array_fraction_of_record_bytes": 0.967182982932266,
+      "never_used_record_bytes_at_horizon": 1797124092,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 4777,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 4777,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 25.623581167979864,
+      "peak_rss_bytes": 1022414848,
+      "cpu_seconds": 49.108621,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "requests": 24,
+      "persisted_record_bytes": 1786976586,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 48624024,
+      "serialized_scores_array_bytes": 1738147840,
+      "scores_array_fraction_of_record_bytes": 0.9726752178050082,
+      "never_used_record_bytes_at_horizon": 1786976586,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 3952,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 3952,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 161,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 22.874919177003903,
+      "peak_rss_bytes": 1011216384,
+      "cpu_seconds": 43.634578000000005,
+      "capacity_evictions": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "requests": 16,
+      "persisted_record_bytes": 1016116904,
+      "unique_ever_used_record_bytes": 0,
+      "native_state_bytes": 24142216,
+      "serialized_scores_array_bytes": 991838208,
+      "scores_array_fraction_of_record_bytes": 0.9761063949389823,
+      "never_used_record_bytes_at_horizon": 1016116904,
+      "record_ever_used_ratio": 0.0,
+      "persisted_token_instances": 1962,
+      "unique_reused_token_instances": 0,
+      "horizon_unused_token_instances": 1962,
+      "token_instance_utilization": 0.0,
+      "horizon_unused_token_ratio": 1.0,
+      "disk_saved_prefill_tokens": 0,
+      "reuse_events": 0,
+      "resident_saved_prefill_tokens": 120,
+      "serialized_bytes_per_disk_saved_token": null,
+      "runtime_seconds": 12.847282314003678,
+      "peak_rss_bytes": 992911360,
+      "cpu_seconds": 24.641591,
+      "capacity_evictions": 0
+    }
+  ],
+  "reasons": [
+    {
+      "pattern": "append",
+      "seed": 42,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 5144,
+      "never_used_whole_record_bytes": 1704997768
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 393,
+      "never_used_whole_record_bytes": 82634264
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 4449,
+      "never_used_whole_record_bytes": 1695841520
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 333,
+      "never_used_whole_record_bytes": 81896264
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 3610,
+      "never_used_whole_record_bytes": 1673366935
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 256,
+      "never_used_whole_record_bytes": 80949164
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 1682,
+      "never_used_whole_record_bytes": 895976925
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 201,
+      "never_used_whole_record_bytes": 80272663
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 5240,
+      "never_used_whole_record_bytes": 1715902472
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 393,
+      "never_used_whole_record_bytes": 82634264
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 4501,
+      "never_used_whole_record_bytes": 1706205024
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 329,
+      "never_used_whole_record_bytes": 81847064
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 3701,
+      "never_used_whole_record_bytes": 1693326299
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 255,
+      "never_used_whole_record_bytes": 80936863
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 1746,
+      "never_used_whole_record_bytes": 916211933
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 201,
+      "never_used_whole_record_bytes": 80272663
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 5240,
+      "never_used_whole_record_bytes": 1725626376
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 393,
+      "never_used_whole_record_bytes": 82634264
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 4453,
+      "never_used_whole_record_bytes": 1715338528
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 324,
+      "never_used_whole_record_bytes": 81785564
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 3696,
+      "never_used_whole_record_bytes": 1706027422
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 256,
+      "never_used_whole_record_bytes": 80949164
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "reason": "CONSUMED_ON_LOOKUP",
+      "horizon_unused_token_instances": 1761,
+      "never_used_whole_record_bytes": 935844241
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "reason": "HORIZON_END_NOT_PROVEN_INVALID",
+      "horizon_unused_token_instances": 201,
+      "never_used_whole_record_bytes": 80272663
+    }
+  ],
+  "lookup_analysis": [
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0001",
+      "object_id": "append-42-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0002",
+      "object_id": "append-42-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0003",
+      "object_id": "append-42-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0004",
+      "object_id": "append-42-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0005",
+      "object_id": "append-42-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0006",
+      "object_id": "append-42-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0007",
+      "object_id": "append-42-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0008",
+      "object_id": "append-42-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0009",
+      "object_id": "append-42-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0010",
+      "object_id": "append-42-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0011",
+      "object_id": "append-42-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0012",
+      "object_id": "append-42-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0013",
+      "object_id": "append-42-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0014",
+      "object_id": "append-42-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0015",
+      "object_id": "append-42-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0016",
+      "object_id": "append-42-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0017",
+      "object_id": "append-42-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0018",
+      "object_id": "append-42-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0019",
+      "object_id": "append-42-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0020",
+      "object_id": "append-42-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0021",
+      "object_id": "append-42-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0022",
+      "object_id": "append-42-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 42,
+      "request_id": "append-42-r0023",
+      "object_id": "append-42-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0001",
+      "object_id": "retry-42-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0002",
+      "object_id": "retry-42-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0003",
+      "object_id": "retry-42-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0004",
+      "object_id": "retry-42-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0005",
+      "object_id": "retry-42-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0006",
+      "object_id": "retry-42-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0007",
+      "object_id": "retry-42-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0008",
+      "object_id": "retry-42-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0009",
+      "object_id": "retry-42-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0010",
+      "object_id": "retry-42-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0011",
+      "object_id": "retry-42-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0012",
+      "object_id": "retry-42-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0013",
+      "object_id": "retry-42-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0014",
+      "object_id": "retry-42-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0015",
+      "object_id": "retry-42-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0016",
+      "object_id": "retry-42-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0017",
+      "object_id": "retry-42-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0018",
+      "object_id": "retry-42-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0019",
+      "object_id": "retry-42-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0020",
+      "object_id": "retry-42-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0021",
+      "object_id": "retry-42-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0022",
+      "object_id": "retry-42-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 42,
+      "request_id": "retry-42-r0023",
+      "object_id": "retry-42-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0001",
+      "object_id": "edit-42-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0002",
+      "object_id": "edit-42-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0003",
+      "object_id": "edit-42-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0004",
+      "object_id": "edit-42-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0005",
+      "object_id": "edit-42-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0006",
+      "object_id": "edit-42-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0007",
+      "object_id": "edit-42-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0008",
+      "object_id": "edit-42-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0009",
+      "object_id": "edit-42-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0010",
+      "object_id": "edit-42-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0011",
+      "object_id": "edit-42-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0012",
+      "object_id": "edit-42-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0013",
+      "object_id": "edit-42-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0014",
+      "object_id": "edit-42-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0015",
+      "object_id": "edit-42-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0016",
+      "object_id": "edit-42-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0017",
+      "object_id": "edit-42-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0018",
+      "object_id": "edit-42-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0019",
+      "object_id": "edit-42-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0020",
+      "object_id": "edit-42-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0021",
+      "object_id": "edit-42-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0022",
+      "object_id": "edit-42-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 42,
+      "request_id": "edit-42-r0023",
+      "object_id": "edit-42-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0001",
+      "object_id": "session_end-42-v0000",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0002",
+      "object_id": "session_end-42-v0001",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0003",
+      "object_id": "session_end-42-v0002",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0004",
+      "object_id": "session_end-42-v0003",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0005",
+      "object_id": "session_end-42-v0004",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0006",
+      "object_id": "session_end-42-v0005",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0007",
+      "object_id": "session_end-42-v0006",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0008",
+      "object_id": "session_end-42-v0007",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0009",
+      "object_id": "session_end-42-v0008",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0010",
+      "object_id": "session_end-42-v0009",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0011",
+      "object_id": "session_end-42-v0010",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0012",
+      "object_id": "session_end-42-v0011",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0013",
+      "object_id": "session_end-42-v0012",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0014",
+      "object_id": "session_end-42-v0013",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 42,
+      "request_id": "session_end-42-r0015",
+      "object_id": "session_end-42-v0014",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0001",
+      "object_id": "append-43-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0002",
+      "object_id": "append-43-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0003",
+      "object_id": "append-43-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0004",
+      "object_id": "append-43-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0005",
+      "object_id": "append-43-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0006",
+      "object_id": "append-43-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0007",
+      "object_id": "append-43-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0008",
+      "object_id": "append-43-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0009",
+      "object_id": "append-43-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0010",
+      "object_id": "append-43-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0011",
+      "object_id": "append-43-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0012",
+      "object_id": "append-43-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0013",
+      "object_id": "append-43-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0014",
+      "object_id": "append-43-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0015",
+      "object_id": "append-43-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0016",
+      "object_id": "append-43-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0017",
+      "object_id": "append-43-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0018",
+      "object_id": "append-43-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0019",
+      "object_id": "append-43-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0020",
+      "object_id": "append-43-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0021",
+      "object_id": "append-43-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0022",
+      "object_id": "append-43-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 43,
+      "request_id": "append-43-r0023",
+      "object_id": "append-43-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0001",
+      "object_id": "retry-43-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0002",
+      "object_id": "retry-43-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0003",
+      "object_id": "retry-43-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0004",
+      "object_id": "retry-43-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0005",
+      "object_id": "retry-43-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0006",
+      "object_id": "retry-43-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0007",
+      "object_id": "retry-43-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0008",
+      "object_id": "retry-43-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0009",
+      "object_id": "retry-43-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0010",
+      "object_id": "retry-43-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0011",
+      "object_id": "retry-43-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0012",
+      "object_id": "retry-43-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0013",
+      "object_id": "retry-43-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0014",
+      "object_id": "retry-43-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0015",
+      "object_id": "retry-43-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0016",
+      "object_id": "retry-43-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0017",
+      "object_id": "retry-43-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0018",
+      "object_id": "retry-43-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0019",
+      "object_id": "retry-43-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0020",
+      "object_id": "retry-43-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0021",
+      "object_id": "retry-43-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0022",
+      "object_id": "retry-43-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 43,
+      "request_id": "retry-43-r0023",
+      "object_id": "retry-43-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0001",
+      "object_id": "edit-43-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0002",
+      "object_id": "edit-43-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0003",
+      "object_id": "edit-43-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0004",
+      "object_id": "edit-43-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0005",
+      "object_id": "edit-43-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0006",
+      "object_id": "edit-43-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0007",
+      "object_id": "edit-43-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0008",
+      "object_id": "edit-43-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0009",
+      "object_id": "edit-43-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0010",
+      "object_id": "edit-43-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0011",
+      "object_id": "edit-43-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0012",
+      "object_id": "edit-43-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0013",
+      "object_id": "edit-43-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0014",
+      "object_id": "edit-43-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0015",
+      "object_id": "edit-43-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0016",
+      "object_id": "edit-43-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0017",
+      "object_id": "edit-43-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0018",
+      "object_id": "edit-43-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0019",
+      "object_id": "edit-43-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0020",
+      "object_id": "edit-43-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0021",
+      "object_id": "edit-43-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0022",
+      "object_id": "edit-43-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 43,
+      "request_id": "edit-43-r0023",
+      "object_id": "edit-43-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0001",
+      "object_id": "session_end-43-v0000",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0002",
+      "object_id": "session_end-43-v0001",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0003",
+      "object_id": "session_end-43-v0002",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0004",
+      "object_id": "session_end-43-v0003",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0005",
+      "object_id": "session_end-43-v0004",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0006",
+      "object_id": "session_end-43-v0005",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0007",
+      "object_id": "session_end-43-v0006",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0008",
+      "object_id": "session_end-43-v0007",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0009",
+      "object_id": "session_end-43-v0008",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0010",
+      "object_id": "session_end-43-v0009",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0011",
+      "object_id": "session_end-43-v0010",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0012",
+      "object_id": "session_end-43-v0011",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0013",
+      "object_id": "session_end-43-v0012",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0014",
+      "object_id": "session_end-43-v0013",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 43,
+      "request_id": "session_end-43-r0015",
+      "object_id": "session_end-43-v0014",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0001",
+      "object_id": "append-44-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0002",
+      "object_id": "append-44-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0003",
+      "object_id": "append-44-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0004",
+      "object_id": "append-44-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0005",
+      "object_id": "append-44-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0006",
+      "object_id": "append-44-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0007",
+      "object_id": "append-44-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0008",
+      "object_id": "append-44-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0009",
+      "object_id": "append-44-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0010",
+      "object_id": "append-44-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0011",
+      "object_id": "append-44-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0012",
+      "object_id": "append-44-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0013",
+      "object_id": "append-44-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0014",
+      "object_id": "append-44-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0015",
+      "object_id": "append-44-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0016",
+      "object_id": "append-44-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0017",
+      "object_id": "append-44-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0018",
+      "object_id": "append-44-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0019",
+      "object_id": "append-44-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0020",
+      "object_id": "append-44-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0021",
+      "object_id": "append-44-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0022",
+      "object_id": "append-44-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "append",
+      "seed": 44,
+      "request_id": "append-44-r0023",
+      "object_id": "append-44-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0001",
+      "object_id": "retry-44-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0002",
+      "object_id": "retry-44-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0003",
+      "object_id": "retry-44-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0004",
+      "object_id": "retry-44-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0005",
+      "object_id": "retry-44-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0006",
+      "object_id": "retry-44-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0007",
+      "object_id": "retry-44-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0008",
+      "object_id": "retry-44-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0009",
+      "object_id": "retry-44-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0010",
+      "object_id": "retry-44-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0011",
+      "object_id": "retry-44-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0012",
+      "object_id": "retry-44-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0013",
+      "object_id": "retry-44-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0014",
+      "object_id": "retry-44-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0015",
+      "object_id": "retry-44-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0016",
+      "object_id": "retry-44-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0017",
+      "object_id": "retry-44-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0018",
+      "object_id": "retry-44-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0019",
+      "object_id": "retry-44-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0020",
+      "object_id": "retry-44-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0021",
+      "object_id": "retry-44-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0022",
+      "object_id": "retry-44-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "retry",
+      "seed": 44,
+      "request_id": "retry-44-r0023",
+      "object_id": "retry-44-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0001",
+      "object_id": "edit-44-v0000",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0002",
+      "object_id": "edit-44-v0001",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0003",
+      "object_id": "edit-44-v0002",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0004",
+      "object_id": "edit-44-v0003",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0005",
+      "object_id": "edit-44-v0004",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0006",
+      "object_id": "edit-44-v0005",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0007",
+      "object_id": "edit-44-v0006",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0008",
+      "object_id": "edit-44-v0007",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0009",
+      "object_id": "edit-44-v0008",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0010",
+      "object_id": "edit-44-v0009",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0011",
+      "object_id": "edit-44-v0010",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0012",
+      "object_id": "edit-44-v0011",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0013",
+      "object_id": "edit-44-v0012",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0014",
+      "object_id": "edit-44-v0013",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0015",
+      "object_id": "edit-44-v0014",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0016",
+      "object_id": "edit-44-v0015",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0017",
+      "object_id": "edit-44-v0016",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0018",
+      "object_id": "edit-44-v0017",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0019",
+      "object_id": "edit-44-v0018",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0020",
+      "object_id": "edit-44-v0019",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0021",
+      "object_id": "edit-44-v0020",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0022",
+      "object_id": "edit-44-v0021",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "edit",
+      "seed": 44,
+      "request_id": "edit-44-r0023",
+      "object_id": "edit-44-v0022",
+      "disk_state_prefix_tokens": 7,
+      "resident_prefix_tokens": 7,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0001",
+      "object_id": "session_end-44-v0000",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0002",
+      "object_id": "session_end-44-v0001",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0003",
+      "object_id": "session_end-44-v0002",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0004",
+      "object_id": "session_end-44-v0003",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0005",
+      "object_id": "session_end-44-v0004",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0006",
+      "object_id": "session_end-44-v0005",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0007",
+      "object_id": "session_end-44-v0006",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0008",
+      "object_id": "session_end-44-v0007",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0009",
+      "object_id": "session_end-44-v0008",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0010",
+      "object_id": "session_end-44-v0009",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0011",
+      "object_id": "session_end-44-v0010",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0012",
+      "object_id": "session_end-44-v0011",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0013",
+      "object_id": "session_end-44-v0012",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0014",
+      "object_id": "session_end-44-v0013",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    },
+    {
+      "pattern": "session_end",
+      "seed": 44,
+      "request_id": "session_end-44-r0015",
+      "object_id": "session_end-44-v0014",
+      "disk_state_prefix_tokens": 8,
+      "resident_prefix_tokens": 8,
+      "restored": false,
+      "disk_saved_prefill_tokens": 0
+    }
+  ],
+  "lookup_summary": {
+    "disk_reads": 252,
+    "restored": 0,
+    "not_restored_and_disk_lcp_not_better_than_resident": 252
+  },
+  "screening_reuse_positive_control": false,
+  "chunk_replay_status": "designed-not-executed",
+  "pure_kv_useful_bytes": null,
+  "physical_bytes": null,
+  "erase": null,
+  "limitations": [
+    "Record-level ever-used bytes include the unused tail and non-KV state; not fine-grained KV byte utilization.",
+    "Token-instance utilization counts each persisted version separately and unions reuse ranges within that version.",
+    "All synthetic sessions end at a declared finite horizon; horizon-unused is not infinite-future dead.",
+    "Native pop-on-lookup can remove a record without load_state; edit/retry are not automatically semantic invalidation.",
+    "No real trace, chunk backend, batching, crash recovery or physical storage experiment was measured."
+  ]
+}

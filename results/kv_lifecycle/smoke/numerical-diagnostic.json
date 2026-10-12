@@ -1,0 +1,7 @@
+{
+  "partial_output_equals_cold": false,
+  "cold_vs_restored_first_logit_relative_rms": 0.034883931279182434,
+  "cold_vs_restored_first_logit_max_abs": 0.5131664276123047,
+  "native_vs_observed_first_logit_max_abs": 0.0,
+  "note": "Instrumentation gate is identical native restore behavior, not bitwise equality across different quantized decode batch histories."
+}
