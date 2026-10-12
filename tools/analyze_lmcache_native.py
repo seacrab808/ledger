@@ -95,7 +95,7 @@ def summarize():
     if batch.exists():result['batch_component']=json.loads(batch.read_text())
     out=ROOT/'records/lmcache-native-summary.json';out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     with (ROOT/'results/lmcache_native/seed-summary.csv').open('w',newline='',encoding='utf-8') as f:
-        writer=csv.DictWriter(f,fieldnames=result['seed_level'][0]);writer.writeheader();writer.writerows(result['seed_level'])
+        writer=csv.DictWriter(f,fieldnames=result['seed_level'][0],lineterminator='\n');writer.writeheader();writer.writerows(result['seed_level'])
     print(json.dumps({'status':result['status'],'checks_passed':result['checks_passed'],'checks_total':len(checks),'overall':result['overall']},ensure_ascii=False,indent=2))
 
 if __name__=='__main__':summarize()
