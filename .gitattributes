@@ -9,4 +9,4 @@
 docs/LEDGER* -text
 records/phase-01-executed-config.json -text
 # Runtime evidence and its SHA256 manifest must survive Windows/Linux checkouts byte-for-byte.
-results/kv_lifecycle/** -text
+results/kv_lifecycle/** -text whitespace=-blank-at-eol,-blank-at-eof

@@ -158,6 +158,7 @@ def add_notes(pages,summary,helpers):
             svg=svg.replace('href="#'+identifier+'"','href="#'+prefix+identifier+'"')
             svg=svg.replace('url(#'+identifier+')','url(#'+prefix+identifier+')')
         svg=svg.replace('<svg ','<svg style="max-width:100%;height:auto;stroke-linejoin:round;stroke-linecap:butt" ',1)
+        svg='\n'.join(line.rstrip() for line in svg.splitlines())
         body+=section(title,'<div class="scroll">'+svg+'</div>')
     lookups=summary['lookup_summary']
     body+=section('핵심 관측 · 높은 미사용 비율을 GO로 읽지 않는다',f'<p>12 screening runs의 disk 절약 tokens는 모두 0이다. Disk read {lookups["disk_reads"]}회 중 load_state {lookups["restored"]}회였고, {lookups["not_restored_and_disk_lcp_not_better_than_resident"]}회 모두 disk prefix가 resident prefix보다 길지 않았다. 먼저 pop한 record를 복원하지 않아 다음 같은 session까지 보존하지 못했다. Append-only disk 재사용 baseline도 실패했으므로 이 backend/fixture는 일반적인 future-reuse screening에 부적합하다.</p>')
